@@ -107,10 +107,10 @@ o_character_overworld_fox.y = global.beforebattley
 x = view_xview
 y = view_yview
 
-if instance_exists(o_menu_battle_character_fox)
+if instance_exists(o_menu_battle_party_fox)
 {
-    x = o_menu_battle_character_fox.x-10
-    y = o_menu_battle_character_fox.y-5
+    x = o_menu_battle_party_fox.x-10
+    y = o_menu_battle_party_fox.y-5
 }
 </string>
           </argument>
@@ -134,16 +134,16 @@ if instance_exists(o_menu_battle_character_fox)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(o_menu_battle_character_fox)
+            <string>if instance_exists(o_menu_battle_party_fox)
 {
-    if o_menu_battle_character_fox.image_index = 0
+    if o_menu_battle_party_fox.image_index = 0
     {
-        draw_sprite(sprite_index, global.hp, o_menu_battle_character_fox.x-8, o_menu_battle_character_fox.y-6)
+        draw_sprite(sprite_index, global.hp, o_menu_battle_party_fox.x-8, o_menu_battle_party_fox.y-6)
     }
     
-    if o_menu_battle_character_fox.image_index != 0
+    if o_menu_battle_party_fox.image_index != 0
     {
-        draw_sprite(sprite_index, global.hp, o_menu_battle_character_fox.x-100, o_menu_battle_character_fox.y)
+        draw_sprite(sprite_index, global.hp, o_menu_battle_party_fox.x-100, o_menu_battle_party_fox.y)
     }
 }
 else

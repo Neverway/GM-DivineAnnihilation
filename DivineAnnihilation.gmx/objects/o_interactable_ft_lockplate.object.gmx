@@ -60,7 +60,7 @@ active = 1;
             with (inspect_trigger) instance_destroy();
             global.textcontent = "*Click!";
             instance_create(x,y+32,o_trigger_event);
-            sprite_index = s_interactable_lockplate_active;
+            sprite_index = s_interactable_ft_lockplate_active;
             instance_create(unlockx, unlocky, o_system_unlock);
             active = 0;
             global.inve1 = "---"
@@ -71,7 +71,7 @@ active = 1;
             with (inspect_trigger) instance_destroy();
             global.textcontent = "*Click!";
             instance_create(x,y+32,o_trigger_event);
-            sprite_index = s_interactable_lockplate_active;
+            sprite_index = s_interactable_ft_lockplate_active;
             instance_create(unlockx, unlocky, o_system_unlock);
             active = 0;
             global.inve2 = "---"
@@ -82,7 +82,7 @@ active = 1;
             with (inspect_trigger) instance_destroy();
             global.textcontent = "*Click!";
             instance_create(x,y+32,o_trigger_event);
-            sprite_index = s_interactable_lockplate_active;
+            sprite_index = s_interactable_ft_lockplate_active;
             instance_create(unlockx, unlocky, o_system_unlock);
             active = 0;
             global.inve3 = "---"
@@ -93,7 +93,7 @@ active = 1;
             with (inspect_trigger) instance_destroy();
             global.textcontent = "*Click!";
             instance_create(x,y+32,o_trigger_event);
-            sprite_index = s_interactable_lockplate_active;
+            sprite_index = s_interactable_ft_lockplate_active;
             instance_create(unlockx, unlocky, o_system_unlock);
             active = 0;
             global.inve4 = "---"
@@ -104,7 +104,7 @@ active = 1;
             with (inspect_trigger) instance_destroy();
             global.textcontent = "*Click!";
             instance_create(x,y+32,o_trigger_event);
-            sprite_index = s_interactable_lockplate_active;
+            sprite_index = s_interactable_ft_lockplate_active;
             instance_create(unlockx, unlocky, o_system_unlock);
             active = 0;
             global.inve5 = "---"

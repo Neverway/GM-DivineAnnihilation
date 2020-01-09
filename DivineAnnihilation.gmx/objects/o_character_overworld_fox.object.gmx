@@ -367,7 +367,7 @@ if(!kLeft &amp;&amp; !kRight &amp;&amp; !kUp &amp;&amp; !kDown)
 //==========================//
 // Menus
 //==========================//
-if kMenu &amp;&amp; partymenu_open = 0
+if kMenu &amp;&amp; partymenu_open = 0 &amp;&amp; canmove = 1
 {
     partymenu_open =1;
     instance_create(x,y,o_menu_inventory_items);
@@ -422,6 +422,15 @@ if destroy_enemies = 1
     if distance_to_object(o_character_overworld_roamer) &lt;= 64
     {
         with instance_nearest(x,y,o_character_overworld_roamer)
+        {
+            instance_destroy();
+            show_debug_message("DESTROYING ENEIMES");
+        }
+        destroy_enemies = 0;
+    }
+    if distance_to_object(o_character_overworld_viney) &lt;= 64
+    {
+        with instance_nearest(x,y,o_character_overworld_viney)
         {
             instance_destroy();
             show_debug_message("DESTROYING ENEIMES");

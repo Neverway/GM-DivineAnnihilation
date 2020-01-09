@@ -85,7 +85,12 @@
         </sprites>
       </sprites>
       <sprites name="Enemies">
-        <sprites name="Artine Monsters"/>
+        <sprites name="Viney">
+          <sprite>sprites\s_character_overworld_viney_idle_front</sprite>
+          <sprite>sprites\s_character_overworld_viney_idle_side</sprite>
+          <sprite>sprites\s_character_overworld_viney_idle_back</sprite>
+          <sprite>sprites\s_character_overworld_viney_chase_side</sprite>
+        </sprites>
       </sprites>
       <sprites name="Bosses">
         <sprites name="Roamer">
@@ -140,6 +145,7 @@
         <sprites name="Environment">
           <sprite>sprites\s_environment_ft_water</sprite>
           <sprite>sprites\s_environment_ft_water_medium</sprite>
+          <sprite>sprites\s_environment_ft_fern</sprite>
         </sprites>
         <sprites name="Special Tiles">
           <sprite>sprites\s_tile_ft_shrinepitfall</sprite>
@@ -361,6 +367,7 @@
         <background>background\b_1_wall_forest</background>
         <background>background\b_2_brick_path</background>
         <background>background\b_4_floor</background>
+        <background>background\b_2_decals</background>
       </backgrounds>
       <backgrounds name="Special">
         <background>background\b_2_wall_forrest_glass</background>
@@ -372,6 +379,7 @@
       <background>background\b_floor_forest</background>
       <background>background\b_floor_grass</background>
       <background>background\b_wall_tree</background>
+      <background>background\b_dev</background>
     </backgrounds>
     <backgrounds name="Train">
       <backgrounds name="Inisde">
@@ -456,7 +464,14 @@
         </objects>
       </objects>
       <objects name="Enemies">
-        <objects name="Artine Monsters"/>
+        <objects name="Viney">
+          <objects name="Overworld">
+            <object>objects\o_character_overworld_viney</object>
+          </objects>
+          <objects name="Battle">
+            <object>objects\o_character_battle_viney</object>
+          </objects>
+        </objects>
       </objects>
       <objects name="Bosses">
         <objects name="Roamer">
@@ -518,6 +533,7 @@
         </objects>
         <objects name="Environment">
           <object>objects\o_environment_ft_water</object>
+          <object>objects\o_environment_ft_fern</object>
         </objects>
         <objects name="Special Tiles">
           <object>objects\o_tile_ft_shrinepitfall</object>
@@ -648,6 +664,10 @@
           <object>objects\o_system_battle_enemyslot1</object>
           <object>objects\o_system_battle_enemyslot2</object>
           <object>objects\o_system_battle_enemyslot3</object>
+          <object>objects\o_system_posmark1</object>
+          <object>objects\o_system_posmark_1</object>
+          <object>objects\o_system_posmark2</object>
+          <object>objects\o_system_posmark0</object>
         </objects>
         <object>objects\o_system_createsave</object>
         <object>objects\o_system_name</object>
@@ -705,6 +725,7 @@
       <room>rooms\r_c0_s0</room>
       <room>rooms\r_c0_s1</room>
       <room>rooms\r_c1_s0</room>
+      <room>rooms\room18</room>
     </rooms>
     <rooms name="End">
       <room>rooms\r_end_staffroll</room>
@@ -715,6 +736,7 @@
     <rooms name="Developer">
       <room>rooms\r_spelltest</room>
       <room>rooms\r_roomcheck</room>
+      <room>rooms\r_DEVELOPER1</room>
       <rooms name="Scraps">
         <room>rooms\r_alpha_townside</room>
         <room>rooms\r_prealpha_townwhole</room>

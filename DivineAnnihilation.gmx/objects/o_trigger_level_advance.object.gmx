@@ -99,8 +99,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>o_tile_hole_top.image_index = 1;
-o_tile_hole_bottom.visible = 1;
+            <string>o_tile_ft_holetop.image_index = 1;
+o_tile_ft_holebottom.visible = 1;
 instance_create(x,y,o_character_special_fox_falling);
 with o_character_special_fox_falling
 {

@@ -136,20 +136,20 @@
     <instance objName="&lt;undefined&gt;" x="6560" y="2144" name="inst_E3F9E8A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="-64" y="28" name="inst_44CFBE73" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_interactable_savepoint" x="381" y="297" name="inst_61465B75" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_interactable_potion_health" x="848" y="288" name="inst_FD14078B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_structure_house" x="1584" y="176" name="inst_F9FC4414" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_structure_house" x="1776" y="176" name="inst_5CBA9F11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_structure_house" x="2400" y="176" name="inst_B0227548" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_structure_house" x="2208" y="176" name="inst_34B5EEB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_changetext" x="1584" y="256" name="inst_F0795AB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_changetext" x="1776" y="256" name="inst_7AFC9F99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_changetext" x="2208" y="256" name="inst_EDD32FA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_changetext" x="2400" y="256" name="inst_AD48D961" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_interactable_potion_health" x="848" y="288" name="inst_FD14078B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_interact" x="1584" y="256" name="inst_9CD82334" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_interact" x="385" y="329" name="inst_31C0E5D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_interact" x="2208" y="256" name="inst_FB4AD0BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_interact" x="2400" y="256" name="inst_1E4BD80C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_interact" x="1776" y="256" name="inst_EFC90EA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_structure_house" x="1584" y="176" name="inst_F9FC4414" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_structure_house" x="1776" y="176" name="inst_5CBA9F11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_structure_house" x="2400" y="176" name="inst_B0227548" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_structure_house" x="2208" y="176" name="inst_34B5EEB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="2944" y="4256" name="inst_1EA787E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="544" y="160" name="inst_77779B69" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="640" y="384" name="inst_BCB2AC77" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
