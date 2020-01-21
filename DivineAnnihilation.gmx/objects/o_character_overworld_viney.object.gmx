@@ -27,7 +27,76 @@
             <kind>1</kind>
             <string>image_xscale = 1.5
 image_yscale = 1.5
+active = 1
 </string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Battle Start
+global.roomcamefrom = room;
+global.beforebattlex = o_character_overworld_fox.x;
+global.beforebattley = o_character_overworld_fox.y;
+global.battle_flavourtext = "An Artine Viney attacks!";
+global.enemyslot1 = o_character_battle_viney
+chanceslot2 = random_range(0,100)
+if chanceslot2 &lt;= enemy2chance
+{
+    global.enemyslot2 = o_character_battle_viney
+    chanceslot3 = random_range(0,100)
+    global.battle_flavourtext = "A group of Artine Viney's attack!";
+    if chanceslot3 &lt;= enemy3chance
+    {
+        global.enemyslot3 = o_character_battle_viney
+    }
+    else
+    {
+        global.enemyslot3 = 0;
+    }
+}
+else 
+{
+    global.enemyslot2 = 0;
+    global.enemyslot3 = 0;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>224</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_another_room</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>11</kind>
+            <room>r_socialdepression</room>
           </argument>
         </arguments>
       </action>
@@ -154,53 +223,14 @@ if instance_exists(o_system_follower1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Battle Start
-global.roomcamefrom = room;
-global.beforebattlex = o_character_overworld_fox.x;
-global.beforebattley = o_character_overworld_fox.y;
-global.battle_flavourtext = "An Artine Viney attacks!";
-global.enemyslot1 = o_character_battle_viney
-chanceslot2 = random_range(0,100)
-if chanceslot2 &lt;= enemy2chance
+            <string>///Transition screen to battle room
+if active = 1
 {
-    global.enemyslot2 = o_character_battle_viney
-    chanceslot3 = random_range(0,100)
-    global.battle_flavourtext = "A group of Artine Viney's attack!";
-    if chanceslot3 &lt;= enemy3chance
-    {
-        global.enemyslot3 = o_character_battle_viney
-    }
-    else
-    {
-        global.enemyslot3 = 0;
-    }
-}
-else 
-{
-    global.enemyslot2 = 0;
-    global.enemyslot3 = 0;
+    alarm[0] = 50;
+    instance_create(view_xview,view_yview,o_transitions_battle_trip)
+    active = 0
 }
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>224</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_another_room</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>11</kind>
-            <room>r_battletest</room>
           </argument>
         </arguments>
       </action>

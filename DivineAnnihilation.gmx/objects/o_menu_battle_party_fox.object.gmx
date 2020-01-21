@@ -11,58 +11,6 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>541</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sprite_set</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>5</kind>
-            <sprite>s_menu_battle_party_fox</sprite>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>active</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -77,23 +25,24 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.partymember1 = 1
-{
-    o_menu_battle_party_cat.visible = true;
-}
-else
-{
-    o_menu_battle_party_cat.visible = false;
-}
+            <string>/// Initialize Entity
 
-if global.partymember2 = 1
-{
-    o_menu_battle_party_dog.visible = true;
-}
-else
-{
-    o_menu_battle_party_dog.visible = false;
-}
+//==========================//
+//Inherit Events
+//==========================//
+active = 1;
+
+
+//==========================//
+// Variables
+//==========================//
+image_speed = 0;
+image_index = 0;
+
+
+//==========================//
+// Battle stuff
+//==========================//
 
 </string>
           </argument>
@@ -117,7 +66,8 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>active = 1;
+            <string>/// Re-Activate
+active = 1;
 </string>
           </argument>
         </arguments>
@@ -168,7 +118,13 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var kLeft, kRight, kSelect, kBack;
+            <string>/// Scroll through active members
+
+
+//==========================//
+// Member Scroll Stuff
+//==========================//
+var kLeft, kRight, kSelect, kBack;
 
 kLeft = keyboard_check_pressed(vk_left);
 kRight = keyboard_check_pressed(vk_right);
@@ -241,156 +197,6 @@ if global.menuactive = 1
     <event eventtype="9" enumb="90">
       <action>
         <libid>1</libid>
-        <id>612</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>-1</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if_variable</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>image_index</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>422</id>
-        <kind>1</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>541</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sprite_set</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>5</kind>
-            <sprite>s_menu_battle_party_fox</sprite>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>2</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>541</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sprite_set</functionname>
-        <codestring></codestring>
-        <whoName>o_menu_battle_party_cat</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>5</kind>
-            <sprite>s_menu_battle_party_cat</sprite>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>3</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>541</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sprite_set</functionname>
-        <codestring></codestring>
-        <whoName>o_menu_battle_party_dog</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>5</kind>
-            <sprite>s_menu_battle_party_dog</sprite>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>2</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>active</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -405,48 +211,60 @@ if global.menuactive = 1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.activeplayer = o_character_battle_fox;
+            <string>/// Select the party members move!
+
+//Fox 0-Hover 1-Other.hover 2-Deactivated
+//Cat 0-Hover 1-Dog.hover 2-Fox.hover 3-Deactivated
+//Dog 0-Hover 1-Other.hover 2-Deactivated
+
+//==========================//
+// Member
+//==========================//
+
+//Fox selected
+if image_index = 0
+{
+    image_index = 3
+    o_menu_battle_party_cat.image_index = 3
+    o_menu_battle_party_dog.image_index = 2
+    active = 0
+    with o_menu_battle_introtext
+    {
+        instance_change(o_menu_battle_moves, 1)
+    }
+    //global.activemember = "fox"
+}
+
+//Cat selected
+if o_menu_battle_party_cat.image_index = 0
+{
+    image_index = 2
+    o_menu_battle_party_cat.image_index = 4
+    o_menu_battle_party_dog.image_index = 2
+    active = 0
+    with o_menu_battle_introtext
+    {
+        instance_change(o_menu_battle_moves, 1)
+    }
+    global.activemember = "cat"
+}
+
+//Dog selected
+if o_menu_battle_party_dog.image_index = 0
+{
+    image_index = 2
+    o_menu_battle_party_cat.image_index = 3
+    o_menu_battle_party_dog.image_index = 3
+    active = 0
+    with o_menu_battle_introtext
+    {
+        instance_change(o_menu_battle_moves, 1)
+    }
+    global.activemember = "dog"
+}
 </string>
           </argument>
         </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>202</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_change_object</functionname>
-        <codestring></codestring>
-        <whoName>o_menu_battle_introtext</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>10</kind>
-            <object>o_menu_battle_moves</object>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>424</id>
-        <kind>2</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
   </events>

@@ -21,9 +21,13 @@
           </sprites>
           <sprites name="Battle">
             <sprite>sprites\s_character_battle_fox_prepare</sprite>
-            <sprite>sprites\s_character_battle_fox_sword_stab</sprite>
-            <sprite>sprites\s_character_battle_fox_sword_slash</sprite>
-            <sprite>sprites\s_character_battle_fox_spell_fire</sprite>
+            <sprite>sprites\s_character_battle_fox_slash</sprite>
+            <sprites name="Unsure if used">
+              <sprite>sprites\s_character_battle_fox_sword_stab</sprite>
+              <sprite>sprites\s_character_battle_fox_sword_slash</sprite>
+              <sprite>sprites\s_character_battle_fox_slide</sprite>
+              <sprite>sprites\s_character_battle_fox_spell_fire</sprite>
+            </sprites>
           </sprites>
           <sprites name="Special">
             <sprite>sprites\s_character_special_fox_repair</sprite>
@@ -45,6 +49,10 @@
             <sprite>sprites\s_character_overworld_cat_idle_left</sprite>
             <sprite>sprites\s_character_overworld_cat_idle_right</sprite>
             <sprite>sprites\s_character_overworld_cat_idle_back</sprite>
+          </sprites>
+          <sprites name="Battle">
+            <sprite>sprites\s_character_battle_cat_prepare</sprite>
+            <sprite>sprites\s_character_battle_cat_slash</sprite>
           </sprites>
           <sprites name="Portraits">
             <sprite>sprites\s_hud_portrait_cat_normal_s1</sprite>
@@ -86,10 +94,17 @@
       </sprites>
       <sprites name="Enemies">
         <sprites name="Viney">
-          <sprite>sprites\s_character_overworld_viney_idle_front</sprite>
-          <sprite>sprites\s_character_overworld_viney_idle_side</sprite>
-          <sprite>sprites\s_character_overworld_viney_idle_back</sprite>
-          <sprite>sprites\s_character_overworld_viney_chase_side</sprite>
+          <sprites name="Overworld">
+            <sprite>sprites\s_character_overworld_viney_idle_front</sprite>
+            <sprite>sprites\s_character_overworld_viney_idle_side</sprite>
+            <sprite>sprites\s_character_overworld_viney_idle_back</sprite>
+            <sprite>sprites\s_character_overworld_viney_chase_side</sprite>
+          </sprites>
+          <sprites name="Battle">
+            <sprite>sprites\s_character_battle_viney_idle</sprite>
+            <sprite>sprites\s_character_battle_viney_active</sprite>
+            <sprite>sprites\s_character_battle_viney_active_hurt</sprite>
+          </sprites>
         </sprites>
       </sprites>
       <sprites name="Bosses">
@@ -168,6 +183,11 @@
           <sprite>sprites\s_environment_train_void</sprite>
         </sprites>
       </sprites>
+      <sprites name="Forest">
+        <sprite>sprites\s_environment_forest_tree_small</sprite>
+        <sprite>sprites\s_environment_forest_tree_medium</sprite>
+        <sprite>sprites\s_environment_forest_tree_large</sprite>
+      </sprites>
     </sprites>
     <sprites name="Menus">
       <sprites name="Main">
@@ -196,6 +216,7 @@
         <sprite>sprites\s_menu_battle_action</sprite>
         <sprite>sprites\s_menu_battle_spell</sprite>
         <sprite>sprites\s_menu_battle_item</sprite>
+        <sprite>sprites\s_menu_battle_selectenemy</sprite>
       </sprites>
       <sprites name="Hud">
         <sprites name="Overworld">
@@ -223,6 +244,10 @@
           <sprite>sprites\s_hud_special_meter_needle</sprite>
         </sprites>
       </sprites>
+      <sprites name="Transitions">
+        <sprite>sprites\s_transition_battle_trip</sprite>
+        <sprite>sprites\s_transition_battle_arrive</sprite>
+      </sprites>
     </sprites>
     <sprites name="Battle">
       <sprites name="Moves">
@@ -240,12 +265,12 @@
           <sprite>sprites\s_battle_moves_spell_incomingright</sprite>
         </sprites>
         <sprites name="Attack">
-          <sprite>sprites\s_battle_moves_attack_sword</sprite>
-          <sprite>sprites\s_battle_moves_attack_drone</sprite>
-          <sprite>sprites\s_battle_moves_attack_dronehit</sprite>
-          <sprite>sprites\s_battle_moves_attack_dronehitbox</sprite>
-          <sprite>sprites\s_battle_moves_attack_zone</sprite>
+          <sprite>sprites\s_battle_attack_crosshair</sprite>
+          <sprite>sprites\s_battle_attack_slash</sprite>
         </sprites>
+      </sprites>
+      <sprites name="Zone">
+        <sprite>sprites\s_battle_zone</sprite>
       </sprites>
     </sprites>
     <sprites name="System (Don't use unless you know what you're doing)">
@@ -334,6 +359,13 @@
           </sprites>
         </sprites>
         <sprite>sprites\s_menu_star</sprite>
+        <sprites name="Attack">
+          <sprite>sprites\s_battle_moves_attack_sword</sprite>
+          <sprite>sprites\s_battle_moves_attack_drone</sprite>
+          <sprite>sprites\s_battle_moves_attack_dronehit</sprite>
+          <sprite>sprites\s_battle_moves_attack_dronehitbox</sprite>
+          <sprite>sprites\s_battle_moves_attack_zone</sprite>
+        </sprites>
       </sprites>
     </sprites>
   </sprites>
@@ -354,14 +386,6 @@
       </backgrounds>
     </backgrounds>
     <backgrounds name="Forest">
-      <backgrounds name="Outside">
-        <background>background\b_4_grass_background</background>
-        <background>background\b_0_leaves</background>
-        <background>background\b_1_trees</background>
-        <background>background\b_2_trees_background</background>
-        <background>background\b_3_grass_path</background>
-        <background>background\pl</background>
-      </backgrounds>
       <backgrounds name="Inside">
         <background>background\b_1_wall_library</background>
         <background>background\b_1_wall_forest</background>
@@ -372,6 +396,8 @@
       <backgrounds name="Special">
         <background>background\b_2_wall_forrest_glass</background>
       </backgrounds>
+      <background>background\b_forest_autumn</background>
+      <background>background\b_forest_snowy</background>
     </backgrounds>
     <backgrounds name="Other">
       <background>background\b_floor_corupted</background>
@@ -380,6 +406,14 @@
       <background>background\b_floor_grass</background>
       <background>background\b_wall_tree</background>
       <background>background\b_dev</background>
+      <backgrounds name="Outside">
+        <background>background\b_4_grass_background</background>
+        <background>background\b_0_leaves</background>
+        <background>background\b_1_trees</background>
+        <background>background\b_2_trees_background</background>
+        <background>background\b_3_grass_path</background>
+        <background>background\pl</background>
+      </backgrounds>
     </backgrounds>
     <backgrounds name="Train">
       <backgrounds name="Inisde">
@@ -432,9 +466,6 @@
         <objects name="Fox">
           <objects name="Overworld">
             <object>objects\o_character_overworld_fox</object>
-          </objects>
-          <objects name="Battle">
-            <object>objects\o_character_battle_fox</object>
           </objects>
           <objects name="Special">
             <object>objects\o_character_special_fox_repair</object>
@@ -554,6 +585,11 @@
           <object>objects\o_structure_train_wires</object>
         </objects>
       </objects>
+      <objects name="Forest">
+        <object>objects\o_environment_forest_tree_small</object>
+        <object>objects\o_environment_forest_tree_medium</object>
+        <object>objects\o_environment_forest_tree_large</object>
+      </objects>
     </objects>
     <objects name="Menus">
       <objects name="Main">
@@ -581,6 +617,7 @@
         <object>objects\o_menu_battle_action</object>
         <object>objects\o_menu_battle_spell</object>
         <object>objects\o_menu_battle_item</object>
+        <object>objects\o_menu_battle_enemy</object>
       </objects>
       <objects name="Hud">
         <objects name="Overworld">
@@ -613,36 +650,14 @@
           <object>objects\o_hud_special_meter_dog</object>
         </objects>
         <objects name="Battle">
+          <object>objects\o_hud_battle_enemyselect</object>
           <object>objects\o_hud_battle_item_text</object>
           <object>objects\o_hud_hp</object>
         </objects>
       </objects>
-    </objects>
-    <objects name="Battle">
-      <objects name="Moves">
-        <objects name="Attack">
-          <object>objects\o_battle_moves_attack_sword</object>
-          <object>objects\o_battle_moves_attack_drone</object>
-          <object>objects\o_battle_moves_attack_dronehitbox</object>
-          <object>objects\o_battle_moves_attack_zone</object>
-        </objects>
-        <objects name="Spell">
-          <object>objects\o_battle_moves_spell_box</object>
-          <object>objects\o_battle_moves_spell_incomingrange</object>
-          <object>objects\o_battle_moves_spell_incomingsweetspot</object>
-          <object>objects\o_battle_moves_spell_incomingmissed</object>
-          <object>objects\o_battle_moves_spell_arrowup</object>
-          <object>objects\o_battle_moves_spell_arrowdown</object>
-          <object>objects\o_battle_moves_spell_arrowleft</object>
-          <object>objects\o_battle_moves_spell_arrowright</object>
-          <object>objects\o_battle_moves_spell_incomingup</object>
-          <object>objects\o_battle_moves_spell_incomingdown</object>
-          <object>objects\o_battle_moves_spell_incomingleft</object>
-          <object>objects\o_battle_moves_spell_incomingright</object>
-        </objects>
-      </objects>
-      <objects name="Zone">
-        <object>objects\o_battle_zone</object>
+      <objects name="Transitions">
+        <object>objects\o_transitions_battle_trip</object>
+        <object>objects\o_transition_battle_arrive</object>
       </objects>
     </objects>
     <objects name="System (Don't use unless you know what you're doing)">
@@ -661,9 +676,6 @@
           <object>objects\p_ent</object>
         </objects>
         <objects name="Battle">
-          <object>objects\o_system_battle_enemyslot1</object>
-          <object>objects\o_system_battle_enemyslot2</object>
-          <object>objects\o_system_battle_enemyslot3</object>
           <object>objects\o_system_posmark1</object>
           <object>objects\o_system_posmark_1</object>
           <object>objects\o_system_posmark2</object>
@@ -711,6 +723,52 @@
           </objects>
         </objects>
         <object>objects\o_menu_star</object>
+        <objects name="Attack">
+          <object>objects\o_battle_moves_attack_sword</object>
+          <object>objects\o_battle_moves_attack_drone</object>
+          <object>objects\o_battle_moves_attack_dronehitbox</object>
+          <object>objects\o_battle_moves_attack_zone</object>
+        </objects>
+      </objects>
+    </objects>
+    <objects name="I miss my friends">
+      <objects name="Old">
+        <object>objects\o_character_battle_fox</object>
+        <object>objects\o_system_battle_enemyslot3</object>
+        <object>objects\o_system_battle_enemyslot2</object>
+        <object>objects\o_system_battle_enemyslot1</object>
+        <objects name="Moves">
+          <objects name="Spell">
+            <object>objects\o_battle_moves_spell_box</object>
+            <object>objects\o_battle_moves_spell_incomingrange</object>
+            <object>objects\o_battle_moves_spell_incomingsweetspot</object>
+            <object>objects\o_battle_moves_spell_incomingmissed</object>
+            <object>objects\o_battle_moves_spell_arrowup</object>
+            <object>objects\o_battle_moves_spell_arrowdown</object>
+            <object>objects\o_battle_moves_spell_arrowleft</object>
+            <object>objects\o_battle_moves_spell_arrowright</object>
+            <object>objects\o_battle_moves_spell_incomingup</object>
+            <object>objects\o_battle_moves_spell_incomingdown</object>
+            <object>objects\o_battle_moves_spell_incomingleft</object>
+            <object>objects\o_battle_moves_spell_incomingright</object>
+          </objects>
+          <objects name="Attack">
+            <object>objects\o_battle_attack_crosshair</object>
+            <object>objects\o_battle_attack_slash</object>
+            <object>objects\o_battle_glowpoint</object>
+          </objects>
+        </objects>
+        <objects name="Zone">
+          <object>objects\o_battle_zone</object>
+          <object>objects\o_battle_activezone</object>
+        </objects>
+      </objects>
+      <objects name="New">
+        <object>objects\o_character_battle_cat2</object>
+        <object>objects\o_character_battle_fox2</object>
+        <object>objects\o_character_battle_fox_active</object>
+        <object>objects\o_character_battle_cat_active</object>
+        <object>objects\o_system_battle</object>
       </objects>
     </objects>
   </objects>
@@ -725,13 +783,13 @@
       <room>rooms\r_c0_s0</room>
       <room>rooms\r_c0_s1</room>
       <room>rooms\r_c1_s0</room>
-      <room>rooms\room18</room>
+      <room>rooms\r_c2_s0</room>
     </rooms>
     <rooms name="End">
       <room>rooms\r_end_staffroll</room>
     </rooms>
     <rooms name="Battles">
-      <room>rooms\r_battletest</room>
+      <room>rooms\r_socialdepression</room>
     </rooms>
     <rooms name="Developer">
       <room>rooms\r_spelltest</room>

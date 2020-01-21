@@ -72,7 +72,14 @@
     <instance objName="o_system_battle_enemyslot1" x="544" y="168" name="inst_6849F632" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_system_battle_enemyslot2" x="544" y="64" name="inst_B1B308DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_system_battle_enemyslot3" x="544" y="272" name="inst_98BBABAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_character_battle_fox" x="64" y="176" name="inst_1EB9D530" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_battle_activezone" x="160" y="120" name="inst_53199A78" locked="0" code="" scaleX="1" scaleY="0.75" colour="4294967295" rotation="0"/>
+    <instance objName="o_battle_glowpoint" x="320" y="64" name="inst_C982BE76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_battle_glowpoint" x="256" y="80" name="inst_A9FB5C42" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_battle_glowpoint" x="384" y="80" name="inst_8387E505" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_system_battle" x="16" y="0" name="inst_31500976" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_character_battle_fox" x="72" y="176" name="inst_1EB9D530" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_character_battle_cat2" x="64" y="80" name="inst_19655A36" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="o_character_battle_fox_active" x="320" y="280" name="inst_DEA2EAF2" locked="0" code="" scaleX="2.5" scaleY="2.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

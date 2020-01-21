@@ -393,6 +393,14 @@ if image_index = 4
         global.showtriggers = "on"
     }
 }
+if image_index = 5
+{
+    room_goto_next()
+}
+if image_index = 6
+{
+    room_goto_next()
+}
 </string>
           </argument>
         </arguments>

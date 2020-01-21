@@ -297,9 +297,9 @@
     <instance objName="o_trigger_warp" x="11616" y="104" name="inst_6733E30B" locked="0" code="desx = 9888;&#xA;desy = 1224;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_warp" x="9888" y="1264" name="inst_19FBFAF9" locked="0" code="desx = 11616;&#xA;desy = 136;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_interact" x="1552" y="2696" name="inst_00935829" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_trigger_changetext" x="1552" y="2696" name="inst_8B5EBF53" locked="0" code="setstring = &quot;*You turn the valve...                         Nothing happend.&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_trigger_changetext" x="1552" y="2696" name="inst_8B5EBF53" locked="0" code="setstring = &quot;*You turn the valve...                         Nothing happened.&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_interact" x="1736" y="2696" name="inst_36B4A859" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_trigger_changetext" x="1736" y="2696" name="inst_3876B981" locked="0" code="setstring = &quot;*You turn the valve...                         Nothing happend.&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_trigger_changetext" x="1736" y="2696" name="inst_3876B981" locked="0" code="setstring = &quot;*You turn the valve...                         Nothing happened.&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_warp" x="4128" y="1280" name="inst_90E50E0D" locked="0" code="desx = 1632;&#xA;desy = 848;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_warp" x="5632" y="1088" name="inst_79289CFE" locked="0" code="desx = 6304;&#xA;desy = 1088;" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_warp" x="6272" y="1088" name="inst_AE5ABF94" locked="0" code="desx = 5600;&#xA;desy = 1080;" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
@@ -307,7 +307,7 @@
     <instance objName="o_trigger_warp" x="5184" y="2624" name="inst_FB3EDAF4" locked="0" code="desx = 5184;&#xA;desy = 640;" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_warp" x="4864" y="3792" name="inst_10BBA4D7" locked="0" code="desx = 8928;&#xA;desy = 608;" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_warp" x="5760" y="1792" name="inst_10604AC2" locked="0" code="desx = 4864;&#xA;desy = 4440;" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_trigger_warp" x="8928" y="640" name="inst_95EFC82F" locked="0" code="desx = 4856;&#xA;desy = 3648;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_trigger_warp" x="8928" y="640" name="inst_95EFC82F" locked="0" code="desx = 4856;&#xA;desy = 3824;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_changetext" x="1568" y="896" name="inst_444D289E" locked="0" code="setstring = &quot;*There is a blue panel on the wall. It seems to be missing a piece.&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_interact" x="5664" y="1904" name="inst_6F2838B5" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_interact" x="5760" y="1904" name="inst_3B5EFF0C" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
@@ -2513,7 +2513,6 @@
     <tile bgName="b_1_wall_forest" x="7552" y="2432" w="64" h="64" xo="128" yo="128" id="10039598" name="inst_A8DD516E" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="b_1_wall_forest" x="7552" y="2880" w="64" h="64" xo="128" yo="256" id="10039599" name="inst_7C2F8954" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="b_1_wall_forest" x="6976" y="2880" w="64" h="64" xo="0" yo="256" id="10039600" name="inst_2E39369C" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="b_2_decals" x="2880" y="645" w="64" h="64" xo="64" yo="64" id="10039617" name="inst_EC3D3C0E" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="b_2_decals" x="2944" y="645" w="64" h="64" xo="128" yo="64" id="10039618" name="inst_AC60E386" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="b_2_decals" x="3008" y="645" w="64" h="64" xo="64" yo="64" id="10039619" name="inst_25375472" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="b_2_decals" x="3136" y="645" w="64" h="64" xo="64" yo="64" id="10039620" name="inst_24D08951" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

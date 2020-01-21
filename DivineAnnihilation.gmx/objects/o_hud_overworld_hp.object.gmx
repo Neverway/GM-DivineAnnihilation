@@ -80,6 +80,8 @@ image_index = 99
             <kind>1</kind>
             <string>o_character_overworld_fox.x = global.beforebattlex
 o_character_overworld_fox.y = global.beforebattley
+o_character_overworld_fox.canmove = 1;
+global.menuactive = 1
 
 </string>
           </argument>
