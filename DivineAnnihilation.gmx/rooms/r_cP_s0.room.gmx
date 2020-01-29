@@ -135,7 +135,6 @@
     <instance objName="o_trigger_changetext" x="2080" y="3328" name="inst_F3F08E33" locked="0" code="setstring = &quot;*The door is locked.&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_changetext" x="2624" y="3328" name="inst_C0B61E4A" locked="0" code="setstring = &quot;*The door is locked.&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_changetext" x="2432" y="3328" name="inst_E169E46E" locked="0" code="setstring = &quot;*The door is locked.&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_trigger_changetext" x="2368" y="2560" name="inst_B4DAB24E" locked="0" code="setstring = &quot;*The door is locked.&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_changetext" x="2752" y="3008" name="inst_72805998" locked="0" code="setstring = &quot;*The door is locked.&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_changetext" x="2944" y="2624" name="inst_FA250715" locked="0" code="setstring = &quot;*The door is locked.&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_changetext" x="1216" y="2880" name="inst_08DF9BAE" locked="0" code="setstring = &quot;*The door is locked.&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -152,7 +151,6 @@
     <instance objName="&lt;undefined&gt;" x="200" y="2352" name="inst_3092E87B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="208" y="2408" name="inst_BE931DFF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_structure_house" x="1632" y="3520" name="inst_A9665C5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_structure_house" x="2368" y="2496" name="inst_3E13E0A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_structure_house" x="2368" y="3968" name="inst_3D6EF10C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_structure_house" x="3072" y="3968" name="inst_52C2EF32" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_structure_house" x="3904" y="3776" name="inst_57AE0E56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -165,7 +163,6 @@
     <instance objName="o_structure_shop_spells" x="3744" y="3072" name="inst_54B2DC76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_structure_shop_spells" x="3328" y="3008" name="inst_83B6CC70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_structure_shop_spells" x="4672" y="3072" name="inst_FA1F4D7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_structure_shop_spells" x="2016" y="2496" name="inst_6A37C850" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_structure_house_door" x="832" y="2752" name="inst_979F1C1D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_structure_ft_door_gate" x="2144" y="128" name="inst_EAC1779A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_decoration_door_shadow" x="992" y="728" name="inst_ECCC2CCA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -224,7 +221,7 @@
     <instance objName="o_block" x="2624" y="3288" name="inst_8F1D7F51" locked="0" code="" scaleX="2.40000009536743" scaleY="1.39999997615814" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="2752" y="2968" name="inst_CB89E745" locked="0" code="" scaleX="2.40000009536743" scaleY="1.39999997615814" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="2944" y="2584" name="inst_1FC1964F" locked="0" code="" scaleX="2.40000009536743" scaleY="1.39999997615814" colour="4294967295" rotation="0"/>
-    <instance objName="o_block" x="2368" y="2520" name="inst_1E15D3E6" locked="0" code="" scaleX="2.40000009536743" scaleY="1.39999997615814" colour="4294967295" rotation="0"/>
+    <instance objName="o_block" x="2392" y="2520" name="inst_1E15D3E6" locked="0" code="" scaleX="2.40000009536743" scaleY="1.39999997615814" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="3904" y="3800" name="inst_79C2237B" locked="0" code="" scaleX="2.40000009536743" scaleY="1.39999997615814" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="4288" y="3800" name="inst_D5F5DF03" locked="0" code="" scaleX="2.40000009536743" scaleY="1.39999997615814" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="4672" y="3992" name="inst_CEA611EB" locked="0" code="" scaleX="2.40000009536743" scaleY="1.39999997615814" colour="4294967295" rotation="0"/>
@@ -240,8 +237,8 @@
     <instance objName="o_block" x="4144" y="3096" name="inst_E2AEAA9F" locked="0" code="" scaleX="0.899999976158142" scaleY="1.39999997615814" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="4720" y="3096" name="inst_B59C9C90" locked="0" code="" scaleX="0.899999976158142" scaleY="1.39999997615814" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="4624" y="3096" name="inst_ECAB35FC" locked="0" code="" scaleX="0.899999976158142" scaleY="1.39999997615814" colour="4294967295" rotation="0"/>
-    <instance objName="o_block" x="2064" y="2520" name="inst_6C72C3F0" locked="0" code="" scaleX="0.899999976158142" scaleY="1.39999997615814" colour="4294967295" rotation="0"/>
-    <instance objName="o_block" x="1968" y="2520" name="inst_EB5C81B8" locked="0" code="" scaleX="0.899999976158142" scaleY="1.39999997615814" colour="4294967295" rotation="0"/>
+    <instance objName="o_block" x="2288" y="2520" name="inst_6C72C3F0" locked="0" code="" scaleX="0.899999976158142" scaleY="1.39999997615814" colour="4294967295" rotation="0"/>
+    <instance objName="o_block" x="2192" y="2520" name="inst_EB5C81B8" locked="0" code="" scaleX="0.899999976158142" scaleY="1.39999997615814" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="3792" y="3096" name="inst_30A9DBC8" locked="0" code="" scaleX="0.899999976158142" scaleY="1.39999997615814" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="3696" y="3096" name="inst_0BE5E6B0" locked="0" code="" scaleX="0.899999976158142" scaleY="1.39999997615814" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="3280" y="3032" name="inst_EEE3667E" locked="0" code="" scaleX="0.899999976158142" scaleY="1.39999997615814" colour="4294967295" rotation="0"/>
@@ -267,13 +264,12 @@
     <instance objName="o_block" x="1952" y="64" name="inst_0BA599F5" locked="0" code="" scaleX="5" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="2336" y="64" name="inst_98FC5EC1" locked="0" code="" scaleX="5" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="2144" y="96" name="inst_126D843D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_trigger_changetext" x="1968" y="2560" name="inst_B7EA9726" locked="0" code="setstring = &quot;*Town Library&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_trigger_changetext" x="2192" y="2560" name="inst_B7EA9726" locked="0" code="setstring = &quot;*Town Library&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_interact" x="768" y="2368" name="inst_89E30D10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_interact" x="1060" y="2584" name="inst_58D71A72" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_interact" x="1056" y="2304" name="inst_84127A5A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_interact" x="1376" y="2368" name="inst_EC44E516" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_interact" x="1216" y="2880" name="inst_3F96ED9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_trigger_interact" x="2368" y="2560" name="inst_AE45BD2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_interact" x="2080" y="3328" name="inst_5BFE6D68" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_interact" x="2432" y="3328" name="inst_DCEBB583" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_interact" x="2624" y="3328" name="inst_92F67A4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -287,12 +283,12 @@
     <instance objName="o_trigger_interact" x="4992" y="3456" name="inst_7AE1F57A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_interact" x="5376" y="3072" name="inst_192B1157" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_interact" x="2944" y="2624" name="inst_0AD0F976" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_trigger_interact" x="1968" y="2560" name="inst_E32EDD7E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_trigger_interact" x="2192" y="2560" name="inst_E32EDD7E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_warp" x="832" y="2805" name="inst_53D30683" locked="0" code="desx = 984;&#xA;desy = 720;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_hud_overworld_hp" x="64" y="0" name="inst_67D75A87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_warp" x="992" y="760" name="inst_B255CFAC" locked="0" code="desx = 832;&#xA;desy = 2840;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_trigger_warp" x="2016" y="2549" name="inst_BD040707" locked="0" code="desx = 2136;&#xA;desy = 840;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_trigger_warp" x="2144" y="888" name="inst_374CCE40" locked="0" code="desx = 2008;&#xA;desy = 2584;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_trigger_warp" x="2240" y="2549" name="inst_BD040707" locked="0" code="desx = 2144;&#xA;desy = 856;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_trigger_warp" x="2144" y="888" name="inst_374CCE40" locked="0" code="desx = 2240;&#xA;desy = 2584;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="832" y="2840" name="inst_CD633D71" locked="0" code="if events == 1&#xA;{&#xA;  o_character_overworld_fox.sprite_index = s_fox_b&#xA;  alarm[0]=100&#xA;}" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_fruniture_bed" x="896" y="512" name="inst_8A5D7334" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="o_fruniture_bed_covers" x="920" y="608" name="inst_5FEB45B9" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
@@ -303,7 +299,6 @@
     <instance objName="&lt;undefined&gt;" x="920" y="592" name="inst_8D5EA688" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="792" y="2856" name="inst_689F959C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="744" y="2864" name="inst_A18D64F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_trigger_changetext" x="2144" y="848" name="inst_01B1E636" locked="0" code="setstring = &quot;party_m1: *Insert text directing the player to upper left of the library*&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="832" y="2840" name="inst_A4F02219" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="2144" y="848" name="inst_00D093B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="2032" y="192" name="inst_F5EC3878" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
@@ -312,6 +307,7 @@
     <instance objName="&lt;undefined&gt;" x="928" y="512" name="inst_2E2A5128" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_interactable_weapon_sword" x="1028" y="516" name="inst_2197C433" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_character_overworld_fox" x="976" y="568" name="inst_140EE738" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_structure_ht_library" x="2240" y="2496" name="inst_1F28F650" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="920" y="536" name="inst_FAA25543" locked="0" code="" scaleX="0.75" scaleY="0.75" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="920" y="584" name="inst_0D4C8F7F" locked="0" code="" scaleX="0.75" scaleY="0.75" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="784" y="2776" name="inst_D682E00A" locked="0" code="" scaleX="0.899999976158142" scaleY="1.39999997615814" colour="4294967295" rotation="0"/>
@@ -321,12 +317,14 @@
     <instance objName="o_block" x="2368" y="188" name="inst_9FEEFABA" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="2368" y="452" name="inst_34A15698" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="1912" y="748" name="inst_4DA1B5EA" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="o_trigger_chainevents" x="832" y="2864" name="inst_B7BF6834" locked="0" code="move_player = false;&#xA;move_player_speed = false;&#xA;face_player = false;&#xA;set_portrait = s_hud_portrait_cat_normal_s1;&#xA;set_portrait_direction = false;&#xA;text = &quot;Hey, are you ready to head out?&quot;&#xA;def_other = o_character_overworld_cat;&#xA;move_other = 0;&#xA;move_other_speed = 0;&#xA;face_other = &quot;down&quot;;&#xA;destroy_after_use = 0;&#xA;req_channel = 0&#xA;fin_channel = 1" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_trigger_chainevents" x="832" y="2864" name="inst_5C2FDBF5" locked="0" code="move_player = false;&#xA;move_player_speed = false;&#xA;face_player = false;&#xA;set_portrait = s_hud_portrait_fox_normal_s1;&#xA;set_portrait_direction = false;&#xA;text = &quot;Yeah, sorry I must have fallen asleep.&quot;&#xA;def_other = o_character_overworld_cat;&#xA;move_other = 0;&#xA;move_other_speed = 0;&#xA;face_other = &quot;down&quot;;&#xA;destroy_after_use = 0;&#xA;req_channel = 1&#xA;fin_channel = 2" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_trigger_chainevents" x="832" y="2864" name="inst_FB8D36F7" locked="0" code="move_player = false;&#xA;move_player_speed = false;&#xA;face_player = false;&#xA;set_portrait = s_hud_portrait_cat_normal_s1;&#xA;set_portrait_direction = false;&#xA;text = &quot;That's alright. We should stop by the library first, there is something I want to show you.&quot;&#xA;def_other = o_character_overworld_cat;&#xA;move_other = 0;&#xA;move_other_speed = 0;&#xA;face_other = &quot;down&quot;;&#xA;destroy_after_use = 0;&#xA;req_channel = 2&#xA;fin_channel = 3" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_trigger_chainevents" x="832" y="2864" name="inst_FAE2CE69" locked="0" code="move_player = false;&#xA;move_player_speed = false;&#xA;face_player = false;&#xA;set_portrait = s_hud_portrait_fox_normal_s1;&#xA;set_portrait_direction = false;&#xA;text = &quot;Okay, let me grab my gear first.&quot;&#xA;def_other = o_character_overworld_cat;&#xA;move_other = 0;&#xA;move_other_speed = 0;&#xA;face_other = &quot;down&quot;;&#xA;destroy_after_use = 0;&#xA;req_channel = 3&#xA;fin_channel = 4" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_trigger_chainevents" x="832" y="2864" name="inst_F278C602" locked="0" code="move_player = false;&#xA;move_player_speed = false;&#xA;face_player = false;&#xA;set_portrait = s_hud_portrait_cat_normal_s1;&#xA;set_portrait_direction = false;&#xA;text = &quot;I will be here when you are ready.&quot;&#xA;def_other = o_character_overworld_cat;&#xA;move_other = 0;&#xA;move_other_speed = 0;&#xA;face_other = &quot;down&quot;;&#xA;destroy_after_use = 0;&#xA;req_channel = 4&#xA;fin_channel = 0" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_block" x="2088" y="2520" name="inst_0A16E2D4" locked="0" code="" scaleX="2.40000009536743" scaleY="1.39999997615814" colour="4294967295" rotation="0"/>
+    <instance objName="o_trigger_chainevents" x="760" y="2840" name="inst_B7BF6834" locked="0" code="move_player = false;&#xA;move_player_speed = false;&#xA;face_player = false;&#xA;set_portrait = s_hud_portrait_cat_normal_s1;&#xA;set_portrait_direction = false;&#xA;text = &quot;Hey, are you ready to head out?&quot;&#xA;def_other = o_character_overworld_cat;&#xA;move_other = 0;&#xA;move_other_speed = 0;&#xA;face_other = &quot;down&quot;;&#xA;destroy_after_use = 0;&#xA;req_channel = 0&#xA;fin_channel = 1" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_trigger_chainevents" x="760" y="2840" name="inst_5C2FDBF5" locked="0" code="move_player = false;&#xA;move_player_speed = false;&#xA;face_player = false;&#xA;set_portrait = s_hud_portrait_fox_normal_s1;&#xA;set_portrait_direction = false;&#xA;text = &quot;Yeah, sorry I must have fallen asleep.&quot;&#xA;def_other = o_character_overworld_cat;&#xA;move_other = 0;&#xA;move_other_speed = 0;&#xA;face_other = &quot;down&quot;;&#xA;destroy_after_use = 0;&#xA;req_channel = 1&#xA;fin_channel = 2" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_trigger_chainevents" x="760" y="2840" name="inst_FB8D36F7" locked="0" code="move_player = false;&#xA;move_player_speed = false;&#xA;face_player = false;&#xA;set_portrait = s_hud_portrait_cat_normal_s1;&#xA;set_portrait_direction = false;&#xA;text = &quot;That's alright. We should stop by the library first, there is something I want to show you.&quot;&#xA;def_other = o_character_overworld_cat;&#xA;move_other = 0;&#xA;move_other_speed = 0;&#xA;face_other = &quot;down&quot;;&#xA;destroy_after_use = 0;&#xA;req_channel = 2&#xA;fin_channel = 3" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_trigger_chainevents" x="760" y="2840" name="inst_FAE2CE69" locked="0" code="move_player = false;&#xA;move_player_speed = false;&#xA;face_player = false;&#xA;set_portrait = s_hud_portrait_fox_normal_s1;&#xA;set_portrait_direction = false;&#xA;text = &quot;Okay, let me grab my gear first.&quot;&#xA;def_other = o_character_overworld_cat;&#xA;move_other = 0;&#xA;move_other_speed = 0;&#xA;face_other = &quot;down&quot;;&#xA;destroy_after_use = 0;&#xA;req_channel = 3&#xA;fin_channel = 4" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_trigger_chainevents" x="760" y="2840" name="inst_F278C602" locked="0" code="move_player = false;&#xA;move_player_speed = false;&#xA;face_player = false;&#xA;set_portrait = s_hud_portrait_cat_normal_s1;&#xA;set_portrait_direction = false;&#xA;text = &quot;I will be here when you are ready.&quot;&#xA;def_other = o_character_overworld_cat;&#xA;move_other = 0;&#xA;move_other_speed = 0;&#xA;face_other = &quot;down&quot;;&#xA;destroy_after_use = 0;&#xA;req_channel = 4&#xA;fin_channel = 0" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_hud_overworld_name" x="0" y="0" name="inst_BBCC76EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_trigger_goldpickup" x="2088" y="2560" name="inst_A077794B" locked="0" code="amount = 10;&#xA;pickuptext = &quot;*You found 10G in the drain.&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_system_textbox_handler" x="0" y="16" name="inst_FDBE88AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_transition_fade_in" x="-872" y="2568" name="inst_5DCB5175" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

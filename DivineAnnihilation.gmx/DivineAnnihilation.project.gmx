@@ -4,7 +4,7 @@
     <Config>Configs\Default</Config>
     <Config>Configs\c</Config>
   </Configs>
-  <datafiles number="10" name="datafiles"/>
+  <datafiles number="11" name="datafiles"/>
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\s_gameover_ajourneysend</sound>
@@ -151,55 +151,60 @@
         <sprite>sprites\s_trigger_goldpickup</sprite>
         <sprite>sprites\s_trigger_join</sprite>
       </sprites>
-      <sprites name="Forest Temple">
-        <sprites name="Outdoor">
-          <sprite>sprites\s_structure_ft_front</sprite>
-          <sprite>sprites\s_structure_ft_shrine</sprite>
-          <sprite>sprites\s_structure_ft_fountain</sprite>
+      <sprites name="Area">
+        <sprites name="Hometown">
+          <sprite>sprites\s_structure_ht_library</sprite>
         </sprites>
-        <sprites name="Indoor">
-          <sprite>sprites\s_structure_ft_door_gate</sprite>
-          <sprite>sprites\s_structure_ft_door_dungeon</sprite>
-          <sprite>sprites\s_structure_ft_library_desk</sprite>
-          <sprite>sprites\s_structure_ft_library_bookcaseside</sprite>
-          <sprite>sprites\s_structure_ft_pillar</sprite>
-          <sprite>sprites\s_structure_ft_pillar_paralax</sprite>
-          <sprite>sprites\s_decoration_ft_banner_ootf</sprite>
-          <sprite>sprites\s_interactable_ft_pressureplate</sprite>
-          <sprite>sprites\s_interactable_ft_lockplate</sprite>
-          <sprite>sprites\s_interactable_ft_lockplate_active</sprite>
-          <sprite>sprites\s_interactable_ft_key</sprite>
+        <sprites name="Forest">
+          <sprite>sprites\s_environment_forest_tree_small</sprite>
+          <sprite>sprites\s_environment_forest_tree_medium</sprite>
+          <sprite>sprites\s_environment_forest_tree_large</sprite>
         </sprites>
-        <sprites name="Environment">
-          <sprite>sprites\s_environment_ft_water</sprite>
-          <sprite>sprites\s_environment_ft_water_medium</sprite>
-          <sprite>sprites\s_environment_ft_fern</sprite>
+        <sprites name="Forest Temple">
+          <sprites name="Outdoor">
+            <sprite>sprites\s_structure_ft_front</sprite>
+            <sprite>sprites\s_structure_ft_shrine</sprite>
+            <sprite>sprites\s_structure_ft_fountain</sprite>
+          </sprites>
+          <sprites name="Indoor">
+            <sprite>sprites\s_structure_ft_door_gate</sprite>
+            <sprite>sprites\s_structure_ft_door_dungeon</sprite>
+            <sprite>sprites\s_structure_ft_library_desk</sprite>
+            <sprite>sprites\s_structure_ft_library_bookcaseside</sprite>
+            <sprite>sprites\s_structure_ft_pillar</sprite>
+            <sprite>sprites\s_structure_ft_pillar_paralax</sprite>
+            <sprite>sprites\s_decoration_ft_banner_ootf</sprite>
+            <sprite>sprites\s_interactable_ft_pressureplate</sprite>
+            <sprite>sprites\s_interactable_ft_lockplate</sprite>
+            <sprite>sprites\s_interactable_ft_lockplate_active</sprite>
+            <sprite>sprites\s_interactable_ft_key</sprite>
+          </sprites>
+          <sprites name="Environment">
+            <sprite>sprites\s_environment_ft_water</sprite>
+            <sprite>sprites\s_environment_ft_water_medium</sprite>
+            <sprite>sprites\s_environment_ft_fern</sprite>
+          </sprites>
+          <sprites name="Special Tiles">
+            <sprite>sprites\s_tile_ft_shrinepitfall</sprite>
+            <sprite>sprites\s_tile_ft_holetop</sprite>
+            <sprite>sprites\s_tile_ft_holebottom</sprite>
+          </sprites>
         </sprites>
-        <sprites name="Special Tiles">
-          <sprite>sprites\s_tile_ft_shrinepitfall</sprite>
-          <sprite>sprites\s_tile_ft_holetop</sprite>
-          <sprite>sprites\s_tile_ft_holebottom</sprite>
+        <sprites name="Train">
+          <sprites name="Outdoor">
+            <sprite>sprites\s_structure_train</sprite>
+          </sprites>
+          <sprites name="Indoor">
+            <sprite>sprites\s_structure_train_seat</sprite>
+            <sprite>sprites\s_structure_train_pillar</sprite>
+            <sprite>sprites\s_structure_train_pipes</sprite>
+            <sprite>sprites\s_structure_train_tireholds</sprite>
+            <sprite>sprites\s_structure_train_wires</sprite>
+          </sprites>
+          <sprites name="Environment">
+            <sprite>sprites\s_environment_train_void</sprite>
+          </sprites>
         </sprites>
-      </sprites>
-      <sprites name="Train">
-        <sprites name="Outdoor">
-          <sprite>sprites\s_structure_train</sprite>
-        </sprites>
-        <sprites name="Indoor">
-          <sprite>sprites\s_structure_train_seat</sprite>
-          <sprite>sprites\s_structure_train_pillar</sprite>
-          <sprite>sprites\s_structure_train_pipes</sprite>
-          <sprite>sprites\s_structure_train_tireholds</sprite>
-          <sprite>sprites\s_structure_train_wires</sprite>
-        </sprites>
-        <sprites name="Environment">
-          <sprite>sprites\s_environment_train_void</sprite>
-        </sprites>
-      </sprites>
-      <sprites name="Forest">
-        <sprite>sprites\s_environment_forest_tree_small</sprite>
-        <sprite>sprites\s_environment_forest_tree_medium</sprite>
-        <sprite>sprites\s_environment_forest_tree_large</sprite>
       </sprites>
     </sprites>
     <sprites name="Menus">
@@ -571,52 +576,57 @@
           <object>objects\o_trigger_prlx1_on</object>
         </objects>
       </objects>
-      <objects name="Forest Temple">
-        <objects name="Outdoor">
-          <object>objects\o_structure_ft_front</object>
-          <object>objects\o_structure_ft_shrine</object>
-          <object>objects\o_structure_ft_shrinecover</object>
-          <object>objects\o_structure_ft_fountain</object>
+      <objects name="Area">
+        <objects name="Hometown">
+          <object>objects\o_structure_ht_library</object>
         </objects>
-        <objects name="Indoor">
-          <object>objects\o_structure_ft_door_gate</object>
-          <object>objects\o_structure_ft_door_dungeon</object>
-          <object>objects\o_structure_ft_library_desk</object>
-          <object>objects\o_structure_ft_library_bookcaseside</object>
-          <object>objects\o_structure_ft_pillar</object>
-          <object>objects\o_structure_ft_pillar_paralax</object>
-          <object>objects\o_decoration_ft_banner_ootf</object>
-          <object>objects\o_interactable_ft_pressureplate</object>
-          <object>objects\o_interactable_ft_lockplate</object>
-          <object>objects\o_interactable_ft_key</object>
+        <objects name="Forest">
+          <object>objects\o_environment_forest_tree_small</object>
+          <object>objects\o_environment_forest_tree_medium</object>
+          <object>objects\o_environment_forest_tree_large</object>
         </objects>
-        <objects name="Environment">
-          <object>objects\o_environment_ft_water</object>
-          <object>objects\o_environment_ft_fern</object>
+        <objects name="Forest Temple">
+          <objects name="Outdoor">
+            <object>objects\o_structure_ft_front</object>
+            <object>objects\o_structure_ft_shrine</object>
+            <object>objects\o_structure_ft_shrinecover</object>
+            <object>objects\o_structure_ft_fountain</object>
+          </objects>
+          <objects name="Indoor">
+            <object>objects\o_structure_ft_door_gate</object>
+            <object>objects\o_structure_ft_door_dungeon</object>
+            <object>objects\o_structure_ft_library_desk</object>
+            <object>objects\o_structure_ft_library_bookcaseside</object>
+            <object>objects\o_structure_ft_pillar</object>
+            <object>objects\o_structure_ft_pillar_paralax</object>
+            <object>objects\o_decoration_ft_banner_ootf</object>
+            <object>objects\o_interactable_ft_pressureplate</object>
+            <object>objects\o_interactable_ft_lockplate</object>
+            <object>objects\o_interactable_ft_key</object>
+          </objects>
+          <objects name="Environment">
+            <object>objects\o_environment_ft_water</object>
+            <object>objects\o_environment_ft_fern</object>
+          </objects>
+          <objects name="Special Tiles">
+            <object>objects\o_tile_ft_shrinepitfall</object>
+            <object>objects\o_tile_ft_holetop</object>
+            <object>objects\o_tile_ft_holebottom</object>
+          </objects>
         </objects>
-        <objects name="Special Tiles">
-          <object>objects\o_tile_ft_shrinepitfall</object>
-          <object>objects\o_tile_ft_holetop</object>
-          <object>objects\o_tile_ft_holebottom</object>
+        <objects name="Train">
+          <objects name="Outdoor">
+            <object>objects\o_interactable_train</object>
+            <object>objects\o_interactable_train_static</object>
+          </objects>
+          <objects name="Indoor">
+            <object>objects\o_structure_train_seat</object>
+            <object>objects\o_structure_train_pillar</object>
+            <object>objects\o_structure_train_pipes</object>
+            <object>objects\o_structure_train_tireholds</object>
+            <object>objects\o_structure_train_wires</object>
+          </objects>
         </objects>
-      </objects>
-      <objects name="Trian">
-        <objects name="Outdoor">
-          <object>objects\o_interactable_train</object>
-          <object>objects\o_interactable_train_static</object>
-        </objects>
-        <objects name="Indoor">
-          <object>objects\o_structure_train_seat</object>
-          <object>objects\o_structure_train_pillar</object>
-          <object>objects\o_structure_train_pipes</object>
-          <object>objects\o_structure_train_tireholds</object>
-          <object>objects\o_structure_train_wires</object>
-        </objects>
-      </objects>
-      <objects name="Forest">
-        <object>objects\o_environment_forest_tree_small</object>
-        <object>objects\o_environment_forest_tree_medium</object>
-        <object>objects\o_environment_forest_tree_large</object>
       </objects>
     </objects>
     <objects name="Menus">

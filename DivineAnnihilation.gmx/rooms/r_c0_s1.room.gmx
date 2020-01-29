@@ -301,7 +301,7 @@
     <instance objName="o_trigger_changetext" x="1552" y="2696" name="inst_8B5EBF53" locked="0" code="setstring = &quot;*You turn the valve...                         Nothing happened.&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_interact" x="1736" y="2696" name="inst_36B4A859" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_changetext" x="1736" y="2696" name="inst_3876B981" locked="0" code="setstring = &quot;*You turn the valve...                         Nothing happened.&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_trigger_warp" x="4128" y="1280" name="inst_90E50E0D" locked="0" code="desx = 1632;&#xA;desy = 848;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_trigger_warp" x="4128" y="1360" name="inst_90E50E0D" locked="0" code="desx = 1632;&#xA;desy = 848;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_warp" x="5632" y="1088" name="inst_79289CFE" locked="0" code="desx = 6304;&#xA;desy = 1088;" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_warp" x="6272" y="1088" name="inst_AE5ABF94" locked="0" code="desx = 5600;&#xA;desy = 1080;" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_warp" x="5184" y="608" name="inst_D2B86A12" locked="0" code="desx = 5184;&#xA;desy = 2584;" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
@@ -318,6 +318,8 @@
     <instance objName="o_trigger_warp" x="7360" y="2112" name="inst_E683DEBF" locked="0" code="desx = 8608;&#xA;desy = 2112;" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_warp" x="8576" y="2112" name="inst_3054A4AA" locked="0" code="desx = 7320;&#xA;desy = 2112;" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_interact" x="4316" y="967" name="inst_C17F6F50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_trigger_changetext" x="4128" y="1248" name="inst_4C520965" locked="0" code="setstring = &quot;*The gate locked behind you.&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_trigger_interact" x="4128" y="1280" name="inst_04D3AD5B" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="o_transition_fade_in" x="-872" y="2568" name="inst_6F3DD698" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
