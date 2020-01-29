@@ -54,7 +54,8 @@
           <argument>
             <kind>1</kind>
             <string>global.menuactive = 1
-
+global.savex = 0
+global.savey = 0
 //-----
 if (file_exists("profile1.sav"))
 {

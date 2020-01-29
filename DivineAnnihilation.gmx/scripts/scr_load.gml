@@ -1,6 +1,7 @@
 show_debug_message("Loading file: ")
 show_debug_message(string(argument0))
 
+/////////////////////////////////////////////////////////////////////////
 if argument0 = "profile1"
 {
 if (file_exists("profile1.sav"))
@@ -59,6 +60,8 @@ else
 }
 }
 
+
+/////////////////////////////////////////////////////////////////////////
 if argument0 = "profile2"
 {
 if (file_exists("profile2.sav"))
@@ -90,8 +93,8 @@ global.partymember2 = ini_read_real("profile2","partymember2",0);
 // Load level
     global.level = ini_read_real("profile2","level",0);
     
-    show_debug_message("Pushed XY DATA")
-    instance_create(0,0,o_system_loadsavedxy);
+    
+    show_debug_message("Attempting to load file.")    
     room_goto(SavedRoom);
     
     
@@ -117,6 +120,8 @@ else
 }
 }
 
+
+/////////////////////////////////////////////////////////////////////////
 if argument0 = "profile3"
 {
 if (file_exists("profile3.sav"))
@@ -148,6 +153,8 @@ global.partymember2 = ini_read_real("profile3","partymember2",0);
 // Load level
     global.level = ini_read_real("profile3","level",0);
     
+    
+    show_debug_message("Attempting to load file.")
     room_goto(SavedRoom);
     
 // Load inventory
@@ -171,6 +178,8 @@ else
 }
 }
 
+
+/////////////////////////////////////////////////////////////////////////
 if argument0 = "profile4"
 {
 if (file_exists("profile4.sav"))
@@ -202,6 +211,8 @@ global.partymember2 = ini_read_real("profile4","partymember2",0);
 // Load level
     global.level = ini_read_real("profile4","level",0);
     
+    
+    show_debug_message("Attempting to load file.")
     room_goto(SavedRoom);
     
 // Load inventory
