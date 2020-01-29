@@ -232,7 +232,7 @@ if image_index = 0
     {
         instance_change(o_menu_battle_moves, 1)
     }
-    //global.activemember = "fox"
+    global.activemember = "fox"
 }
 
 //Cat selected

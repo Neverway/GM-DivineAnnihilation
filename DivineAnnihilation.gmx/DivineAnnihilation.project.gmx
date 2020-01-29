@@ -6,7 +6,9 @@
   </Configs>
   <datafiles number="10" name="datafiles"/>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\s_gameover_ajourneysend</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Entities">
       <sprites name="Main Cast">
@@ -81,6 +83,11 @@
             <sprite>sprites\s_character_overworld_dog_idle_right_gearedsrifle_aim</sprite>
           </sprites>
         </sprites>
+        <sprites name="Player">
+          <sprite>sprites\s_battle_attack_crosshair</sprite>
+          <sprite>sprites\s_battle_attack_slash</sprite>
+          <sprite>sprites\s_battle_attack_sword_hitbox</sprite>
+        </sprites>
       </sprites>
       <sprites name="NPCs">
         <sprites name="Desk Demon">
@@ -101,6 +108,11 @@
             <sprite>sprites\s_character_overworld_viney_chase_side</sprite>
           </sprites>
           <sprites name="Battle">
+            <sprites name="Attacks">
+              <sprite>sprites\s_battle_attack_artine_rosebud</sprite>
+              <sprite>sprites\s_battle_attack_artine_roseleaf</sprite>
+              <sprite>sprites\s_battle_attack_viney_artine_roseleaf_death</sprite>
+            </sprites>
             <sprite>sprites\s_character_battle_viney_idle</sprite>
             <sprite>sprites\s_character_battle_viney_active</sprite>
             <sprite>sprites\s_character_battle_viney_active_hurt</sprite>
@@ -124,6 +136,7 @@
       <sprites name="Pickups">
         <sprite>sprites\s_interactable_potion_health</sprite>
         <sprite>sprites\s_interactable_item_communicator</sprite>
+        <sprite>sprites\s_interactable_weapon_sword</sprite>
       </sprites>
       <sprites name="Triggers">
         <sprite>sprites\s_trigger_interact</sprite>
@@ -249,30 +262,6 @@
         <sprite>sprites\s_transition_battle_arrive</sprite>
       </sprites>
     </sprites>
-    <sprites name="Battle">
-      <sprites name="Moves">
-        <sprites name="Spell">
-          <sprite>sprites\s_battle_moves_spell_box</sprite>
-          <sprite>sprites\s_battle_moves_spell_incomingrange</sprite>
-          <sprite>sprites\s_battle_moves_spell_incomingsweetspot</sprite>
-          <sprite>sprites\s_battle_moves_spell_arrowup</sprite>
-          <sprite>sprites\s_battle_moves_spell_arrowdown</sprite>
-          <sprite>sprites\s_battle_moves_spell_arrowleft</sprite>
-          <sprite>sprites\s_battle_moves_spell_arrowright</sprite>
-          <sprite>sprites\s_battle_moves_spell_incomingup</sprite>
-          <sprite>sprites\s_battle_moves_spell_incomingdown</sprite>
-          <sprite>sprites\s_battle_moves_spell_incomingleft</sprite>
-          <sprite>sprites\s_battle_moves_spell_incomingright</sprite>
-        </sprites>
-        <sprites name="Attack">
-          <sprite>sprites\s_battle_attack_crosshair</sprite>
-          <sprite>sprites\s_battle_attack_slash</sprite>
-        </sprites>
-      </sprites>
-      <sprites name="Zone">
-        <sprite>sprites\s_battle_zone</sprite>
-      </sprites>
-    </sprites>
     <sprites name="System (Don't use unless you know what you're doing)">
       <sprites name="Configuration">
         <sprite>sprites\s_system_developer</sprite>
@@ -291,6 +280,20 @@
         <sprite>sprites\s_system_follower</sprite>
         <sprite>sprites\s_system_unlock</sprite>
         <sprite>sprites\s_shadow</sprite>
+        <sprite>sprites\s_battle_zone</sprite>
+        <sprites name="Spell">
+          <sprite>sprites\s_battle_moves_spell_box</sprite>
+          <sprite>sprites\s_battle_moves_spell_incomingrange</sprite>
+          <sprite>sprites\s_battle_moves_spell_incomingsweetspot</sprite>
+          <sprite>sprites\s_battle_moves_spell_arrowup</sprite>
+          <sprite>sprites\s_battle_moves_spell_arrowdown</sprite>
+          <sprite>sprites\s_battle_moves_spell_arrowleft</sprite>
+          <sprite>sprites\s_battle_moves_spell_arrowright</sprite>
+          <sprite>sprites\s_battle_moves_spell_incomingup</sprite>
+          <sprite>sprites\s_battle_moves_spell_incomingdown</sprite>
+          <sprite>sprites\s_battle_moves_spell_incomingleft</sprite>
+          <sprite>sprites\s_battle_moves_spell_incomingright</sprite>
+        </sprites>
       </sprites>
       <sprites name="Need?">
         <sprites name="old">
@@ -366,6 +369,7 @@
           <sprite>sprites\s_battle_moves_attack_dronehitbox</sprite>
           <sprite>sprites\s_battle_moves_attack_zone</sprite>
         </sprites>
+        <sprite>sprites\s_battle_attack_sheild</sprite>
       </sprites>
     </sprites>
   </sprites>
@@ -472,10 +476,19 @@
             <object>objects\o_character_special_fox_falling</object>
             <object>objects\o_character_special_fox_sleep</object>
           </objects>
+          <objects name="Battle">
+            <object>objects\o_character_battle_fox2</object>
+            <object>objects\o_character_battle_fox_active</object>
+            <object>objects\object184</object>
+          </objects>
         </objects>
         <objects name="Cat">
           <objects name="Overworld">
             <object>objects\o_character_overworld_cat</object>
+          </objects>
+          <objects name="Battle">
+            <object>objects\o_character_battle_cat2</object>
+            <object>objects\o_character_battle_cat_active</object>
           </objects>
         </objects>
         <objects name="Dog">
@@ -485,6 +498,14 @@
           <objects name="Special">
             <object>objects\o_character_special_dog_standoff</object>
           </objects>
+          <objects name="Battle">
+            <object>objects\o_character_battle_dog_active</object>
+          </objects>
+        </objects>
+        <objects name="Player">
+          <object>objects\o_battle_attack_crosshair</object>
+          <object>objects\o_battle_attack_slash</object>
+          <object>objects\o_battle_attack_sword_hitbox</object>
         </objects>
       </objects>
       <objects name="NPCs">
@@ -500,7 +521,13 @@
             <object>objects\o_character_overworld_viney</object>
           </objects>
           <objects name="Battle">
+            <objects name="Attacks">
+              <object>objects\o_battle_attack_artine_rosebud</object>
+              <object>objects\o_battle_attack_artine_roseleaf</object>
+              <object>objects\o_battle_attack_artine_roseleaf_death</object>
+            </objects>
             <object>objects\o_character_battle_viney</object>
+            <object>objects\o_character_battle_viney_active</object>
           </objects>
         </objects>
       </objects>
@@ -525,6 +552,7 @@
       <objects name="Pickups">
         <object>objects\o_interactable_potion_health</object>
         <object>objects\o_interactable_item_communicator</object>
+        <object>objects\o_interactable_weapon_sword</object>
       </objects>
       <objects name="Triggers">
         <object>objects\o_trigger_interact</object>
@@ -664,6 +692,8 @@
       <objects name="Room Requirements">
         <object>objects\o_system_camera</object>
         <object>objects\o_system_textbox_handler</object>
+        <object>objects\o_system_battle</object>
+        <object>objects\o_system_variblecarrier</object>
       </objects>
       <objects name="Configuration">
         <object>objects\o_system_developer</object>
@@ -680,14 +710,21 @@
           <object>objects\o_system_posmark_1</object>
           <object>objects\o_system_posmark2</object>
           <object>objects\o_system_posmark0</object>
+          <object>objects\o_system_battle_enemyslot1</object>
+          <object>objects\o_system_battle_enemyslot2</object>
+          <object>objects\o_system_battle_enemyslot3</object>
+          <object>objects\o_battle_zone</object>
+          <object>objects\o_battle_activezone</object>
         </objects>
-        <object>objects\o_system_createsave</object>
-        <object>objects\o_system_name</object>
-        <object>objects\o_system_follower1</object>
-        <object>objects\o_system_follower2</object>
-        <object>objects\o_system_unlock</object>
+        <objects name="Overworld">
+          <object>objects\o_system_exit</object>
+          <object>objects\o_system_unlock</object>
+          <object>objects\o_system_follower2</object>
+          <object>objects\o_system_follower1</object>
+          <object>objects\o_system_name</object>
+          <object>objects\o_system_createsave</object>
+        </objects>
         <object>objects\o_system_loadsavedxy</object>
-        <object>objects\o_system_exit</object>
       </objects>
       <objects name="Need?">
         <objects name="old">
@@ -729,46 +766,18 @@
           <object>objects\o_battle_moves_attack_dronehitbox</object>
           <object>objects\o_battle_moves_attack_zone</object>
         </objects>
-      </objects>
-    </objects>
-    <objects name="I miss my friends">
-      <objects name="Old">
-        <object>objects\o_character_battle_fox</object>
-        <object>objects\o_system_battle_enemyslot3</object>
-        <object>objects\o_system_battle_enemyslot2</object>
-        <object>objects\o_system_battle_enemyslot1</object>
-        <objects name="Moves">
-          <objects name="Spell">
-            <object>objects\o_battle_moves_spell_box</object>
-            <object>objects\o_battle_moves_spell_incomingrange</object>
-            <object>objects\o_battle_moves_spell_incomingsweetspot</object>
-            <object>objects\o_battle_moves_spell_incomingmissed</object>
-            <object>objects\o_battle_moves_spell_arrowup</object>
-            <object>objects\o_battle_moves_spell_arrowdown</object>
-            <object>objects\o_battle_moves_spell_arrowleft</object>
-            <object>objects\o_battle_moves_spell_arrowright</object>
-            <object>objects\o_battle_moves_spell_incomingup</object>
-            <object>objects\o_battle_moves_spell_incomingdown</object>
-            <object>objects\o_battle_moves_spell_incomingleft</object>
-            <object>objects\o_battle_moves_spell_incomingright</object>
-          </objects>
-          <objects name="Attack">
-            <object>objects\o_battle_attack_crosshair</object>
-            <object>objects\o_battle_attack_slash</object>
-            <object>objects\o_battle_glowpoint</object>
+        <objects name="Advanced WIP">
+          <objects name="Old">
+            <object>objects\o_character_battle_fox</object>
           </objects>
         </objects>
-        <objects name="Zone">
-          <object>objects\o_battle_zone</object>
-          <object>objects\o_battle_activezone</object>
+        <object>objects\o_battle_attackspawn</object>
+        <objects name="Attacks types">
+          <object>objects\o_battle_attack_projectile_spawner</object>
+          <object>objects\o_battle_attack_projectile_spawner2</object>
+          <object>objects\o_battle_attack_projectile_bumperR</object>
+          <object>objects\o_battle_attack_projectile_bumperL</object>
         </objects>
-      </objects>
-      <objects name="New">
-        <object>objects\o_character_battle_cat2</object>
-        <object>objects\o_character_battle_fox2</object>
-        <object>objects\o_character_battle_fox_active</object>
-        <object>objects\o_character_battle_cat_active</object>
-        <object>objects\o_system_battle</object>
       </objects>
     </objects>
   </objects>
@@ -780,6 +789,7 @@
       <room>rooms\r_menu_name</room>
     </rooms>
     <rooms name="Overworld">
+      <room>rooms\r_cP_s0</room>
       <room>rooms\r_c0_s0</room>
       <room>rooms\r_c0_s1</room>
       <room>rooms\r_c1_s0</room>
@@ -789,7 +799,7 @@
       <room>rooms\r_end_staffroll</room>
     </rooms>
     <rooms name="Battles">
-      <room>rooms\r_socialdepression</room>
+      <room>rooms\r_battle</room>
     </rooms>
     <rooms name="Developer">
       <room>rooms\r_spelltest</room>

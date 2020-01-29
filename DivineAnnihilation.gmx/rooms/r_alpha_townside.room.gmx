@@ -184,7 +184,7 @@
     <instance objName="o_block" x="3392" y="384" name="inst_A4F91532" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="o_hud_overworld_hp" x="0" y="0" name="inst_467721FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_system_textbox_handler" x="-64" y="14" name="inst_FDBE88AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_transition_fade_in" x="-896" y="-64" name="inst_FB81EC63" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_transition_fade_in" x="-768" y="-160" name="inst_FB81EC63" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="b_4_grass_background" x="0" y="448" w="64" h="64" xo="0" yo="0" id="10009602" name="inst_9C25404C" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -26,7 +26,7 @@ global.inve4 = "---";
 global.inve5 = "---";
 
 // Set weapons
-global.wepo1 = "Sword";
+global.wepo1 = "---";
 global.wepo2 = "---";
 global.wepo3 = "---";
 global.wepo4 = "---";

@@ -72,6 +72,7 @@
     <instance objName="o_block" x="1680" y="1102" name="inst_8F6F4A7E" locked="0" code="" scaleX="0.25" scaleY="0.200000002980232" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_join" x="1632" y="1160" name="inst_4D46D186" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_interact" x="1844" y="1096" name="inst_E54145F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_transition_fade_in" x="-872" y="2568" name="inst_307B0D25" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

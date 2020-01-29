@@ -21,6 +21,8 @@ if (file_exists("profile1.sav"))
     var SavedRoom = ini_read_real("profile1","room",r_roomcheck);
     global.savedx = ini_read_real("profile1","savedx",0);
     global.savedy = ini_read_real("profile1","savedy",0);
+    o_system_variblecarrier.alarm[0] = 10;
+
 
 // Load hp
     global.hp = ini_read_real("profile1","health",99);
@@ -43,11 +45,11 @@ if (file_exists("profile1.sav"))
     global.inve5 = ini_read_string("profile1","inv5","---");
 
 // Load weapons
-    global.wepo1 = ini_read_string("profile1","wep1","Sword");
-    global.wepo2 = ini_read_string("profile1","wep2","---");
-    global.wepo3 = ini_read_string("profile1","wep3","---");
-    global.wepo4 = ini_read_string("profile1","wep4","---");
-    global.wepo5 = ini_read_string("profile1","wep5","---");
+    global.wepo1 = ini_read_string("profile1","wpn1","---");
+    global.wepo2 = ini_read_string("profile1","wpn2","---");
+    global.wepo3 = ini_read_string("profile1","wpn3","---");
+    global.wepo4 = ini_read_string("profile1","wpn4","---");
+    global.wepo5 = ini_read_string("profile1","wpn5","---");
     ini_close();
 }
 else
@@ -77,6 +79,7 @@ global.partymember2 = ini_read_real("profile2","partymember2",0);
     var SavedRoom = ini_read_real("profile2","room",r_roomcheck);
     global.savedx = ini_read_real("profile2","savedx",0);
     global.savedy = ini_read_real("profile2","savedy",0);
+    o_system_variblecarrier.alarm[0] = 10;
 
 // Load hp
     global.hp = ini_read_real("profile2","health",99);
@@ -101,11 +104,11 @@ global.partymember2 = ini_read_real("profile2","partymember2",0);
     global.inve5 = ini_read_string("profile2","inv5","---");
 
 // Load weapons
-    global.wepo1 = ini_read_string("profile2","wep1","Sword");
-    global.wepo2 = ini_read_string("profile2","wep2","---");
-    global.wepo3 = ini_read_string("profile2","wep3","---");
-    global.wepo4 = ini_read_string("profile2","wep4","---");
-    global.wepo5 = ini_read_string("profile2","wep5","---");
+    global.wepo1 = ini_read_string("profile2","wpn1","---");
+    global.wepo2 = ini_read_string("profile2","wpn2","---");
+    global.wepo3 = ini_read_string("profile2","wpn3","---");
+    global.wepo4 = ini_read_string("profile2","wpn4","---");
+    global.wepo5 = ini_read_string("profile2","wpn5","---");
     ini_close();
 }
 else
@@ -134,6 +137,7 @@ global.partymember2 = ini_read_real("profile3","partymember2",0);
     var SavedRoom = ini_read_real("profile3","room",r_roomcheck);
     global.savedx = ini_read_real("profile3","savedx",0);
     global.savedy = ini_read_real("profile3","savedy",0);
+    o_system_variblecarrier.alarm[0] = 10;
 
 // Load hp
     global.hp = ini_read_real("profile3","health",99);
@@ -154,11 +158,11 @@ global.partymember2 = ini_read_real("profile3","partymember2",0);
     global.inve5 = ini_read_string("profile3","inv5","---");
 
 // Load weapons
-    global.wepo1 = ini_read_string("profile3","wep1","Sword");
-    global.wepo2 = ini_read_string("profile3","wep2","---");
-    global.wepo3 = ini_read_string("profile3","wep3","---");
-    global.wepo4 = ini_read_string("profile3","wep4","---");
-    global.wepo5 = ini_read_string("profile3","wep5","---");
+    global.wepo1 = ini_read_string("profile3","wpn1","---");
+    global.wepo2 = ini_read_string("profile3","wpn2","---");
+    global.wepo3 = ini_read_string("profile3","wpn3","---");
+    global.wepo4 = ini_read_string("profile3","wpn4","---");
+    global.wepo5 = ini_read_string("profile3","wpn5","---");
     ini_close();
 }
 else
@@ -187,6 +191,7 @@ global.partymember2 = ini_read_real("profile4","partymember2",0);
     var SavedRoom = ini_read_real("profile4","room",r_roomcheck);
     global.savedx = ini_read_real("profile4","savedx",0);
     global.savedy = ini_read_real("profile4","savedy",0);
+    o_system_variblecarrier.alarm[0] = 10;
 
 // Load hp
     global.hp = ini_read_real("profile4","health",99);
@@ -207,11 +212,11 @@ global.partymember2 = ini_read_real("profile4","partymember2",0);
     global.inve5 = ini_read_string("profile4","inv5","---");
 
 // Load weapons
-    global.wepo1 = ini_read_string("profile4","wep1","Sword");
-    global.wepo2 = ini_read_string("profile4","wep2","---");
-    global.wepo3 = ini_read_string("profile4","wep3","---");
-    global.wepo4 = ini_read_string("profile4","wep4","---");
-    global.wepo5 = ini_read_string("profile4","wep5","---");
+    global.wepo1 = ini_read_string("profile4","wpn1","---");
+    global.wepo2 = ini_read_string("profile4","wpn2","---");
+    global.wepo3 = ini_read_string("profile4","wpn3","---");
+    global.wepo4 = ini_read_string("profile4","wpn4","---");
+    global.wepo5 = ini_read_string("profile4","wpn5","---");
     ini_close();
 }
 else

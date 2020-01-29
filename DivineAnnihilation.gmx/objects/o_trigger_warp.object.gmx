@@ -64,20 +64,18 @@ o_system_follower1.y = desy
 o_system_camera.x = desx
 o_system_camera.y = desy
 
-if instance_exists(o_character_overworld_cat)
+if global.partymember1 = 1
 {
-    if o_character_overworld_cat.active = 1
-    {
     o_character_overworld_cat.x = desx
     o_character_overworld_cat.y = desy
     o_system_follower2.x = desx
     o_system_follower2.y = desy
-    }
 }
+
 
 if instance_exists(o_character_overworld_dog)
 {
-    if o_character_overworld_dog.active = 1
+    if partymember2 = 1
     {
     o_character_overworld_dog.x = desx
     o_character_overworld_dog.y = desy

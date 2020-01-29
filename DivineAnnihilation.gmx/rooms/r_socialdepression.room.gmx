@@ -82,7 +82,6 @@
     <instance objName="o_battle_glowpoint" x="256" y="32" name="inst_585032D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_character_battle_cat2" x="72" y="80" name="inst_A882E0AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_character_battle_fox2" x="80" y="184" name="inst_91D6C87F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_character_battle_fox_active" x="320" y="288" name="inst_57226519" locked="0" code="" scaleX="2.5" scaleY="2.5" colour="4294967295" rotation="0"/>
     <instance objName="o_transition_battle_arrive" x="640" y="0" name="inst_2DB927BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>

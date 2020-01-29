@@ -30,8 +30,8 @@ var SavedRoom = room;
 ini_write_real(argument0,"room",SavedRoom);
 
 // Save room x/y
-ini_write_real(argument0,"savedx",global.playerx);
-ini_write_real(argument0,"savedy",global.playery);
+ini_write_real(argument0,"savedx",o_character_overworld_fox.x);
+ini_write_real(argument0,"savedy",o_character_overworld_fox.y);
 
 // Save party
 ini_write_real(argument0,"partymember1",global.partymember1);

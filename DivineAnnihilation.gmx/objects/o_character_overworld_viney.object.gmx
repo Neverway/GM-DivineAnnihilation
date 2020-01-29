@@ -96,7 +96,7 @@ else
         <arguments>
           <argument>
             <kind>11</kind>
-            <room>r_socialdepression</room>
+            <room>r_battle</room>
           </argument>
         </arguments>
       </action>

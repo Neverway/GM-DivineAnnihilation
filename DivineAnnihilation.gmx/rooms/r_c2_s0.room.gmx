@@ -92,6 +92,7 @@
     <instance objName="o_block" x="3936" y="3808" name="inst_D3B8E516" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="4000" y="3872" name="inst_DDB9C8F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="4064" y="4032" name="inst_4FA5AE76" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="o_transition_fade_in" x="-872" y="2568" name="inst_E2AD791C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="b_wall_tree" x="8904" y="352" w="64" h="64" xo="0" yo="0" id="10025720" name="inst_68D81958" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

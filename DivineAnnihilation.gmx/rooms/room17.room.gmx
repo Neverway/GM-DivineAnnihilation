@@ -71,11 +71,11 @@
     <instance objName="&lt;undefined&gt;" x="0" y="0" name="inst_1C53C371" locked="0" code="" scaleX="0" scaleY="0" colour="0" rotation="0"/>
     <instance objName="o_character_battle_fox" x="64" y="176" name="inst_1EB9D530" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_character_battle_roamer" x="560" y="152" name="inst_2B4D2B1F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_battle_moves_spell_incomingrange" x="256" y="240" name="inst_FBA8D311" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_battle_moves_spell_incomingsweetspot" x="256" y="248" name="inst_7F02F8D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_battle_moves_spell_incomingmissed" x="256" y="264" name="inst_C79E23C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_battle_moves_spell_incomingmissed" x="408" y="304" name="inst_0311686B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_battle_moves_spell_incomingsweetspot" x="400" y="32" name="inst_2344B6E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="256" y="240" name="inst_FBA8D311" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="256" y="248" name="inst_7F02F8D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="256" y="264" name="inst_C79E23C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="408" y="304" name="inst_0311686B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="400" y="32" name="inst_2344B6E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="328" y="480" name="inst_B82848EE" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="168" y="336" name="inst_9FF4FE22" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="168" y="8" name="inst_F0D79B20" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>

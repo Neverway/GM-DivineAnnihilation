@@ -35,9 +35,9 @@ event_inherited();
 //==========================//
 // Movement
 //==========================//
-vxMax = 2; // ?
-vyMax = 2; // ?
-accel = .25; // Acceleration
+vxMax = 4; // ?
+vyMax = 4; // ?
+accel = .75; // Acceleration
 fric = 1.8; // Friction
 canmove = 1; // Allow the player to move varialbe (default is 1)
 move = 0; // ?
@@ -135,8 +135,8 @@ kMenu = keyboard_check_pressed(ord("C"));
 //--------------------------//
 if(kSprint)
 {
-    vxMax = 3.25; // Set max x veleocity to 2
-    vyMax = 3.25; // Set max y veleocity to 2
+    vxMax = 4; // Set max x veleocity to 2
+    vyMax = 4; // Set max y veleocity to 2
 }
 //--------------------------//
 // Left

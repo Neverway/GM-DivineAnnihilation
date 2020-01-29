@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-10000</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>p_entity</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -36,8 +36,8 @@ event_inherited();
 //==========================//
 // Squash and Stretch
 //==========================//
-xscale = 2;
-yscale = 2;
+image_xscale = 1.5;
+image_yscale = 1.5;
 image_speed = 0;
 image_index = 0;
 
@@ -45,7 +45,7 @@ image_index = 0;
 // Variables
 //==========================//
 pos = 2
-active = 0
+active = 1
 lx = 216
 rx = 416
 cx = 320
@@ -68,6 +68,82 @@ hold = 100
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Initialize Player
+
+//==========================//
+//Inherit Events
+//==========================//
+event_inherited();
+
+//==========================//
+// Movement
+//==========================//
+vxMax = 4; // ?
+vyMax = 4; // ?
+accel = .75; // Acceleration
+fric = 1.8; // Friction
+canmove = 1; // Allow the player to move varialbe (default is 1)
+move = 0; // ?
+
+//==========================//
+// Squash and Stretch
+//==========================//
+xscale = 2.5; // Stored xscale (used in draw event)
+yscale = 2.5; // Stored yscale (used in draw event)
+
+//==========================//
+// States (Not used in my code, but here to keep script from breaking)
+//==========================//
+IDLE = 10;
+RUN = 11;
+ATTACK = 12;
+DEFEND = 13;
+attackRate = .05; // Nu
+
+//==========================//
+// Initialize Extra Properties
+//==========================//
+state = IDLE // Set animation state to idle
+dir = 0; // Direction the player is facing
+facing = image_xscale; // Set facing to images xscale
+
+
+//==========================//
+// Unsorted
+//==========================//
+image_speed = 0
+image_index = 0
+attack = 0
+
+//==========================//
+// Create needed instances
+//==========================//
+
+
+
+
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
@@ -86,7 +162,165 @@ hold = 100
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if active = 1
+            <string>/// Controls and movemnt
+
+//==========================//
+// Create Variables
+//==========================//
+var kUp, kDown, kLeft, kRight, kSelect, kBack, kMenu;
+
+
+//==========================//
+// Define Controls
+//==========================//
+kUp = keyboard_check(vk_up);
+kDown = keyboard_check(vk_down);
+kLeft = keyboard_check(vk_left);
+kRight = keyboard_check(vk_right);
+kSelect = keyboard_check_pressed(ord("X"));
+kSprint = keyboard_check(ord("X"));
+kBack = keyboard_check_pressed(ord("Z"));
+kMenu = keyboard_check_pressed(ord("C"));
+
+
+//==========================//
+// Movement
+//==========================//
+
+
+
+//--------------------------//
+// Sprinting
+//--------------------------//
+if(kSprint)
+{
+    vxMax = 4; // Set max x veleocity to 2
+    vyMax = 4; // Set max y veleocity to 2
+}
+//--------------------------//
+// Left
+//--------------------------//
+if(kLeft &amp;&amp; !kRight)
+{
+    move = 1
+    //facing = -1;
+    state = RUN;
+    if (vx &gt; 0) {
+        vx = approach(vx,0,fric);
+    }
+    vx = approach(vx,-vxMax,accel);
+    if(!kUp &amp;&amp; !kDown) {
+        if (vy != 0) {
+            vy = approach(vy,0,fric);
+        }
+    }
+    
+    dir = 2;
+}
+
+//--------------------------//
+// Right
+//--------------------------//
+if(kRight &amp;&amp; !kLeft)
+{
+    move = 1
+    //facing = 1;
+    state = RUN;
+    if (vx &lt; 0) {
+        vx = approach(vx,0,fric);
+    }
+    vx = approach(vx,vxMax,accel);
+    if(!kUp &amp;&amp; !kDown) {
+        if (vy != 0) {
+            vy = approach(vy,0,fric);
+        }
+    }
+    
+    dir = 2;
+}
+
+//--------------------------//
+// Up
+//--------------------------//
+if(kUp &amp;&amp; !kDown)
+{
+    move = 1
+    state = RUN;
+    if (vy &gt; 0) {
+        vy = approach(vy,0,fric);
+    }
+    vy = approach(vy,-vyMax,accel);
+    
+    if(!kLeft &amp;&amp; !kRight) {
+        if (vx != 0) {
+            vx = approach(vx,0,fric);
+        }
+    }
+    if((vy*vx) == 0) {
+        dir = 1;
+        } else {
+        dir = 2;
+        }
+}
+
+//--------------------------//
+// Down
+//--------------------------//
+if(kDown &amp;&amp; !kUp)
+{
+    move = 1
+    state = RUN;
+    if (vy &lt; 0) {
+        vy = approach(vy,0,fric);
+    }
+    vy = approach(vy,vyMax,accel);
+    
+    if(!kLeft &amp;&amp; !kRight) {
+        if (vx != 0) {
+            vx = approach(vx,0,fric);
+        }
+    }
+    if((vy*vx) == 0) {
+        dir = 0;
+        } else {
+        dir = 2;
+        }
+}
+
+
+//==========================//
+// Friction
+//==========================//
+if(!kLeft &amp;&amp; !kRight &amp;&amp; !kUp &amp;&amp; !kDown)
+{
+    move = 0
+    state = IDLE;
+    vx = approach(vx,0,fric);
+    vy = approach(vy,0,fric);
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/*
+if active = 1
 {
 
 // Visible when active
@@ -98,7 +332,7 @@ o_character_battle_fox2.visible = 0;
     {
         if !instance_exists(o_battle_attack_crosshair)
         {
-            instance_create(x,y-160,o_battle_attack_crosshair);
+            instance_create(x,y-96,o_battle_attack_crosshair);
             movement = "crosshair";
         }
     }
@@ -170,6 +404,113 @@ if active = 0
             <kind>1</kind>
             <string>image_speed = 0
 image_index = 0
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Handle Sprite Directions and Animation
+
+//==========================//
+// Define sprite for standing directions
+//==========================//
+switch(state) {
+    case IDLE:
+        image_speed = image_speed;
+        switch(dir) {
+        case 0:
+            sprite_index = sprite_index;
+        break;
+        
+        case 1:
+            sprite_index = sprite_index;
+        break;
+        
+        case 2:
+            sprite_index = sprite_index;
+        break;
+        }
+        draw_sprite_ext(s_shadow, 1, x,y+2,1,1,0,c_white,0.5);
+    break;
+
+//==========================//
+// Define sprite for walking directions
+//==========================//
+    case RUN:
+        if(vx != 0) {
+        image_speed = image_speed;
+        } else {
+        image_speed = image_speed;
+        }
+        switch(dir) {
+        case 0:
+            sprite_index = sprite_index;
+        break;
+        
+        case 1:
+            sprite_index = sprite_index;
+        break;
+        
+        case 2:
+            sprite_index = sprite_index;
+        break;
+        }
+        draw_sprite_ext(s_shadow, image_index, x,y+2,1,1,0,c_white,0.5);
+    break;
+}
+
+//==========================//
+// Draw Player
+//==========================//
+draw_sprite_ext(s_shadow, 1, x,y+2,2.5,2.5,0,c_white,0.75);
+draw_sprite_ext(sprite_index, image_index, x, y + (16 - 16 * yscale) * 0.25, image_xscale, image_yscale, 0, c_white, image_alpha);
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="90">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if !instance_exists(o_battle_attack_slash)
+{
+    instance_create(x,y,o_battle_attack_slash);
+    instance_create(x,y,o_battle_attack_sword_hitbox);
+    o_character_battle_fox_active.sprite_index = s_character_battle_fox_slash
+    o_character_battle_fox_active.image_speed = .5
+}
 </string>
           </argument>
         </arguments>

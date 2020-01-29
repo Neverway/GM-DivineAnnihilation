@@ -133,7 +133,6 @@
     <instance objName="o_trigger_warp" x="4864" y="4544" name="inst_856762AB" locked="0" code="desx = 5760;&#xA;desy = 1856;" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="0" y="0" name="inst_F1F08AC1" locked="0" code="" scaleX="0" scaleY="0" colour="0" rotation="0"/>
     <instance objName="o_environment_ft_water" x="10304" y="896" name="inst_704F4C92" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_character_overworld_roamer" x="904" y="1128" name="inst_C217FD4F" locked="0" code="enemy2chance = 15;&#xA;enemy3chance = 15;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_interactable_item_communicator" x="8824" y="304" name="inst_02DDCBC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_interactable_ft_lockplate" x="5664" y="1904" name="inst_6FA60928" locked="0" code="unlockx = 5752;&#xA;unlocky = 1920;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_interactable_ft_key" x="9024" y="2464" name="inst_64DC1148" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -141,6 +140,8 @@
     <instance objName="o_character_overworld_viney" x="7224" y="2480" name="inst_2B9F3DE7" locked="0" code="enemy2chance = 15;&#xA;enemy3chance = 15;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_character_overworld_viney" x="8752" y="2472" name="inst_F4CED5A9" locked="0" code="enemy2chance = 15;&#xA;enemy3chance = 15;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_character_overworld_viney" x="9128" y="2176" name="inst_11D370BD" locked="0" code="enemy2chance = 15;&#xA;enemy3chance = 15;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_interactable_savepoint" x="4312" y="952" name="inst_918C9161" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_character_overworld_viney" x="888" y="1144" name="inst_CD853DA6" locked="0" code="enemy2chance = 0;&#xA;enemy3chance = 0;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_character_special_fox_sleep" x="1600" y="1160" name="inst_2C07538A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_menu_star" x="5280" y="-864" name="inst_41625C0F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_character_overworld_cat" x="1632" y="2816" name="inst_FC6E0963" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -290,7 +291,7 @@
     <instance objName="o_trigger_interact" x="11616" y="504" name="inst_A21444C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_chainevents" x="1632" y="2848" name="inst_9E2981F7" locked="0" code="move_player = false;&#xA;move_player_speed = false;&#xA;face_player = false;&#xA;set_portrait = s_hud_portrait_fox_normal_s1;&#xA;set_portrait_direction = false;&#xA;text = &quot;Does this mean we are good to head back then?&quot;&#xA;def_other = o_character_overworld_cat;&#xA;move_other = 0;&#xA;move_other_speed = 0;&#xA;face_other = &quot;down&quot;;&#xA;destroy_after_use = 0;&#xA;req_channel = 4&#xA;fin_channel = 5" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_chainevents" x="1632" y="2848" name="inst_A0F86E41" locked="0" code="move_player = false;&#xA;move_player_speed = false;&#xA;face_player = false;&#xA;set_portrait = s_hud_portrait_cat_normal_s1;&#xA;set_portrait_direction = false;&#xA;text = &quot;Yeah we should have all the parts that we need!&quot;&#xA;def_other = o_character_overworld_cat;&#xA;move_other = 0;&#xA;move_other_speed = 0;&#xA;face_other = &quot;down&quot;;&#xA;destroy_after_use = 0;&#xA;req_channel = 5&#xA;fin_channel = 6" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_trigger_spawnobj" x="1632" y="2848" name="inst_C40F758E" locked="0" code="obj = o_trigger_join&#xA;desx = x&#xA;desy = y&#xA;req_channel = 6&#xA;fin_channel = 0" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_trigger_spawnobj" x="1592" y="2848" name="inst_C40F758E" locked="0" code="obj = o_trigger_join&#xA;desx = x&#xA;desy = y&#xA;req_channel = 6&#xA;fin_channel = 0" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_level_advance" x="2024" y="2784" name="inst_F19EB5A6" locked="0" code="delay = 1;&#xA;falling = 0;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_warp" x="8928" y="200" name="inst_FFAD8AE9" locked="0" code="desx = 1632;&#xA;desy = 2927;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_warp" x="1632" y="3024" name="inst_34CD5A03" locked="0" code="desx = 8928;&#xA;desy = 233;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
@@ -316,6 +317,8 @@
     <instance objName="o_trigger_warp" x="7616" y="2752" name="inst_1AA7B82A" locked="0" code="desx = 4256;&#xA;desy = 2304;" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_warp" x="7360" y="2112" name="inst_E683DEBF" locked="0" code="desx = 8608;&#xA;desy = 2112;" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_warp" x="8576" y="2112" name="inst_3054A4AA" locked="0" code="desx = 7320;&#xA;desy = 2112;" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="o_trigger_interact" x="4316" y="967" name="inst_C17F6F50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_transition_fade_in" x="-872" y="2568" name="inst_6F3DD698" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="b_4_floor" x="1344" y="1152" w="64" h="64" xo="0" yo="0" id="10020908" name="inst_02EC11F7" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

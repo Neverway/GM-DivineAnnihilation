@@ -82,8 +82,31 @@ instance_create(x,y,o_system_exit);
 
 
 
-
-
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>o_character_overworld_fox.x = global.savedx
+o_character_overworld_fox.y = global.savedy
+show_debug_message("GLOBALIZE TEST")
 </string>
           </argument>
         </arguments>
@@ -179,33 +202,6 @@ if canmove = 1
 }
 
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Globalize the players x and y coordinates
-
-//==========================//
-// Position
-//==========================//
-global.playerx = x;
-global.playery = y;
 </string>
           </argument>
         </arguments>
@@ -918,8 +914,7 @@ switch(state) {
 // Draw Player
 //==========================//
 draw_sprite_ext(sprite_index, image_index, x, y + (16 - 16 * yscale) * 0.25, facing * xscale, yscale, 0, c_white, image_alpha);
-global.player1x = x
-global.player1y = y
+
 </string>
           </argument>
         </arguments>
