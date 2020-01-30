@@ -172,10 +172,10 @@ o_system_follower2.y = y;
 if active = 1
 {
     global.partymember1 = 1;
-    if o_character_overworld_fox.move = 1
-    {
+    //if o_character_overworld_fox.move = 1
+    //{
         move_towards_point(o_system_follower1.x,o_system_follower1.y,o_character_overworld_fox.vxMax + o_character_overworld_fox.accel)
-    }
+    //}
 }
 
 </string>

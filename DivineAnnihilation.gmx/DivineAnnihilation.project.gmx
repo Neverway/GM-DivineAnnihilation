@@ -154,6 +154,7 @@
       <sprites name="Area">
         <sprites name="Hometown">
           <sprite>sprites\s_structure_ht_library</sprite>
+          <sprite>sprites\s_structure_ht_castle</sprite>
         </sprites>
         <sprites name="Forest">
           <sprite>sprites\s_environment_forest_tree_small</sprite>
@@ -579,6 +580,7 @@
       <objects name="Area">
         <objects name="Hometown">
           <object>objects\o_structure_ht_library</object>
+          <object>objects\o_structure_ht_castle</object>
         </objects>
         <objects name="Forest">
           <object>objects\o_environment_forest_tree_small</object>
