@@ -814,9 +814,6 @@
       <room>rooms\r_battle</room>
     </rooms>
     <rooms name="Developer">
-      <room>rooms\r_spelltest</room>
-      <room>rooms\r_roomcheck</room>
-      <room>rooms\r_DEVELOPER1</room>
       <rooms name="Scraps">
         <room>rooms\r_alpha_townside</room>
         <room>rooms\r_prealpha_townwhole</room>
@@ -825,6 +822,10 @@
         <room>rooms\r_oldstart</room>
         <room>rooms\room17</room>
       </rooms>
+      <rooms name="Test stuff">
+        <room>rooms\r_roomcheck</room>
+      </rooms>
+      <room>rooms\r_COPYME</room>
     </rooms>
   </rooms>
   <constants number="12">
