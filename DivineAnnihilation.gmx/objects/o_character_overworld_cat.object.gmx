@@ -43,6 +43,7 @@ active = 0;
 move = 1;
 face = "left"
 facetowards = 0;
+image_speed = 0.07;
 
 </string>
           </argument>

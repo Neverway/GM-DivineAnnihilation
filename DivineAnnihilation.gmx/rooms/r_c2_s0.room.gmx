@@ -3,8 +3,8 @@
   <caption></caption>
   <width>12000</width>
   <height>6500</height>
-  <vsnap>64</vsnap>
-  <hsnap>64</hsnap>
+  <vsnap>8</vsnap>
+  <hsnap>8</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>-1</persistent>
@@ -52,14 +52,15 @@
   <instances>
     <instance objName="o_system_camera" x="1464" y="4003" name="inst_B9C1B6E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_character_overworld_fox" x="1472" y="4032" name="inst_E0030F40" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_hud_overworld_shelf" x="0" y="0" name="inst_A956C4D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_hud_overworld_hp" x="0" y="0" name="inst_8BC18C75" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_hud_overworld_shelf" x="64" y="0" name="inst_A956C4D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_hud_overworld_hp" x="64" y="0" name="inst_8BC18C75" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_system_textbox_handler" x="0" y="0" name="inst_32B85DDD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="0" y="0" name="inst_EF5D889F" locked="0" code="" scaleX="0" scaleY="0" colour="0" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="4864" y="680" name="inst_8BE22346" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="4880" y="680" name="inst_C2CF5AE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_hud_overworld_name" x="32" y="8" name="inst_0DF83F26" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_hud_overworld_name" x="0" y="64" name="inst_0DF83F26" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="0" y="0" name="inst_F1F08AC1" locked="0" code="" scaleX="0" scaleY="0" colour="0" rotation="0"/>
+    <instance objName="operator" x="0" y="128" name="inst_321F02F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_menu_star" x="5280" y="-864" name="inst_41625C0F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_environment_forest_tree_medium" x="2944" y="3632" name="inst_6D52C888" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_environment_forest_tree_medium" x="3224" y="3088" name="inst_10DD00E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -72,6 +73,18 @@
     <instance objName="o_environment_forest_tree_large" x="3215" y="3791" name="inst_0B815E4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_environment_forest_tree_large" x="3735" y="3403" name="inst_7EC35426" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_environment_forest_tree_large" x="3018" y="3918" name="inst_13976D1E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_light" x="2937" y="3520" name="inst_FE260107" locked="0" code="lightsize = 200;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_light" x="3210" y="3668" name="inst_49CF285C" locked="0" code="lightsize = 200;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_light" x="3012" y="3795" name="inst_9253B868" locked="0" code="lightsize = 200;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_light" x="2553" y="3971" name="inst_41F70739" locked="0" code="lightsize = 200;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_light" x="2297" y="3842" name="inst_85B94312" locked="0" code="lightsize = 200;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_light" x="3824" y="3904" name="inst_02F7653C" locked="0" code="lightsize = 200;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_light" x="3728" y="3280" name="inst_C5077C43" locked="0" code="lightsize = 200;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_light" x="3440" y="3368" name="inst_A6D93BD6" locked="0" code="lightsize = 200;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_light" x="3084" y="3135" name="inst_DF70C08B" locked="0" code="lightsize = 200;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_light" x="3216" y="2974" name="inst_8CE5DE98" locked="0" code="lightsize = 200;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_light" x="3000" y="2944" name="inst_78C070DB" locked="0" code="lightsize = 200;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_light" x="3318" y="2752" name="inst_43E821E4" locked="0" code="lightsize = 500;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="1568" y="3936" name="inst_14CFC5B7" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="1568" y="4128" name="inst_2F72A332" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="1376" y="4032" name="inst_8BCEB94D" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>

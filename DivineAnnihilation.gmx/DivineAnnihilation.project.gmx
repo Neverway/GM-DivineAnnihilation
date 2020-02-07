@@ -14,27 +14,12 @@
       <sprites name="Main Cast">
         <sprites name="Fox">
           <sprites name="Overworld">
-            <sprite>sprites\s_character_overworld_fox_idle_front</sprite>
             <sprite>sprites\s_character_overworld_fox_idle_side</sprite>
+            <sprite>sprites\s_character_overworld_fox_idle_front</sprite>
             <sprite>sprites\s_character_overworld_fox_idle_back</sprite>
-            <sprite>sprites\s_character_overworld_fox_walk_front</sprite>
             <sprite>sprites\s_character_overworld_fox_walk_side</sprite>
+            <sprite>sprites\s_character_overworld_fox_walk_front</sprite>
             <sprite>sprites\s_character_overworld_fox_walk_back</sprite>
-          </sprites>
-          <sprites name="Battle">
-            <sprite>sprites\s_character_battle_fox_prepare</sprite>
-            <sprite>sprites\s_character_battle_fox_slash</sprite>
-            <sprites name="Unsure if used">
-              <sprite>sprites\s_character_battle_fox_sword_stab</sprite>
-              <sprite>sprites\s_character_battle_fox_sword_slash</sprite>
-              <sprite>sprites\s_character_battle_fox_slide</sprite>
-              <sprite>sprites\s_character_battle_fox_spell_fire</sprite>
-            </sprites>
-          </sprites>
-          <sprites name="Special">
-            <sprite>sprites\s_character_special_fox_repair</sprite>
-            <sprite>sprites\s_character_special_fox_falling</sprite>
-            <sprite>sprites\s_character_special_fox_sleep</sprite>
           </sprites>
           <sprites name="Portraits">
             <sprite>sprites\s_hud_portrait_none</sprite>
@@ -47,81 +32,26 @@
         </sprites>
         <sprites name="Cat">
           <sprites name="Overworld">
-            <sprite>sprites\s_character_overworld_cat_idle_front</sprite>
             <sprite>sprites\s_character_overworld_cat_idle_left</sprite>
             <sprite>sprites\s_character_overworld_cat_idle_right</sprite>
+            <sprite>sprites\s_character_overworld_cat_idle_front</sprite>
             <sprite>sprites\s_character_overworld_cat_idle_back</sprite>
-          </sprites>
-          <sprites name="Battle">
-            <sprite>sprites\s_character_battle_cat_prepare</sprite>
-            <sprite>sprites\s_character_battle_cat_slash</sprite>
           </sprites>
           <sprites name="Portraits">
             <sprite>sprites\s_hud_portrait_cat_normal_s1</sprite>
-            <sprite>sprites\s_hud_portrait_cat_radio_s1</sprite>
             <sprite>sprites\s_hud_portrait_cat_normal_s2</sprite>
             <sprite>sprites\s_hud_portrait_cat_normal_s3</sprite>
             <sprite>sprites\s_hud_portrait_cat_normal_s4</sprite>
+            <sprite>sprites\s_hud_portrait_cat_radio_s1</sprite>
           </sprites>
-        </sprites>
-        <sprites name="Dog">
-          <sprites name="Overworld">
-            <sprite>sprites\s_character_overworld_dog_idle_front</sprite>
-            <sprite>sprites\s_character_overworld_dog_idle_left</sprite>
-            <sprite>sprites\s_character_overworld_dog_idle_right</sprite>
-            <sprite>sprites\s_character_overworld_dog_idle_back</sprite>
-          </sprites>
-          <sprites name="Other">
-            <sprite>sprites\s_character_overworld_dog_idle_left_srifle</sprite>
-            <sprite>sprites\s_character_overworld_dog_idle_right_srifle</sprite>
-            <sprite>sprites\s_character_overworld_dog_idle_front_geared</sprite>
-            <sprite>sprites\s_character_overworld_dog_idle_left_geared</sprite>
-            <sprite>sprites\s_character_overworld_dog_idle_right_geared</sprite>
-            <sprite>sprites\s_character_overworld_dog_idle_back_geared</sprite>
-            <sprite>sprites\s_character_overworld_dog_idle_left_gearedsrifle</sprite>
-            <sprite>sprites\s_character_overworld_dog_idle_right_gearedsrifle</sprite>
-            <sprite>sprites\s_character_overworld_dog_idle_right_gearedsrifle_aim</sprite>
-          </sprites>
-        </sprites>
-        <sprites name="Player">
-          <sprite>sprites\s_battle_attack_crosshair</sprite>
-          <sprite>sprites\s_battle_attack_slash</sprite>
-          <sprite>sprites\s_battle_attack_sword_hitbox</sprite>
         </sprites>
       </sprites>
       <sprites name="NPCs">
-        <sprites name="Desk Demon">
-          <sprites name="Overworld">
-            <sprite>sprites\s_character_overworld_deskdemon_idle</sprite>
-          </sprites>
-          <sprites name="Portraits">
-            <sprite>sprites\s_hud_portrait_deskdemon_s1</sprite>
-          </sprites>
-        </sprites>
-      </sprites>
-      <sprites name="Enemies">
-        <sprites name="Viney">
-          <sprites name="Overworld">
-            <sprite>sprites\s_character_overworld_viney_idle_front</sprite>
-            <sprite>sprites\s_character_overworld_viney_idle_side</sprite>
-            <sprite>sprites\s_character_overworld_viney_idle_back</sprite>
-            <sprite>sprites\s_character_overworld_viney_chase_side</sprite>
-          </sprites>
-          <sprites name="Battle">
-            <sprites name="Attacks">
-              <sprite>sprites\s_battle_attack_artine_rosebud</sprite>
-              <sprite>sprites\s_battle_attack_artine_roseleaf</sprite>
-              <sprite>sprites\s_battle_attack_viney_artine_roseleaf_death</sprite>
-            </sprites>
-            <sprite>sprites\s_character_battle_viney_idle</sprite>
-            <sprite>sprites\s_character_battle_viney_active</sprite>
-            <sprite>sprites\s_character_battle_viney_active_hurt</sprite>
-          </sprites>
-        </sprites>
-      </sprites>
-      <sprites name="Bosses">
-        <sprites name="Roamer">
-          <sprite>sprites\s_character_overworld_roamer_idle</sprite>
+        <sprites name="DealerBarley">
+          <sprite>sprites\s_character_overworld_barley_idle_left</sprite>
+          <sprite>sprites\s_character_overworld_barley_idle_right</sprite>
+          <sprite>sprites\s_character_overworld_barley_idle_front</sprite>
+          <sprite>sprites\s_character_overworld_barley_idle_back</sprite>
         </sprites>
       </sprites>
     </sprites>
@@ -268,114 +198,188 @@
         <sprite>sprites\s_transition_battle_arrive</sprite>
       </sprites>
     </sprites>
-    <sprites name="System (Don't use unless you know what you're doing)">
-      <sprites name="Configuration">
-        <sprite>sprites\s_system_developer</sprite>
+    <sprites name="I DONT KNOW WHERE TO PUT THIS BUT IM HAPPY">
+      <sprites name="Player">
+        <sprite>sprites\s_battle_attack_crosshair</sprite>
+        <sprite>sprites\s_battle_attack_slash</sprite>
+        <sprite>sprites\s_battle_attack_sword_hitbox</sprite>
       </sprites>
-      <sprites name="Background">
-        <sprites name="Parents">
-          <sprite>sprites\s_character_mask</sprite>
-          <sprite>sprites\s_enemy_mask</sprite>
-          <sprite>sprites\s_lower_mask</sprite>
-          <sprite>sprites\s_superlow</sprite>
-          <sprite>sprites\s_battle_shadow</sprite>
-          <sprite>sprites\s_character_battle_hitbox</sprite>
+      <sprites name="Desk Demon">
+        <sprites name="Overworld">
+          <sprite>sprites\s_character_overworld_deskdemon_idle</sprite>
         </sprites>
-        <sprite>sprites\s_system_name_cursor</sprite>
-        <sprite>sprites\s_system_exiting</sprite>
-        <sprite>sprites\s_system_follower</sprite>
-        <sprite>sprites\s_system_unlock</sprite>
-        <sprite>sprites\s_shadow</sprite>
-        <sprite>sprites\s_battle_zone</sprite>
-        <sprites name="Spell">
-          <sprite>sprites\s_battle_moves_spell_box</sprite>
-          <sprite>sprites\s_battle_moves_spell_incomingrange</sprite>
-          <sprite>sprites\s_battle_moves_spell_incomingsweetspot</sprite>
-          <sprite>sprites\s_battle_moves_spell_arrowup</sprite>
-          <sprite>sprites\s_battle_moves_spell_arrowdown</sprite>
-          <sprite>sprites\s_battle_moves_spell_arrowleft</sprite>
-          <sprite>sprites\s_battle_moves_spell_arrowright</sprite>
-          <sprite>sprites\s_battle_moves_spell_incomingup</sprite>
-          <sprite>sprites\s_battle_moves_spell_incomingdown</sprite>
-          <sprite>sprites\s_battle_moves_spell_incomingleft</sprite>
-          <sprite>sprites\s_battle_moves_spell_incomingright</sprite>
+        <sprites name="Portraits">
+          <sprite>sprites\s_hud_portrait_deskdemon_s1</sprite>
         </sprites>
       </sprites>
-      <sprites name="Need?">
-        <sprites name="old">
-          <sprite>sprites\s_battle_enemy_hp</sprite>
-          <sprites name="Unused">
-            <sprite>sprites\s_environment_debri</sprite>
-            <sprite>sprites\s_fruniture_bed_covers</sprite>
-            <sprite>sprites\s_fruniture_bed</sprite>
-            <sprite>sprites\s_structure_door</sprite>
-            <sprite>sprites\s_structure_shop_unlabled</sprite>
-            <sprite>sprites\s_structure_house_door</sprite>
-            <sprite>sprites\s_structure_house</sprite>
-          </sprites>
-          <sprite>sprites\s_hud_inventory_potion_health</sprite>
-          <sprite>sprites\s_hud_inventory_spellbook</sprite>
-          <sprite>sprites\s_hud_inventory_axe</sprite>
-          <sprite>sprites\s_menu_battle_enemy</sprite>
-          <sprites name="Deadriser">
-            <sprite>sprites\s_character_battle_deadriser_chase</sprite>
-            <sprite>sprites\s_character_battle_deadriser_attack</sprite>
-          </sprites>
-          <sprite>sprites\s_character_overworld_cardboard</sprite>
-          <sprite>sprites\s_character_overworld_deadriser</sprite>
-          <sprites name="transition">
-            <sprite>sprites\s_transition_dream</sprite>
-            <sprite>sprites\s_transition_fade_in</sprite>
-            <sprite>sprites\s_transition_fade_out</sprite>
-          </sprites>
-          <sprites name="other">
-            <sprite>sprites\s_missing</sprite>
-            <sprite>sprites\s_pfx_knock</sprite>
-          </sprites>
-          <sprites name="particle">
-            <sprite>sprites\s_particle_sleep</sprite>
-            <sprite>sprites\s_particle_knock</sprite>
-          </sprites>
-          <sprite>sprites\s_menu_party_members</sprite>
-          <sprites name="terrain">
-            <sprite>sprites\s_terrain_floor_grass</sprite>
-            <sprite>sprites\s_terrain_wall_grass</sprite>
-            <sprite>sprites\s_terrain_wall_trees</sprite>
-            <sprite>sprites\s_terrain_wall_dream</sprite>
-            <sprite>sprites\s_terrain_wall_corupted</sprite>
-          </sprites>
-          <sprites name="corupted">
-            <sprite>sprites\s_corupted_tree_light</sprite>
-            <sprite>sprites\s_corupted_tree_shade</sprite>
-            <sprite>sprites\s_corupted_tree_stump</sprite>
-          </sprites>
-          <sprite>sprites\s_battleaxe_slash</sprite>
-          <sprite>sprites\s_battleaxe</sprite>
+      <sprites name="Roamer">
+        <sprite>sprites\s_character_overworld_roamer_idle</sprite>
+      </sprites>
+      <sprites name="Viney">
+        <sprites name="Overworld">
+          <sprite>sprites\s_character_overworld_viney_idle_front</sprite>
+          <sprite>sprites\s_character_overworld_viney_idle_side</sprite>
+          <sprite>sprites\s_character_overworld_viney_idle_back</sprite>
+          <sprite>sprites\s_character_overworld_viney_chase_side</sprite>
         </sprites>
-        <sprite>sprites\sprite129</sprite>
-        <sprite>sprites\s_character_battle_mech_laser</sprite>
-        <sprite>sprites\s_character_battle_mech_open</sprite>
-        <sprite>sprites\s_character_battle_mech_vulnerable</sprite>
-        <sprite>sprites\s_character_battle_mech_close</sprite>
-        <sprite>sprites\s_character_battle_mech_hit</sprite>
-        <sprites name="Attacks">
-          <sprites name="Player">
-            <sprite>sprites\s_battle_attack_character_fire</sprite>
-            <sprite>sprites\s_battle_attack_shinehitbox</sprite>
+        <sprites name="Battle">
+          <sprites name="Attacks">
+            <sprite>sprites\s_battle_attack_artine_rosebud</sprite>
+            <sprite>sprites\s_battle_attack_artine_roseleaf</sprite>
+            <sprite>sprites\s_battle_attack_viney_artine_roseleaf_death</sprite>
           </sprites>
-          <sprites name="Roamer">
-            <sprite>sprites\s_battle_attack_roamer_laser</sprite>
+          <sprite>sprites\s_character_battle_viney_idle</sprite>
+          <sprite>sprites\s_character_battle_viney_active</sprite>
+          <sprite>sprites\s_character_battle_viney_active_hurt</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="Dog">
+        <sprites name="Overworld">
+          <sprite>sprites\s_character_overworld_dog_idle_front</sprite>
+          <sprite>sprites\s_character_overworld_dog_idle_left</sprite>
+          <sprite>sprites\s_character_overworld_dog_idle_right</sprite>
+          <sprite>sprites\s_character_overworld_dog_idle_back</sprite>
+        </sprites>
+        <sprites name="Other">
+          <sprite>sprites\s_character_overworld_dog_idle_left_srifle</sprite>
+          <sprite>sprites\s_character_overworld_dog_idle_right_srifle</sprite>
+          <sprite>sprites\s_character_overworld_dog_idle_front_geared</sprite>
+          <sprite>sprites\s_character_overworld_dog_idle_left_geared</sprite>
+          <sprite>sprites\s_character_overworld_dog_idle_right_geared</sprite>
+          <sprite>sprites\s_character_overworld_dog_idle_back_geared</sprite>
+          <sprite>sprites\s_character_overworld_dog_idle_left_gearedsrifle</sprite>
+          <sprite>sprites\s_character_overworld_dog_idle_right_gearedsrifle</sprite>
+          <sprite>sprites\s_character_overworld_dog_idle_right_gearedsrifle_aim</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="Unsure if used">
+        <sprite>sprites\s_character_battle_fox_sword_stab</sprite>
+        <sprite>sprites\s_character_battle_fox_sword_slash</sprite>
+        <sprite>sprites\s_character_battle_fox_slide</sprite>
+        <sprite>sprites\s_character_battle_fox_spell_fire</sprite>
+      </sprites>
+      <sprites name="Battle">
+        <sprite>sprites\s_character_battle_fox_prepare</sprite>
+        <sprite>sprites\s_character_battle_fox_slash</sprite>
+      </sprites>
+      <sprites name="Special">
+        <sprite>sprites\s_character_special_fox_repair</sprite>
+        <sprite>sprites\s_character_special_fox_falling</sprite>
+        <sprite>sprites\s_character_special_fox_sleep</sprite>
+      </sprites>
+      <sprites name="Battle">
+        <sprite>sprites\s_character_battle_cat_prepare</sprite>
+        <sprite>sprites\s_character_battle_cat_slash</sprite>
+      </sprites>
+      <sprites name="System (Don't use unless you know what you're doing)">
+        <sprites name="Configuration">
+          <sprite>sprites\s_system_developer</sprite>
+        </sprites>
+        <sprites name="Background">
+          <sprites name="Parents">
+            <sprite>sprites\s_character_mask</sprite>
+            <sprite>sprites\s_enemy_mask</sprite>
+            <sprite>sprites\s_lower_mask</sprite>
+            <sprite>sprites\s_superlow</sprite>
+            <sprite>sprites\s_battle_shadow</sprite>
+            <sprite>sprites\s_character_battle_hitbox</sprite>
+          </sprites>
+          <sprite>sprites\s_system_name_cursor</sprite>
+          <sprite>sprites\s_system_exiting</sprite>
+          <sprite>sprites\s_system_follower</sprite>
+          <sprite>sprites\s_system_unlock</sprite>
+          <sprite>sprites\s_shadow</sprite>
+          <sprite>sprites\s_battle_zone</sprite>
+          <sprites name="Spell">
+            <sprite>sprites\s_battle_moves_spell_box</sprite>
+            <sprite>sprites\s_battle_moves_spell_incomingrange</sprite>
+            <sprite>sprites\s_battle_moves_spell_incomingsweetspot</sprite>
+            <sprite>sprites\s_battle_moves_spell_arrowup</sprite>
+            <sprite>sprites\s_battle_moves_spell_arrowdown</sprite>
+            <sprite>sprites\s_battle_moves_spell_arrowleft</sprite>
+            <sprite>sprites\s_battle_moves_spell_arrowright</sprite>
+            <sprite>sprites\s_battle_moves_spell_incomingup</sprite>
+            <sprite>sprites\s_battle_moves_spell_incomingdown</sprite>
+            <sprite>sprites\s_battle_moves_spell_incomingleft</sprite>
+            <sprite>sprites\s_battle_moves_spell_incomingright</sprite>
           </sprites>
         </sprites>
-        <sprite>sprites\s_menu_star</sprite>
-        <sprites name="Attack">
-          <sprite>sprites\s_battle_moves_attack_sword</sprite>
-          <sprite>sprites\s_battle_moves_attack_drone</sprite>
-          <sprite>sprites\s_battle_moves_attack_dronehit</sprite>
-          <sprite>sprites\s_battle_moves_attack_dronehitbox</sprite>
-          <sprite>sprites\s_battle_moves_attack_zone</sprite>
+        <sprites name="Need?">
+          <sprites name="old">
+            <sprite>sprites\s_battle_enemy_hp</sprite>
+            <sprites name="Unused">
+              <sprite>sprites\s_environment_debri</sprite>
+              <sprite>sprites\s_fruniture_bed_covers</sprite>
+              <sprite>sprites\s_fruniture_bed</sprite>
+              <sprite>sprites\s_structure_door</sprite>
+              <sprite>sprites\s_structure_shop_unlabled</sprite>
+              <sprite>sprites\s_structure_house_door</sprite>
+              <sprite>sprites\s_structure_house</sprite>
+            </sprites>
+            <sprite>sprites\s_hud_inventory_potion_health</sprite>
+            <sprite>sprites\s_hud_inventory_spellbook</sprite>
+            <sprite>sprites\s_hud_inventory_axe</sprite>
+            <sprite>sprites\s_menu_battle_enemy</sprite>
+            <sprites name="Deadriser">
+              <sprite>sprites\s_character_battle_deadriser_chase</sprite>
+              <sprite>sprites\s_character_battle_deadriser_attack</sprite>
+            </sprites>
+            <sprite>sprites\s_character_overworld_cardboard</sprite>
+            <sprite>sprites\s_character_overworld_deadriser</sprite>
+            <sprites name="transition">
+              <sprite>sprites\s_transition_dream</sprite>
+              <sprite>sprites\s_transition_fade_in</sprite>
+              <sprite>sprites\s_transition_fade_out</sprite>
+            </sprites>
+            <sprites name="other">
+              <sprite>sprites\s_missing</sprite>
+              <sprite>sprites\s_pfx_knock</sprite>
+            </sprites>
+            <sprites name="particle">
+              <sprite>sprites\s_particle_sleep</sprite>
+              <sprite>sprites\s_particle_knock</sprite>
+            </sprites>
+            <sprite>sprites\s_menu_party_members</sprite>
+            <sprites name="terrain">
+              <sprite>sprites\s_terrain_floor_grass</sprite>
+              <sprite>sprites\s_terrain_wall_grass</sprite>
+              <sprite>sprites\s_terrain_wall_trees</sprite>
+              <sprite>sprites\s_terrain_wall_dream</sprite>
+              <sprite>sprites\s_terrain_wall_corupted</sprite>
+            </sprites>
+            <sprites name="corupted">
+              <sprite>sprites\s_corupted_tree_light</sprite>
+              <sprite>sprites\s_corupted_tree_shade</sprite>
+              <sprite>sprites\s_corupted_tree_stump</sprite>
+            </sprites>
+            <sprite>sprites\s_battleaxe_slash</sprite>
+            <sprite>sprites\s_battleaxe</sprite>
+          </sprites>
+          <sprite>sprites\sprite129</sprite>
+          <sprite>sprites\s_character_battle_mech_laser</sprite>
+          <sprite>sprites\s_character_battle_mech_open</sprite>
+          <sprite>sprites\s_character_battle_mech_vulnerable</sprite>
+          <sprite>sprites\s_character_battle_mech_close</sprite>
+          <sprite>sprites\s_character_battle_mech_hit</sprite>
+          <sprites name="Attacks">
+            <sprites name="Player">
+              <sprite>sprites\s_battle_attack_character_fire</sprite>
+              <sprite>sprites\s_battle_attack_shinehitbox</sprite>
+            </sprites>
+            <sprites name="Roamer">
+              <sprite>sprites\s_battle_attack_roamer_laser</sprite>
+            </sprites>
+          </sprites>
+          <sprite>sprites\s_menu_star</sprite>
+          <sprites name="Attack">
+            <sprite>sprites\s_battle_moves_attack_sword</sprite>
+            <sprite>sprites\s_battle_moves_attack_drone</sprite>
+            <sprite>sprites\s_battle_moves_attack_dronehit</sprite>
+            <sprite>sprites\s_battle_moves_attack_dronehitbox</sprite>
+            <sprite>sprites\s_battle_moves_attack_zone</sprite>
+          </sprites>
+          <sprite>sprites\s_battle_attack_sheild</sprite>
         </sprites>
-        <sprite>sprites\s_battle_attack_sheild</sprite>
       </sprites>
     </sprites>
   </sprites>
@@ -564,6 +568,7 @@
         <object>objects\o_trigger_interact</object>
         <object>objects\o_trigger_event</object>
         <object>objects\o_trigger_chainevents</object>
+        <object>objects\o_trigger_chainstart</object>
         <object>objects\o_trigger_spawnobj</object>
         <object>objects\o_trigger_forcewalk</object>
         <object>objects\o_trigger_forcestop</object>
@@ -792,6 +797,9 @@
         </objects>
       </objects>
     </objects>
+    <object>objects\o_lightcontrol</object>
+    <object>objects\o_light</object>
+    <object>objects\operator</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Menu">

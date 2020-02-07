@@ -867,7 +867,7 @@ if(state == RUN) {
 //==========================//
 switch(state) {
     case IDLE:
-        image_speed = .15;
+        image_speed = .07;
         switch(dir) {
         case 0:
             sprite_index = s_character_overworld_fox_idle_front;
