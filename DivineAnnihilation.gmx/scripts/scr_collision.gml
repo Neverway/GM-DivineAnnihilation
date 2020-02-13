@@ -18,7 +18,7 @@ else {
     vy = 0;
     }
     }
-if global.noclip = "on"
+if global.meshingEnabled == true
 {
     x += sign(vx);
     y += sign(vy);

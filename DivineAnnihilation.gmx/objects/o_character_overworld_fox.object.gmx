@@ -28,25 +28,29 @@
             <string>/// Initialize Player
 
 //==========================//
-//Inherit Events
+// Inherit Events
 //==========================//
 event_inherited();
+
 
 //==========================//
 // Movement
 //==========================//
-vxMax = 2; // ?
-vyMax = 2; // ?
-accel = .25; // Acceleration
-fric = 1.8; // Friction
-canmove = 1; // Allow the player to move varialbe (default is 1)
-move = 0; // ?
+vxMax = 2;              // Velocity x max
+vyMax = 2;              // Velocity y max
+walkAcceleration = .25; // Acceleration
+walkFriction = 1.8;     // Friction
+canMove = true;         // Allow the player to move varialbe (default is true)
+move = 0;               // ?  
+noclipSpeed = 16;       // The amount of pixels the player will jump when nocliping
+
 
 //==========================//
 // Squash and Stretch
 //==========================//
 xscale = 1.5; // Stored xscale (used in draw event)
 yscale = 1.5; // Stored yscale (used in draw event)
+
 
 //==========================//
 // States (Not used in my code, but here to keep script from breaking)
@@ -57,31 +61,31 @@ ATTACK = 12;
 DEFEND = 13;
 attackRate = .05; // Nu
 
+
 //==========================//
 // Initialize Extra Properties
 //==========================//
-state = IDLE // Set animation state to idle
-dir = 0; // Direction the player is facing
-facing = image_xscale; // Set facing to images xscale
-partymenu_open = 0; // Inventory menu open varaiable
+animationState = IDLE;  // Set animation state to idle
+facingDirection = 0;    // Direction the player is facing
+facing = image_xscale;  // Set facing to images xscale
+
 
 //==========================//
 // Unsorted
 //==========================//
-trigbox1 = 1; // ?
-slot1 = 0; // ?
-global.com_channel = 0;
-destroy_enemies = 0;
-paralax1 = 0;
+trigbox1 = 1;                   // ?
+slot1 = 0;                      // ?
+global.com_channel = 0;         // Communication channel for text triggers [needs reworking]
+destroyDefeatedEnemies = false; // Destroy nearby enemies when leaving a battle to avoid being sent back into battle
+inventoryOpen = false;          // Inventory menu open varaiable
+paralax1 = false;               // Paralaxing the first layer
+destroyRange = 64
+
 
 //==========================//
 // Create needed instances
 //==========================//
-instance_create(x,y,o_system_follower1); // Spawn distance ball for 1st party member
-instance_create(x,y,o_system_exit);
-
-
-
+instance_create(x, y, o_system_exit); // Invisible object that quits the game when the quit key is held
 </string>
           </argument>
         </arguments>
@@ -104,9 +108,9 @@ instance_create(x,y,o_system_exit);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>o_character_overworld_fox.x = global.savedx
-o_character_overworld_fox.y = global.savedy
-show_debug_message("GLOBALIZE TEST")
+            <string>/// Globalize players coordinates
+o_character_overworld_fox.x = global.savedx;
+o_character_overworld_fox.y = global.savedy;
 </string>
           </argument>
         </arguments>
@@ -129,7 +133,9 @@ show_debug_message("GLOBALIZE TEST")
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.com_channel = 0
+            <string>/// Reset communication channel
+
+global.com_channel = 0;
 </string>
           </argument>
         </arguments>
@@ -154,10 +160,7 @@ show_debug_message("GLOBALIZE TEST")
             <kind>1</kind>
             <string>/// Re-enable movement
 
-//==========================//
-// Movement
-//==========================//
-canmove = 1; // Allow the player to move again
+canMove = true; // Allow the player to move again
 </string>
           </argument>
         </arguments>
@@ -180,21 +183,75 @@ canmove = 1; // Allow the player to move again
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///Destroy defeated enemies
+
+//==========================//
+// List of enemies to destory
+//==========================//
+if destroyDefeatedEnemies == true
+{
+
+
+//--------------------------//
+// Roamer
+//--------------------------//
+    if distance_to_object(o_character_overworld_roamer) &lt;= destroyRange
+    {
+        with instance_nearest(x, y, o_character_overworld_roamer)
+        {
+            instance_destroy();
+        }
+        destroyDefeatedEnemies = false;
+    }
+    
+    
+//--------------------------//
+// Artine Viney
+//--------------------------//
+    if distance_to_object(o_character_overworld_viney) &lt;= destroyRange
+    {
+        with instance_nearest(x, y, o_character_overworld_viney)
+        {
+            instance_destroy();
+        }
+        destroyDefeatedEnemies = false;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>/// Stop/Resume players movement
 
 //==========================//
 // Movement
 //==========================//
-if canmove = 0
+if canMove == false
 {
-    state = IDLE; // Stop the walk cycle
+    animationState = IDLE; // Stop the walk cycle
     vxMax = 0; // Set max x veleocity to 0
     vyMax = 0; // Set max y veleocity to 0
     vx = 0; // Set x veleocity to 0
     vy = 0; // Set y veleocity to 0
     stop = 1; // ?
 }
-if canmove = 1
+if canMove == true
 {
     vxMax = 2; // Set max x veleocity to 2
     vyMax = 2; // Set max y veleocity to 2
@@ -246,10 +303,10 @@ kMenu = keyboard_check_pressed(ord("C"));
 //==========================//
 // Movement
 //==========================//
-
-
-if canmove = 1
+if canMove == true
 {
+
+
 //--------------------------//
 // Sprinting
 //--------------------------//
@@ -258,6 +315,8 @@ if(kSprint)
     vxMax = 3.25; // Set max x veleocity to 2
     vyMax = 3.25; // Set max y veleocity to 2
 }
+
+
 //--------------------------//
 // Left
 //--------------------------//
@@ -265,19 +324,23 @@ if(kLeft &amp;&amp; !kRight)
 {
     move = 1
     facing = -1;
-    state = RUN;
-    if (vx &gt; 0) {
-        vx = approach(vx,0,fric);
+    animationState = RUN;
+    if (vx &gt; 0)
+    {
+        vx = approach(vx, 0, walkFriction);
     }
-    vx = approach(vx,-vxMax,accel);
-    if(!kUp &amp;&amp; !kDown) {
-        if (vy != 0) {
-            vy = approach(vy,0,fric);
+    vx = approach(vx,-vxMax,walkAcceleration);
+    
+    if(!kUp &amp;&amp; !kDown)
+    {
+        if (vy != 0)
+        {
+            vy = approach(vy, 0, walkFriction);
         }
     }
-    
-    dir = 2;
+    facingDirection = 2;
 }
+
 
 //--------------------------//
 // Right
@@ -286,19 +349,23 @@ if(kRight &amp;&amp; !kLeft)
 {
     move = 1
     facing = 1;
-    state = RUN;
-    if (vx &lt; 0) {
-        vx = approach(vx,0,fric);
+    animationState = RUN;
+    if (vx &lt; 0)
+    {
+        vx = approach(vx, 0, walkFriction);
     }
-    vx = approach(vx,vxMax,accel);
-    if(!kUp &amp;&amp; !kDown) {
-        if (vy != 0) {
-            vy = approach(vy,0,fric);
+    vx = approach(vx, vxMax, walkAcceleration);
+    
+    if(!kUp &amp;&amp; !kDown)
+    {
+        if (vy != 0)
+        {
+            vy = approach(vy, 0, walkFriction);
         }
     }
-    
-    dir = 2;
+    facingDirection = 2;
 }
+
 
 //--------------------------//
 // Up
@@ -306,23 +373,30 @@ if(kRight &amp;&amp; !kLeft)
 if(kUp &amp;&amp; !kDown)
 {
     move = 1
-    state = RUN;
-    if (vy &gt; 0) {
-        vy = approach(vy,0,fric);
+    animationState = RUN;    
+    if (vy &gt; 0)
+    {
+        vy = approach(vy, 0, walkFriction);
     }
-    vy = approach(vy,-vyMax,accel);
+    vy = approach(vy, -vyMax, walkAcceleration);
     
-    if(!kLeft &amp;&amp; !kRight) {
-        if (vx != 0) {
-            vx = approach(vx,0,fric);
+    if(!kLeft &amp;&amp; !kRight)
+    {
+        if (vx != 0)
+        {
+            vx = approach(vx, 0, walkFriction);
         }
     }
-    if((vy*vx) == 0) {
-        dir = 1;
-        } else {
-        dir = 2;
-        }
+    if((vy*vx) == 0)
+    {
+        facingDirection = 1;
+    }
+    else
+    {
+        facingDirection = 2;
+    }
 }
+
 
 //--------------------------//
 // Down
@@ -330,43 +404,51 @@ if(kUp &amp;&amp; !kDown)
 if(kDown &amp;&amp; !kUp)
 {
     move = 1
-    state = RUN;
-    if (vy &lt; 0) {
-        vy = approach(vy,0,fric);
+    animationState = RUN;
+    if (vy &lt; 0)
+    {
+        vy = approach(vy, 0, walkFriction);
     }
-    vy = approach(vy,vyMax,accel);
+    vy = approach(vy, vyMax, walkAcceleration);
     
-    if(!kLeft &amp;&amp; !kRight) {
-        if (vx != 0) {
-            vx = approach(vx,0,fric);
+    if(!kLeft &amp;&amp; !kRight)
+    {
+        if (vx != 0)
+        {
+            vx = approach(vx, 0, walkFriction);
         }
     }
-    if((vy*vx) == 0) {
-        dir = 0;
-        } else {
-        dir = 2;
-        }
+    if((vy*vx) == 0)
+    {
+        facingDirection = 0;
+    }
+    else
+    {
+        facingDirection = 2;
+    }
 }
 }
 
+
 //==========================//
-// Friction
+// Stopping Friction
 //==========================//
 if(!kLeft &amp;&amp; !kRight &amp;&amp; !kUp &amp;&amp; !kDown)
 {
-    move = 0
-    state = IDLE;
-    vx = approach(vx,0,fric);
-    vy = approach(vy,0,fric);
+    move = 0;
+    animationState = IDLE;
+    vx = approach(vx, 0, walkFriction);
+    vy = approach(vy, 0, walkFriction);
 }
+
 
 //==========================//
 // Menus
 //==========================//
-if kMenu &amp;&amp; partymenu_open = 0 &amp;&amp; canmove = 1
+if kMenu &amp;&amp; inventoryOpen = false &amp;&amp; canMove = true
 {
-    partymenu_open =1;
-    instance_create(x,y,o_menu_inventory_items);
+    inventoryOpen = true;
+    instance_create(x, y, o_menu_inventory_items);
 }
 
 </string>
@@ -389,410 +471,96 @@ if kMenu &amp;&amp; partymenu_open = 0 &amp;&amp; canmove = 1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Update party memeber 1s distance
-o_system_follower1.x = x;
-o_system_follower1.y = y;
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Destroy defeated enemies
-if destroy_enemies = 1
-{
-    if distance_to_object(o_character_overworld_roamer) &lt;= 64
-    {
-        with instance_nearest(x,y,o_character_overworld_roamer)
-        {
-            instance_destroy();
-            show_debug_message("DESTROYING ENEIMES");
-        }
-        destroy_enemies = 0;
-    }
-    if distance_to_object(o_character_overworld_viney) &lt;= 64
-    {
-        with instance_nearest(x,y,o_character_overworld_viney)
-        {
-            instance_destroy();
-            show_debug_message("DESTROYING ENEIMES");
-        }
-        destroy_enemies = 0;
-    }
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// paralax
-if paralax1 = 1
-{
-    background_x[1] = view_xview/3;
+            <string>/// Developer nocliping
 
-background_x[4] = view_xview/3;
-background_x[2] = view_xview/2.5;
+//==========================//
+// Create Variables
+//==========================//
+var noclipUp, noclipDown, noclipLeft, noclipRight
+
+
+//==========================//
+// Define Controls
+//==========================//
+noclipUp = keyboard_check(ord("W"));
+noclipDown = keyboard_check(ord("S"));
+noclipLeft = keyboard_check(ord("A"));
+noclipRight = keyboard_check(ord("D"));
+
+
+//==========================//
+// Nocliping
+//==========================//
+if global.noclipEnabled == true
+{
+
+
+//--------------------------//
+// Noclip up
+//--------------------------//
+if noclipUp
+{
+    y -= noclipSpeed;
+}
+
+
+//--------------------------//
+// Noclip down
+//--------------------------//
+if noclipDown
+{
+    y += noclipSpeed;
+}
+
+
+//--------------------------//
+// Noclip left
+//--------------------------//
+if noclipLeft
+{
+    x -= noclipSpeed;
+}
+
+
+//--------------------------//
+// Noclip right
+//--------------------------//
+if noclipRight
+{
+    x += noclipSpeed;
+}
 }
 </string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="5" enumb="87">
       <action>
         <libid>1</libid>
-        <id>612</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
-        <isquestion>-1</isquestion>
+        <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if_variable</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>0</kind>
-            <string>global.devmode</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>"on"</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>422</id>
-        <kind>1</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>109</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_move_to</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>-32</string>
+            <kind>1</kind>
+            <string>/// Paralaxing
+
+if paralax1 == true
+{
+    background_x[1] = view_xview / 3;
+    background_x[4] = view_xview / 3;
+    background_x[2] = view_xview / 2.5;
+}
+</string>
           </argument>
         </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>424</id>
-        <kind>2</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-    </event>
-    <event eventtype="5" enumb="83">
-      <action>
-        <libid>1</libid>
-        <id>612</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>-1</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if_variable</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>global.devmode</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>"on"</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>422</id>
-        <kind>1</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>109</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_move_to</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>32</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>424</id>
-        <kind>2</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-    </event>
-    <event eventtype="5" enumb="68">
-      <action>
-        <libid>1</libid>
-        <id>612</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>-1</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if_variable</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>global.devmode</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>"on"</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>422</id>
-        <kind>1</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>109</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_move_to</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>32</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>424</id>
-        <kind>2</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-    </event>
-    <event eventtype="5" enumb="65">
-      <action>
-        <libid>1</libid>
-        <id>612</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>-1</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if_variable</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>global.devmode</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>"on"</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>422</id>
-        <kind>1</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>109</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_move_to</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>-32</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>424</id>
-        <kind>2</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="7" enumb="25">
@@ -820,21 +588,26 @@ background_x[2] = view_xview/2.5;
 xscale = approach(xscale, 1, .05);
 yscale = approach(yscale, 1, .05);
 
+
 //==========================//
 // While character runs
 //==========================//
-if(state == RUN) {
-    if(animation_hit_frame(0) || animation_hit_frame(2)) {
+if(animationState == RUN)
+{
+    if(animation_hit_frame(0) || animation_hit_frame(2))
+    {
         yscale = 0.80;
         xscale = 1.20;
     }
-    if(p_chance(.1)) {
+    if(p_chance(.1))
+    {
         var _vx = vx;
         var mydepth = depth;
-        with(instance_create(other.x,other.y+7,o_dust)){
+        with(instance_create(other.x, other.y+7, o_dust))
+        {
             depth = mydepth;
-            vx = _vx*0.25;
-            vy = random_range(-0.75,0.25);
+            vx = _vx * 0.25;
+            vy = random_range(-0.75, 0.25);
           }
     }   
 }
@@ -865,10 +638,12 @@ if(state == RUN) {
 //==========================//
 // Define sprite for standing directions
 //==========================//
-switch(state) {
+switch(animationState)
+{
     case IDLE:
         image_speed = .07;
-        switch(dir) {
+        switch(facingDirection)
+        {
         case 0:
             sprite_index = s_character_overworld_fox_idle_front;
         break;
@@ -881,19 +656,24 @@ switch(state) {
             sprite_index = s_character_overworld_fox_idle_side;
         break;
         }
-        draw_sprite_ext(s_shadow, 1, x,y+2,1,1,0,c_white,0.5);
+        draw_sprite_ext(s_shadow, 1, x, y+2, 1, 1, 0, c_white, 0.5);
     break;
+
 
 //==========================//
 // Define sprite for walking directions
 //==========================//
     case RUN:
-        if(vx != 0) {
+        if(vx != 0)
+        {
         image_speed = abs(vx)/25;
-        } else {
+        }
+        else
+        {
         image_speed = abs(vy)/30;
         }
-        switch(dir) {
+        switch(facingDirection)
+        {
         case 0:
             sprite_index = s_character_overworld_fox_walk_front;
         break;
@@ -906,9 +686,10 @@ switch(state) {
             sprite_index = s_character_overworld_fox_walk_side;
         break;
         }
-        draw_sprite_ext(s_shadow, image_index, x,y+2,1,1,0,c_white,0.5);
+        draw_sprite_ext(s_shadow, image_index, x, y+2, 1, 1, 0, c_white, 0.5);
     break;
 }
+
 
 //==========================//
 // Draw Player

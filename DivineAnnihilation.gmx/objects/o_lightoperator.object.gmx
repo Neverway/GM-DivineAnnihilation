@@ -3,35 +3,11 @@
   <spriteName>s_lightcontrol</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-99999</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>self</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>globalvar light;
-light = surface_create(view_wview,view_hview)
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -49,16 +25,23 @@ light = surface_create(view_wview,view_hview)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>surface_set_target(light);
-draw_set_color(c_ltgray);
-draw_rectangle(0,0,view_wview,view_hview,false);
-surface_reset_target();
+            <string>if instance_exists(o_lightcontrol)
+{
+if !surface_exists(light)
+{
+    with o_lightcontrol
+    {
+        instance_destroy();
+    }
+    instance_create(x,y,o_lightcontrol);
+}
+}
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="9" enumb="117">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -75,12 +58,40 @@ surface_reset_target();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_blend_mode(bm_subtract);
-if surface_exists(light)
+            <string>if instance_exists(o_lightcontrol)
 {
-    draw_surface(light,view_xview,view_yview);
+    with o_lightcontrol
+    {
+        instance_destroy();
+    }
 }
-draw_set_blend_mode(bm_normal);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="116">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+if !instance_exists(o_lightcontrol)
+{
+    instance_create(x, y, o_lightcontrol);
+}
 </string>
           </argument>
         </arguments>

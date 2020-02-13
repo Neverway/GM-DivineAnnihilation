@@ -26,12 +26,13 @@
           <argument>
             <kind>1</kind>
             <string>/// Devmode ShowTriggers
-if global.showtriggers = "off"
+
+if global.showTriggers == false
 {
     visible = false;
 }
 
-if global.showtriggers = "on"
+if global.showTriggers == true
 {
     visible = true;
 }

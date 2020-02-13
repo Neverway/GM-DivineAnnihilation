@@ -25,8 +25,29 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// TO ENABLE DEVELOPER MODE SET VISIBLE TO TRUE ON THE LEFT WINDOW
-global.devmen = "off"
+            <string>/// SET VISIBLE TO TRUE TO ENABLE DEVELOPER MODE
+
+//==========================//
+// Setup variables
+//==========================//
+global.developerMenuOpen = false
+global.noclipEnabled = false
+global.meshingEnabled = false
+global.showTriggers = false
+
+
+//==========================//
+// Setup drawing variables
+//==========================//
+image_index = 0;
+image_speed = 0;
+image_xscale = 1;
+image_yscale = 1;
+
+
+//==========================//
+// Active state for developer menu
+//==========================//
 if visible
 {
     active = true;
@@ -36,71 +57,7 @@ if not visible
 {
     active = false;
 }
-
-global.devmode = "off"
-global.noclip = "off"
-global.showtriggers = "off"
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>541</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sprite_set</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>5</kind>
-            <sprite>s_system_developer</sprite>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>542</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sprite_transform</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
           </argument>
         </arguments>
       </action>
@@ -122,109 +79,15 @@ global.showtriggers = "off"
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>active = true;
+            <string>/// Set developer menu to active
+
+active = true;
 </string>
           </argument>
         </arguments>
       </action>
     </event>
     <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>612</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>-1</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if_variable</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>global.devmen</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>"on"</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>422</id>
-        <kind>1</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>9</kind>
-            <script>scr_updown_menu</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>2</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>10</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>424</id>
-        <kind>2</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -241,8 +104,217 @@ global.showtriggers = "off"
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = view_xview
-y = view_yview+5
+            <string>/// Menu navigation and configuration
+
+//==========================//
+// Controls
+//==========================//
+var kSelect, kOpen
+kSelect = keyboard_check_pressed(ord("Z"));
+kOpen = keyboard_check_pressed(vk_f1);
+
+
+//==========================//
+// Drawing and centering
+//==========================//
+x = view_xview
+y = view_yview + 5
+
+
+//==========================//
+// Toggleing the developer menu
+//==========================//
+if active
+{
+if kOpen
+{
+
+//--------------------------//
+// Close devloper menu
+//--------------------------//
+    if global.developerMenuOpen == true
+    {
+        global.developerMenuOpen = false;
+        image_index = 0;
+        active = false;
+        alarm[0] = 10;
+    }
+    
+    
+//--------------------------//
+// Open devloper menu
+//--------------------------//
+    if global.developerMenuOpen == false
+    {
+        global.developerMenuOpen = true;
+        image_index = 1;
+        active = false;
+        global.menuactive = 1;
+        alarm[0] = 10;
+    }
+
+}
+}
+
+//==========================//
+// Scrolling
+//==========================//
+if global.developerMenuOpen == true
+{
+    script_execute(scr_updown_menu, 2, 17)
+}
+
+
+//==========================//
+// Selecting
+//==========================//
+if kSelect
+{
+
+
+//--------------------------//
+// Toggle Nocliping
+//--------------------------//
+    if image_index == 2
+    {
+        if global.noclipEnabled == true
+        {
+            global.noclipEnabled = false;
+            show_debug_message("False")
+        }
+        
+        if global.noclipEnabled == false
+        {
+            global.noclipEnabled = true;
+            
+            show_debug_message("True")
+        }
+    }
+    
+    
+//--------------------------//
+// Toggle Meshing
+//--------------------------//
+    if image_index == 3
+    {
+        if global.meshingEnabled == true
+        {
+            global.meshingEnabled = false;
+        }
+        
+        if global.meshingEnabled == false
+        {
+            global.meshingEnabled = true;
+        }
+    }
+    
+    
+//--------------------------//
+// Toggle Show Triggers
+//--------------------------//
+    if image_index == 4
+    {
+        if global.showTriggers == true
+        {
+            global.showTriggers = false;
+        }
+        
+        if global.showTriggers == false
+        {
+            global.showTriggers = true;
+        }
+    }
+    
+    
+//--------------------------//
+// Next Room
+//--------------------------//
+    if image_index == 5
+    {
+        room_goto_next();
+    }
+
+
+//--------------------------//
+// Previous Room
+//--------------------------//
+    if image_index == 6
+    {
+        room_goto_previous();
+    }
+
+
+//--------------------------//
+// Reset Room
+//--------------------------//
+    if image_index == 7
+    {
+        room_restart();
+    }
+
+
+//--------------------------//
+// Reset Game
+//--------------------------//
+    if image_index == 8
+    {
+        game_restart();
+    }
+
+
+//--------------------------//
+// Add HP
+//--------------------------//
+    if image_index == 9
+    {
+        global.hp += 10;
+    }
+    
+    
+//--------------------------//
+// Subtract HP
+//--------------------------//
+    if image_index == 10
+    {
+        global.hp -= 10;
+    }
+    
+    
+//--------------------------//
+// Add Gold
+//--------------------------//
+    if image_index == 11
+    {
+        global.gold += 10;
+    }
+    
+    
+//--------------------------//
+// Subtract Gold
+//--------------------------//
+    if image_index == 12
+    {
+        global.gold -= 10;
+    }
+    
+    
+//--------------------------//
+// Add Level
+//--------------------------//
+    if image_index == 13
+    {
+        global.level += 1;
+    }
+    
+    
+//--------------------------//
+// Subtract Level
+//--------------------------//
+    if image_index == 14
+    {
+        global.level -= 1;
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -267,140 +339,16 @@ y = view_yview+5
             <kind>1</kind>
             <string>draw_sprite(sprite_index,image_index,x,y);
 
-if global.devmen = "on"
+if global.developerMenuOpen == true
 {
     draw_set_font(f_retro);
     draw_set_color(c_white);
-    draw_text(x+578,y+39,global.devmode);
-    draw_text(x+578,y+55,global.noclip);
-    draw_text(x+578,y+71,global.showtriggers);
+    draw_text(x+578,y+39,global.noclipEnabled);
+    draw_text(x+578,y+55,global.meshingEnabled);
+    draw_text(x+578,y+71,global.showTriggers);
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="112">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if active
-{
-    if global.devmen = "on"
-    {
-        global.devmen = "off"
-        image_index = 0;
-        active = false;
-        alarm[0] = 10
-    }
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if active
-{
-    if global.devmen = "off"
-    {
-        global.devmen = "on"
-        image_index = 1;
-        global.menuactive = 1
-        active = false;
-        alarm[0] = 10
-    }
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="90">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if image_index = 2
-{
-    if global.devmode = "on"
-    {
-        global.devmode = "off"
-    }
-    else
-    {
-        global.devmode = "on"
-    }
-}
-if image_index = 3
-{
-    if global.noclip = "on"
-    {
-        global.noclip = "off"
-    }
-    else
-    {
-        global.noclip = "on"
-    }
-}
-if image_index = 4
-{
-    if global.showtriggers = "on"
-    {
-        global.showtriggers = "off"
-    }
-    else
-    {
-        global.showtriggers = "on"
-    }
-}
-if image_index = 5
-{
-    room_goto_next()
-}
-if image_index = 6
-{
-    room_goto_next()
-}
+
+
 </string>
           </argument>
         </arguments>
