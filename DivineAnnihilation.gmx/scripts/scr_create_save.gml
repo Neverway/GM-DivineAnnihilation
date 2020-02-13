@@ -9,8 +9,8 @@ global.savedx = 0;
 global.savedy = 0;
 
 // Set party
-global.partymember1 = 0;
-global.partymember2 = 0;
+global.partyMember1Following = false;
+global.partyMember2Following = false;
 
 // Set gold
 global.gold = 0;
@@ -68,8 +68,8 @@ var SavedRoom = 4;
 ini_write_real(argument0,"room",SavedRoom);
 
 // Save party
-ini_write_real(argument0,"partymember1",global.partymember1);
-ini_write_real(argument0,"partymember2",global.partymember2);
+ini_write_real(argument0,"partymember1",global.partyMember1Following);
+ini_write_real(argument0,"partymember2",global.partyMember2Following);
 
 // Save gold
 ini_write_real(argument0,"gold",global.gold);

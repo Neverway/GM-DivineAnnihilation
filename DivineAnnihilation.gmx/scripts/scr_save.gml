@@ -34,8 +34,8 @@ ini_write_real(argument0,"savedx",o_character_overworld_fox.x);
 ini_write_real(argument0,"savedy",o_character_overworld_fox.y);
 
 // Save party
-ini_write_real(argument0,"partymember1",global.partymember1);
-ini_write_real(argument0,"partymember2",global.partymember2);
+ini_write_real(argument0,"partymember1",global.partyMember1Following);
+ini_write_real(argument0,"partymember2",global.partyMember2Following);
 
 // Save gold
 ini_write_real(argument0,"gold",global.gold);

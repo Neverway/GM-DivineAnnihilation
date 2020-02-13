@@ -167,7 +167,7 @@
     <instance objName="o_structure_ft_door_gate" x="2144" y="128" name="inst_EAC1779A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_decoration_door_shadow" x="992" y="728" name="inst_ECCC2CCA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_decoration_door_shadow" x="2144" y="856" name="inst_9EEE3981" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_hud_overworld_shelf" x="64" y="0" name="inst_0B72CB45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_hud_overworld_shelf" x="-520" y="-64" name="inst_0B72CB45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="432" y="2304" name="inst_81E00D98" locked="0" code="" scaleX="13.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="-32" y="2440" name="inst_4E0AC85E" locked="0" code="" scaleX="1" scaleY="3.25" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="1048" y="2240" name="inst_F264A08E" locked="0" code="" scaleX="5.75" scaleY="1" colour="4294967295" rotation="0"/>
@@ -283,7 +283,7 @@
     <instance objName="o_trigger_interact" x="2944" y="2624" name="inst_0AD0F976" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_interact" x="2192" y="2560" name="inst_E32EDD7E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_warp" x="832" y="2805" name="inst_53D30683" locked="0" code="desx = 984;&#xA;desy = 720;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_hud_overworld_hp" x="64" y="0" name="inst_67D75A87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_hud_overworld_hp" x="-520" y="-64" name="inst_67D75A87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_warp" x="992" y="760" name="inst_B255CFAC" locked="0" code="desx = 832;&#xA;desy = 2840;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_warp" x="2240" y="2549" name="inst_BD040707" locked="0" code="desx = 2144;&#xA;desy = 856;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_warp" x="2144" y="888" name="inst_374CCE40" locked="0" code="desx = 2240;&#xA;desy = 2584;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -304,7 +304,7 @@
     <instance objName="o_character_overworld_cardboard" x="2400" y="672" name="inst_DB56ABC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="928" y="512" name="inst_2E2A5128" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_interactable_weapon_sword" x="1028" y="516" name="inst_2197C433" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_lightoperator" x="8" y="40" name="inst_B71CA210" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_lightoperator" x="-328" y="-24" name="inst_B71CA210" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_character_overworld_fox" x="976" y="568" name="inst_140EE738" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_structure_ht_library" x="2240" y="2496" name="inst_1F28F650" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_structure_ht_castle" x="4448" y="2248" name="inst_472D0C32" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -347,7 +347,7 @@
     <instance objName="o_block" x="7840" y="912" name="inst_40F93828" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="6576" y="528" name="inst_7BF01342" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="6624" y="592" name="inst_5A12AFD9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_hud_overworld_name" x="0" y="0" name="inst_BBCC76EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_hud_overworld_name" x="-336" y="-64" name="inst_BBCC76EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_goldpickup" x="2088" y="2560" name="inst_A077794B" locked="0" code="amount = 10;&#xA;pickuptext = &quot;*You found 10G in the drain.&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_warp" x="5632" y="2632" name="inst_2D69D95F" locked="0" code="desx = 6168;&#xA;desy = 384;" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="o_trigger_warp" x="5632" y="3400" name="inst_B764BC3D" locked="0" code="desx = 6168;&#xA;desy = 1152;" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
@@ -387,8 +387,8 @@
     <instance objName="o_light" x="1912" y="744" name="inst_1F2BFAE6" locked="0" code="lightsize = 200; //Size of the lightsource [default is 200]&#xA;lightcolor = c_orange; //Color of the lightsource [default is c_orange]" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_light" x="2368" y="656" name="inst_768A3635" locked="0" code="lightsize = 200; //Size of the lightsource [default is 200]&#xA;lightcolor = c_orange; //Color of the lightsource [default is c_orange]" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_light" x="992" y="600" name="inst_0A47B387" locked="0" code="lightsize = 200; //Size of the lightsource [default is 200]&#xA;lightcolor = c_orange; //Color of the lightsource [default is c_orange]" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_system_textbox_handler" x="0" y="16" name="inst_FDBE88AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_transition_fade_in" x="-872" y="2568" name="inst_5DCB5175" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_system_textbox_handler" x="-336" y="-48" name="inst_FDBE88AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_transition_fade_in" x="-640" y="-544" name="inst_5DCB5175" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="b_4_grass_background" x="2176" y="2688" w="64" h="64" xo="0" yo="0" id="10012594" name="inst_C75DEC09" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -6836,6 +6836,11 @@
     <tile bgName="b_forest_autumn" x="5696" y="2432" w="64" h="64" xo="128" yo="768" id="10049456" name="inst_C3C84161" depth="-10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="b_forest_autumn" x="5760" y="2432" w="64" h="64" xo="128" yo="768" id="10049457" name="inst_AAA8BE34" depth="-10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="b_forest_autumn" x="5824" y="2432" w="64" h="64" xo="128" yo="768" id="10049458" name="inst_B2E7C56C" depth="-10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="b_0_shadow" x="-64" y="-64" w="64" h="64" xo="128" yo="256" id="10049980" name="inst_BED78C3D" depth="-10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="b_0_shadow" x="-128" y="-64" w="64" h="64" xo="128" yo="256" id="10049981" name="inst_7C01280A" depth="-10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="b_0_shadow" x="-192" y="-64" w="64" h="64" xo="128" yo="256" id="10049982" name="inst_0431F18E" depth="-10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="b_0_shadow" x="-256" y="-64" w="64" h="64" xo="128" yo="256" id="10049983" name="inst_CB804C82" depth="-10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="b_0_shadow" x="-320" y="-64" w="64" h="64" xo="128" yo="256" id="10049984" name="inst_06784898" depth="-10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

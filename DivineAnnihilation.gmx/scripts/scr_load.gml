@@ -13,10 +13,10 @@ if (file_exists("profile1.sav"))
     global.name = ini_read_string("profile1","name","FOX");
     
 // Save party
-    ini_read_real("profile1","partymember1",0);
-    ini_read_real("profile1","partymember2",0);
-    global.partymember1 = ini_read_real("profile1","partymember1",0);
-    global.partymember2 = ini_read_real("profile1","partymember2",0);
+    ini_read_real("profile1","partymember1",false);
+    ini_read_real("profile1","partymember2",false);
+    global.partyMember1Following = ini_read_real("profile1","partymember1",false);
+    global.partyMember2Following = ini_read_real("profile1","partymember2",false);
     
 // Load room
     var SavedRoom = ini_read_real("profile1","room",r_roomcheck);
@@ -73,10 +73,10 @@ if (file_exists("profile2.sav"))
     global.name = ini_read_string("profile2","name","FOX");
     
 // Save party
-ini_read_real("profile2","partymember1",0);
-ini_read_real("profile2","partymember2",0);
-global.partymember1 = ini_read_real("profile2","partymember1",0);
-global.partymember2 = ini_read_real("profile2","partymember2",0);
+ini_read_real("profile2","partymember1",false);
+ini_read_real("profile2","partymember2",false);
+global.partyMember1Following = ini_read_real("profile2","partymember1",false);
+global.partyMember2Following = ini_read_real("profile2","partymember2",false);
     
 // Load room
     var SavedRoom = ini_read_real("profile2","room",r_roomcheck);
@@ -133,10 +133,10 @@ if (file_exists("profile3.sav"))
     global.name = ini_read_string("profile3","name","FOX");
     
 // Save party
-ini_read_real("profile3","partymember1",0);
-ini_read_real("profile3","partymember2",0);
-global.partymember1 = ini_read_real("profile3","partymember1",0);
-global.partymember2 = ini_read_real("profile3","partymember2",0);
+ini_read_real("profile3","partymember1",false);
+ini_read_real("profile3","partymember2",false);
+global.partyMember1Following = ini_read_real("profile3","partymember1",false);
+global.partyMember2Following = ini_read_real("profile3","partymember2",false);
     
 // Load room
     var SavedRoom = ini_read_real("profile3","room",r_roomcheck);
@@ -191,10 +191,10 @@ if (file_exists("profile4.sav"))
     global.name = ini_read_string("profile4","name","FOX");
     
 // Save party
-ini_read_real("profile4","partymember1",0);
-ini_read_real("profile4","partymember2",0);
-global.partymember1 = ini_read_real("profile4","partymember1",0);
-global.partymember2 = ini_read_real("profile4","partymember2",0);
+ini_read_real("profile4","partymember1",false);
+ini_read_real("profile4","partymember2",false);
+global.partyMember1Following = ini_read_real("profile4","partymember1",false);
+global.partyMember2Following = ini_read_real("profile4","partymember2",false);
     
 // Load room
     var SavedRoom = ini_read_real("profile4","room",r_roomcheck);

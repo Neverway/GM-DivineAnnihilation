@@ -64,7 +64,7 @@
     <instance objName="o_system_variblecarrier" x="-16" y="-16" name="inst_3C408B3A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_menu_main_title" x="96" y="144" name="inst_DDF939F6" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="o_block" x="320" y="-992" name="inst_69A9D0FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_system_developer" x="0" y="0" name="inst_DFD50318" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_system_developer" x="0" y="0" name="inst_C963064F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
