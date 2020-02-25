@@ -28,6 +28,7 @@
     <sprites name="Menus">
       <sprites name="Title">
         <sprite>sprites\spr_menu_title_opening</sprite>
+        <sprite>sprites\spr_menu_title_main</sprite>
       </sprites>
     </sprites>
     <sprites name="System">
@@ -41,10 +42,16 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <scripts name="Menus">
+      <script>scripts\scr_menu_scrolling.gml</script>
+    </scripts>
+  </scripts>
   <objects name="objects">
     <objects name="Menus">
       <objects name="Title">
         <object>objects\obj_menu_title_opening</object>
+        <object>objects\obj_menu_title_main</object>
       </objects>
     </objects>
     <objects name="System">
