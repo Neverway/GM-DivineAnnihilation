@@ -54,9 +54,14 @@
       <script>scripts\scr_menu_scrolling.gml</script>
     </scripts>
     <scripts name="System">
-      <script>scripts\scr_system_createSave.gml</script>
-      <script>scripts\scr_system_loadSave.gml</script>
-      <script>scripts\scr_system_saveSave.gml</script>
+      <scripts name="Camera">
+        <script>scripts\scr_system_camera_followFox.gml</script>
+      </scripts>
+      <scripts name="Save">
+        <script>scripts\scr_system_save_create.gml</script>
+        <script>scripts\scr_system_save_load.gml</script>
+        <script>scripts\scr_system_save_save.gml</script>
+      </scripts>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -64,6 +69,7 @@
       <objects name="Title">
         <object>objects\obj_menu_title_opening</object>
         <object>objects\obj_menu_title_main</object>
+        <object>objects\obj_menu_title_saves</object>
       </objects>
     </objects>
     <objects name="System">
@@ -75,6 +81,9 @@
       </objects>
       <objects name="Parents">
         <object>objects\par_trigger</object>
+      </objects>
+      <objects name="Background">
+        <object>objects\obj_system_background_camera</object>
       </objects>
     </objects>
   </objects>
