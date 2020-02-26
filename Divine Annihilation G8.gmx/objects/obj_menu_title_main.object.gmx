@@ -25,7 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_index = 0;
+            <string>/// Setup variables
+
+//==========================//
+// Setup
+//==========================//
+image_index = 0;
 image_speed = 0;
 </string>
           </argument>
@@ -49,7 +54,124 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_menu_scrolling, 0, 2, "verticle");
+            <string>/// Menu control
+
+//==========================//
+// Main menu
+//==========================//
+if sprite_index == spr_menu_title_main
+{
+    script_execute(scr_menu_scrolling, 0, 2, "verticle");
+
+
+//------------------------------------//
+// Go to save menu
+//------------------------------------//
+    if global.keyAction and image_index == 0
+    {
+        sprite_index = spr_menu_title_saves;
+    }
+
+
+//------------------------------------//
+// Go to options menu
+//------------------------------------//
+    if global.keyAction and image_index == 1
+    {
+        sprite_index = spr_menu_title_options;
+    }
+
+
+//------------------------------------//
+// Quit
+//------------------------------------//
+    if global.keyAction and image_index == 2
+    {
+        game_end();
+    }
+}
+
+
+//==========================//
+// Saves menu
+//==========================//
+if sprite_index == spr_menu_title_saves
+{
+    script_execute(scr_menu_scrolling, 0, 3, "verticle");
+
+
+//------------------------------------//
+// Go back to main menu
+//------------------------------------//
+    if global.keySecond
+    {
+        sprite_index = spr_menu_title_main;
+    }
+
+
+//------------------------------------//
+// Profile 1 selected
+//------------------------------------//
+    if global.keyAction and image_index == 0
+    {
+        if file_exists("profile1.sav")
+        {
+            script_execute(scr_system_loadSave, "profile1");
+        }
+        else
+        {
+            script_execute(scr_system_createSave, "profile1");
+        }
+    }
+
+
+//------------------------------------//
+// Profile 2 selected
+//------------------------------------//
+    if global.keyAction and image_index == 1
+    {
+        if file_exists("profile2.sav")
+        {
+            script_execute(scr_system_loadSave, "profile2");
+        }
+        else
+        {
+            script_execute(scr_system_createSave, "profile2");
+        }
+    }
+
+
+//------------------------------------//
+// Profile 3 selected
+//------------------------------------//
+    if global.keyAction and image_index == 2
+    {
+        if file_exists("profile3.sav")
+        {
+            script_execute(scr_system_loadSave, "profile3");
+        }
+        else
+        {
+            script_execute(scr_system_createSave, "profile3");
+        }
+    }
+
+
+//------------------------------------//
+// Profile 4 selected
+//------------------------------------//
+    if global.keyAction and image_index == 3
+    {
+        if file_exists("profile4.sav")
+        {
+            script_execute(scr_system_loadSave, "profile4");
+        }
+        else
+        {
+            script_execute(scr_system_createSave, "profile4");
+        }
+    }
+}
 </string>
           </argument>
         </arguments>

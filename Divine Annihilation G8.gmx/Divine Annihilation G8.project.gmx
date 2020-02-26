@@ -29,6 +29,7 @@
       <sprites name="Title">
         <sprite>sprites\spr_menu_title_opening</sprite>
         <sprite>sprites\spr_menu_title_main</sprite>
+        <sprite>sprites\spr_menu_title_saves</sprite>
       </sprites>
     </sprites>
     <sprites name="System">
@@ -40,11 +41,22 @@
       </sprites>
     </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <backgrounds name="Area tiles">
+      <backgrounds name="Forrest">
+        <background>background\bgr_tile_forrest_autumn</background>
+      </backgrounds>
+    </backgrounds>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Menus">
       <script>scripts\scr_menu_scrolling.gml</script>
+    </scripts>
+    <scripts name="System">
+      <script>scripts\scr_system_createSave.gml</script>
+      <script>scripts\scr_system_loadSave.gml</script>
+      <script>scripts\scr_system_saveSave.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -71,6 +83,7 @@
       <room>rooms\rm_title_opening</room>
       <room>rooms\rm_title_menu</room>
     </rooms>
+    <room>rooms\rm_chapter1_section1_hometown</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

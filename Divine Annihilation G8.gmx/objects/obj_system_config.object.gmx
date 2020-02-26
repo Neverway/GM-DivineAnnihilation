@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>par_trigger</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -39,6 +39,40 @@ global.showTriggers = false;
 // Generic global variables
 //==========================//
 global.menuActive = true;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Load player x/y coordinates
+
+//==========================//
+// Move objects to saved coordinates
+//==========================//
+if global.roomSavedX != 0 and global.roomSavedY != 0
+{
+    obj_character_overworld_fox.x = global.roomSavedX;
+    obj_character_overworld_fox.y = global.roomSavedY + 32;
+    o_system_camera.x = global.roomSavedX;
+    o_system_camera.y = global.roomSavedY + 32;
+}
 </string>
           </argument>
         </arguments>

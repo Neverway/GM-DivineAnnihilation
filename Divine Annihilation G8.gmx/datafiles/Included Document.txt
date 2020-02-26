@@ -3,7 +3,7 @@ Abreviations
 Sprite - spr
 Sound - snd
 Music - mus
-Background - bgn
+Background - bgr
 Path - pth
 Script - scr
 Shader - sdr
@@ -50,3 +50,10 @@ Clipbord
 //------------------------------------//
 // 
 //-----------------------------------//
+
+
+1000004
+1000003
+1000002
+1000001
+-10000
