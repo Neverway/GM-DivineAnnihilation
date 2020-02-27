@@ -135,6 +135,46 @@ canMove = true;
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>/// Stop/Resume players movement (and stop sprinting)
+
+//==========================//
+// Movement
+//==========================//
+if canMove == false
+{
+    animationState = stateIdle; // Stop the walk cycle
+    maxXVelocity = 0; // Set max x veleocity to 0
+    maxyVelocity = 0; // Set max y veleocity to 0
+    vx = 0; // Set x veleocity to 0
+    vy = 0; // Set y veleocity to 0
+    stop = 1; // ?
+}
+if canMove == true
+{
+    maxXVelocity = 2; // Set max x veleocity to 2
+    maxyVelocity = 2; // Set max y veleocity to 2
+    stop = 0; // ?
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>///Destroy defeated enemies
 
 //==========================//
@@ -183,7 +223,7 @@ if canMove == true
 //--------------------------//
 // Sprinting
 //--------------------------//
-if global.keySecond
+if global.keySprint
 {
     maxXVelocity = 3.25; // Set max x veleocity to 2
     maxYVelocity = 3.25; // Set max y veleocity to 2

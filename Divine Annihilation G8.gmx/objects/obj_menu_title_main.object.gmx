@@ -32,8 +32,8 @@
 //==========================//
 image_index = 0;
 image_speed = 0;
-global.menuActive = false;
-alarm[0] = 10;
+active = false;
+alarm[0] = 100;
 </string>
           </argument>
         </arguments>
@@ -56,7 +56,7 @@ alarm[0] = 10;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.menuActive = true;
+            <string>active = true;
 </string>
           </argument>
         </arguments>
@@ -84,7 +84,7 @@ alarm[0] = 10;
 //==========================//
 // Main menu
 //==========================//
-if global.menuActive
+if active
 {
     script_execute(scr_menu_scrolling, 0, 2, "verticle");
     
