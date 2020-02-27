@@ -33,6 +33,93 @@
 image_index = 0;
 image_speed = 0;
 global.menuActive = true;
+
+
+//==========================//
+// Reset saved coordinates
+//==========================//
+global.savex = 0
+global.savey = 0
+
+
+//==========================//
+// Get profile information
+//==========================//
+
+//------------------------------------//
+// Assign file 1 file information
+//-----------------------------------//
+if (file_exists("profile1.sav"))
+{
+    ini_open("profile1.sav");
+    global.save1Name = ini_read_string("profile1","playerName","FOX");
+    ini_close();
+}
+
+//------------------------------------//
+// Assign file 1 blank file information
+//-----------------------------------//
+else
+{
+    global.save1Name = "NEW FILE 1"
+}
+
+
+//------------------------------------//
+// Assign file 2 file information
+//-----------------------------------//
+if (file_exists("profile2.sav"))
+{
+    ini_open("profile2.sav");
+    global.save2Name = ini_read_string("profile2","playerName","FOX");
+    ini_close();
+}
+
+//------------------------------------//
+// Assign file 2 blank file information
+//-----------------------------------//
+else
+{
+    global.save2Name = "NEW FILE 2"
+}
+
+
+//------------------------------------//
+// Assign file 3 file information
+//-----------------------------------//
+if (file_exists("profile3.sav"))
+{
+    ini_open("profile3.sav");
+    global.save3Name = ini_read_string("profile3","playerName","FOX");
+    ini_close();
+}
+
+//------------------------------------//
+// Assign file 3 blank file information
+//-----------------------------------//
+else
+{
+    global.save3Name = "NEW FILE 3"
+}
+
+
+//------------------------------------//
+// Assign file 4 file information
+//-----------------------------------//
+if (file_exists("profile4.sav"))
+{
+    ini_open("profile4.sav");
+    global.save4Name = ini_read_string("profile4","playerName","FOX");
+    ini_close();
+}
+
+//------------------------------------//
+// Assign file 4 blank file information
+//-----------------------------------//
+else
+{
+    global.save4Name = "NEW FILE 4"
+}
 </string>
           </argument>
         </arguments>
@@ -134,6 +221,39 @@ global.menuActive = true;
             script_execute(scr_system_save_create, "profile4");
         }
     }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Draw profile information
+
+//==========================//
+// Setup
+//==========================//
+draw_set_font(fnt_menu);
+draw_set_color(c_white);
+draw_text(95, 77, global.save1Name);
+draw_text(95, 177, global.save2Name);
+draw_text(95, 277, global.save3Name);
+draw_text(95, 377, global.save4Name);
 </string>
           </argument>
         </arguments>
