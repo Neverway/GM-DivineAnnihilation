@@ -25,6 +25,20 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprites name="Entities">
+      <sprites name="Main Cast">
+        <sprites name="Fox">
+          <sprites name="Overworld">
+            <sprite>sprites\spr_character_overworld_fox_idle_side</sprite>
+            <sprite>sprites\spr_character_overworld_fox_idle_front</sprite>
+            <sprite>sprites\spr_character_overworld_fox_idle_back</sprite>
+            <sprite>sprites\spr_character_overworld_fox_walk_side</sprite>
+            <sprite>sprites\spr_character_overworld_fox_walk_front</sprite>
+            <sprite>sprites\spr_character_overworld_fox_walk_back</sprite>
+          </sprites>
+        </sprites>
+      </sprites>
+    </sprites>
     <sprites name="Menus">
       <sprites name="Title">
         <sprite>sprites\spr_menu_title_opening</sprite>
@@ -33,11 +47,25 @@
       </sprites>
     </sprites>
     <sprites name="System">
+      <sprites name="Required">
+        <sprite>sprites\spr_system_required_camera</sprite>
+      </sprites>
       <sprites name="Configuration">
         <sprite>sprites\spr_system_config</sprite>
       </sprites>
       <sprites name="Lighting">
         <sprite>sprites\spr_system_light_point</sprite>
+      </sprites>
+      <sprites name="Background">
+        <sprites name="Parents">
+          <sprite>sprites\spr_system_parent_trigger</sprite>
+        </sprites>
+        <sprites name="Masks">
+          <sprite>sprites\spr_system_mask_player</sprite>
+        </sprites>
+        <sprites name="Other">
+          <sprite>sprites\spr_system_other_entityShadow</sprite>
+        </sprites>
       </sprites>
     </sprites>
   </sprites>
@@ -56,15 +84,31 @@
     <scripts name="System">
       <scripts name="Camera">
         <script>scripts\scr_system_camera_followFox.gml</script>
+        <script>scripts\scr_system_camera_moveTo.gml</script>
       </scripts>
       <scripts name="Save">
         <script>scripts\scr_system_save_create.gml</script>
         <script>scripts\scr_system_save_load.gml</script>
         <script>scripts\scr_system_save_save.gml</script>
       </scripts>
+      <scripts name="Collisions">
+        <script>scripts\scr_system_collision.gml</script>
+      </scripts>
+      <scripts name="Player">
+        <script>scripts\approach.gml</script>
+      </scripts>
     </scripts>
   </scripts>
   <objects name="objects">
+    <objects name="Entities">
+      <objects name="Main Cast">
+        <objects name="Fox">
+          <objects name="Overworld">
+            <object>objects\obj_character_overworld_fox</object>
+          </objects>
+        </objects>
+      </objects>
+    </objects>
     <objects name="Menus">
       <objects name="Title">
         <object>objects\obj_menu_title_opening</object>
@@ -73,17 +117,21 @@
       </objects>
     </objects>
     <objects name="System">
+      <objects name="Required">
+        <object>objects\obj_system_required_camera</object>
+      </objects>
       <objects name="Configuration">
         <object>objects\obj_system_config</object>
       </objects>
       <objects name="Lighting">
         <object>objects\obj_system_light_point</object>
       </objects>
-      <objects name="Parents">
-        <object>objects\par_trigger</object>
-      </objects>
       <objects name="Background">
-        <object>objects\obj_system_background_camera</object>
+        <objects name="Parents">
+          <object>objects\obj_system_parent_trigger</object>
+          <object>objects\obj_system_parent_solid</object>
+          <object>objects\obj_system_parent_entity</object>
+        </objects>
       </objects>
     </objects>
   </objects>
@@ -92,7 +140,9 @@
       <room>rooms\rm_title_opening</room>
       <room>rooms\rm_title_menu</room>
     </rooms>
-    <room>rooms\rm_chapter1_section1_hometown</room>
+    <rooms name="Chapter 1">
+      <room>rooms\rm_chapter1_section1_hometown</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
