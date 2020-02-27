@@ -60,7 +60,7 @@ global.menuActive = true;
 //==========================//
 // Erase save menu
 //==========================//
-script_execute(scr_menu_scrolling, 0, 1, "verticle");
+script_execute(scr_menu_scrolling, 0, 1, "vertical");
 
 
 //------------------------------------//
@@ -150,10 +150,13 @@ if global.keyAction and image_index == 1
 // Draw selected profile info
 //==========================//
 if selectedProfile = "profile1"
-{
+{   
+    draw_set_font(fnt_menu_large);
+    draw_set_color(c_black);
+    draw_text(395, 160, "Delete profile 1?");
+    
     draw_set_font(fnt_menu);
     draw_set_color(c_white);
-    draw_text(385, 191, "Delete profile 1?");
     draw_text(95, 77, global.save1Name);
     draw_set_color(c_gray);
     draw_text(95, 177, global.save2Name);
@@ -163,12 +166,15 @@ if selectedProfile = "profile1"
 
 
 if selectedProfile = "profile2"
-{
+{   
+    draw_set_font(fnt_menu_large);
+    draw_set_color(c_black);
+    draw_text(395, 160, "Delete profile 2?");
+    
     draw_set_font(fnt_menu);
     draw_set_color(c_gray);
     draw_text(95, 77, global.save1Name);
     draw_set_color(c_white);
-    draw_text(385, 191, "Delete profile 2?");
     draw_text(95, 177, global.save2Name);
     draw_set_color(c_gray);
     draw_text(95, 277, global.save3Name);
@@ -176,27 +182,33 @@ if selectedProfile = "profile2"
 }
 
 if selectedProfile = "profile3"
-{
+{   
+    draw_set_font(fnt_menu_large);
+    draw_set_color(c_black);
+    draw_text(395, 160, "Delete profile 3?");
+    
     draw_set_font(fnt_menu);
     draw_set_color(c_gray);
     draw_text(95, 77, global.save1Name);
     draw_text(95, 177, global.save2Name);
     draw_set_color(c_white);
-    draw_text(385, 191, "Delete profile 3?");
     draw_text(95, 277, global.save3Name);
     draw_set_color(c_gray);
     draw_text(95, 377, global.save4Name);
 }
 
 if selectedProfile = "profile4"
-{
+{   
+    draw_set_font(fnt_menu_large);
+    draw_set_color(c_black);
+    draw_text(395, 160, "Delete profile 4?");
+    
     draw_set_font(fnt_menu);
     draw_set_color(c_gray);
     draw_text(95, 77, global.save1Name);
     draw_text(95, 177, global.save2Name);
     draw_text(95, 277, global.save3Name);
     draw_set_color(c_white);
-    draw_text(385, 191, "Delete profile 4?");
     draw_text(95, 377, global.save4Name);
 }
 

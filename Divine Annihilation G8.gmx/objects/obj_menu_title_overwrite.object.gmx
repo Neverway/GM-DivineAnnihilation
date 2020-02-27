@@ -147,7 +147,7 @@ else
 //==========================//
 // Saves menu
 //==========================//
-    script_execute(scr_menu_scrolling, 0, 1, "verticle");
+    script_execute(scr_menu_scrolling, 0, 1, "vertical");
 
 
 //------------------------------------//

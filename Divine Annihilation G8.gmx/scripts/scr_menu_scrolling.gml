@@ -9,7 +9,7 @@ scrollDirection = argument2 // Is it a "horizontal" or "verticle" scrolling menu
 //==========================//
 // Up and down menu scrolling
 //==========================//
-if scrollDirection == "verticle"
+if scrollDirection = "vertical"
 {
     if global.menuActive == true
     {

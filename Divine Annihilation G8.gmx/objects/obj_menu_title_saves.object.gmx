@@ -147,92 +147,96 @@ else
 //==========================//
 // Saves menu
 //==========================//
-    script_execute(scr_menu_scrolling, 0, 3, "verticle");
+script_execute(scr_menu_scrolling, 0, 3, "vertical");
 
 
 //------------------------------------//
 // Go back to main menu
 //------------------------------------//
-    if global.keySecond
-    {
-        instance_change(obj_menu_title_main, true);
-    }
+if global.keySecond
+{
+    instance_change(obj_menu_title_main, true);
+}
 
 
 //------------------------------------//
 // Profile 1 selected
 //------------------------------------//
-    if global.keyAction and image_index == 0
+if global.keyAction and image_index == 0
+{
+    if file_exists("profile1.sav")
     {
-        if file_exists("profile1.sav")
-        {
-            instance_change(obj_menu_title_overwrite, true);
-            obj_menu_title_overwrite.selectedProfile = "profile1";
-        }
-        
-        else
-        {
-            global.saveProfile = "profile1";
-            room_goto(2);
-        }
+        instance_change(obj_menu_title_overwrite, true);
+        obj_menu_title_overwrite.selectedProfile = "profile1";
     }
+        
+    else
+    {
+        global.saveProfile = "profile1";
+        script_execute(scr_system_save_create, "profile1");
+        room_goto(2);
+    }
+}
 
 
 //------------------------------------//
 // Profile 2 selected
 //------------------------------------//
-    if global.keyAction and image_index == 1
+if global.keyAction and image_index == 1
+{
+    if file_exists("profile2.sav")
     {
-        if file_exists("profile2.sav")
-        {
-            instance_change(obj_menu_title_overwrite, true);
-            obj_menu_title_overwrite.selectedProfile = "profile2";
-        }
-        
-        else
-        {
-            global.saveProfile = "profile2";
-            room_goto(2);
-        }
+        instance_change(obj_menu_title_overwrite, true);
+        obj_menu_title_overwrite.selectedProfile = "profile2";
     }
+        
+    else
+    {
+        global.saveProfile = "profile2";
+        script_execute(scr_system_save_create, "profile2");
+        room_goto(2);
+    }
+}
 
 
 //------------------------------------//
 // Profile 3 selected
 //------------------------------------//
-    if global.keyAction and image_index == 2
+if global.keyAction and image_index == 2
+{
+    if file_exists("profile3.sav")
     {
-        if file_exists("profile3.sav")
-        {
-            instance_change(obj_menu_title_overwrite, true);
-            obj_menu_title_overwrite.selectedProfile = "profile3";
-        }
-        
-        else
-        {
-            global.saveProfile = "profile3";
-            room_goto(2);
-        }
+        instance_change(obj_menu_title_overwrite, true);
+        obj_menu_title_overwrite.selectedProfile = "profile3";
     }
+        
+    else
+    {
+        global.saveProfile = "profile3";
+        script_execute(scr_system_save_create, "profile3");
+        room_goto(2);
+    }
+}
 
 
 //------------------------------------//
 // Profile 4 selected
 //------------------------------------//
-    if global.keyAction and image_index == 3
+if global.keyAction and image_index == 3
+{
+    if file_exists("profile4.sav")
     {
-        if file_exists("profile4.sav")
-        {
-            instance_change(obj_menu_title_overwrite, true);
-            obj_menu_title_overwrite.selectedProfile = "profile4";
-        }
-        
-        else
-        {
-            global.saveProfile = "profile4";
-            room_goto(2);
-        }
+        instance_change(obj_menu_title_overwrite, true);
+        obj_menu_title_overwrite.selectedProfile = "profile4";
     }
+        
+    else
+    {
+        global.saveProfile = "profile4";
+        script_execute(scr_system_save_create, "profile4");
+        room_goto(2);
+    }
+}
 </string>
           </argument>
         </arguments>

@@ -103,6 +103,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_menu</font>
+    <font>fonts\fnt_menu_large</font>
   </fonts>
   <objects name="objects">
     <objects name="Entities">

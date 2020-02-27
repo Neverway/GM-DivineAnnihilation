@@ -60,7 +60,7 @@ global.menuActive = true;
 //==========================//
 // Main menu
 //==========================//
-    script_execute(scr_menu_scrolling, 0, 2, "verticle");
+    script_execute(scr_menu_scrolling, 0, 2, "vertical");
     
     
 //------------------------------------//
