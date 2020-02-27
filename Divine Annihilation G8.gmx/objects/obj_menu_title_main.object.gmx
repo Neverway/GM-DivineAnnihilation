@@ -32,31 +32,7 @@
 //==========================//
 image_index = 0;
 image_speed = 0;
-active = false;
-alarm[0] = 100;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>active = true;
+global.menuActive = true;
 </string>
           </argument>
         </arguments>
@@ -84,15 +60,13 @@ alarm[0] = 100;
 //==========================//
 // Main menu
 //==========================//
-if active
-{
     script_execute(scr_menu_scrolling, 0, 2, "verticle");
     
     
 //------------------------------------//
 // Go to save menu
 //------------------------------------//
-    if global.keyAction and image_index == 0
+    if global.keyAction == 1 and image_index == 0
     {
         instance_change(obj_menu_title_saves, true);
     }
@@ -114,7 +88,6 @@ if active
     {
         game_end();
     }
-}
 </string>
           </argument>
         </arguments>
