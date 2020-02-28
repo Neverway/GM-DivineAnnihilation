@@ -153,7 +153,8 @@ if selectedProfile = "profile1"
 {   
     draw_set_font(fnt_menu_large);
     draw_set_color(c_black);
-    draw_text(395, 160, "Delete profile 1?");
+    draw_text(415, 160, "Delete file?");
+    draw_text(375, 140, string(global.save1Name));
     
     draw_set_font(fnt_menu);
     draw_set_color(c_white);
@@ -169,7 +170,8 @@ if selectedProfile = "profile2"
 {   
     draw_set_font(fnt_menu_large);
     draw_set_color(c_black);
-    draw_text(395, 160, "Delete profile 2?");
+    draw_text(415, 160, "Delete file?");
+    draw_text(375, 140, string(global.save2Name));
     
     draw_set_font(fnt_menu);
     draw_set_color(c_gray);
@@ -185,7 +187,8 @@ if selectedProfile = "profile3"
 {   
     draw_set_font(fnt_menu_large);
     draw_set_color(c_black);
-    draw_text(395, 160, "Delete profile 3?");
+    draw_text(415, 160, "Delete file?");
+    draw_text(375, 140, string(global.save3Name));
     
     draw_set_font(fnt_menu);
     draw_set_color(c_gray);
@@ -201,7 +204,8 @@ if selectedProfile = "profile4"
 {   
     draw_set_font(fnt_menu_large);
     draw_set_color(c_black);
-    draw_text(395, 160, "Delete profile 4?");
+    draw_text(415, 160, "Delete file?");
+    draw_text(375, 140, string(global.save4Name));
     
     draw_set_font(fnt_menu);
     draw_set_color(c_gray);

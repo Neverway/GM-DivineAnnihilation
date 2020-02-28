@@ -194,7 +194,7 @@ else
 // Draw selected profile info
 //==========================//
 if selectedProfile = "profile1"
-{
+{   
     draw_set_font(fnt_menu);
     draw_set_color(c_white);
     draw_text(95, 77, global.save1Name);
@@ -206,7 +206,7 @@ if selectedProfile = "profile1"
 
 
 if selectedProfile = "profile2"
-{
+{   
     draw_set_font(fnt_menu);
     draw_set_color(c_gray);
     draw_text(95, 77, global.save1Name);
@@ -218,7 +218,7 @@ if selectedProfile = "profile2"
 }
 
 if selectedProfile = "profile3"
-{
+{   
     draw_set_font(fnt_menu);
     draw_set_color(c_gray);
     draw_text(95, 77, global.save1Name);
@@ -230,7 +230,7 @@ if selectedProfile = "profile3"
 }
 
 if selectedProfile = "profile4"
-{
+{   
     draw_set_font(fnt_menu);
     draw_set_color(c_gray);
     draw_text(95, 77, global.save1Name);
