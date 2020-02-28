@@ -48,6 +48,9 @@
         <sprite>sprites\spr_menu_title_confirmErase</sprite>
         <sprite>sprites\spr_menu_title_name</sprite>
       </sprites>
+      <sprites name="Hud">
+        <sprite>sprites\spr_menu_hud_playerHealth</sprite>
+      </sprites>
     </sprites>
     <sprites name="System">
       <sprites name="Required">
@@ -125,6 +128,9 @@
         <object>objects\obj_menu_title_overwrite</object>
         <object>objects\obj_menu_title_confirmErase</object>
         <object>objects\obj_menu_title_name</object>
+      </objects>
+      <objects name="Hud">
+        <object>objects\obj_menu_hud_playerHealth</object>
       </objects>
     </objects>
     <objects name="System">

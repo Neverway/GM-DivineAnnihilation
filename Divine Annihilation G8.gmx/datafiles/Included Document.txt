@@ -1,5 +1,6 @@
-Abreviations
--------------------
+//==========================//
+// Abreviations
+//==========================//
 Sprite - spr
 Sound - snd
 Music - mus
@@ -14,8 +15,9 @@ Room - rm
 Extension - ext
 
 
-File name form factor
--------------------
+//==========================//
+// File name form factor
+//==========================//
 [File type abreviation]_[Folder/s it is contained in, minus any pluralization]_[File name]_[Special identifyer or type]
 
 For example say I have a sprite of a opening cutscene, assuming that the folders are orginized like this:
@@ -37,12 +39,22 @@ spr_menu_title_opening_regular
 spr_menu_title_opening_holiday
 
 
-Script/Instance creation code usage
--------------------
+//==========================//
+// Script/Instance creation code usage
+//==========================//
 
 
-Clipbord
--------------------
+//==========================//
+// HUDs
+//==========================//
+If a hud item is shaking around when the player moves draw the hud item through the draw event (you ussualy don't need to use the Draw GUI)
+
+
+//==========================//
+// Clipbord
+//==========================//
+
+
 //==========================//
 // 
 //==========================//

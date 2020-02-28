@@ -53,6 +53,7 @@
     <instance objName="obj_system_required_camera" x="24" y="8" name="inst_20081937" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_system_config" x="0" y="0" name="inst_F2FF4377" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_character_overworld_fox" x="2632" y="3080" name="inst_6E8239F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_menu_hud_playerHealth" x="32" y="-8" name="inst_C1640EE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgr_tile_forrest_autumn" x="2560" y="3136" w="64" h="64" xo="128" yo="256" id="10000251" name="inst_D2FD21EB" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
