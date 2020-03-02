@@ -50,6 +50,7 @@
       </sprites>
       <sprites name="Hud">
         <sprite>sprites\spr_menu_hud_playerHealth</sprite>
+        <sprite>sprites\spr_menu_hud_playerNameShelf</sprite>
       </sprites>
     </sprites>
     <sprites name="System">
@@ -109,6 +110,7 @@
   <fonts name="fonts">
     <font>fonts\fnt_menu</font>
     <font>fonts\fnt_menu_large</font>
+    <font>fonts\fnt_menu_small</font>
   </fonts>
   <objects name="objects">
     <objects name="Entities">
@@ -131,6 +133,7 @@
       </objects>
       <objects name="Hud">
         <object>objects\obj_menu_hud_playerHealth</object>
+        <object>objects\obj_menu_hud_playerNameShelf</object>
       </objects>
     </objects>
     <objects name="System">
