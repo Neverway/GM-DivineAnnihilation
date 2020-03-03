@@ -39,6 +39,11 @@
         </sprites>
       </sprites>
     </sprites>
+    <sprites name="Level &amp; Decoration">
+      <sprites name="Level">
+        <sprite>sprites\spr_level_collider</sprite>
+      </sprites>
+    </sprites>
     <sprites name="Menus">
       <sprites name="Title">
         <sprite>sprites\spr_menu_title_opening</sprite>
@@ -122,6 +127,11 @@
         </objects>
       </objects>
     </objects>
+    <objects name="Level &amp; Decoration">
+      <objects name="Level">
+        <object>objects\obj_level_collider</object>
+      </objects>
+    </objects>
     <objects name="Menus">
       <objects name="Title">
         <object>objects\obj_menu_title_opening</object>
@@ -148,9 +158,9 @@
       </objects>
       <objects name="Background">
         <objects name="Parents">
-          <object>objects\obj_system_parent_trigger</object>
-          <object>objects\obj_system_parent_solid</object>
           <object>objects\obj_system_parent_entity</object>
+          <object>objects\obj_system_parent_solid</object>
+          <object>objects\obj_system_parent_trigger</object>
         </objects>
       </objects>
     </objects>
