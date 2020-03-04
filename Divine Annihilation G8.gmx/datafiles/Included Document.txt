@@ -15,6 +15,7 @@ Room - rm
 Extension - ext
 
 
+
 //==========================//
 // File name form factor
 //==========================//
@@ -39,15 +40,37 @@ spr_menu_title_opening_regular
 spr_menu_title_opening_holiday
 
 
+
 //==========================//
 // Script/Instance creation code usage
 //==========================//
+Copy the creation code for the corisponding item and fill in the {} variables
+
+Example:
+
+(Copy from here V)
+//------------------------------------//
+// Example item name
+//-----------------------------------//
+// Example item description
+example code;
+(To here ^)
+
+
+//------------------------------------//
+// Warp trigger
+//-----------------------------------//
+// {x} & {y} are the coordinates of where the warp will bring you
+destinationX = {x};
+destinationY = {y};
+
 
 
 //==========================//
 // HUDs
 //==========================//
 If a hud item is shaking around when the player moves draw the hud item through the draw event (you ussualy don't need to use the Draw GUI)
+
 
 
 //==========================//
@@ -64,8 +87,13 @@ If a hud item is shaking around when the player moves draw the hud item through 
 //-----------------------------------//
 
 
+
+//==========================//
+// Layers
+//==========================//
 1000004
 1000003
 1000002
 1000001
 -10000
+-1316134912

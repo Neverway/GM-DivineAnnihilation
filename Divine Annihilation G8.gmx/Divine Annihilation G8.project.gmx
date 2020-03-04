@@ -196,14 +196,14 @@
       <room>rooms\rm_title_menu</room>
       <room>rooms\rm_title_name</room>
     </rooms>
-    <rooms name="Developer">
-      <room>rooms\rm_developer_everyTest</room>
-    </rooms>
     <rooms name="Chapter 1">
       <room>rooms\rm_chapter1_section1_hometown</room>
     </rooms>
     <rooms name="Battles">
       <room>rooms\rm_battle_placeholder</room>
+    </rooms>
+    <rooms name="Developer">
+      <room>rooms\rm_developer_everyTest</room>
     </rooms>
   </rooms>
   <help>
