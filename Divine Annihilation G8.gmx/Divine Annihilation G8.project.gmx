@@ -3,11 +3,11 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="2" name="datafiles">
+  <datafiles number="3" name="datafiles">
     <datafile>
-      <name>Included Document.txt</name>
+      <name>Included File.pdf</name>
       <exists>-1</exists>
-      <size>0</size>
+      <size>20769</size>
       <exportAction>2</exportAction>
       <exportDir></exportDir>
       <overwrite>0</overwrite>
@@ -97,8 +97,8 @@
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Area tiles">
-      <backgrounds name="Forrest">
-        <background>background\bgr_tile_forrest_autumn</background>
+      <backgrounds name="Forest">
+        <background>background\bgr_tile_forest_autumn</background>
       </backgrounds>
     </backgrounds>
   </backgrounds>
