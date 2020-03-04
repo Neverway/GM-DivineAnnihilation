@@ -43,6 +43,16 @@
       <sprites name="Level">
         <sprite>sprites\spr_level_collider</sprite>
       </sprites>
+      <sprites name="Triggers">
+        <sprite>sprites\spr_trigger_interact</sprite>
+        <sprite>sprites\spr_trigger_warp</sprite>
+      </sprites>
+      <sprites name="Area">
+        <sprites name="Hometown">
+          <sprite>sprites\spr_area_hometown_castle</sprite>
+          <sprite>sprites\spr_area_hometown_library</sprite>
+        </sprites>
+      </sprites>
     </sprites>
     <sprites name="Menus">
       <sprites name="Title">
@@ -74,6 +84,9 @@
         </sprites>
         <sprites name="Masks">
           <sprite>sprites\spr_system_mask_player</sprite>
+        </sprites>
+        <sprites name="Transition">
+          <sprite>sprites\spr_system_transition_fade</sprite>
         </sprites>
         <sprites name="Other">
           <sprite>sprites\spr_system_other_entityShadow</sprite>
@@ -131,6 +144,15 @@
       <objects name="Level">
         <object>objects\obj_level_collider</object>
       </objects>
+      <objects name="Triggers">
+        <object>objects\obj_trigger_warp</object>
+      </objects>
+      <objects name="Area">
+        <objects name="Hometown">
+          <object>objects\obj_area_hometown_castle</object>
+          <object>objects\obj_area_hometown_library</object>
+        </objects>
+      </objects>
     </objects>
     <objects name="Menus">
       <objects name="Title">
@@ -162,6 +184,9 @@
           <object>objects\obj_system_parent_solid</object>
           <object>objects\obj_system_parent_trigger</object>
         </objects>
+        <objects name="Transition">
+          <object>objects\obj_system_transition_fade</object>
+        </objects>
       </objects>
     </objects>
   </objects>
@@ -171,8 +196,14 @@
       <room>rooms\rm_title_menu</room>
       <room>rooms\rm_title_name</room>
     </rooms>
+    <rooms name="Developer">
+      <room>rooms\rm_developer_everyTest</room>
+    </rooms>
     <rooms name="Chapter 1">
       <room>rooms\rm_chapter1_section1_hometown</room>
+    </rooms>
+    <rooms name="Battles">
+      <room>rooms\rm_battle_placeholder</room>
     </rooms>
   </rooms>
   <help>
