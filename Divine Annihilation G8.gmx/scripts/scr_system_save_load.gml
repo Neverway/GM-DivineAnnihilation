@@ -59,7 +59,7 @@ global.playerGold = ini_read_real(argument0, "playerGold", 0);
 //------------------------------------//
 // Load player level
 //------------------------------------//
-global.level = ini_read_real(argument0, "playerLevel", 0);
+global.playerLevel = ini_read_real(argument0, "playerLevel", 0);
 
 
 //------------------------------------//

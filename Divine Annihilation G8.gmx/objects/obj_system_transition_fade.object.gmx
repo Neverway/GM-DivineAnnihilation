@@ -31,7 +31,10 @@
 // Animation
 //==========================//
 image_speed = .3;
-obj_character_overworld_fox.canMove = false;
+if instance_exists(obj_character_overworld_fox)
+{
+    obj_character_overworld_fox.canMove = false;
+}
 </string>
           </argument>
         </arguments>

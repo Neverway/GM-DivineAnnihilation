@@ -361,7 +361,7 @@ if(!global.keyLeft &amp;&amp; !global.keyRight &amp;&amp; !global.keyUp &amp;&am
 if global.keySelect &amp;&amp; !inventoryOpen &amp;&amp; canMove
 {
     inventoryOpen = true;
-    instance_create(x, y, o_menu_inventory_items);
+    instance_create(x, y, obj_menu_inventory);
 }
 
 

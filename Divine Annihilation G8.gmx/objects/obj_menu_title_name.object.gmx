@@ -34,7 +34,7 @@
 //------------------------------------//
 // Swapable variables
 //-----------------------------------//
-maxCharacters = 12;
+maxCharacters = 10;
 
 currentName = "FOX"
 
