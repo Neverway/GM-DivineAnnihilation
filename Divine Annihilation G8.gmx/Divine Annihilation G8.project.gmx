@@ -103,6 +103,7 @@
     <backgrounds name="Area tiles">
       <backgrounds name="Forest">
         <background>background\bgr_tile_forest_autumn</background>
+        <background>background\bgr_tile_forest_autumn_indoor</background>
       </backgrounds>
     </backgrounds>
   </backgrounds>

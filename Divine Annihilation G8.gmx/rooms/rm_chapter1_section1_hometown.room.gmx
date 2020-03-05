@@ -3,8 +3,8 @@
   <caption></caption>
   <width>12000</width>
   <height>12000</height>
-  <vsnap>16</vsnap>
-  <hsnap>16</hsnap>
+  <vsnap>64</vsnap>
+  <hsnap>64</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -55,6 +55,8 @@
     <instance objName="obj_character_overworld_fox" x="2632" y="3080" name="inst_6E8239F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_area_hometown_castle" x="7008" y="2896" name="inst_07B38E49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_area_hometown_library" x="4800" y="3120" name="inst_D1FBE5A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trigger_warp" x="2848" y="1344" name="inst_58A92C7D" locked="0" code="//------------------------------------//&#xA;// Warp trigger&#xA;//-----------------------------------//&#xA;// {x} &amp; {y} are the coordinates of where the warp will bring you&#xA;destinationX = 4800;&#xA;destinationY = 3184;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trigger_warp" x="4800" y="3152" name="inst_39D74F14" locked="0" code="//------------------------------------//&#xA;// Warp trigger&#xA;//-----------------------------------//&#xA;// {x} &amp; {y} are the coordinates of where the warp will bring you&#xA;destinationX = 2848;&#xA;destinationY = 1312;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="2528" y="2912" name="inst_EB25C1A2" locked="0" code="" scaleX="14" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="3424" y="2848" name="inst_8880F4D4" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="3808" y="2912" name="inst_38D908B4" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
@@ -106,6 +108,15 @@
     <instance objName="obj_level_collider" x="4820" y="3125" name="inst_3069DCEC" locked="0" code="" scaleX="3.25" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="4960" y="3104" name="inst_01B0D77C" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="4768" y="3072" name="inst_CD04E0A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_collider" x="2560" y="832" name="inst_FCCF0E98" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_collider" x="2688" y="960" name="inst_53B9F3E8" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_collider" x="2496" y="896" name="inst_8D738275" locked="0" code="" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_collider" x="2560" y="1280" name="inst_9367F3F0" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_collider" x="2880" y="1280" name="inst_4C0D3D2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_collider" x="2944" y="896" name="inst_82ADE4AB" locked="0" code="" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_collider" x="2816" y="1344" name="inst_3EF22977" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_collider" x="2672" y="960" name="inst_CA7C5BDE" locked="0" code="" scaleX="0.25" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_collider" x="2816" y="960" name="inst_F97545DF" locked="0" code="" scaleX="0.25" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_hud_playerNameShelf" x="32" y="0" name="inst_152F2DD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_hud_playerHealth" x="32" y="0" name="inst_C1640EE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
@@ -753,6 +764,32 @@
     <tile bgName="bgr_tile_forest_autumn" x="7744" y="3456" w="64" h="64" xo="128" yo="256" id="10004972" name="inst_CAF1B4D8" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn" x="7744" y="3520" w="64" h="64" xo="128" yo="256" id="10004973" name="inst_80454DA8" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn" x="6528" y="3072" w="64" h="64" xo="128" yo="256" id="10006060" name="inst_3F5D1AA2" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2560" y="1216" w="64" h="64" xo="64" yo="640" id="10006686" name="inst_49F93323" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2560" y="1152" w="64" h="64" xo="64" yo="640" id="10006687" name="inst_51E29FC3" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2560" y="1088" w="64" h="64" xo="64" yo="640" id="10006688" name="inst_A39A1BF0" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2560" y="1024" w="64" h="64" xo="64" yo="640" id="10006689" name="inst_FFADB789" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2560" y="960" w="64" h="64" xo="64" yo="640" id="10006690" name="inst_E677ED2D" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2560" y="896" w="64" h="64" xo="64" yo="640" id="10006691" name="inst_04266DE4" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2624" y="896" w="64" h="64" xo="64" yo="640" id="10006692" name="inst_759A46C2" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2688" y="896" w="64" h="64" xo="64" yo="640" id="10006693" name="inst_0167A764" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2752" y="896" w="64" h="64" xo="64" yo="640" id="10006694" name="inst_E32418EB" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2816" y="896" w="64" h="64" xo="64" yo="640" id="10006695" name="inst_F942EE5E" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2880" y="896" w="64" h="64" xo="64" yo="640" id="10006696" name="inst_AF1CC9F9" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2880" y="960" w="64" h="64" xo="64" yo="640" id="10006697" name="inst_36BEC871" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2688" y="1088" w="64" h="64" xo="128" yo="640" id="10006772" name="inst_0AFB39AB" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2752" y="1088" w="64" h="64" xo="128" yo="640" id="10006773" name="inst_0131C3B4" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2816" y="1088" w="64" h="64" xo="128" yo="640" id="10006774" name="inst_2A4AC75D" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2880" y="1088" w="64" h="64" xo="128" yo="640" id="10006775" name="inst_B9E632F3" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2880" y="1152" w="64" h="64" xo="128" yo="640" id="10006776" name="inst_83EE3329" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2816" y="1152" w="64" h="64" xo="128" yo="640" id="10006777" name="inst_B6A29423" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2752" y="1152" w="64" h="64" xo="128" yo="640" id="10006778" name="inst_324AE17B" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2688" y="1152" w="64" h="64" xo="128" yo="640" id="10006781" name="inst_2BFD5422" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2688" y="1216" w="64" h="64" xo="128" yo="640" id="10006782" name="inst_472BE187" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2752" y="1216" w="64" h="64" xo="128" yo="640" id="10006783" name="inst_EB3B2710" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2880" y="1216" w="64" h="64" xo="128" yo="640" id="10006785" name="inst_0BC01E2E" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2816" y="1216" w="64" h="64" xo="128" yo="640" id="10006786" name="inst_E54895E8" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2816" y="1280" w="64" h="64" xo="128" yo="640" id="10006787" name="inst_684AE1F6" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2880" y="1024" w="64" h="64" xo="192" yo="576" id="10006788" name="inst_2CC12FA8" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn" x="2624" y="2944" w="64" h="64" xo="128" yo="0" id="10000002" name="inst_7CFA545C" depth="1000003" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn" x="2624" y="3136" w="64" h="64" xo="128" yo="128" id="10000003" name="inst_85E1FD68" depth="1000003" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn" x="2560" y="3136" w="64" h="64" xo="128" yo="128" id="10000004" name="inst_888D30F3" depth="1000003" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -2564,6 +2601,53 @@
     <tile bgName="bgr_tile_forest_autumn" x="8384" y="3136" w="64" h="64" xo="64" yo="576" id="10006056" name="inst_D86DEACB" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn" x="7488" y="3072" w="64" h="64" xo="128" yo="512" id="10006057" name="inst_BCC74E01" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn" x="7488" y="3136" w="64" h="64" xo="128" yo="576" id="10006058" name="inst_DF06E762" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2816" y="960" w="64" h="64" xo="192" yo="384" id="10006669" name="inst_989539C3" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2752" y="960" w="64" h="64" xo="128" yo="384" id="10006672" name="inst_E6287633" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2688" y="960" w="64" h="64" xo="128" yo="384" id="10006674" name="inst_4B9C93BA" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2688" y="1024" w="64" h="64" xo="128" yo="448" id="10006675" name="inst_C01267BB" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2752" y="1024" w="64" h="64" xo="128" yo="448" id="10006676" name="inst_5B88B320" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2816" y="1024" w="64" h="64" xo="192" yo="448" id="10006679" name="inst_03D87CAE" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2624" y="960" w="64" h="64" xo="64" yo="384" id="10006681" name="inst_3D566B6E" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2624" y="1024" w="64" h="64" xo="64" yo="448" id="10006682" name="inst_9A576F17" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2624" y="1088" w="64" h="64" xo="64" yo="448" id="10006683" name="inst_C9192D5B" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2624" y="1152" w="64" h="64" xo="64" yo="448" id="10006684" name="inst_AE419060" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2624" y="1216" w="64" h="64" xo="64" yo="448" id="10006685" name="inst_07D7839C" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2560" y="832" w="64" h="64" xo="128" yo="128" id="10006716" name="inst_2DE58131" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2624" y="832" w="64" h="64" xo="128" yo="128" id="10006717" name="inst_A0F55194" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2688" y="832" w="64" h="64" xo="128" yo="128" id="10006718" name="inst_8C161749" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2752" y="832" w="64" h="64" xo="128" yo="128" id="10006719" name="inst_468FD24F" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2816" y="832" w="64" h="64" xo="128" yo="128" id="10006720" name="inst_D0002D09" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2880" y="832" w="64" h="64" xo="128" yo="128" id="10006721" name="inst_019D4C23" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2560" y="768" w="64" h="64" xo="128" yo="64" id="10006722" name="inst_BC2C6632" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2624" y="768" w="64" h="64" xo="128" yo="64" id="10006723" name="inst_2ABFE803" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2688" y="768" w="64" h="64" xo="128" yo="64" id="10006724" name="inst_D3BDA800" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2752" y="768" w="64" h="64" xo="128" yo="64" id="10006725" name="inst_525371FF" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2816" y="768" w="64" h="64" xo="128" yo="64" id="10006726" name="inst_4277148E" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2880" y="768" w="64" h="64" xo="128" yo="64" id="10006727" name="inst_D69DB392" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2944" y="768" w="64" h="64" xo="192" yo="64" id="10006728" name="inst_9CC2E9AA" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2496" y="768" w="64" h="64" xo="64" yo="64" id="10006729" name="inst_6638A3B0" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2496" y="832" w="64" h="64" xo="64" yo="128" id="10006730" name="inst_2050337E" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2496" y="896" w="64" h="64" xo="64" yo="128" id="10006731" name="inst_D3EC57C9" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2496" y="960" w="64" h="64" xo="64" yo="128" id="10006732" name="inst_5673ADDC" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2496" y="1024" w="64" h="64" xo="64" yo="128" id="10006733" name="inst_254A2159" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2496" y="1088" w="64" h="64" xo="64" yo="128" id="10006734" name="inst_7C9E53A2" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2496" y="1152" w="64" h="64" xo="64" yo="128" id="10006735" name="inst_43E78FBD" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2496" y="1216" w="64" h="64" xo="64" yo="128" id="10006736" name="inst_33A0CA92" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2944" y="832" w="64" h="64" xo="192" yo="128" id="10006737" name="inst_84C515F6" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2944" y="896" w="64" h="64" xo="192" yo="128" id="10006738" name="inst_B231B579" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2944" y="960" w="64" h="64" xo="192" yo="128" id="10006739" name="inst_8AA97514" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2944" y="1024" w="64" h="64" xo="192" yo="128" id="10006740" name="inst_4488D6E6" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2944" y="1088" w="64" h="64" xo="192" yo="128" id="10006741" name="inst_7BF41305" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2944" y="1152" w="64" h="64" xo="192" yo="128" id="10006744" name="inst_36CCC1CC" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2944" y="1216" w="64" h="64" xo="192" yo="128" id="10006745" name="inst_64D7C81E" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2944" y="1280" w="64" h="64" xo="192" yo="192" id="10006746" name="inst_289C3856" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2752" y="1280" w="64" h="64" xo="128" yo="192" id="10006747" name="inst_78080EB2" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2688" y="1280" w="64" h="64" xo="128" yo="192" id="10006748" name="inst_43E2B936" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2624" y="1280" w="64" h="64" xo="128" yo="192" id="10006749" name="inst_D583B13C" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2560" y="1280" w="64" h="64" xo="128" yo="192" id="10006750" name="inst_C28F4690" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2880" y="1280" w="64" h="64" xo="128" yo="192" id="10006751" name="inst_712ADEC7" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2496" y="1280" w="64" h="64" xo="64" yo="192" id="10006752" name="inst_B7B7ED11" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2832" y="1024" w="64" h="64" xo="192" yo="576" id="10006790" name="inst_444996F6" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn" x="2560" y="2944" w="64" h="64" xo="192" yo="448" id="10000469" name="inst_45641F84" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn" x="2624" y="2944" w="64" h="64" xo="192" yo="448" id="10000470" name="inst_9DE2BBB9" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn" x="2688" y="2944" w="64" h="64" xo="192" yo="448" id="10000471" name="inst_3027A140" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
