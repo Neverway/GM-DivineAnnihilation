@@ -37,8 +37,8 @@ event_inherited();
 // Movement
 //==========================//
 noclipSpeed = 16;       // The amount of pixels the player will jump when nocliping
-maxXVelocity = 2;       // Velocity x max
-maxYVelocity = 2;       // Velocity y max
+maxXVelocity = 3.25;       // Velocity x max
+maxYVelocity = 3.25;       // Velocity y max
 walkAcceleration = .25; // Acceleration
 walkFriction = 1.8;     // Friction
 canMove = true;         // Allow the player to move varialbe (default is true)
@@ -151,8 +151,8 @@ if canMove == false
 }
 if canMove == true
 {
-    maxXVelocity = 2; // Set max x veleocity to 2
-    maxyVelocity = 2; // Set max y veleocity to 2
+    maxXVelocity = 3.25; // Set max x veleocity to 2
+    maxYVelocity = 3.25; // Set max y veleocity to 2
     stop = 0; // ?
 }
 </string>
@@ -225,8 +225,8 @@ if canMove == true
 //--------------------------//
 if global.keySprint
 {
-    maxXVelocity = 3.25; // Set max x veleocity to 2
-    maxYVelocity = 3.25; // Set max y veleocity to 2
+    maxXVelocity = 4.25; // Set max x veleocity to 2
+    maxYVelocity = 4.25; // Set max y veleocity to 2
 }
 
 
