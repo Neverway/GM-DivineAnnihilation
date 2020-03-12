@@ -462,11 +462,11 @@ switch(animationState)
     case stateRun:
         if(vx != 0)
         {
-        image_speed = abs(vx)/25;
+        image_speed = abs(vx)/30;
         }
         else
         {
-        image_speed = abs(vy)/30;
+        image_speed = abs(vy)/35;
         }
         switch(facingDirection)
         {

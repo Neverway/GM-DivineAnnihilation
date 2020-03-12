@@ -3,8 +3,8 @@
   <caption></caption>
   <width>12000</width>
   <height>12000</height>
-  <vsnap>64</vsnap>
-  <hsnap>64</hsnap>
+  <vsnap>8</vsnap>
+  <hsnap>8</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -54,9 +54,9 @@
     <instance objName="obj_system_config" x="0" y="0" name="inst_F2FF4377" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_character_overworld_fox" x="2632" y="3080" name="inst_6E8239F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_area_hometown_castle" x="6672" y="2688" name="inst_07B38E49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_area_hometown_library" x="4800" y="3120" name="inst_D1FBE5A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_trigger_warp" x="2848" y="1344" name="inst_58A92C7D" locked="0" code="//------------------------------------//&#xA;// Warp trigger&#xA;//-----------------------------------//&#xA;// {x} &amp; {y} are the coordinates of where the warp will bring you&#xA;destinationX = 4800;&#xA;destinationY = 3184;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_trigger_warp" x="4800" y="3152" name="inst_39D74F14" locked="0" code="//------------------------------------//&#xA;// Warp trigger&#xA;//-----------------------------------//&#xA;// {x} &amp; {y} are the coordinates of where the warp will bring you&#xA;destinationX = 2848;&#xA;destinationY = 1312;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_area_hometown_library" x="4608" y="3088" name="inst_D1FBE5A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trigger_warp" x="2848" y="1344" name="inst_58A92C7D" locked="0" code="//------------------------------------//&#xA;// Warp trigger&#xA;//-----------------------------------//&#xA;// {x} &amp; {y} are the coordinates of where the warp will bring you&#xA;destinationX = 4800;&#xA;destinationY = 3232;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trigger_warp" x="4800" y="3200" name="inst_39D74F14" locked="0" code="//------------------------------------//&#xA;// Warp trigger&#xA;//-----------------------------------//&#xA;// {x} &amp; {y} are the coordinates of where the warp will bring you&#xA;destinationX = 2848;&#xA;destinationY = 1312;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="2528" y="2912" name="inst_EB25C1A2" locked="0" code="" scaleX="14" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="3424" y="2848" name="inst_8880F4D4" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="3808" y="2912" name="inst_38D908B4" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
@@ -99,17 +99,17 @@
     <instance objName="obj_level_collider" x="6224" y="3040" name="inst_78F79441" locked="0" code="" scaleX="5" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="4384" y="3104" name="inst_EC3E9319" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="5216" y="3168" name="inst_1304A275" locked="0" code="" scaleX="16" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_level_collider" x="4573" y="3125" name="inst_9150052F" locked="0" code="" scaleX="3.25" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_level_collider" x="4820" y="3125" name="inst_3069DCEC" locked="0" code="" scaleX="3.25" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_collider" x="4776" y="3120" name="inst_9150052F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="4960" y="3104" name="inst_01B0D77C" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_level_collider" x="4768" y="3072" name="inst_CD04E0A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="6816" y="3008" name="inst_34FAB8AA" locked="0" code="" scaleX="2.25" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="7056" y="3008" name="inst_D10969D7" locked="0" code="" scaleX="2.25" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="7200" y="2960" name="inst_3F9A341B" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="6688" y="2960" name="inst_D4BE2BBE" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_level_collider" x="6960" y="2944" name="inst_5F6E2EB4" locked="0" code="" scaleX="1.5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_collider" x="6960" y="2984" name="inst_5F6E2EB4" locked="0" code="" scaleX="1.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="6544" y="2976" name="inst_87A401BB" locked="0" code="" scaleX="2.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="7328" y="2976" name="inst_C2AACF8A" locked="0" code="" scaleX="2.5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_collider" x="4824" y="3152" name="inst_C1289D80" locked="0" code="" scaleX="2.75" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_collider" x="4608" y="3152" name="inst_620F3975" locked="0" code="" scaleX="2.75" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_hud_playerNameShelf" x="32" y="0" name="inst_152F2DD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_hud_playerHealth" x="32" y="0" name="inst_C1640EE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
