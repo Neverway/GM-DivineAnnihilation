@@ -78,6 +78,7 @@
       </sprites>
       <sprites name="Configuration">
         <sprite>sprites\spr_system_config</sprite>
+        <sprite>sprites\spr_system_config_quit</sprite>
       </sprites>
       <sprites name="Lighting">
         <sprite>sprites\spr_system_light_point</sprite>
@@ -153,6 +154,7 @@
         <object>objects\obj_level_collider</object>
       </objects>
       <objects name="Triggers">
+        <object>objects\obj_trigger_interact</object>
         <object>objects\obj_trigger_warp</object>
       </objects>
       <objects name="Area">
