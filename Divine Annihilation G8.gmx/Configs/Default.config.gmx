@@ -59,7 +59,7 @@
     <option_android_texture_page>1024</option_android_texture_page>
     <option_android_use_test_ads>0</option_android_use_test_ads>
     <option_argumenterrors>True</option_argumenterrors>
-    <option_author></option_author>
+    <option_author>Arthur W. Sheldon</option_author>
     <option_backimage>nil</option_backimage>
     <option_changed>false</option_changed>
     <option_changeresolution>false</option_changeresolution>
@@ -205,9 +205,11 @@
     <option_sync_vertex>1</option_sync_vertex>
     <option_textureGroup0_border>2</option_textureGroup0_border>
     <option_textureGroup0_nocropping>0</option_textureGroup0_nocropping>
-    <option_textureGroup0_parent>&lt;none&gt;</option_textureGroup0_parent>
+    <option_textureGroup0_parent>Default</option_textureGroup0_parent>
     <option_textureGroup0_scaled>0</option_textureGroup0_scaled>
     <option_textureGroup0_targets>9223372036854775807</option_textureGroup0_targets>
+    <option_textureGroup1_nocropping>0</option_textureGroup1_nocropping>
+    <option_textureGroup2_nocropping>0</option_textureGroup2_nocropping>
     <option_textureGroup_count>1</option_textureGroup_count>
     <option_textureGroups0>Default</option_textureGroups0>
     <option_tizen_app_id>http://yourdomain/Divine Annihilation G8</option_tizen_app_id>
@@ -228,7 +230,7 @@
     <option_tizen_usesplash>False</option_tizen_usesplash>
     <option_use_new_audio>True</option_use_new_audio>
     <option_variableerrors>False</option_variableerrors>
-    <option_version>100</option_version>
+    <option_version>0.8.6</option_version>
     <option_version_build>6</option_version_build>
     <option_version_company>Neverway</option_version_company>
     <option_version_copyright>(C) Neverway 2020</option_version_copyright>

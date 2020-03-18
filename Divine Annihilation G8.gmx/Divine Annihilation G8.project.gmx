@@ -51,6 +51,8 @@
         <sprites name="Hometown">
           <sprite>sprites\spr_area_hometown_castle</sprite>
           <sprite>sprites\spr_area_hometown_library</sprite>
+          <sprite>sprites\spr_area_hometown_shop_combat</sprite>
+          <sprite>sprites\spr_area_hometown_shop_magic</sprite>
         </sprites>
       </sprites>
     </sprites>
@@ -131,6 +133,7 @@
       </scripts>
       <scripts name="Textbox">
         <script>scripts\scr_system_textbox.gml</script>
+        <script>scripts\scr_textp.gml</script>
       </scripts>
     </scripts>
   </scripts>
@@ -161,6 +164,8 @@
         <objects name="Hometown">
           <object>objects\obj_area_hometown_castle</object>
           <object>objects\obj_area_hometown_library</object>
+          <object>objects\obj_area_hometown_shop_combat</object>
+          <object>objects\obj_area_hometown_shop_magic</object>
         </objects>
       </objects>
     </objects>
@@ -199,6 +204,9 @@
         </objects>
         <objects name="Transition">
           <object>objects\obj_system_transition_fade</object>
+        </objects>
+        <objects name="Text Box">
+          <object>objects\obj_system_text</object>
         </objects>
       </objects>
     </objects>
