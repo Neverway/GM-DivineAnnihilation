@@ -55,8 +55,8 @@
     <instance objName="obj_system_config" x="0" y="0" name="inst_14D9B6CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_system_required_camera" x="424" y="1456" name="inst_D7798B4B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_character_overworld_fox" x="424" y="1464" name="inst_698C8743" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_area_hometown_library" x="416" y="1272" name="inst_D9400A5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_area_hometown_library" x="888" y="1272" name="inst_D588A152" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_area_hometown_structure_library" x="416" y="1272" name="inst_D9400A5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_area_hometown_structure_library" x="888" y="1272" name="inst_D588A152" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_warp" x="416" y="1328" name="inst_73524243" locked="0" code="//------------------------------------//&#xA;// Warp trigger&#xA;//-----------------------------------//&#xA;// {x} &amp; {y} are the coordinates of where the warp will bring you&#xA;destinationX = 888;&#xA;destinationY = 1360;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_warp" x="888" y="1328" name="inst_D5A0439F" locked="0" code="//------------------------------------//&#xA;// Warp trigger&#xA;//-----------------------------------//&#xA;// {x} &amp; {y} are the coordinates of where the warp will bring you&#xA;destinationX = 416;&#xA;destinationY = 1360;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="192" y="1152" name="inst_D725CB6A" locked="0" code="" scaleX="7" scaleY="2.5" colour="4294967295" rotation="0"/>

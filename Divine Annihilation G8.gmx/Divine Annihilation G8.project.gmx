@@ -49,10 +49,16 @@
       </sprites>
       <sprites name="Area">
         <sprites name="Hometown">
-          <sprite>sprites\spr_area_hometown_castle</sprite>
-          <sprite>sprites\spr_area_hometown_library</sprite>
-          <sprite>sprites\spr_area_hometown_shop_combat</sprite>
-          <sprite>sprites\spr_area_hometown_shop_magic</sprite>
+          <sprites name="Structures">
+            <sprite>sprites\spr_area_hometown_structure_castle</sprite>
+            <sprite>sprites\spr_area_hometown_structure_library</sprite>
+            <sprite>sprites\spr_area_hometown_structure_shop_combat</sprite>
+            <sprite>sprites\spr_area_hometown_structure_shop_magic</sprite>
+            <sprite>sprites\spr_area_hometown_structure_house</sprite>
+          </sprites>
+          <sprites name="Indoor Assets">
+            <sprite>sprites\spr_area_hometown_indooor_desk_verticle</sprite>
+          </sprites>
         </sprites>
       </sprites>
     </sprites>
@@ -162,10 +168,16 @@
       </objects>
       <objects name="Area">
         <objects name="Hometown">
-          <object>objects\obj_area_hometown_castle</object>
-          <object>objects\obj_area_hometown_library</object>
-          <object>objects\obj_area_hometown_shop_combat</object>
-          <object>objects\obj_area_hometown_shop_magic</object>
+          <objects name="Structures">
+            <object>objects\obj_area_hometown_structure_castle</object>
+            <object>objects\obj_area_hometown_structure_library</object>
+            <object>objects\obj_area_hometown_structure_shop_combat</object>
+            <object>objects\obj_area_hometown_structure_shop_magic</object>
+            <object>objects\obj_area_hometown_structure_house</object>
+          </objects>
+          <objects name="Indoor Assets">
+            <object>objects\obj_area_hometown_indoor_desk_verticle</object>
+          </objects>
         </objects>
       </objects>
     </objects>
