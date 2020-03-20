@@ -58,7 +58,13 @@
           </sprites>
           <sprites name="Indoor Assets">
             <sprite>sprites\spr_area_hometown_indooor_desk_verticle</sprite>
+            <sprite>sprites\spr_area_hometown_indoor_bed</sprite>
           </sprites>
+        </sprites>
+      </sprites>
+      <sprites name="Other">
+        <sprites name="Indoor Assets">
+          <sprite>sprites\spr_other_indoor_doorShadow</sprite>
         </sprites>
       </sprites>
     </sprites>
@@ -177,7 +183,13 @@
           </objects>
           <objects name="Indoor Assets">
             <object>objects\obj_area_hometown_indoor_desk_verticle</object>
+            <object>objects\obj_area_hometown_indoor_bed</object>
           </objects>
+        </objects>
+      </objects>
+      <objects name="Other">
+        <objects name="Indoor Assets">
+          <object>objects\obj_other_indoor_doorShadow</object>
         </objects>
       </objects>
     </objects>
