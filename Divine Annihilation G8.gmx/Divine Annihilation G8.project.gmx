@@ -85,6 +85,12 @@
         <sprite>sprites\spr_menu_inventory_items</sprite>
         <sprite>sprites\spr_menu_inventory_equipment</sprite>
       </sprites>
+      <sprites name="Textbox">
+        <sprite>sprites\spr_textbox_textbox</sprite>
+        <sprites name="Portraits">
+          <sprite>sprites\spr_textbox_portrait_none</sprite>
+        </sprites>
+      </sprites>
     </sprites>
     <sprites name="System">
       <sprites name="Required">
@@ -142,10 +148,6 @@
       </scripts>
       <scripts name="Player">
         <script>scripts\approach.gml</script>
-      </scripts>
-      <scripts name="Textbox">
-        <script>scripts\scr_system_textbox.gml</script>
-        <script>scripts\scr_textp.gml</script>
       </scripts>
     </scripts>
   </scripts>
@@ -228,9 +230,6 @@
         </objects>
         <objects name="Transition">
           <object>objects\obj_system_transition_fade</object>
-        </objects>
-        <objects name="Text Box">
-          <object>objects\obj_system_text</object>
         </objects>
       </objects>
     </objects>

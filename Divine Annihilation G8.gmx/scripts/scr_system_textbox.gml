@@ -7,6 +7,7 @@
 font - the kind of font you want to display on screen
 key_press - button assigned to skip text/speed up, move to next slide, start/exit dialogue
 textSpeed - how fast the text will print on screen
+Portrait - the sprite to draw on the side of the textbox, used for charater emotions in dialogue
 */
 
 
@@ -248,7 +249,7 @@ draw_set_font(font);
 //==========================//
 draw_set_color(c_black);
 //draw_rectangle(view_xview,((view_yview+view_hview)-max_height)-(padding*1.5),view_wview,view_yview+view_hview,false);((view_yview+view_hview)-max_height)-(padding*1.5))
-draw_sprite(s_menu_battle_introtext, 1, view_xview, (view_yview + 352))
+draw_sprite(spr_textbox_texbox, 1, view_xview, (view_yview + 352))
 
 
 //==========================//
@@ -275,7 +276,7 @@ draw_set_color(c_white);
 // Draw Text On Screen
 //==========================//
 draw_set_color(c_white);
-if argument4 = s_hud_portrait_none
+if argument4 = spr_textbox_portrait_none
 {
     draw_text_ext(view_xview + padding, ((view_yview + view_hview) - max_height) - (padding / 2), global.display_text, sTxt_height, max_width);
 }
@@ -291,17 +292,17 @@ else
 //==========================//
 if text == "" && global.placeholderTxt == ""
 {
-    global.tboxActive = false;
+    //global.tboxActive = false;
     text = global.textCache;
     global.textCache = "";
-    cinteract = 0
-    o_character_overworld_fox.canMove = true;
-    global.portrait = s_hud_portrait_none;
-    global.com_channel += 1;
-    if global.com_stay = 0
-    {
-        o_character_overworld_fox.alarm[1] = 10
-    }
+    //cinteract = 0
+    obj_character_overworld_fox.canMove = true;
+    //global.portrait = spr_hud_textbox_portrait_none;
+    //global.com_channel += 1;
+    //if global.com_stay = 0
+   // {
+    //    o_character_overworld_fox.alarm[1] = 10
+    //}
 }
 
 return text;

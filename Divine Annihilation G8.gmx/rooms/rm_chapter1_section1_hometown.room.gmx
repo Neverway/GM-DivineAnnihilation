@@ -3,8 +3,8 @@
   <caption></caption>
   <width>12000</width>
   <height>12000</height>
-  <vsnap>8</vsnap>
-  <hsnap>8</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -62,8 +62,7 @@
     <instance objName="obj_trigger_warp" x="4960" y="1280" name="inst_08997DD5" locked="0" code="//------------------------------------//&#xA;// Warp trigger&#xA;//-----------------------------------//&#xA;// {x} &amp; {y} are the coordinates of where the warp will bring you&#xA;destinationX = 6424;&#xA;destinationY = 3800;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_warp" x="5984" y="3704" name="inst_41D96C6F" locked="0" code="//------------------------------------//&#xA;// Warp trigger&#xA;//-----------------------------------//&#xA;// {x} &amp; {y} are the coordinates of where the warp will bring you&#xA;destinationX = 4128;&#xA;destinationY = 1248;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_warp" x="6424" y="3768" name="inst_FAD27BD0" locked="0" code="//------------------------------------//&#xA;// Warp trigger&#xA;//-----------------------------------//&#xA;// {x} &amp; {y} are the coordinates of where the warp will bring you&#xA;destinationX = 4960;&#xA;destinationY = 1248;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_trigger_interact" x="4656" y="3216" name="inst_39967B95" locked="0" code="text = &quot;HIYA!&quot;&#xA;portrait = &quot;&quot;&#xA;text_speed = 0.2" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_area_hometown_indoor_desk_verticle" x="4960" y="1056" name="inst_AED11A4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trigger_interact" x="1392" y="976" name="inst_39967B95" locked="0" code="//------------------------------------//&#xA;// Interaction trigger&#xA;//-----------------------------------//&#xA;// Default text speed is 0.5&#xA;// No portrait, used when interacting and not talking, is spr_hud_portrait_none&#xA;text = &quot;Can you hear me? If we are connected then, good luck!&quot;;&#xA;textSpeed = 0.5;&#xA;portrait = spr_textbox_portrait_none;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_area_hometown_indoor_desk_verticle" x="5152" y="1024" name="inst_404DA793" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_area_hometown_structure_house" x="3616" y="2896" name="inst_11090031" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_area_hometown_structure_house" x="3232" y="2960" name="inst_18F0B9D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -197,6 +196,20 @@
     <instance objName="obj_menu_hud_playerNameShelf" x="32" y="0" name="inst_152F2DD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_system_config" x="0" y="0" name="inst_F2FF4377" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_hud_playerHealth" x="32" y="0" name="inst_C1640EE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="4960" y="1056" name="inst_5765F406" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="4960" y="1056" name="inst_842D14B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="4960" y="1056" name="inst_5F320AA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="4960" y="1056" name="inst_4211F5EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="4648" y="992" name="inst_006C8258" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_area_hometown_indoor_desk_verticle" x="4960" y="1056" name="inst_E3309C7D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_area_hometown_indoor_desk_verticle" x="3872" y="1072" name="inst_64CE7606" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_area_hometown_indoor_desk_verticle" x="4120" y="1040" name="inst_4E1A723D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_collider" x="4088" y="1008" name="inst_022A8932" locked="0" code="" scaleX="1" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_collider" x="3840" y="1040" name="inst_92BD4139" locked="0" code="" scaleX="1" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_collider" x="2496" y="752" name="inst_88F24253" locked="0" code="" scaleX="4" scaleY="1.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_collider" x="2496" y="1008" name="inst_D7EFAFBD" locked="0" code="" scaleX="4" scaleY="1.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_collider" x="2944" y="1008" name="inst_EE63DA79" locked="0" code="" scaleX="4" scaleY="1.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_collider" x="2944" y="752" name="inst_28EF33C5" locked="0" code="" scaleX="4" scaleY="1.26984131336212" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgr_tile_forest_autumn" x="2560" y="3136" w="64" h="64" xo="128" yo="256" id="10000251" name="inst_D2FD21EB" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -3025,6 +3038,22 @@
     <tile bgName="bgr_tile_forest_autumn_indoor" x="1472" y="1152" w="64" h="64" xo="128" yo="192" id="10007359" name="inst_AF5C534F" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn_indoor" x="1472" y="832" w="64" h="64" xo="192" yo="256" id="10007360" name="inst_44EEDA7B" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn_indoor" x="1472" y="896" w="64" h="64" xo="192" yo="320" id="10007361" name="inst_8014C5BA" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2496" y="1024" w="64" h="64" xo="192" yo="320" id="10007382" name="inst_30032379" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2560" y="1024" w="64" h="64" xo="192" yo="320" id="10007383" name="inst_5E31E1E4" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2624" y="1024" w="64" h="64" xo="192" yo="320" id="10007384" name="inst_555CDC02" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="3136" y="1024" w="64" h="64" xo="192" yo="320" id="10007385" name="inst_2CA38D4D" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="3008" y="1024" w="64" h="64" xo="192" yo="320" id="10007386" name="inst_70382F90" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="3072" y="1024" w="64" h="64" xo="192" yo="320" id="10007387" name="inst_272DC190" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2496" y="768" w="64" h="64" xo="192" yo="320" id="10007394" name="inst_B190CC40" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2560" y="768" w="64" h="64" xo="192" yo="320" id="10007395" name="inst_BD11DFC2" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2624" y="768" w="64" h="64" xo="192" yo="320" id="10007396" name="inst_F86043FA" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="3008" y="768" w="64" h="64" xo="192" yo="320" id="10007397" name="inst_281E5F5A" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="3072" y="768" w="64" h="64" xo="192" yo="320" id="10007398" name="inst_07EF65C4" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="3136" y="768" w="64" h="64" xo="192" yo="320" id="10007399" name="inst_ABA78998" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2688" y="768" w="64" h="64" xo="192" yo="320" id="10007411" name="inst_CB9B369A" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2944" y="768" w="64" h="64" xo="192" yo="320" id="10007412" name="inst_CCB02D55" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2944" y="1024" w="64" h="64" xo="192" yo="320" id="10007413" name="inst_8690CCE3" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2688" y="1024" w="64" h="64" xo="192" yo="320" id="10007414" name="inst_29C73A36" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn" x="2560" y="2944" w="64" h="64" xo="192" yo="448" id="10000469" name="inst_45641F84" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn" x="2624" y="2944" w="64" h="64" xo="192" yo="448" id="10000470" name="inst_9DE2BBB9" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn" x="2688" y="2944" w="64" h="64" xo="192" yo="448" id="10000471" name="inst_3027A140" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -5226,6 +5255,22 @@
     <tile bgName="bgr_tile_forest_autumn" x="6656" y="2752" w="64" h="64" xo="192" yo="704" id="10007069" name="inst_4DC2BBB6" depth="-10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn" x="6592" y="2752" w="64" h="64" xo="128" yo="704" id="10007071" name="inst_4973F23B" depth="-10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn" x="7296" y="2944" w="64" h="64" xo="64" yo="768" id="10007072" name="inst_61058719" depth="-10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2496" y="704" w="64" h="64" xo="192" yo="256" id="10007432" name="inst_998795D4" depth="-10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2560" y="704" w="64" h="64" xo="192" yo="256" id="10007433" name="inst_12028CF1" depth="-10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2624" y="704" w="64" h="64" xo="192" yo="256" id="10007434" name="inst_C24024FB" depth="-10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2688" y="704" w="64" h="64" xo="192" yo="256" id="10007435" name="inst_EBA157FA" depth="-10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2944" y="704" w="64" h="64" xo="192" yo="256" id="10007436" name="inst_94283C91" depth="-10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="3008" y="704" w="64" h="64" xo="192" yo="256" id="10007437" name="inst_17C1E520" depth="-10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="3072" y="704" w="64" h="64" xo="192" yo="256" id="10007438" name="inst_D1CE5F0D" depth="-10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="3136" y="704" w="64" h="64" xo="192" yo="256" id="10007439" name="inst_76D3DF86" depth="-10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="3136" y="960" w="64" h="64" xo="192" yo="256" id="10007440" name="inst_AA8DE51D" depth="-10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="3072" y="960" w="64" h="64" xo="192" yo="256" id="10007441" name="inst_A9DF6F4E" depth="-10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="3008" y="960" w="64" h="64" xo="192" yo="256" id="10007442" name="inst_39291208" depth="-10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2944" y="960" w="64" h="64" xo="192" yo="256" id="10007443" name="inst_55A250BB" depth="-10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2688" y="960" w="64" h="64" xo="192" yo="256" id="10007444" name="inst_A40CCCBF" depth="-10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2624" y="960" w="64" h="64" xo="192" yo="256" id="10007445" name="inst_A01B1BED" depth="-10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2560" y="960" w="64" h="64" xo="192" yo="256" id="10007446" name="inst_B5C92CE2" depth="-10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_indoor" x="2496" y="960" w="64" h="64" xo="192" yo="256" id="10007447" name="inst_41F5105D" depth="-10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
