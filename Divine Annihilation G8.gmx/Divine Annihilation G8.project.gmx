@@ -153,6 +153,12 @@
       <scripts name="Player">
         <script>scripts\approach.gml</script>
       </scripts>
+      <scripts name="Textbox">
+        <scripts name="Old">
+          <script>scripts\scr_textbox.gml</script>
+          <script>scripts\scr_interact.gml</script>
+        </scripts>
+      </scripts>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -239,6 +245,12 @@
         </objects>
         <objects name="Transition">
           <object>objects\obj_system_transition_fade</object>
+        </objects>
+      </objects>
+      <objects name="Textbox">
+        <objects name="Old">
+          <object>objects\o_system_textbox_handler</object>
+          <object>objects\o_trigger_interact</object>
         </objects>
       </objects>
     </objects>
