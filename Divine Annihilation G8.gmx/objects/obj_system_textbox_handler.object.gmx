@@ -11,30 +11,6 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>cinteract</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -49,45 +25,34 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.textcontent = "ERROR: txt string absent"
-sampletext = global.textcontent;
-k_action = keyboard_check_pressed(ord('Z'))
-global.portrait = spr_textbox_portrait_none
+            <string>/// Initialize
+
+//==========================//
+// Setup
+//==========================//
+cinteract = 0;
+global.textContent = "ERROR: text string is missing!"; // Set default text
+sampleText = global.textContent;
+k_action = keyboard_check_pressed(ord('Z')); 
+global.portrait = spr_textbox_portrait_none; // Set default textbox portrait
 
 
-global.com_stay = 0;
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Global "scr_textbox" Variables
-
-global.txtCache = "";
-global.txtIndex = 1; // For use in the "scr_textbox" script. (Don't mess with this)
-global.display_txt = ""; // For use in the "scr_textbox" script. Printed letters on screen.
+//==========================//
+// Global scr_textbox variable
+//==========================//
+global.textCache = "";
+global.textIndex = 1; // For use in the "scr_textbox" script. (Don't mess with this)
+global.displayText = ""; // For use in the "scr_textbox" script. Printed letters on screen.
 global.maxPrintTimer = 2; // How fast each indivual letter will print 
 global.printTimer = 0; // ""
-global.tboxActive = false; // Is the textbox active in the game? is someone speaking? (use this variable to pause events... or not)
-global.placeholderTxt = ""; // For use in the "scr_textbox" script. (Don't mess with this)
-global.temp_placeholderTxt = ""; // For use in the "scr_textbox" script. (Don't mess with this)
+global.textboxActive = false; // Is the textbox active in the game? is someone speaking? (use this variable to pause events... or not)
+global.placeholderText = ""; // For use in the "scr_textbox" script. (Don't mess with this)
+global.temporaryPlaceholderText = ""; // For use in the "scr_textbox" script. (Don't mess with this)
 
-//For the automated dialogue boxes
+
+//------------------------------------//
+// For the automated dialogue boxes
+//-----------------------------------//
 global.timer = 0;
 global.auto = false;
 </string>
@@ -112,175 +77,37 @@ global.auto = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>sampletext = global.textcontent;
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>612</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>-1</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if_variable</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>cinteract</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>422</id>
-        <kind>1</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>k_action = keyboard_check_pressed(ord('Z'))
+            <string>/// Input Checks
 
-if k_action
-{
-    global.tboxActive = true;
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>424</id>
-        <kind>2</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>612</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>-1</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if_variable</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>cinteract</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>2</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>422</id>
-        <kind>1</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>k_action = keyboard_check_pressed(ord('Z'))
+//==========================//
+// Setup
+//==========================//
+sampleText = global.textContent;
 
-if k_action
+if cinteract == 1
 {
-    global.tboxActive = true;
-    global.menuactive = 1
+    k_action = keyboard_check_pressed(ord('Z'))
+
+    if k_action
+    {
+        global.textboxActive = true;
+    }
 }
+
+if cinteract == 2
+{
+    k_action = keyboard_check_pressed(ord('Z'))
+
+    if k_action
+    {
+        global.textboxActive = true;
+        global.menuActive = 1
+    }
+}
+
 </string>
           </argument>
         </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>424</id>
-        <kind>2</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="8" enumb="0">
@@ -300,9 +127,10 @@ if k_action
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.tboxActive
+            <string>/// Draw
+if global.textboxActive
 {
-    sampletext = scr_textbox(sampletext, fnt_menu, k_action, 2, global.portrait);
+    sampleText = scr_textbox(sampleText, fnt_menu, k_action, 2, global.portrait);
 }
 </string>
           </argument>

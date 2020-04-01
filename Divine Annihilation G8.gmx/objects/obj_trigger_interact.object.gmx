@@ -89,7 +89,7 @@ if inTriggerRange
 //==========================//
 // Set target text to instance text
 //==========================//
-global.textcontent = text;
+global.textContent = text;
 
 //==========================//
 // Set clipping to true

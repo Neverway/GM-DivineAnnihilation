@@ -34,8 +34,8 @@ var sampleTxt = "sample";
 var sTxt_height = string_height(sampleTxt)+2;
 
 // Store the txt in a cache "folder" for recalling purposes
-if global.txtCache == ""{
-    global.txtCache = txt;
+if global.textCache == ""{
+    global.textCache = txt;
 }
 
 //Padding for inside dialogue box
@@ -103,14 +103,14 @@ if (new_txt_height > max_height){
      while(new_txt_height > max_height)
      {
         var tempChar = string_copy(new_txt,string_length(new_txt),1);
-        global.temp_placeholderTxt += tempChar;
+        global.temp_placeholderText += tempChar;
         new_txt = string_delete(new_txt,string_length(new_txt),1);
         new_txt_height = string_height_ext(new_txt,sTxt_height,max_width);
      }
      //Reverse order
-     while(string_length(global.temp_placeholderTxt) > 0){
-        global.placeholderTxt += string_copy(global.temp_placeholderTxt,string_length(global.temp_placeholderTxt),1);
-        global.temp_placeholderTxt = string_delete(global.temp_placeholderTxt,string_length(global.temp_placeholderTxt),1);
+     while(string_length(global.temp_placeholderText) > 0){
+        global.placeholderText += string_copy(global.temp_placeholderText,string_length(global.temp_placeholderText),1);
+        global.temp_placeholderText = string_delete(global.temp_placeholderText,string_length(global.temp_placeholderText),1);
      }
 }
 
@@ -128,20 +128,21 @@ if !keyboard_check(key_press)
 //txt_length = string_length(txt);
 
 // Print stuff out from txt
-if global.printTimer <= 0 && (global.txtIndex < txt_length+1) {
-    global.display_txt += string_copy(txt,global.txtIndex,1);
+if global.printTimer <= 0 && (global.textIndex < txt_length+1)
+{
+    global.displayText+= string_copy(txt,global.textIndex,1);
     global.printTimer = global.maxPrintTimer;
-    global.txtIndex++;
+    global.textIndex++;
 }
 
 //Move onto next slide of text or exit dialogue
-if global.txtIndex >= txt_length && key_press
+if global.textIndex >= txt_length && key_press
 {
-    global.display_txt = "";
-    txt = global.placeholderTxt;
-    global.placeholderTxt = "";
-    global.temp_placeholderTxt = "";
-    global.txtIndex = 1;
+    global.displayText= "";
+    txt = global.placeholderText;
+    global.placeholderText = "";
+    global.temp_placeholderText = "";
+    global.textIndex= 1;
     global.maxPrintTimer = txtSpeed;
 }
 
@@ -176,19 +177,19 @@ draw_set_color(c_white);
 draw_set_color(c_white);
 if argument4 = spr_textbox_textbox
 {
-    draw_text_ext(view_xview+padding,((view_yview+view_hview)-max_height)-(padding/2),global.display_txt,sTxt_height,max_width);
+    draw_text_ext(view_xview+padding,((view_yview+view_hview)-max_height)-(padding/2),global.displayText,sTxt_height,max_width);
 }
 else
 {
-    draw_text_ext(view_xview+padding+128,((view_yview+view_hview)-max_height)-(padding/2),global.display_txt,sTxt_height,max_width-128);
+    draw_text_ext(view_xview+padding+128,((view_yview+view_hview)-max_height)-(padding/2),global.displayText,sTxt_height,max_width-128);
 }
 
 
 // Quit Dialogue/Textbox Event
-if txt == "" && global.placeholderTxt == ""{
-    global.tboxActive = false;
-    txt = global.txtCache;
-    global.txtCache = "";
+if txt == "" && global.placeholderText == ""{
+    global.textboxActive = false;
+    txt = global.textCache;
+    global.textCache = "";
     cinteract = 0
     obj_character_overworld_fox.canMove = true;
     global.portrait = spr_textbox_textbox;
