@@ -214,7 +214,7 @@
     <instance objName="obj_level_collider" x="2944" y="1008" name="inst_EE63DA79" locked="0" code="" scaleX="4" scaleY="1.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="2944" y="752" name="inst_28EF33C5" locked="0" code="" scaleX="4" scaleY="1.26984131336212" colour="4294967295" rotation="0"/>
     <instance objName="obj_system_lightOperator" x="8" y="24" name="inst_800FCFFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_trigger_interact" x="1488" y="976" name="inst_B51C32B9" locked="0" code="setstring = &quot;Good luck!&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trigger_interact" x="1488" y="976" name="inst_B51C32B9" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;text = &quot;Good luck!&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_system_light_point" x="1440" y="1056" name="inst_FB48D935" locked="0" code="//------------------------------------//&#xA;// Point light&#xA;//-----------------------------------//&#xA;lightSize = 200;&#xA;lightColor = c_orange;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_system_light_point" x="2624" y="1280" name="inst_BE82003F" locked="0" code="//------------------------------------//&#xA;// Point light&#xA;//-----------------------------------//&#xA;lightSize = 200;&#xA;lightColor = c_orange;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_system_light_point" x="3072" y="1280" name="inst_3D913558" locked="0" code="//------------------------------------//&#xA;// Point light&#xA;//-----------------------------------//&#xA;lightSize = 200;&#xA;lightColor = c_orange;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -257,7 +257,7 @@
     <instance objName="obj_system_light_point" x="5024" y="3264" name="inst_06B80B1C" locked="0" code="//------------------------------------//&#xA;// Point light&#xA;//-----------------------------------//&#xA;lightSize = 250;&#xA;lightColor = c_orange;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_system_light_point" x="5024" y="3648" name="inst_F1ED4290" locked="0" code="//------------------------------------//&#xA;// Point light&#xA;//-----------------------------------//&#xA;lightSize = 250;&#xA;lightColor = c_orange;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_system_light_point" x="4576" y="3648" name="inst_D92DC37A" locked="0" code="//------------------------------------//&#xA;// Point light&#xA;//-----------------------------------//&#xA;lightSize = 250;&#xA;lightColor = c_orange;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_system_textbox_handler" x="1472" y="976" name="inst_377CC209" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_system_textbox_handler" x="1472" y="976" name="inst_377CC209" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgr_tile_forest_autumn" x="2560" y="3136" w="64" h="64" xo="128" yo="256" id="10000251" name="inst_D2FD21EB" depth="1000004" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

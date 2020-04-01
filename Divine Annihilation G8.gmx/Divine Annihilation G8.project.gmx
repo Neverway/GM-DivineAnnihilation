@@ -181,7 +181,6 @@
         <object>objects\obj_level_collider</object>
       </objects>
       <objects name="Triggers">
-        <object>objects\obj_trigger_interact</object>
         <object>objects\obj_trigger_warp</object>
       </objects>
       <objects name="Area">
@@ -249,8 +248,8 @@
       </objects>
       <objects name="Textbox">
         <objects name="Old">
-          <object>objects\o_system_textbox_handler</object>
-          <object>objects\o_trigger_interact</object>
+          <object>objects\obj_system_textbox_handler</object>
+          <object>objects\obj_trigger_interact</object>
         </objects>
       </objects>
     </objects>
