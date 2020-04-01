@@ -60,6 +60,9 @@
             <sprite>sprites\spr_area_hometown_indooor_desk_verticle</sprite>
             <sprite>sprites\spr_area_hometown_indoor_bed</sprite>
           </sprites>
+          <sprites name="Outdoor Assets">
+            <sprite>sprites\spr_area_hometown_outdoor_lamp</sprite>
+          </sprites>
         </sprites>
       </sprites>
       <sprites name="Other">
@@ -102,6 +105,7 @@
       </sprites>
       <sprites name="Lighting">
         <sprite>sprites\spr_system_light_point</sprite>
+        <sprite>sprites\spr_system_lightOperator</sprite>
       </sprites>
       <sprites name="Background">
         <sprites name="Parents">
@@ -187,6 +191,9 @@
             <object>objects\obj_area_hometown_indoor_desk_verticle</object>
             <object>objects\obj_area_hometown_indoor_bed</object>
           </objects>
+          <objects name="Outdoor Assets">
+            <object>objects\obj_area_hometown_outdoor_lamp</object>
+          </objects>
         </objects>
       </objects>
       <objects name="Other">
@@ -221,6 +228,8 @@
       </objects>
       <objects name="Lighting">
         <object>objects\obj_system_light_point</object>
+        <object>objects\obj_system_lightOperator</object>
+        <object>objects\obj_system_lightingController</object>
       </objects>
       <objects name="Background">
         <objects name="Parents">
