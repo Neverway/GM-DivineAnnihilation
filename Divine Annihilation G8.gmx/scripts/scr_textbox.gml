@@ -155,7 +155,7 @@ draw_set_font(font);
 // Draw dialogue box
 draw_set_color(c_black);
 //draw_rectangle(view_xview,((view_yview+view_hview)-max_height)-(padding*1.5),view_wview,view_yview+view_hview,false);((view_yview+view_hview)-max_height)-(padding*1.5))
-draw_sprite(spr_textbox_textbox, 1, view_xview, (view_yview+352))
+draw_sprite(spr_menu_textbox, 1, view_xview, (view_yview+352))
 
 // Draw portrait
 if argument4
@@ -175,29 +175,33 @@ draw_set_color(c_white);
 
 // Draw Text On Screen
 draw_set_color(c_white);
-if argument4 = spr_textbox_textbox
+if argument4 == spr_character_portrait_none
 {
     draw_text_ext(view_xview+padding,((view_yview+view_hview)-max_height)-(padding/2),global.displayText,sTxt_height,max_width);
 }
-else
+if argument4 != spr_character_portrait_none
 {
     draw_text_ext(view_xview+padding+128,((view_yview+view_hview)-max_height)-(padding/2),global.displayText,sTxt_height,max_width-128);
 }
 
 
 // Quit Dialogue/Textbox Event
-if txt == "" && global.placeholderText == ""{
-    global.textboxActive = false;
+if txt == "" && global.placeholderText == ""
+{
     txt = global.textCache;
     global.textCache = "";
-    cinteract = 0
-    obj_character_overworld_fox.canMove = true;
-    global.portrait = spr_textbox_textbox;
-    //global.com_channel += 1;
-    //if global.com_stay = 0
-    //{
-    //    obj_character_overworld_fox.alarm[1] = 10
-    //}
+    global.portrait = spr_character_portrait_none;
+    if global.textboxCount + 1 <= global.totalTextboxCount
+    {
+        global.textboxCount += 1
+    }
+    else if global.textboxCount + 1 > global.totalTextboxCount
+    {
+        global.textboxCount = 1
+        obj_character_overworld_fox.canMove = true;
+        cinteract = 0
+        global.textboxActive = false;
+    }
 }
 
 return txt;

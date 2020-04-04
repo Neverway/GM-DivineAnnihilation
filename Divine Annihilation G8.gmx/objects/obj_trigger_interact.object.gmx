@@ -89,7 +89,37 @@ if inTriggerRange
 //==========================//
 // Set target text to instance text
 //==========================//
-global.textContent = text;
+global.totalTextboxCount = totalTextboxCount
+if global.textboxCount = 1
+{
+    global.textContent = text;
+    global.portrait = portrait;
+}
+
+if global.textboxCount = 2
+{
+    global.textContent = text2;
+    global.portrait = portrait2;
+}
+
+if global.textboxCount = 3
+{
+    global.textContent = text3;
+    global.portrait = portrait3;
+}
+
+if global.textboxCount = 4
+{
+    global.textContent = text4;
+    global.portrait = portrait4;
+}
+
+if global.textboxCount = 5
+{
+    global.textContent = text5;
+    global.portrait = portrait5;
+}
+
 
 //==========================//
 // Set clipping to true

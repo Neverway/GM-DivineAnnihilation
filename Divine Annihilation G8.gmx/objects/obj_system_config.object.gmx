@@ -164,6 +164,19 @@ global.keyToggleFull = keyboard_check_pressed(vk_f4)
 // Inherit Events
 //==========================//
 event_inherited();
+
+
+//==========================//
+// Check Day/Night
+//==========================//
+if !instance_exists(obj_system_lightingController)
+{
+    global.time = "day";
+}
+else
+{
+    global.time = "night";
+}
 </string>
           </argument>
         </arguments>

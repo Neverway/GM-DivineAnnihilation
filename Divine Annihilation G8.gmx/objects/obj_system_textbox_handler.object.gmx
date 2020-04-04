@@ -33,8 +33,9 @@
 cinteract = 0;
 global.textContent = "ERROR: text string is missing!"; // Set default text
 sampleText = global.textContent;
-k_action = keyboard_check_pressed(ord('Z')); 
-global.portrait = spr_textbox_portrait_none; // Set default textbox portrait
+k_action = keyboard_check_pressed(ord('Z'));
+global.portrait = spr_character_portrait_none; // Set default textbox portrait
+global.textboxCount = 1;
 
 
 //==========================//
