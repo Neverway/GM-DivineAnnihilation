@@ -41,6 +41,11 @@
             <sprite>sprites\spr_character_portrait_fox_idle</sprite>
           </sprites>
         </sprites>
+        <sprites name="Desk Demon">
+          <sprites name="Portrait">
+            <sprite>sprites\spr_character_portrait_deskDemon_idle</sprite>
+          </sprites>
+        </sprites>
       </sprites>
       <sprites name="Background">
         <sprites name="Hometown">
@@ -54,6 +59,12 @@
             <sprite>sprites\spr_character_hometown_gaurdcat_idle_front</sprite>
             <sprites name="Portraits">
               <sprite>sprites\spr_character_portrait_hometown_gaurdcat_idle</sprite>
+            </sprites>
+          </sprites>
+          <sprites name="Dealer Barley">
+            <sprite>sprites\spr_character_hometown_dealerBarley_idle_front</sprite>
+            <sprites name="Portraits">
+              <sprite>sprites\spr_character_portrait_dealerBarley_idle</sprite>
             </sprites>
           </sprites>
         </sprites>
@@ -81,6 +92,7 @@
           </sprites>
           <sprites name="Indoor Assets">
             <sprite>sprites\spr_area_hometown_indooor_desk_verticle</sprite>
+            <sprite>sprites\spr_area_hometown_indoor_desk_verticle</sprite>
             <sprite>sprites\spr_area_hometown_indoor_bed</sprite>
           </sprites>
           <sprites name="Outdoor Assets">
@@ -207,6 +219,9 @@
           <objects name="Cat Gaurd">
             <object>objects\obj_character_hometown_gaurdcat</object>
           </objects>
+          <objects name="DealerBarley">
+            <object>objects\obj_character_hometown_dealerBarley</object>
+          </objects>
         </objects>
       </objects>
     </objects>
@@ -234,6 +249,7 @@
           </objects>
           <objects name="Indoor Assets">
             <object>objects\obj_area_hometown_indoor_desk_verticle</object>
+            <object>objects\obj_area_hometown_indoor_desk_hor</object>
             <object>objects\obj_area_hometown_indoor_bed</object>
           </objects>
           <objects name="Outdoor Assets">

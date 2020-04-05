@@ -4,7 +4,7 @@
   <width>12000</width>
   <height>12000</height>
   <vsnap>8</vsnap>
-  <hsnap>16</hsnap>
+  <hsnap>8</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -62,7 +62,7 @@
     <instance objName="obj_trigger_warp" x="4960" y="1280" name="inst_08997DD5" locked="0" code="//------------------------------------//&#xA;// Warp trigger&#xA;//-----------------------------------//&#xA;// {x} &amp; {y} are the coordinates of where the warp will bring you&#xA;destinationX = 6432;&#xA;destinationY = 3792;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_warp" x="5984" y="3704" name="inst_41D96C6F" locked="0" code="//------------------------------------//&#xA;// Warp trigger&#xA;//-----------------------------------//&#xA;// {x} &amp; {y} are the coordinates of where the warp will bring you&#xA;destinationX = 4128;&#xA;destinationY = 1248;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_warp" x="6432" y="3760" name="inst_FAD27BD0" locked="0" code="//------------------------------------//&#xA;// Warp trigger&#xA;//-----------------------------------//&#xA;// {x} &amp; {y} are the coordinates of where the warp will bring you&#xA;destinationX = 4960;&#xA;destinationY = 1248;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_area_hometown_indoor_desk_verticle" x="5152" y="1024" name="inst_404DA793" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_area_hometown_indoor_desk_verticle" x="5152" y="1072" name="inst_404DA793" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_area_hometown_structure_house" x="3616" y="2896" name="inst_11090031" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_area_hometown_structure_house" x="3232" y="2960" name="inst_18F0B9D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_area_hometown_structure_house" x="3936" y="2960" name="inst_100188BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -165,8 +165,8 @@
     <instance objName="obj_level_collider" x="4928" y="1280" name="inst_CB56E2CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="4864" y="1216" name="inst_9978A59B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="4800" y="832" name="inst_3E9B649F" locked="0" code="" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
-    <instance objName="obj_level_collider" x="4928" y="1024" name="inst_84E704B8" locked="0" code="" scaleX="1" scaleY="1.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_level_collider" x="5120" y="992" name="inst_78D169C8" locked="0" code="" scaleX="1" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_collider" x="4927" y="1018" name="inst_84E704B8" locked="0" code="" scaleX="1" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_collider" x="5120" y="994" name="inst_78D169C8" locked="0" code="" scaleX="1" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="3872" y="2960" name="inst_A8FD4FF0" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="3552" y="2896" name="inst_5546911B" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="3168" y="2960" name="inst_6CAA49B0" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
@@ -199,14 +199,14 @@
     <instance objName="&lt;undefined&gt;" x="4960" y="1056" name="inst_5F320AA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="4960" y="1056" name="inst_4211F5EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="4648" y="992" name="inst_006C8258" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_area_hometown_indoor_desk_verticle" x="4960" y="1056" name="inst_E3309C7D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_area_hometown_indoor_desk_verticle" x="3872" y="1072" name="inst_64CE7606" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_area_hometown_indoor_desk_verticle" x="4120" y="1040" name="inst_4E1A723D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_area_hometown_indoor_desk_verticle" x="4960" y="1096" name="inst_E3309C7D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_area_hometown_indoor_desk_verticle" x="3872" y="1118" name="inst_64CE7606" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_area_hometown_indoor_desk_verticle" x="4112" y="1088" name="inst_4E1A723D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_area_hometown_outdoor_lamp" x="4576" y="3352" name="inst_497DC2ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_area_hometown_outdoor_lamp" x="5024" y="3352" name="inst_E698CFE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_area_hometown_outdoor_lamp" x="4576" y="3736" name="inst_32BBE08A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_area_hometown_outdoor_lamp" x="5024" y="3736" name="inst_A32C7CAF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_level_collider" x="4088" y="1008" name="inst_022A8932" locked="0" code="" scaleX="1" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_collider" x="4080" y="1010" name="inst_022A8932" locked="0" code="" scaleX="1" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="3840" y="1040" name="inst_92BD4139" locked="0" code="" scaleX="1" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="2496" y="752" name="inst_88F24253" locked="0" code="" scaleX="4" scaleY="1.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="2496" y="1008" name="inst_D7EFAFBD" locked="0" code="" scaleX="4" scaleY="1.25" colour="4294967295" rotation="0"/>
@@ -272,13 +272,18 @@
     <instance objName="&lt;undefined&gt;" x="4656" y="3200" name="inst_A1F024D0" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;text = &quot;Good luck!&quot;;&#xA;portrait = spr_textbox_portrait_none;&#xA;textboxOrder = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_character_hometown_gaurdwolf" x="7072" y="3080" name="inst_64176839" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_character_hometown_gaurdcat" x="6944" y="3080" name="inst_7780E4C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_level_pickup_gold" x="3904" y="3536" name="inst_80CBB152" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;goldAmount = 15;&#xA;&#xA;pickupText = &quot;You found 15 gold!&quot;;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_level_pickup_hpPotion" x="3968" y="3488" name="inst_70BFE885" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_pickup_gold" x="3856" y="3496" name="inst_80CBB152" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;goldAmount = 15;&#xA;&#xA;pickupText = &quot;You found 15 gold!&quot;;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_pickup_hpPotion" x="3920" y="3512" name="inst_70BFE885" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_area_hometown_indoor_desk_hor" x="4952" y="904" name="inst_AC598896" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_area_hometown_indoor_desk_hor" x="4136" y="904" name="inst_8643E494" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_character_hometown_dealerBarley" x="4104" y="872" name="inst_5653234D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="2512" y="3184" name="inst_35050F07" locked="0" code="" scaleX="14" scaleY="1.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="4560" y="3352" name="inst_28CFB5AB" locked="0" code="" scaleX="0.5" scaleY="0.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="5008" y="3352" name="inst_4B75C0AF" locked="0" code="" scaleX="0.5" scaleY="0.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="5008" y="3736" name="inst_D745B9AE" locked="0" code="" scaleX="0.5" scaleY="0.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="4560" y="3736" name="inst_CA7B0BC2" locked="0" code="" scaleX="0.5" scaleY="0.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_collider" x="4864" y="872" name="inst_1871F968" locked="0" code="" scaleX="2.75" scaleY="0.75" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_collider" x="4048" y="872" name="inst_46668DB9" locked="0" code="" scaleX="2.75" scaleY="0.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_interact" x="3760" y="3520" name="inst_1732EE94" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;totalTextboxCount = 1;&#xA;&#xA;text = &quot;*The door is locked.&quot;&#xA;portrait = spr_character_portrait_none;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_interact" x="3600" y="2944" name="inst_E0BBE94B" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;totalTextboxCount = 1;&#xA;&#xA;text = &quot;*The door is locked.&quot;&#xA;portrait = spr_character_portrait_none;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_interact" x="3920" y="3008" name="inst_DC064597" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;totalTextboxCount = 1;&#xA;&#xA;text = &quot;*The door is locked.&quot;&#xA;portrait = spr_character_portrait_none;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -296,6 +301,7 @@
     <instance objName="obj_trigger_interact" x="5392" y="3264" name="inst_C6A1B98E" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;totalTextboxCount = 1;&#xA;&#xA;text = &quot;*The door is locked.&quot;&#xA;portrait = spr_character_portrait_none;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_interact" x="1344" y="960" name="inst_2DE99C8B" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;totalTextboxCount = 1;&#xA;&#xA;text = &quot;*You probably shouldn't go to sleep just yet.&quot;&#xA;portrait = spr_character_portrait_none;" scaleX="2" scaleY="2.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_interact" x="6912" y="3064" name="inst_8F574616" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;totalTextboxCount = 6;&#xA;&#xA;text = &quot;*Sorry &quot; + global.playerName + &quot;, no one is allowed to see the king today.&quot;;&#xA;portrait = spr_character_portrait_hometown_gaurdcat_idle;&#xA;&#xA;text2 = &quot;*Oh, is there any special reason?&quot;&#xA;portrait2 = spr_character_portrait_fox_idle;&#xA;&#xA;text3 = &quot;*Not that I know of. But now that you mention it, he has seemed to be worried about something recently.&quot;&#xA;portrait3 = spr_character_portrait_hometown_gaurdcat_idle;&#xA;&#xA;text4 = &quot;*Yeah, we have been working extra hours the past couple days. I am exauhsted.&quot;&#xA;portrait4 = spr_character_portrait_hometown_gaurdwolf_idle;&#xA;&#xA;text5 = &quot;*Oh, well I hope the king gets better. Good luck you guys!&quot;&#xA;portrait5 = spr_character_portrait_fox_idle;&#xA;&#xA;text6 = &quot;*You too, be safe out there&quot; + global.playerName + &quot;.&quot;&#xA;portrait6 = spr_character_portrait_hometown_gaurdcat_idle;" scaleX="6" scaleY="0.75" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trigger_interact" x="4056" y="904" name="inst_5BF2AE9A" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;totalTextboxCount = 6;&#xA;&#xA;text = &quot;*How can I help you?&quot;&#xA;portrait = spr_character_portrait_dealerBarley_idle;&#xA;&#xA;text2 = &quot;*Oh, it look like this part of the game is not finished yet. How suprising.&quot;&#xA;portrait2 = spr_character_portrait_deskDemon_idle;&#xA;&#xA;text3 = &quot;*Huh? Who are you?&quot;&#xA;portrait3 = spr_character_portrait_fox_idle;&#xA;&#xA;text4 = &quot;*Who cares. I am here because someone is not doing their job. Don't worry about who I am. Okay?&quot;&#xA;portrait4 = spr_character_portrait_deskDemon_idle;&#xA;&#xA;text5 = &quot;*... Okay.&quot;&#xA;portrait5 = spr_character_portrait_fox_idle;&#xA;&#xA;text6 = &quot;*Good bye.&quot;&#xA;portrait6 = spr_character_portrait_deskDemon_idle;" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_system_light_flicker" x="2160" y="2040" name="inst_2FF1DCA1" locked="0" code="//------------------------------------//&#xA;// Flicker light&#xA;//-----------------------------------//&#xA;flickerSizeMin = 150;&#xA;flickerSizeMax = 175;&#xA;flickerDelayMin = 4;&#xA;flickerDelayMax = 15;&#xA;lightColor = c_aqua;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
