@@ -38,7 +38,23 @@
           </sprites>
           <sprites name="Portraits">
             <sprite>sprites\spr_character_portrait_none</sprite>
-            <sprite>sprites\spr_character_portrait_test</sprite>
+            <sprite>sprites\spr_character_portrait_fox_idle</sprite>
+          </sprites>
+        </sprites>
+      </sprites>
+      <sprites name="Background">
+        <sprites name="Hometown">
+          <sprites name="Wolf Gaurd">
+            <sprite>sprites\spr_character_hometown_gaurdwolf_idle_front</sprite>
+            <sprites name="Portraits">
+              <sprite>sprites\spr_character_portrait_hometown_gaurdwolf_idle</sprite>
+            </sprites>
+          </sprites>
+          <sprites name="Cat Gaurd">
+            <sprite>sprites\spr_character_hometown_gaurdcat_idle_front</sprite>
+            <sprites name="Portraits">
+              <sprite>sprites\spr_character_portrait_hometown_gaurdcat_idle</sprite>
+            </sprites>
           </sprites>
         </sprites>
       </sprites>
@@ -46,6 +62,9 @@
     <sprites name="Level &amp; Decoration">
       <sprites name="Level">
         <sprite>sprites\spr_level_collider</sprite>
+        <sprites name="Pickups">
+          <sprite>sprites\spr_level_pickup_hpPotion</sprite>
+        </sprites>
       </sprites>
       <sprites name="Triggers">
         <sprite>sprites\spr_trigger_interact</sprite>
@@ -138,6 +157,9 @@
     <scripts name="Menus">
       <script>scripts\scr_menu_scrolling.gml</script>
     </scripts>
+    <scripts name="Item">
+      <script>scripts\scr_pickup.gml</script>
+    </scripts>
     <scripts name="System">
       <scripts name="Camera">
         <script>scripts\scr_system_camera_followFox.gml</script>
@@ -158,6 +180,7 @@
         <scripts name="Old">
           <script>scripts\scr_textbox.gml</script>
           <script>scripts\scr_interact.gml</script>
+          <script>scripts\scr_interactOnTouch.gml</script>
         </scripts>
       </scripts>
     </scripts>
@@ -176,13 +199,28 @@
           </objects>
         </objects>
       </objects>
+      <objects name="Background">
+        <objects name="Hometown">
+          <objects name="Wolf Gaurd">
+            <object>objects\obj_character_hometown_gaurdwolf</object>
+          </objects>
+          <objects name="Cat Gaurd">
+            <object>objects\obj_character_hometown_gaurdcat</object>
+          </objects>
+        </objects>
+      </objects>
     </objects>
     <objects name="Level &amp; Decoration">
       <objects name="Level">
         <object>objects\obj_level_collider</object>
+        <objects name="Pickups">
+          <object>objects\obj_level_pickup_gold</object>
+          <object>objects\obj_level_pickup_hpPotion</object>
+        </objects>
       </objects>
       <objects name="Triggers">
         <object>objects\obj_trigger_interact</object>
+        <object>objects\obj_trigger_event</object>
         <object>objects\obj_trigger_warp</object>
       </objects>
       <objects name="Area">
@@ -229,12 +267,16 @@
     <objects name="System">
       <objects name="Required">
         <object>objects\obj_system_required_camera</object>
-      </objects>
-      <objects name="Configuration">
-        <object>objects\obj_system_config</object>
+        <objects name="Textbox">
+          <object>objects\obj_system_textbox_handler</object>
+        </objects>
+        <objects name="Configuration">
+          <object>objects\obj_system_config</object>
+        </objects>
       </objects>
       <objects name="Lighting">
         <object>objects\obj_system_light_point</object>
+        <object>objects\obj_system_light_flicker</object>
         <object>objects\obj_system_lightOperator</object>
         <object>objects\obj_system_lightingController</object>
       </objects>
@@ -247,9 +289,6 @@
         <objects name="Transition">
           <object>objects\obj_system_transition_fade</object>
         </objects>
-      </objects>
-      <objects name="Textbox">
-        <object>objects\obj_system_textbox_handler</object>
       </objects>
     </objects>
   </objects>
