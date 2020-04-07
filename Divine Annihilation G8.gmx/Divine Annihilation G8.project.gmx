@@ -41,11 +41,6 @@
             <sprite>sprites\spr_character_portrait_fox_idle</sprite>
           </sprites>
         </sprites>
-        <sprites name="Desk Demon">
-          <sprites name="Portrait">
-            <sprite>sprites\spr_character_portrait_deskDemon_idle</sprite>
-          </sprites>
-        </sprites>
       </sprites>
       <sprites name="Background">
         <sprites name="Hometown">
@@ -66,6 +61,26 @@
             <sprites name="Portraits">
               <sprite>sprites\spr_character_portrait_dealerBarley_idle</sprite>
             </sprites>
+          </sprites>
+          <sprites name="Dealer Magic">
+            <sprite>sprites\spr_character_hometown_dealerMagic</sprite>
+            <sprites name="Portraits">
+              <sprite>sprites\spr_character_portrait_dealerMagic_idle</sprite>
+            </sprites>
+          </sprites>
+        </sprites>
+      </sprites>
+      <sprites name="Debug">
+        <sprites name="Desk Demon">
+          <sprite>sprites\spr_character_debug_deskDemon_idle</sprite>
+          <sprites name="Portrait">
+            <sprite>sprites\spr_character_portrait_deskDemon_idle</sprite>
+          </sprites>
+        </sprites>
+        <sprites name="spr_character_cardboard_idle">
+          <sprite>sprites\spr_character_debug_cardboard</sprite>
+          <sprites name="Portrait">
+            <sprite>sprites\spr_character_portrait_cardboard_idle</sprite>
           </sprites>
         </sprites>
       </sprites>
@@ -91,9 +106,20 @@
             <sprite>sprites\spr_area_hometown_structure_house</sprite>
           </sprites>
           <sprites name="Indoor Assets">
-            <sprite>sprites\spr_area_hometown_indooor_desk_verticle</sprite>
-            <sprite>sprites\spr_area_hometown_indoor_desk_verticle</sprite>
-            <sprite>sprites\spr_area_hometown_indoor_bed</sprite>
+            <sprites name="Furniture">
+              <sprite>sprites\spr_area_hometown_furniture_bed</sprite>
+              <sprite>sprites\spr_area_hometown_furniture_desk_vertical</sprite>
+              <sprite>sprites\spr_area_hometown_furniture_desk_horizontal</sprite>
+              <sprite>sprites\spr_area_hometown_furniture_chair</sprite>
+            </sprites>
+            <sprites name="Decorations">
+              <sprite>sprites\spr_area_hometown_decoration_libraryLamp</sprite>
+              <sprite>sprites\spr_area_hometown_decoration_bell</sprite>
+              <sprite>sprites\spr_area_hometown_decoration_bookstack_messy</sprite>
+              <sprite>sprites\spr_area_hometown_decoration_bookstack_tidy</sprite>
+              <sprite>sprites\spr_area_hometown_decoration_ink</sprite>
+              <sprite>sprites\spr_area_hometown_decoration_papers</sprite>
+            </sprites>
           </sprites>
           <sprites name="Outdoor Assets">
             <sprite>sprites\spr_area_hometown_outdoor_lamp</sprite>
@@ -222,6 +248,17 @@
           <objects name="DealerBarley">
             <object>objects\obj_character_hometown_dealerBarley</object>
           </objects>
+          <objects name="DealerMagic">
+            <object>objects\obj_character_hometown_dealerMagic</object>
+          </objects>
+        </objects>
+      </objects>
+      <objects name="Debug">
+        <objects name="Desk Demon">
+          <object>objects\obj_character_deskDemon</object>
+        </objects>
+        <objects name="Cardboard">
+          <object>objects\obj_character_cardboard</object>
         </objects>
       </objects>
     </objects>
@@ -248,9 +285,20 @@
             <object>objects\obj_area_hometown_structure_house</object>
           </objects>
           <objects name="Indoor Assets">
-            <object>objects\obj_area_hometown_indoor_desk_verticle</object>
-            <object>objects\obj_area_hometown_indoor_desk_hor</object>
-            <object>objects\obj_area_hometown_indoor_bed</object>
+            <objects name="Furniture">
+              <object>objects\obj_area_hometown_furniture_bed</object>
+              <object>objects\obj_area_hometown_furniture_desk_vertical</object>
+              <object>objects\obj_area_hometown_furniture_desk_horizontal</object>
+              <object>objects\obj_area_hometown_furniture_chair</object>
+            </objects>
+            <objects name="Decorations">
+              <object>objects\obj_area_hometown_decoration_libraryLamp</object>
+              <object>objects\obj_area_hometown_decoration_bell</object>
+              <object>objects\obj_area_hometown_decoration_bookstack_messy</object>
+              <object>objects\obj_area_hometown_decoration_bookstack_tidy</object>
+              <object>objects\obj_area_hometown_decoration_ink</object>
+              <object>objects\obj_area_hometown_decoration_papers</object>
+            </objects>
           </objects>
           <objects name="Outdoor Assets">
             <object>objects\obj_area_hometown_outdoor_lamp</object>
