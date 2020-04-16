@@ -45,27 +45,35 @@
       <sprites name="Background">
         <sprites name="Hometown">
           <sprites name="Wolf Gaurd">
-            <sprite>sprites\spr_character_hometown_gaurdwolf_idle_front</sprite>
+            <sprites name="Overworld">
+              <sprite>sprites\spr_character_hometown_gaurdwolf_idle_front</sprite>
+            </sprites>
             <sprites name="Portraits">
               <sprite>sprites\spr_character_portrait_hometown_gaurdwolf_idle</sprite>
             </sprites>
           </sprites>
           <sprites name="Cat Gaurd">
-            <sprite>sprites\spr_character_hometown_gaurdcat_idle_front</sprite>
+            <sprites name="Overworld">
+              <sprite>sprites\spr_character_hometown_gaurdcat_idle_front</sprite>
+            </sprites>
             <sprites name="Portraits">
               <sprite>sprites\spr_character_portrait_hometown_gaurdcat_idle</sprite>
             </sprites>
           </sprites>
           <sprites name="Dealer Barley">
-            <sprite>sprites\spr_character_hometown_dealerBarley_idle_front</sprite>
+            <sprites name="Overworld">
+              <sprite>sprites\spr_character_hometown_dealerBarley_idle_front</sprite>
+            </sprites>
             <sprites name="Portraits">
               <sprite>sprites\spr_character_portrait_dealerBarley_idle</sprite>
             </sprites>
           </sprites>
-          <sprites name="Dealer Magic">
-            <sprite>sprites\spr_character_hometown_dealerMagic</sprite>
+          <sprites name="Dealer Margo">
+            <sprites name="Overworld">
+              <sprite>sprites\spr_character_hometown_dealerMargo</sprite>
+            </sprites>
             <sprites name="Portraits">
-              <sprite>sprites\spr_character_portrait_dealerMagic_idle</sprite>
+              <sprite>sprites\spr_character_portrait_dealerMargo_idle</sprite>
             </sprites>
           </sprites>
         </sprites>
@@ -88,6 +96,7 @@
     <sprites name="Level &amp; Decoration">
       <sprites name="Level">
         <sprite>sprites\spr_level_collider</sprite>
+        <sprite>sprites\spr_level_savepoint</sprite>
         <sprites name="Pickups">
           <sprite>sprites\spr_level_pickup_hpPotion</sprite>
         </sprites>
@@ -189,6 +198,7 @@
         <background>background\bgr_tile_forest_autumn_indoor</background>
       </backgrounds>
     </backgrounds>
+    <background>background\bgr_tile_Shadows</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -265,6 +275,7 @@
     <objects name="Level &amp; Decoration">
       <objects name="Level">
         <object>objects\obj_level_collider</object>
+        <object>objects\obj_level_savepoint</object>
         <objects name="Pickups">
           <object>objects\obj_level_pickup_gold</object>
           <object>objects\obj_level_pickup_hpPotion</object>
@@ -319,6 +330,7 @@
         <object>objects\obj_menu_title_overwrite</object>
         <object>objects\obj_menu_title_confirmErase</object>
         <object>objects\obj_menu_title_name</object>
+        <object>objects\obj_versionText</object>
       </objects>
       <objects name="Hud">
         <object>objects\obj_menu_hud_playerHealth</object>

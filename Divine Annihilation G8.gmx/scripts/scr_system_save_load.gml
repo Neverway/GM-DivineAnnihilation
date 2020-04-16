@@ -96,7 +96,7 @@ global.inventorySlot5 = ini_read_string(argument0, "inventorySlot5", "---");
 
 
 //------------------------------------//
-// Save weapons
+// Load weapons
 //------------------------------------//
 global.weaponSlot1 = ini_read_string(argument0, "weaponSlot1", "---");
 global.weaponSlot2 = ini_read_string(argument0, "weaponSlot2", "---");
