@@ -60,7 +60,7 @@ inTriggerRange = false;
 //==========================//
 if inTriggerRange
 {
-    script_execute(scr_interactOnTouch)
+    script_execute(scr_text_event)
 }
 </string>
           </argument>

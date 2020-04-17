@@ -60,14 +60,7 @@ inTriggerRange = false;
 //==========================//
 if inTriggerRange
 {
-    if activateOnTouch == false
-    {
-        script_execute(scr_text_interact);
-    }
-    //else
-    //{
-    //    script_execute(scr_text_conversationEvent);
-    //}
+    script_execute(scr_interactOnTouch)
 }
 </string>
           </argument>

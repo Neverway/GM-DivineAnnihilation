@@ -41,6 +41,16 @@
             <sprite>sprites\spr_character_portrait_fox_idle</sprite>
           </sprites>
         </sprites>
+        <sprites name="Cat">
+          <sprites name="Overworld">
+            <sprite>sprites\spr_character_overworld_cat_idle_side</sprite>
+            <sprite>sprites\spr_character_overworld_cat_idle_front</sprite>
+            <sprite>sprites\spr_character_overworld_cat_idle_back</sprite>
+          </sprites>
+          <sprites name="Portraits">
+            <sprite>sprites\spr_character_portrait_cat_idle</sprite>
+          </sprites>
+        </sprites>
       </sprites>
       <sprites name="Background">
         <sprites name="Hometown">
@@ -192,13 +202,13 @@
     </sprites>
   </sprites>
   <backgrounds name="background">
+    <background>background\bgr_tile_Shadows</background>
     <backgrounds name="Area tiles">
       <backgrounds name="Forest">
         <background>background\bgr_tile_forest_autumn</background>
         <background>background\bgr_tile_forest_autumn_indoor</background>
       </backgrounds>
     </backgrounds>
-    <background>background\bgr_tile_Shadows</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -225,11 +235,10 @@
         <script>scripts\approach.gml</script>
       </scripts>
       <scripts name="Textbox">
-        <scripts name="Old">
-          <script>scripts\scr_textbox.gml</script>
-          <script>scripts\scr_interact.gml</script>
-          <script>scripts\scr_interactOnTouch.gml</script>
-        </scripts>
+        <script>scripts\scr_textbox.gml</script>
+        <script>scripts\scr_text_interact.gml</script>
+        <script>scripts\scr_text_conversationEvent.gml</script>
+        <script>scripts\scr_text_event.gml</script>
       </scripts>
     </scripts>
   </scripts>
@@ -244,6 +253,11 @@
         <objects name="Fox">
           <objects name="Overworld">
             <object>objects\obj_character_overworld_fox</object>
+          </objects>
+        </objects>
+        <objects name="Cat">
+          <objects name="Overworld">
+            <object>objects\obj_character_overworld_cat</object>
           </objects>
         </objects>
       </objects>
@@ -284,6 +298,7 @@
       <objects name="Triggers">
         <object>objects\obj_trigger_interact</object>
         <object>objects\obj_trigger_event</object>
+        <object>objects\obj_trigger_partyMemberJoin</object>
         <object>objects\obj_trigger_warp</object>
       </objects>
       <objects name="Area">
