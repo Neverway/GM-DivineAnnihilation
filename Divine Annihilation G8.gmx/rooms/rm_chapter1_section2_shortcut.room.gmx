@@ -53,7 +53,6 @@
     <instance objName="obj_system_required_camera" x="2048" y="3256" name="inst_20081937" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_character_overworld_fox" x="2048" y="3288" name="inst_6E8239F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_hud_playerNameShelf" x="32" y="0" name="inst_152F2DD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_system_config" x="0" y="0" name="inst_F2FF4377" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_hud_playerHealth" x="32" y="0" name="inst_C1640EE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="4960" y="1056" name="inst_5765F406" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="4960" y="1056" name="inst_842D14B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -78,7 +77,7 @@
     <instance objName="&lt;undefined&gt;" x="4656" y="3200" name="inst_A1F024D0" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;text = &quot;Good luck!&quot;;&#xA;portrait = spr_textbox_portrait_none;&#xA;textboxOrder = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_character_overworld_cat" x="2048" y="3288" name="inst_AF9AAB35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_other_indoor_doorShadow" x="2048" y="3352" name="inst_71C224C1" locked="0" code="" scaleX="3" scaleY="0.899999976158142" colour="4294967295" rotation="0"/>
-    <instance objName="obj_trigger_levelTransition" x="2048" y="3328" name="inst_CA594625" locked="0" code="roomID = room - 1;" scaleX="3.5" scaleY="0.75" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trigger_levelTransition" x="2048" y="3328" name="inst_CA594625" locked="0" code="//------------------------------------//&#xA;// Level Transition&#xA;//-----------------------------------//&#xA;// If returning = true then add lines returnX = {x} &amp; returnY = {Y}&#xA;// {x} &amp; {y} are the coordinates of where the player will be when the next room is loaded&#xA;roomID = room - 1;&#xA;returning = true;&#xA;returnX = 10912;&#xA;returnY = 3888;" scaleX="3.5" scaleY="0.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="1920" y="2944" name="inst_13B513E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="1984" y="2880" name="inst_E91EC95F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="2048" y="2848" name="inst_63B9624D" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>

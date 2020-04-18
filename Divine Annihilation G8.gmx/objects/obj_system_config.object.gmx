@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>-100001</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>obj_system_parent_trigger</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -45,6 +45,38 @@ global.menuActive = true;
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Load player x/y coordinates for level return
+
+//==========================//
+// Move objects to saved coordinates
+//==========================//
+show_debug_message("&gt;&gt;&gt;It's loading the return cordinates!")
+obj_character_overworld_fox.x = returnX;
+obj_character_overworld_fox.y = returnY;
+obj_system_required_camera.x = returnX;
+obj_system_required_camera.y = returnY;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
@@ -71,8 +103,8 @@ if global.roomSavedX != 0 and global.roomSavedY != 0
 {
     obj_character_overworld_fox.x = global.roomSavedX;
     obj_character_overworld_fox.y = global.roomSavedY + 32;
-    o_system_camera.x = global.roomSavedX;
-    o_system_camera.y = global.roomSavedY + 32;
+    obj_system_required_camera.x = global.roomSavedX;
+    obj_system_required_camera.y = global.roomSavedY + 32;
 }
 </string>
           </argument>

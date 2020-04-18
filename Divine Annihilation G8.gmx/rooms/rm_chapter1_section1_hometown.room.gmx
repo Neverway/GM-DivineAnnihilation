@@ -192,7 +192,6 @@
     <instance objName="obj_level_collider" x="1344" y="896" name="inst_77072CC7" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="1344" y="960" name="inst_8F35A815" locked="0" code="" scaleX="0.75" scaleY="1.125" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_hud_playerNameShelf" x="32" y="0" name="inst_152F2DD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_system_config" x="0" y="0" name="inst_F2FF4377" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_hud_playerHealth" x="32" y="0" name="inst_C1640EE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="4960" y="1056" name="inst_5765F406" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="4960" y="1056" name="inst_842D14B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -284,7 +283,7 @@
     <instance objName="obj_character_overworld_cat" x="3368" y="3496" name="inst_AF9AAB35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_pickup_gold" x="3352" y="3472" name="inst_64558551" locked="0" code="//------------------------------------//&#xA;// Gold Pickup&#xA;//-----------------------------------//&#xA;goldAmount = 45;&#xA;&#xA;pickupText = &quot;&quot;;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_partyMemberJoin" x="3352" y="3472" name="inst_0F2A471A" locked="0" code="//------------------------------------//&#xA;// Party Controller&#xA;//-----------------------------------//&#xA;memberID = 1;&#xA;status = &quot;joining&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_trigger_levelTransition" x="10912" y="3856" name="inst_8C5A3785" locked="0" code="roomID = room + 1;" scaleX="4.51612901687622" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trigger_levelTransition" x="10912" y="3856" name="inst_8C5A3785" locked="0" code="//------------------------------------//&#xA;// Level Transition&#xA;//-----------------------------------//&#xA;// If returning = true then add lines returnX = {x} &amp; returnY = {Y}&#xA;// {x} &amp; {y} are the coordinates of where the player will be when the next room is loaded&#xA;roomID = room + 1;&#xA;returning = false;" scaleX="4.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_area_hometown_decoration_papers" x="2848" y="661" name="inst_9813D8DE" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_area_hometown_decoration_ink" x="2882" y="649" name="inst_10F01254" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_area_hometown_decoration_bookstack_tidy" x="2776" y="655" name="inst_12B8C52B" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>

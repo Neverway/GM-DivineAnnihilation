@@ -58,6 +58,10 @@ refreshing = false;
 //==========================//
 // Set object positions
 //==========================//
+if returning
+{
+    script_execute(scr_system_setPositionOnLoad, returnX, returnY);
+}
 obj_character_overworld_fox.canMove = true;
 room_goto(roomID);
 </string>

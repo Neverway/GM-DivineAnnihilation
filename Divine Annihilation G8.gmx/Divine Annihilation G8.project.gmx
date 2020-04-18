@@ -234,6 +234,7 @@
       </scripts>
       <scripts name="Player">
         <script>scripts\approach.gml</script>
+        <script>scripts\scr_system_setPositionOnLoad.gml</script>
       </scripts>
       <scripts name="Textbox">
         <script>scripts\scr_textbox.gml</script>
