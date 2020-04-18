@@ -88,19 +88,29 @@ global.partyMember3Following = ini_read_real(argument0, "partyMember3Following",
 //------------------------------------//
 // Load ineventory
 //------------------------------------//
-global.inventorySlot1 = ini_read_string(argument0, "inventorySlot1", "---");
-global.inventorySlot2 = ini_read_string(argument0, "inventorySlot2", "---");
-global.inventorySlot3 = ini_read_string(argument0, "inventorySlot3", "---");
-global.inventorySlot4 = ini_read_string(argument0, "inventorySlot4", "---");
-global.inventorySlot5 = ini_read_string(argument0, "inventorySlot5", "---");
+global.itemSlot1 = ini_read_string(argument0, "itemSlot1", "---");
+global.itemSlot2 = ini_read_string(argument0, "itemSlot2", "---");
+global.itemSlot3 = ini_read_string(argument0, "itemSlot3", "---");
+global.itemSlot4 = ini_read_string(argument0, "itemSlot4", "---");
+global.itemSlot5 = ini_read_string(argument0, "itemSlot5", "---");
+global.itemCatagorySlot1 = ini_read_real(argument0, "itemCatagorySlot1", spr_menu_inventory_icon_none);
+global.itemCatagorySlot2 = ini_read_real(argument0, "itemCatagorySlot2", spr_menu_inventory_icon_none);
+global.itemCatagorySlot3 = ini_read_real(argument0, "itemCatagorySlot3", spr_menu_inventory_icon_none);
+global.itemCatagorySlot4 = ini_read_real(argument0, "itemCatagorySlot4", spr_menu_inventory_icon_none);
+global.itemCatagorySlot5 = ini_read_real(argument0, "itemCatagorySlot5", spr_menu_inventory_icon_none);
 
 
 //------------------------------------//
 // Load weapons
 //------------------------------------//
-global.weaponSlot1 = ini_read_string(argument0, "weaponSlot1", "---");
-global.weaponSlot2 = ini_read_string(argument0, "weaponSlot2", "---");
-global.weaponSlot3 = ini_read_string(argument0, "weaponSlot3", "---");
-global.weaponSlot4 = ini_read_string(argument0, "weaponSlot4", "---");
-global.weaponSlot5 = ini_read_string(argument0, "weaponSlot5", "---");
+global.equipmentSlot1 = ini_read_string(argument0, "equipmentSlot1", "---");
+global.equipmentSlot2 = ini_read_string(argument0, "equipmentSlot2", "---");
+global.equipmentSlot3 = ini_read_string(argument0, "equipmentSlot3", "---");
+global.equipmentSlot4 = ini_read_string(argument0, "equipmentSlot4", "---");
+global.equipmentSlot5 = ini_read_string(argument0, "equipmentSlot5", "---");
+global.equipmentCatagorySlot1 = ini_read_real(argument0, "equipmentCatagorySlot1", spr_menu_inventory_icon_none);
+global.equipmentCatagorySlot2 = ini_read_real(argument0, "equipmentCatagorySlot2", spr_menu_inventory_icon_none);
+global.equipmentCatagorySlot3 = ini_read_real(argument0, "equipmentCatagorySlot3", spr_menu_inventory_icon_none);
+global.equipmentCatagorySlot4 = ini_read_real(argument0, "equipmentCatagorySlot4", spr_menu_inventory_icon_none);
+global.equipmentCatagorySlot5 = ini_read_real(argument0, "equipmentCatagorySlot5", spr_menu_inventory_icon_none);
 ini_close();

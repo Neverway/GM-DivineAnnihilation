@@ -77,7 +77,8 @@ global.menuActive = true;
 //------------------------------------//
     if global.keyAction and image_index == 1
     {
-        instance_change(obj_menu_title_options, true);
+        //instance_change(obj_menu_title_options, true);
+        show_debug_message("&gt;&gt;&gt;There is not an options menu in the game yet.")
     }
 
 

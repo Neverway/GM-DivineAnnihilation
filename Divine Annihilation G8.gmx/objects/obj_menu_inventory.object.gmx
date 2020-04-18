@@ -176,6 +176,46 @@ draw_sprite(sprite_index, image_index, view_xview, view_yview);
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>/// Draw Item Icons
+
+//==========================//
+// Item
+//==========================//
+draw_sprite(global.itemCatagorySlot1, 0, view_xview + 352, view_yview + 234);
+draw_sprite(global.itemCatagorySlot2, 0, view_xview + 352, view_yview + 262);
+draw_sprite(global.itemCatagorySlot3, 0, view_xview + 352, view_yview + 290);
+draw_sprite(global.itemCatagorySlot4, 0, view_xview + 352, view_yview + 318);
+draw_sprite(global.itemCatagorySlot5, 0, view_xview + 352, view_yview + 346);
+
+
+//==========================//
+// Equipment
+//==========================//
+draw_sprite(global.equipmentCatagorySlot1, 0, view_xview + 475, view_yview + 234);
+draw_sprite(global.equipmentCatagorySlot2, 0, view_xview + 475, view_yview + 262);
+draw_sprite(global.equipmentCatagorySlot3, 0, view_xview + 475, view_yview + 290);
+draw_sprite(global.equipmentCatagorySlot4, 0, view_xview + 475, view_yview + 318);
+draw_sprite(global.equipmentCatagorySlot5, 0, view_xview + 475, view_yview + 346);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>/// Draw text
 
 //==========================//
@@ -196,77 +236,77 @@ if sprite_index == spr_menu_inventory_items
     if image_index == 0
     {
         draw_set_color(c_white);
-        draw_text(view_xview+380, view_yview+236, global.inventorySlot1);
+        draw_text(view_xview+380, view_yview+236, global.itemSlot1);
         draw_set_color(c_gray);
-        draw_text(view_xview+380, view_yview+264, global.inventorySlot2);
-        draw_text(view_xview+380, view_yview+292, global.inventorySlot3);
-        draw_text(view_xview+380, view_yview+320, global.inventorySlot4);
-        draw_text(view_xview+380, view_yview+348, global.inventorySlot5);
+        draw_text(view_xview+380, view_yview+264, global.itemSlot2);
+        draw_text(view_xview+380, view_yview+292, global.itemSlot3);
+        draw_text(view_xview+380, view_yview+320, global.itemSlot4);
+        draw_text(view_xview+380, view_yview+348, global.itemSlot5);
     }
 
 
     if image_index == 1
     {
         draw_set_color(c_gray);
-        draw_text(view_xview+380, view_yview+236, global.inventorySlot1);
+        draw_text(view_xview+380, view_yview+236, global.itemSlot1);
         draw_set_color(c_white);
-        draw_text(view_xview+380, view_yview+264, global.inventorySlot2);
+        draw_text(view_xview+380, view_yview+264, global.itemSlot2);
         draw_set_color(c_gray);
-        draw_text(view_xview+380, view_yview+292, global.inventorySlot3);
-        draw_text(view_xview+380, view_yview+320, global.inventorySlot4);
-        draw_text(view_xview+380, view_yview+348, global.inventorySlot5);
+        draw_text(view_xview+380, view_yview+292, global.itemSlot3);
+        draw_text(view_xview+380, view_yview+320, global.itemSlot4);
+        draw_text(view_xview+380, view_yview+348, global.itemSlot5);
     }
 
 
     if image_index == 2
     {
         draw_set_color(c_gray);
-        draw_text(view_xview+380, view_yview+236, global.inventorySlot1);
-        draw_text(view_xview+380, view_yview+264, global.inventorySlot2);
+        draw_text(view_xview+380, view_yview+236, global.itemSlot1);
+        draw_text(view_xview+380, view_yview+264, global.itemSlot2);
         draw_set_color(c_white);
-        draw_text(view_xview+380, view_yview+292, global.inventorySlot3);
+        draw_text(view_xview+380, view_yview+292, global.itemSlot3);
         draw_set_color(c_gray);
-        draw_text(view_xview+380, view_yview+320, global.inventorySlot4);
-        draw_text(view_xview+380, view_yview+348, global.inventorySlot5);
+        draw_text(view_xview+380, view_yview+320, global.itemSlot4);
+        draw_text(view_xview+380, view_yview+348, global.itemSlot5);
     }
 
 
     if image_index == 3
     {
         draw_set_color(c_gray);
-        draw_text(view_xview+380, view_yview+236, global.inventorySlot1);
-        draw_text(view_xview+380, view_yview+264, global.inventorySlot2);
-        draw_text(view_xview+380, view_yview+292, global.inventorySlot3);
+        draw_text(view_xview+380, view_yview+236, global.itemSlot1);
+        draw_text(view_xview+380, view_yview+264, global.itemSlot2);
+        draw_text(view_xview+380, view_yview+292, global.itemSlot3);
         draw_set_color(c_white);
-        draw_text(view_xview+380, view_yview+320, global.inventorySlot4);
+        draw_text(view_xview+380, view_yview+320, global.itemSlot4);
         draw_set_color(c_gray);
-        draw_text(view_xview+380, view_yview+348, global.inventorySlot5);
+        draw_text(view_xview+380, view_yview+348, global.itemSlot5);
     }
 
 
     if image_index == 4
     {
         draw_set_color(c_gray);
-        draw_text(view_xview+380, view_yview+236, global.inventorySlot1);
-        draw_text(view_xview+380, view_yview+264, global.inventorySlot2);
-        draw_text(view_xview+380, view_yview+292, global.inventorySlot3);
-        draw_text(view_xview+380, view_yview+320, global.inventorySlot4);
+        draw_text(view_xview+380, view_yview+236, global.itemSlot1);
+        draw_text(view_xview+380, view_yview+264, global.itemSlot2);
+        draw_text(view_xview+380, view_yview+292, global.itemSlot3);
+        draw_text(view_xview+380, view_yview+320, global.itemSlot4);
         draw_set_color(c_white);
-        draw_text(view_xview+380, view_yview+348, global.inventorySlot5);
+        draw_text(view_xview+380, view_yview+348, global.itemSlot5);
     }
     
 
     draw_set_color(c_gray);
-    draw_text(view_xview+503, view_yview+236, global.weaponSlot1);
-    draw_text(view_xview+503, view_yview+264, global.weaponSlot2);
-    draw_text(view_xview+503, view_yview+292, global.weaponSlot3);
-    draw_text(view_xview+503, view_yview+320, global.weaponSlot4);
-    draw_text(view_xview+503, view_yview+348, global.weaponSlot5);
+    draw_text(view_xview+503, view_yview+236, global.equipmentSlot1);
+    draw_text(view_xview+503, view_yview+264, global.equipmentSlot2);
+    draw_text(view_xview+503, view_yview+292, global.equipmentSlot3);
+    draw_text(view_xview+503, view_yview+320, global.equipmentSlot4);
+    draw_text(view_xview+503, view_yview+348, global.equipmentSlot5);
 }
 
 
 //==========================//
-// Weapons text
+// equipment text
 //==========================//
 draw_set_font(fnt_menu);
 if sprite_index == spr_menu_inventory_equipment
@@ -274,72 +314,72 @@ if sprite_index == spr_menu_inventory_equipment
     if image_index == 0
     {
         draw_set_color(c_white);
-        draw_text(view_xview+503, view_yview+236, global.weaponSlot1);
+        draw_text(view_xview+503, view_yview+236, global.equipmentSlot1);
         draw_set_color(c_gray);
-        draw_text(view_xview+503, view_yview+264, global.weaponSlot2);
-        draw_text(view_xview+503, view_yview+292, global.weaponSlot3);
-        draw_text(view_xview+503, view_yview+320, global.weaponSlot4);
-        draw_text(view_xview+503, view_yview+348, global.weaponSlot5);
+        draw_text(view_xview+503, view_yview+264, global.equipmentSlot2);
+        draw_text(view_xview+503, view_yview+292, global.equipmentSlot3);
+        draw_text(view_xview+503, view_yview+320, global.equipmentSlot4);
+        draw_text(view_xview+503, view_yview+348, global.equipmentSlot5);
     }
     
     
     if image_index == 1 and sprite_index == spr_menu_inventory_equipment
     {
         draw_set_color(c_gray);
-        draw_text(view_xview+503, view_yview+236, global.weaponSlot1);
+        draw_text(view_xview+503, view_yview+236, global.equipmentSlot1);
         draw_set_color(c_white);
-        draw_text(view_xview+503, view_yview+264, global.weaponSlot2);
+        draw_text(view_xview+503, view_yview+264, global.equipmentSlot2);
         draw_set_color(c_gray);
-        draw_text(view_xview+503, view_yview+292, global.weaponSlot3);
-        draw_text(view_xview+503, view_yview+320, global.weaponSlot4);
-        draw_text(view_xview+503, view_yview+348, global.weaponSlot5);
+        draw_text(view_xview+503, view_yview+292, global.equipmentSlot3);
+        draw_text(view_xview+503, view_yview+320, global.equipmentSlot4);
+        draw_text(view_xview+503, view_yview+348, global.equipmentSlot5);
     }
 
 
     if image_index == 2 and sprite_index == spr_menu_inventory_equipment
     {
         draw_set_color(c_gray);
-        draw_text(view_xview+503, view_yview+236, global.weaponSlot1);
-        draw_text(view_xview+503, view_yview+264, global.weaponSlot2);
+        draw_text(view_xview+503, view_yview+236, global.equipmentSlot1);
+        draw_text(view_xview+503, view_yview+264, global.equipmentSlot2);
         draw_set_color(c_white);
-        draw_text(view_xview+503, view_yview+292, global.weaponSlot3);
+        draw_text(view_xview+503, view_yview+292, global.equipmentSlot3);
         draw_set_color(c_gray);
-        draw_text(view_xview+503, view_yview+320, global.weaponSlot4);
-        draw_text(view_xview+503, view_yview+348, global.weaponSlot5);
+        draw_text(view_xview+503, view_yview+320, global.equipmentSlot4);
+        draw_text(view_xview+503, view_yview+348, global.equipmentSlot5);
     }
 
 
     if image_index == 3 and sprite_index == spr_menu_inventory_equipment
     {
         draw_set_color(c_gray);
-        draw_text(view_xview+503, view_yview+236, global.weaponSlot1);
-        draw_text(view_xview+503, view_yview+264, global.weaponSlot2);
-        draw_text(view_xview+503, view_yview+292, global.weaponSlot3);
+        draw_text(view_xview+503, view_yview+236, global.equipmentSlot1);
+        draw_text(view_xview+503, view_yview+264, global.equipmentSlot2);
+        draw_text(view_xview+503, view_yview+292, global.equipmentSlot3);
         draw_set_color(c_white);
-        draw_text(view_xview+503, view_yview+320, global.weaponSlot4);
+        draw_text(view_xview+503, view_yview+320, global.equipmentSlot4);
         draw_set_color(c_gray);
-        draw_text(view_xview+503, view_yview+348, global.weaponSlot5);
+        draw_text(view_xview+503, view_yview+348, global.equipmentSlot5);
     }
 
 
     if image_index == 4 and sprite_index == spr_menu_inventory_equipment
     {
         draw_set_color(c_gray);
-        draw_text(view_xview+503, view_yview+236, global.weaponSlot1);
-        draw_text(view_xview+503, view_yview+264, global.weaponSlot2);
-        draw_text(view_xview+503, view_yview+292, global.weaponSlot3);
-        draw_text(view_xview+503, view_yview+320, global.weaponSlot4);
+        draw_text(view_xview+503, view_yview+236, global.equipmentSlot1);
+        draw_text(view_xview+503, view_yview+264, global.equipmentSlot2);
+        draw_text(view_xview+503, view_yview+292, global.equipmentSlot3);
+        draw_text(view_xview+503, view_yview+320, global.equipmentSlot4);
         draw_set_color(c_white);
-        draw_text(view_xview+503, view_yview+348, global.weaponSlot5);
+        draw_text(view_xview+503, view_yview+348, global.equipmentSlot5);
     }
     
     
         draw_set_color(c_gray);
-        draw_text(view_xview+380, view_yview+236, global.inventorySlot1);
-        draw_text(view_xview+380, view_yview+264, global.inventorySlot2);
-        draw_text(view_xview+380, view_yview+292, global.inventorySlot3);
-        draw_text(view_xview+380, view_yview+320, global.inventorySlot4);
-        draw_text(view_xview+380, view_yview+348, global.inventorySlot5);
+        draw_text(view_xview+380, view_yview+236, global.itemSlot1);
+        draw_text(view_xview+380, view_yview+264, global.itemSlot2);
+        draw_text(view_xview+380, view_yview+292, global.itemSlot3);
+        draw_text(view_xview+380, view_yview+320, global.itemSlot4);
+        draw_text(view_xview+380, view_yview+348, global.itemSlot5);
 }
 </string>
           </argument>

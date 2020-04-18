@@ -1,4 +1,4 @@
-/// scr_pickup("item"/"weapon", "{item name}")
+/// scr_pickup("item"/"equipment", "{item name}")
 
 //==========================//
 // Assign pickup to item
@@ -7,100 +7,110 @@ if argument0 == "item"
 {
 
 //------------------------------------//
-// Inventory Slot 1
+// item Slot 1
 //-----------------------------------//
-    if global.inventorySlot1 == "---"
+    if global.itemSlot1 == "---"
     {
-        global.inventorySlot1 = argument1
-        instance_destroy()
+        global.itemSlot1 = argument1;
+        global.itemCatagorySlot1 = argument2;
+        instance_destroy();
     }
     
 //------------------------------------//
-// Inventory Slot 2
+// item Slot 2
 //-----------------------------------//
-    else if global.inventorySlot2 == "---"
+    else if global.itemSlot2 == "---"
     {
-        global.inventorySlot2 = argument1
-        instance_destroy()
+        global.itemSlot2 = argument1;
+        global.itemCatagorySlot2 = argument2;
+        instance_destroy();
     }
     
 //------------------------------------//
-// Inventory Slot 3
+// item Slot 3
 //-----------------------------------//
-        else if global.inventorySlot3 == "---"
+        else if global.itemSlot3 == "---"
     {
-        global.inventorySlot3 = argument1
-        instance_destroy()
+        global.itemSlot3 = argument1;
+        global.itemCatagorySlot3 = argument2;
+        instance_destroy();
     }
 
 //------------------------------------//
-// Inventory Slot 4
+// item Slot 4
 //-----------------------------------//
-    else if global.inventorySlot4 == "---"
+    else if global.itemSlot4 == "---"
     {
-        global.inventorySlot4 = argument1
-        instance_destroy()
+        global.itemSlot4 = argument1;
+        global.itemCatagorySlot4 = argument2;
+        instance_destroy();
     }
         
 //------------------------------------//
-// Inventory Slot 5
+// item Slot 5
 //-----------------------------------//
-    else if global.inventorySlot5 == "---"
+    else if global.itemSlot5 == "---"
     {
-        global.inventorySlot5 = argument1
-        instance_destroy()
+        global.itemSlot5 = argument1;
+        global.itemCatagorySlot5 = argument2;
+        instance_destroy();
     }
 }
 
 
 //==========================//
-// Assign pickup to weapon
+// Assign pickup to equipment
 //==========================//
-if argument0 == "weapon"
+if argument0 == "equipment"
 {
 
 //------------------------------------//
-// Weapon Slot 1
+// equipment Slot 1
 //-----------------------------------//
-        if global.weaponSlot1 == "---"
+        if global.equipmentSlot1 == "---"
     {
-        global.weaponSlot1 = argument1
+        global.equipmentSlot1 = argument1
+        global.equipmentCatagorySlot1 = argument2
         instance_destroy()
     }
     
 //------------------------------------//
-// Weapon Slot 2
+// equipment Slot 2
 //-----------------------------------//
-        else if global.weaponSlot2 == "---"
+        else if global.equipmentSlot2 == "---"
     {
-        global.weaponSlot2 = argument1
+        global.equipmentSlot2 = argument1
+        global.equipmentCatagorySlot2 = argument2
         instance_destroy()
     }
     
 //------------------------------------//
-// Weapon Slot 3
+// equipment Slot 3
 //-----------------------------------//
-        else if global.weaponSlot3 == "---"
+        else if global.equipmentSlot3 == "---"
     {
-        global.weaponSlot3 = argument1
+        global.equipmentSlot3 = argument1
+        global.equipmentCatagorySlot3 = argument2
         instance_destroy()
     }
     
 //------------------------------------//
-// Weapon Slot 4
+// equipment Slot 4
 //-----------------------------------//
-    else if global.weaponSlot4 == "---"
+    else if global.equipmentSlot4 == "---"
     {
-        global.weaponSlot4 = argument1
+        global.equipmentSlot4 = argument1
+        global.equipmentCatagorySlot4 = argument2
         instance_destroy()
     }
     
 //------------------------------------//
-// Weapon Slot 5
+// equipment Slot 5
 //-----------------------------------//
-    else if global.weaponSlot5 == "---"
+    else if global.equipmentSlot5 == "---"
     {
-        global.weaponSlot5 = argument1
+        global.equipmentSlot5 = argument1
+        global.equipmentCatagorySlot5 = argument2
         instance_destroy()
     }
 }

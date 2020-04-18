@@ -167,6 +167,13 @@
       <sprites name="Inventory">
         <sprite>sprites\spr_menu_inventory_items</sprite>
         <sprite>sprites\spr_menu_inventory_equipment</sprite>
+        <sprite>sprites\spr_menu_inventory_icon_none</sprite>
+        <sprite>sprites\spr_menu_inventory_icon_weapon</sprite>
+        <sprite>sprites\spr_menu_inventory_icon_defense</sprite>
+        <sprite>sprites\spr_menu_inventory_icon_magic</sprite>
+        <sprite>sprites\spr_menu_inventory_icon_puzzle</sprite>
+        <sprite>sprites\spr_menu_inventory_icon_consumable</sprite>
+        <sprite>sprites\spr_menu_inventory_icon_other</sprite>
       </sprites>
       <sprites name="Textbox">
         <sprite>sprites\spr_menu_textbox</sprite>

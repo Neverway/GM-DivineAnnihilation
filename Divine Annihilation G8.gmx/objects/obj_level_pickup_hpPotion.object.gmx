@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>if global.keyAction
 {
-    script_execute(scr_pickup, "item", "HP Potion")
+    script_execute(scr_pickup, "item", "HP Potion", spr_menu_inventory_icon_consumable);
 }
 </string>
           </argument>
