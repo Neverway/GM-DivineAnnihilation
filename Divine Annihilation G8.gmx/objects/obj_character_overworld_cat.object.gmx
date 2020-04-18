@@ -66,13 +66,48 @@ image_yscale = 1.5;
 //==========================//
 // Following
 //==========================//
+absoluteSpeed = abs(obj_character_overworld_fox.vx) + abs(obj_character_overworld_fox.vy)
 if global.partyMember1Following
 {
-    if point_distance(x, y, obj_character_overworld_fox.x, obj_character_overworld_fox.y) &gt; 48
+    if point_distance(x, y, obj_character_overworld_fox.x, obj_character_overworld_fox.y) &gt; 48 and absoluteSpeed &gt; 0.25
     {
-                     move_towards_point(obj_character_overworld_fox.x, obj_character_overworld_fox.y, obj_character_overworld_fox.maxXVelocity);
+    
+//------------------------------------//
+// Follow walking
+//-----------------------------------//
+        if obj_character_overworld_fox.maxXVelocity = 3.25
+        {
+            if absoluteSpeed &lt;= 3.25
+            {
+                move_towards_point(obj_character_overworld_fox.x, obj_character_overworld_fox.y, absoluteSpeed - 0.25);
+            }
+        
+            else
+            {
+                move_towards_point(obj_character_overworld_fox.x, obj_character_overworld_fox.y, absoluteSpeed - 2.25);
+            }
+        }
+        
+//------------------------------------//
+// Follow sprinting
+//-----------------------------------//
+        if obj_character_overworld_fox.maxXVelocity = 4.25
+        {
+            if absoluteSpeed &lt;= 4.25
+            {
+                move_towards_point(obj_character_overworld_fox.x, obj_character_overworld_fox.y, absoluteSpeed - 0.25);
+            }
+        
+            else
+            {
+                move_towards_point(obj_character_overworld_fox.x, obj_character_overworld_fox.y, absoluteSpeed - 3);
+            }
+        }
     }
 
+//------------------------------------//
+// Stop follower
+//-----------------------------------//
     else
     {
         speed = 0;
