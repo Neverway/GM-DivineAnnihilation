@@ -46,6 +46,9 @@
             <sprite>sprites\spr_character_overworld_cat_idle_side</sprite>
             <sprite>sprites\spr_character_overworld_cat_idle_front</sprite>
             <sprite>sprites\spr_character_overworld_cat_idle_back</sprite>
+            <sprite>sprites\spr_character_overworld_cat_walk_side</sprite>
+            <sprite>sprites\spr_character_overworld_cat_walk_front</sprite>
+            <sprite>sprites\spr_character_overworld_cat_walk_back</sprite>
           </sprites>
           <sprites name="Portraits">
             <sprite>sprites\spr_character_portrait_cat_idle</sprite>

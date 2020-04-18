@@ -36,7 +36,7 @@ event_inherited();
 //==========================//
 // Setup
 //==========================//
-image_speed = 0;
+//image_speed = 0;
 image_xscale = 1.5;
 image_yscale = 1.5;
 </string>
@@ -94,6 +94,33 @@ if global.partyMember1Following
 //==========================//
      if instance_exists(obj_character_overworld_fox) and speed != 0
      {
+        image_speed = obj_character_overworld_fox.image_speed;
+        if obj_character_overworld_fox.x &gt; x
+        {
+            sprite_index = spr_character_overworld_cat_walk_side;
+            image_xscale = 1.5;
+        }
+         
+        if obj_character_overworld_fox.x &lt; x 
+        {
+            sprite_index = spr_character_overworld_cat_walk_side;
+            image_xscale = -1.5;
+        }
+     
+        if obj_character_overworld_fox.y &gt; y and x &gt; obj_character_overworld_fox.x-32 and x &lt; obj_character_overworld_fox.x+32
+        {
+            sprite_index = spr_character_overworld_cat_walk_front;
+        }
+    
+        if obj_character_overworld_fox.y &lt; y and x &gt; obj_character_overworld_fox.x-32 and x &lt; obj_character_overworld_fox.x+32
+        {
+            sprite_index = spr_character_overworld_cat_walk_back;
+        }
+    }
+    
+    if instance_exists(obj_character_overworld_fox) and speed = 0
+    {
+        //image_speed = 0;
         if obj_character_overworld_fox.x &gt; x
         {
             sprite_index = spr_character_overworld_cat_idle_side;
@@ -139,8 +166,8 @@ if global.partyMember1Following
         <arguments>
           <argument>
             <kind>1</kind>
-            <string> draw_sprite_ext(spr_system_other_entityShadow, 1, x, y, 1, 1, 0, c_white, 0.5);
- draw_self();
+            <string>draw_sprite_ext(spr_system_other_entityShadow, 1, x, y, 1, 1, 0, c_white, 0.5);
+draw_self();
 </string>
           </argument>
         </arguments>
