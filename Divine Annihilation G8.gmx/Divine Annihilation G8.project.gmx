@@ -207,6 +207,7 @@
       <backgrounds name="Forest">
         <background>background\bgr_tile_forest_autumn</background>
         <background>background\bgr_tile_forest_autumn_indoor</background>
+        <background>background\bgr_tile_forest_autumn_cave</background>
       </backgrounds>
     </backgrounds>
   </backgrounds>
@@ -300,6 +301,7 @@
         <object>objects\obj_trigger_event</object>
         <object>objects\obj_trigger_partyMemberJoin</object>
         <object>objects\obj_trigger_warp</object>
+        <object>objects\obj_trigger_levelTransition</object>
       </objects>
       <objects name="Area">
         <objects name="Hometown">
@@ -367,6 +369,7 @@
       </objects>
       <objects name="Lighting">
         <object>objects\obj_system_light_point</object>
+        <object>objects\obj_system_light_lantern</object>
         <object>objects\obj_system_light_flicker</object>
         <object>objects\obj_system_lightOperator</object>
         <object>objects\obj_system_lightingController</object>
@@ -379,6 +382,7 @@
         </objects>
         <objects name="Transition">
           <object>objects\obj_system_transition_fade</object>
+          <object>objects\obj_system_transition_fadeInLevel</object>
         </objects>
       </objects>
     </objects>
@@ -391,6 +395,7 @@
     </rooms>
     <rooms name="Chapter 1">
       <room>rooms\rm_chapter1_section1_hometown</room>
+      <room>rooms\rm_chapter1_section2_shortcut</room>
     </rooms>
     <rooms name="Battles">
       <room>rooms\rm_battle_placeholder</room>
