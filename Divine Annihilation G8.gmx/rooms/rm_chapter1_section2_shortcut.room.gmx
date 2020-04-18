@@ -76,7 +76,7 @@
     <instance objName="&lt;undefined&gt;" x="4656" y="3200" name="inst_11BD0E6E" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;text = &quot;Good luck!&quot;;&#xA;portrait = spr_textbox_portrait_none;&#xA;textboxOrder = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="4656" y="3200" name="inst_A1F024D0" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;text = &quot;Good luck!&quot;;&#xA;portrait = spr_textbox_portrait_none;&#xA;textboxOrder = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_character_overworld_cat" x="2048" y="3288" name="inst_AF9AAB35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_other_indoor_doorShadow" x="2048" y="3352" name="inst_71C224C1" locked="0" code="" scaleX="3" scaleY="0.899999976158142" colour="4294967295" rotation="0"/>
+    <instance objName="obj_other_indoor_doorShadow" x="2046" y="3328" name="inst_71C224C1" locked="0" code="" scaleX="3" scaleY="0.899999976158142" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_levelTransition" x="2048" y="3328" name="inst_CA594625" locked="0" code="//------------------------------------//&#xA;// Level Transition&#xA;//-----------------------------------//&#xA;// If returning = true then add lines returnX = {x} &amp; returnY = {Y}&#xA;// {x} &amp; {y} are the coordinates of where the player will be when the next room is loaded&#xA;roomID = room - 1;&#xA;returning = true;&#xA;returnX = 10912;&#xA;returnY = 3888;" scaleX="3.5" scaleY="0.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="1920" y="2944" name="inst_13B513E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="1984" y="2880" name="inst_E91EC95F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -131,7 +131,6 @@
     <tile bgName="bgr_tile_forest_autumn_cave" x="1984" y="2880" w="64" h="64" xo="128" yo="512" id="10009798" name="inst_69D2E13F" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn_cave" x="2176" y="2880" w="64" h="64" xo="128" yo="512" id="10009801" name="inst_381D795D" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn_cave" x="1920" y="2944" w="64" h="64" xo="128" yo="512" id="10009802" name="inst_EF402616" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgr_tile_forest_autumn_cave" x="1920" y="2880" w="64" h="64" xo="128" yo="448" id="10009803" name="inst_4F7B85D6" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn_cave" x="1984" y="2816" w="64" h="64" xo="128" yo="448" id="10009804" name="inst_069F874B" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn_cave" x="2176" y="2816" w="64" h="64" xo="128" yo="448" id="10009807" name="inst_C251F363" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn_cave" x="2240" y="2816" w="64" h="64" xo="192" yo="448" id="10009808" name="inst_B27FDC27" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -153,6 +152,7 @@
     <tile bgName="bgr_tile_forest_autumn_cave" x="1856" y="2944" w="64" h="64" xo="64" yo="512" id="10009825" name="inst_569B6B67" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn_cave" x="1856" y="2880" w="64" h="64" xo="64" yo="448" id="10009826" name="inst_D4639D7E" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn_cave" x="1920" y="2816" w="64" h="64" xo="64" yo="448" id="10009827" name="inst_60F5F640" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_cave" x="1920" y="2880" w="64" h="64" xo="192" yo="384" id="10009877" name="inst_96D6F3DE" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
