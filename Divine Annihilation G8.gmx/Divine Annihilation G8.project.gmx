@@ -60,7 +60,12 @@
           <sprites name="Hometown">
             <sprites name="Wolf Gaurd">
               <sprites name="Overworld">
+                <sprite>sprites\spr_character_hometown_gaurdwolf_idle_side</sprite>
                 <sprite>sprites\spr_character_hometown_gaurdwolf_idle_front</sprite>
+                <sprite>sprites\spr_character_hometown_gaurdwolf_idle_back</sprite>
+                <sprite>sprites\spr_character_hometown_gaurdwolf_idle_sideS2</sprite>
+                <sprite>sprites\spr_character_hometown_gaurdwolf_idle_frontS2</sprite>
+                <sprite>sprites\spr_character_hometown_gaurdwolf_idle_backS2</sprite>
               </sprites>
               <sprites name="Portraits">
                 <sprite>sprites\spr_character_portrait_hometown_gaurdwolf_idle</sprite>
@@ -288,6 +293,8 @@
         <objects name="Cat">
           <objects name="Overworld">
             <object>objects\obj_character_overworld_cat</object>
+            <object>objects\obj_character_overworld_ph1</object>
+            <object>objects\obj_character_overworld_ph2</object>
           </objects>
         </objects>
       </objects>

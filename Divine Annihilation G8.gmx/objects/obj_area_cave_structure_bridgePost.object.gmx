@@ -83,7 +83,7 @@ if instance_exists(obj_system_lightingController)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string> draw_sprite_ext(spr_system_other_entityShadow, 1, x, y+16, 1, 1, 0, c_white, 0.5);
+            <string>
  draw_self();
 </string>
           </argument>

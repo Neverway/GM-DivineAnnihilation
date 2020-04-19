@@ -76,7 +76,7 @@
     <instance objName="&lt;undefined&gt;" x="4656" y="3200" name="inst_11BD0E6E" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;text = &quot;Good luck!&quot;;&#xA;portrait = spr_textbox_portrait_none;&#xA;textboxOrder = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="4656" y="3200" name="inst_A1F024D0" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;text = &quot;Good luck!&quot;;&#xA;portrait = spr_textbox_portrait_none;&#xA;textboxOrder = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_character_overworld_cat" x="2048" y="3288" name="inst_AF9AAB35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_other_indoor_doorShadow" x="2048" y="3328" name="inst_71C224C1" locked="0" code="" scaleX="3" scaleY="0.899999976158142" colour="4294967295" rotation="0"/>
+    <instance objName="obj_other_indoor_doorShadow" x="2048" y="3328" name="inst_71C224C1" locked="0" code="" scaleX="3" scaleY="1.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_levelTransition" x="2048" y="3328" name="inst_CA594625" locked="0" code="//------------------------------------//&#xA;// Level Transition&#xA;//-----------------------------------//&#xA;// If returning = true then add lines returnX = {x} &amp; returnY = {Y}&#xA;// {x} &amp; {y} are the coordinates of where the player will be when the next room is loaded&#xA;roomID = room - 1;&#xA;returning = true;&#xA;returnX = 10912;&#xA;returnY = 3888;" scaleX="3.5" scaleY="0.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_warp" x="2112" y="2904" name="inst_65BCEEB0" locked="0" code="//------------------------------------//&#xA;// Warp trigger&#xA;//-----------------------------------//&#xA;// {x} &amp; {y} are the coordinates of where the warp will bring you&#xA;destinationX = 2944;&#xA;destinationY = 3552;" scaleX="3.87097001075745" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_warp" x="2944" y="3584" name="inst_EE2D576B" locked="0" code="//------------------------------------//&#xA;// Warp trigger&#xA;//-----------------------------------//&#xA;// {x} &amp; {y} are the coordinates of where the warp will bring you&#xA;destinationX = 2112;&#xA;destinationY = 2936;" scaleX="3.87097001075745" scaleY="1" colour="4294967295" rotation="0"/>
@@ -86,8 +86,8 @@
     <instance objName="obj_enemy_cave_saltwaterBat" x="4168" y="4320" name="inst_65739E8F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_cave_saltwaterBat" x="4512" y="3784" name="inst_4983D613" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_cave_saltwaterBat" x="3808" y="3672" name="inst_15CF85F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_other_indoor_doorShadow" x="2944" y="3584" name="inst_EE0BCC59" locked="0" code="" scaleX="3" scaleY="0.899999976158142" colour="4294967295" rotation="0"/>
-    <instance objName="obj_other_indoor_doorShadow" x="5696" y="3328" name="inst_515C1ECA" locked="0" code="" scaleX="3" scaleY="0.899999976158142" colour="4294967295" rotation="0"/>
+    <instance objName="obj_other_indoor_doorShadow" x="2944" y="3584" name="inst_EE0BCC59" locked="0" code="" scaleX="3" scaleY="1.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_other_indoor_doorShadow" x="5696" y="3328" name="inst_515C1ECA" locked="0" code="" scaleX="3" scaleY="1.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_warp" x="4864" y="3024" name="inst_7CAAF09D" locked="0" code="//------------------------------------//&#xA;// Warp trigger&#xA;//-----------------------------------//&#xA;// {x} &amp; {y} are the coordinates of where the warp will bring you&#xA;destinationX = 5696;&#xA;destinationY = 3296;" scaleX="3.87097001075745" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_warp" x="5696" y="3328" name="inst_A5A68252" locked="0" code="//------------------------------------//&#xA;// Warp trigger&#xA;//-----------------------------------//&#xA;// {x} &amp; {y} are the coordinates of where the warp will bring you&#xA;destinationX = 4864;&#xA;destinationY = 3056;" scaleX="3.87097001075745" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_warp" x="6848" y="3352" name="inst_BBBD00D7" locked="0" code="//------------------------------------//&#xA;// Warp trigger&#xA;//-----------------------------------//&#xA;// {x} &amp; {y} are the coordinates of where the warp will bring you&#xA;destinationX = 2112;&#xA;destinationY = 2936;" scaleX="3.87097001075745" scaleY="1" colour="4294967295" rotation="0"/>
@@ -95,9 +95,12 @@
     <instance objName="obj_area_cave_structure_bridgeRope" x="6784" y="3840" name="inst_623AB699" locked="0" code="" scaleX="1" scaleY="9" colour="4294967295" rotation="0"/>
     <instance objName="obj_area_cave_structure_bridgePost" x="6784" y="3584" name="inst_786E1B84" locked="0" code="/// A totally stable bridge that definitely will not break at any point in time." scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_area_cave_structure_bridgePost" x="6848" y="3584" name="inst_B0994026" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_area_cave_structure_bridgePost" x="6784" y="4160" name="inst_87795494" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_area_cave_structure_bridgePost" x="6848" y="4160" name="inst_85582F42" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_area_cave_structure_bridgePost" x="6784" y="4168" name="inst_87795494" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_area_cave_structure_bridgePost" x="6848" y="4168" name="inst_85582F42" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_warp" x="7480" y="4800" name="inst_8CE0D958" locked="0" code="//------------------------------------//&#xA;// Warp trigger&#xA;//-----------------------------------//&#xA;// {x} &amp; {y} are the coordinates of where the warp will bring you&#xA;destinationX = 2112;&#xA;destinationY = 2936;" scaleX="1" scaleY="3.8125" colour="4294967295" rotation="0"/>
+    <instance objName="obj_other_indoor_doorShadow" x="5696" y="3328" name="inst_57261CA8" locked="0" code="" scaleX="3" scaleY="1.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_other_indoor_doorShadow" x="5696" y="3328" name="inst_F47D53F7" locked="0" code="" scaleX="3" scaleY="1.25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_other_indoor_doorShadow" x="5696" y="3328" name="inst_ABA39ABF" locked="0" code="" scaleX="3" scaleY="1.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="1920" y="2944" name="inst_13B513E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="1984" y="2880" name="inst_E91EC95F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="2048" y="2848" name="inst_63B9624D" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
@@ -178,11 +181,11 @@
     <instance objName="obj_level_collider" x="6400" y="3200" name="inst_F5ACEF03" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="6272" y="3136" name="inst_5B9C4363" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="6144" y="3072" name="inst_7EA61E88" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_level_collider" x="6784" y="3296" name="inst_92A31B17" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_collider" x="6784" y="3328" name="inst_92A31B17" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="6848" y="3584" name="inst_1C96AB71" locked="0" code="" scaleX="10.1586999893188" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="6720" y="3648" name="inst_0EB32DA7" locked="0" code="" scaleX="1" scaleY="7.11111116409302" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="6848" y="3648" name="inst_5ABAB703" locked="0" code="" scaleX="1" scaleY="7.11111116409302" colour="4294967295" rotation="0"/>
-    <instance objName="obj_level_collider" x="6400" y="4096" name="inst_A4513777" locked="0" code="" scaleX="6.09523820877075" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_collider" x="6400" y="4096" name="inst_A4513777" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="6848" y="4096" name="inst_F0B5BB29" locked="0" code="" scaleX="11" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="7552" y="4160" name="inst_1083411F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="7616" y="4224" name="inst_145A995C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -791,7 +794,6 @@
     <tile bgName="bgr_tile_Shadows" x="6592" y="3520" w="64" h="64" xo="64" yo="0" id="10012500" name="inst_6452519A" depth="1000003" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_Shadows" x="6656" y="3520" w="64" h="64" xo="64" yo="0" id="10012501" name="inst_9C895660" depth="1000003" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_Shadows" x="6720" y="3520" w="64" h="64" xo="64" yo="0" id="10012502" name="inst_A3B3B617" depth="1000003" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgr_tile_Shadows" x="6784" y="3520" w="64" h="64" xo="64" yo="0" id="10012503" name="inst_F066D1F3" depth="1000003" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_Shadows" x="6848" y="3520" w="64" h="64" xo="64" yo="0" id="10012504" name="inst_39BED3D4" depth="1000003" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_Shadows" x="6912" y="3520" w="64" h="64" xo="64" yo="0" id="10012505" name="inst_8EC6F92C" depth="1000003" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_Shadows" x="6976" y="3520" w="64" h="64" xo="64" yo="0" id="10012506" name="inst_2C437517" depth="1000003" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
