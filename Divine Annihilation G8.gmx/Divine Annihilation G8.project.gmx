@@ -56,37 +56,49 @@
         </sprites>
       </sprites>
       <sprites name="Background">
-        <sprites name="Hometown">
-          <sprites name="Wolf Gaurd">
-            <sprites name="Overworld">
-              <sprite>sprites\spr_character_hometown_gaurdwolf_idle_front</sprite>
+        <sprites name="Autumn Forest">
+          <sprites name="Hometown">
+            <sprites name="Wolf Gaurd">
+              <sprites name="Overworld">
+                <sprite>sprites\spr_character_hometown_gaurdwolf_idle_front</sprite>
+              </sprites>
+              <sprites name="Portraits">
+                <sprite>sprites\spr_character_portrait_hometown_gaurdwolf_idle</sprite>
+              </sprites>
             </sprites>
-            <sprites name="Portraits">
-              <sprite>sprites\spr_character_portrait_hometown_gaurdwolf_idle</sprite>
+            <sprites name="Cat Gaurd">
+              <sprites name="Overworld">
+                <sprite>sprites\spr_character_hometown_gaurdcat_idle_front</sprite>
+              </sprites>
+              <sprites name="Portraits">
+                <sprite>sprites\spr_character_portrait_hometown_gaurdcat_idle</sprite>
+              </sprites>
+            </sprites>
+            <sprites name="Dealer Barley">
+              <sprites name="Overworld">
+                <sprite>sprites\spr_character_hometown_dealerBarley_idle_front</sprite>
+              </sprites>
+              <sprites name="Portraits">
+                <sprite>sprites\spr_character_portrait_dealerBarley_idle</sprite>
+              </sprites>
+            </sprites>
+            <sprites name="Dealer Margo">
+              <sprites name="Overworld">
+                <sprite>sprites\spr_character_hometown_dealerMargo</sprite>
+              </sprites>
+              <sprites name="Portraits">
+                <sprite>sprites\spr_character_portrait_dealerMargo_idle</sprite>
+              </sprites>
             </sprites>
           </sprites>
-          <sprites name="Cat Gaurd">
-            <sprites name="Overworld">
-              <sprite>sprites\spr_character_hometown_gaurdcat_idle_front</sprite>
-            </sprites>
-            <sprites name="Portraits">
-              <sprite>sprites\spr_character_portrait_hometown_gaurdcat_idle</sprite>
-            </sprites>
-          </sprites>
-          <sprites name="Dealer Barley">
-            <sprites name="Overworld">
-              <sprite>sprites\spr_character_hometown_dealerBarley_idle_front</sprite>
-            </sprites>
-            <sprites name="Portraits">
-              <sprite>sprites\spr_character_portrait_dealerBarley_idle</sprite>
-            </sprites>
-          </sprites>
-          <sprites name="Dealer Margo">
-            <sprites name="Overworld">
-              <sprite>sprites\spr_character_hometown_dealerMargo</sprite>
-            </sprites>
-            <sprites name="Portraits">
-              <sprite>sprites\spr_character_portrait_dealerMargo_idle</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="Enemies">
+        <sprites name="Autumn Forest">
+          <sprites name="Cave">
+            <sprites name="Saltwater Bat">
+              <sprite>sprites\spr_enemy_cave_saltwaterBat_idle</sprite>
+              <sprite>sprites\spr_enemy_cave_saltwaterBat_chasing</sprite>
             </sprites>
           </sprites>
         </sprites>
@@ -274,18 +286,29 @@
         </objects>
       </objects>
       <objects name="Background">
-        <objects name="Hometown">
-          <objects name="Wolf Gaurd">
-            <object>objects\obj_character_hometown_gaurdwolf</object>
+        <objects name="Autumn Forest">
+          <objects name="Hometown">
+            <objects name="Wolf Gaurd">
+              <object>objects\obj_character_hometown_gaurdwolf</object>
+            </objects>
+            <objects name="Cat Gaurd">
+              <object>objects\obj_character_hometown_gaurdcat</object>
+            </objects>
+            <objects name="DealerBarley">
+              <object>objects\obj_character_hometown_dealerBarley</object>
+            </objects>
+            <objects name="DealerMagic">
+              <object>objects\obj_character_hometown_dealerMagic</object>
+            </objects>
           </objects>
-          <objects name="Cat Gaurd">
-            <object>objects\obj_character_hometown_gaurdcat</object>
-          </objects>
-          <objects name="DealerBarley">
-            <object>objects\obj_character_hometown_dealerBarley</object>
-          </objects>
-          <objects name="DealerMagic">
-            <object>objects\obj_character_hometown_dealerMagic</object>
+        </objects>
+      </objects>
+      <objects name="Enemies">
+        <objects name="Autumn Forest">
+          <objects name="Cave">
+            <objects name="Saltwater Bat">
+              <object>objects\obj_enemy_cave_saltwaterBat</object>
+            </objects>
           </objects>
         </objects>
       </objects>
@@ -407,6 +430,7 @@
     <rooms name="Chapter 1">
       <room>rooms\rm_chapter1_section1_hometown</room>
       <room>rooms\rm_chapter1_section2_shortcut</room>
+      <room>rooms\rm_chapter1_section3_deepwoods</room>
     </rooms>
     <rooms name="Battles">
       <room>rooms\rm_battle_placeholder</room>
