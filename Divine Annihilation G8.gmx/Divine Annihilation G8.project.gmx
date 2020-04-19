@@ -131,32 +131,38 @@
         <sprite>sprites\spr_trigger_warp</sprite>
       </sprites>
       <sprites name="Area">
-        <sprites name="Hometown">
-          <sprites name="Structures">
-            <sprite>sprites\spr_area_hometown_structure_castle</sprite>
-            <sprite>sprites\spr_area_hometown_structure_library</sprite>
-            <sprite>sprites\spr_area_hometown_structure_shop_combat</sprite>
-            <sprite>sprites\spr_area_hometown_structure_shop_magic</sprite>
-            <sprite>sprites\spr_area_hometown_structure_house</sprite>
-          </sprites>
-          <sprites name="Indoor Assets">
-            <sprites name="Furniture">
-              <sprite>sprites\spr_area_hometown_furniture_bed</sprite>
-              <sprite>sprites\spr_area_hometown_furniture_desk_vertical</sprite>
-              <sprite>sprites\spr_area_hometown_furniture_desk_horizontal</sprite>
-              <sprite>sprites\spr_area_hometown_furniture_chair</sprite>
+        <sprites name="Autumn Forest">
+          <sprites name="Hometown">
+            <sprites name="Structures">
+              <sprite>sprites\spr_area_hometown_structure_castle</sprite>
+              <sprite>sprites\spr_area_hometown_structure_library</sprite>
+              <sprite>sprites\spr_area_hometown_structure_shop_combat</sprite>
+              <sprite>sprites\spr_area_hometown_structure_shop_magic</sprite>
+              <sprite>sprites\spr_area_hometown_structure_house</sprite>
             </sprites>
-            <sprites name="Decorations">
-              <sprite>sprites\spr_area_hometown_decoration_libraryLamp</sprite>
-              <sprite>sprites\spr_area_hometown_decoration_bell</sprite>
-              <sprite>sprites\spr_area_hometown_decoration_bookstack_messy</sprite>
-              <sprite>sprites\spr_area_hometown_decoration_bookstack_tidy</sprite>
-              <sprite>sprites\spr_area_hometown_decoration_ink</sprite>
-              <sprite>sprites\spr_area_hometown_decoration_papers</sprite>
+            <sprites name="Indoor Assets">
+              <sprites name="Furniture">
+                <sprite>sprites\spr_area_hometown_furniture_bed</sprite>
+                <sprite>sprites\spr_area_hometown_furniture_desk_vertical</sprite>
+                <sprite>sprites\spr_area_hometown_furniture_desk_horizontal</sprite>
+                <sprite>sprites\spr_area_hometown_furniture_chair</sprite>
+              </sprites>
+              <sprites name="Decorations">
+                <sprite>sprites\spr_area_hometown_decoration_libraryLamp</sprite>
+                <sprite>sprites\spr_area_hometown_decoration_bell</sprite>
+                <sprite>sprites\spr_area_hometown_decoration_bookstack_messy</sprite>
+                <sprite>sprites\spr_area_hometown_decoration_bookstack_tidy</sprite>
+                <sprite>sprites\spr_area_hometown_decoration_ink</sprite>
+                <sprite>sprites\spr_area_hometown_decoration_papers</sprite>
+              </sprites>
+            </sprites>
+            <sprites name="Outdoor Assets">
+              <sprite>sprites\spr_area_hometown_outdoor_lamp</sprite>
             </sprites>
           </sprites>
-          <sprites name="Outdoor Assets">
-            <sprite>sprites\spr_area_hometown_outdoor_lamp</sprite>
+          <sprites name="Cave">
+            <sprite>sprites\spr_area_cave_structure_bridgePost</sprite>
+            <sprite>sprites\spr_area_cave_structure_bridgeRope</sprite>
           </sprites>
         </sprites>
       </sprites>
@@ -338,32 +344,38 @@
         <object>objects\obj_trigger_levelTransition</object>
       </objects>
       <objects name="Area">
-        <objects name="Hometown">
-          <objects name="Structures">
-            <object>objects\obj_area_hometown_structure_castle</object>
-            <object>objects\obj_area_hometown_structure_library</object>
-            <object>objects\obj_area_hometown_structure_shop_combat</object>
-            <object>objects\obj_area_hometown_structure_shop_magic</object>
-            <object>objects\obj_area_hometown_structure_house</object>
-          </objects>
-          <objects name="Indoor Assets">
-            <objects name="Furniture">
-              <object>objects\obj_area_hometown_furniture_bed</object>
-              <object>objects\obj_area_hometown_furniture_desk_vertical</object>
-              <object>objects\obj_area_hometown_furniture_desk_horizontal</object>
-              <object>objects\obj_area_hometown_furniture_chair</object>
+        <objects name="Autumn Forest">
+          <objects name="Hometown">
+            <objects name="Structures">
+              <object>objects\obj_area_hometown_structure_castle</object>
+              <object>objects\obj_area_hometown_structure_library</object>
+              <object>objects\obj_area_hometown_structure_shop_combat</object>
+              <object>objects\obj_area_hometown_structure_shop_magic</object>
+              <object>objects\obj_area_hometown_structure_house</object>
             </objects>
-            <objects name="Decorations">
-              <object>objects\obj_area_hometown_decoration_libraryLamp</object>
-              <object>objects\obj_area_hometown_decoration_bell</object>
-              <object>objects\obj_area_hometown_decoration_bookstack_messy</object>
-              <object>objects\obj_area_hometown_decoration_bookstack_tidy</object>
-              <object>objects\obj_area_hometown_decoration_ink</object>
-              <object>objects\obj_area_hometown_decoration_papers</object>
+            <objects name="Indoor Assets">
+              <objects name="Furniture">
+                <object>objects\obj_area_hometown_furniture_bed</object>
+                <object>objects\obj_area_hometown_furniture_desk_vertical</object>
+                <object>objects\obj_area_hometown_furniture_desk_horizontal</object>
+                <object>objects\obj_area_hometown_furniture_chair</object>
+              </objects>
+              <objects name="Decorations">
+                <object>objects\obj_area_hometown_decoration_libraryLamp</object>
+                <object>objects\obj_area_hometown_decoration_bell</object>
+                <object>objects\obj_area_hometown_decoration_bookstack_messy</object>
+                <object>objects\obj_area_hometown_decoration_bookstack_tidy</object>
+                <object>objects\obj_area_hometown_decoration_ink</object>
+                <object>objects\obj_area_hometown_decoration_papers</object>
+              </objects>
+            </objects>
+            <objects name="Outdoor Assets">
+              <object>objects\obj_area_hometown_outdoor_lamp</object>
             </objects>
           </objects>
-          <objects name="Outdoor Assets">
-            <object>objects\obj_area_hometown_outdoor_lamp</object>
+          <objects name="Cave">
+            <object>objects\obj_area_cave_structure_bridgePost</object>
+            <object>objects\obj_area_cave_structure_bridgeRope</object>
           </objects>
         </objects>
       </objects>
