@@ -3,11 +3,11 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="4" name="datafiles">
+  <datafiles number="6" name="datafiles">
     <datafile>
-      <name>Included File.pdf</name>
+      <name>Included File.doc</name>
       <exists>-1</exists>
-      <size>20769</size>
+      <size>13824</size>
       <exportAction>2</exportAction>
       <exportDir></exportDir>
       <overwrite>0</overwrite>
@@ -19,7 +19,7 @@
           <CopyToMask>9223372036854775807</CopyToMask>
         </Config>
       </ConfigOptions>
-      <filename>Included File.pdf</filename>
+      <filename></filename>
     </datafile>
   </datafiles>
   <NewExtensions/>
