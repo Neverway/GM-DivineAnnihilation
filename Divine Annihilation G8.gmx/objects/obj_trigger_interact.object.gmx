@@ -31,6 +31,7 @@
 // Setup
 //==========================//
 inTriggerRange = false;
+active = true;
 </string>
           </argument>
         </arguments>
@@ -58,16 +59,17 @@ inTriggerRange = false;
 //==========================//
 // Run interaction script
 //==========================//
-if inTriggerRange
+if inTriggerRange and active == true
 {
     if activateOnTouch == false
     {
         script_execute(scr_text_interact);
     }
-    //else
-    //{
-    //    script_execute(scr_text_conversationEvent);
-    //}
+    if activateOnTouch == true
+    {
+        instance_create(x, y, obj_trigger_event);
+        active = false;
+    }
 }
 </string>
           </argument>

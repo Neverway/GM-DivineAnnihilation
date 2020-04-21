@@ -3,8 +3,8 @@
   <caption></caption>
   <width>12000</width>
   <height>12000</height>
-  <vsnap>8</vsnap>
-  <hsnap>8</hsnap>
+  <vsnap>64</vsnap>
+  <hsnap>64</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -51,7 +51,7 @@
   </views>
   <instances>
     <instance objName="obj_system_required_camera" x="2048" y="3256" name="inst_20081937" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_character_overworld_fox" x="2048" y="3288" name="inst_6E8239F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_character_overworld_fox" x="2048" y="3264" name="inst_6E8239F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_hud_playerNameShelf" x="32" y="0" name="inst_152F2DD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_hud_playerHealth" x="32" y="0" name="inst_C1640EE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="4960" y="1056" name="inst_5765F406" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -85,8 +85,8 @@
     <instance objName="obj_enemy_cave_saltwaterBat" x="3776" y="3648" name="inst_15CF85F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_other_indoor_doorShadow" x="2944" y="3584" name="inst_EE0BCC59" locked="0" code="" scaleX="3" scaleY="1.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_other_indoor_doorShadow" x="5696" y="3328" name="inst_515C1ECA" locked="0" code="" scaleX="3" scaleY="1.25" colour="4294967295" rotation="0"/>
-    <instance objName="obj_area_cave_structure_bridgeRope" x="6848" y="3840" name="inst_1C950479" locked="0" code="" scaleX="1" scaleY="9" colour="4294967295" rotation="0"/>
-    <instance objName="obj_area_cave_structure_bridgeRope" x="6784" y="3840" name="inst_623AB699" locked="0" code="" scaleX="1" scaleY="9" colour="4294967295" rotation="0"/>
+    <instance objName="obj_area_cave_structure_bridgeRope" x="6832" y="3832" name="inst_1C950479" locked="0" code="" scaleX="1" scaleY="9" colour="4294967295" rotation="0"/>
+    <instance objName="obj_area_cave_structure_bridgeRope" x="6768" y="3832" name="inst_623AB699" locked="0" code="" scaleX="1" scaleY="9" colour="4294967295" rotation="0"/>
     <instance objName="obj_area_cave_structure_bridgePost" x="6784" y="3584" name="inst_786E1B84" locked="0" code="/// A totally stable bridge that definitely will not break at any point in time." scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_area_cave_structure_bridgePost" x="6848" y="3584" name="inst_B0994026" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_area_cave_structure_bridgePost" x="6784" y="4168" name="inst_87795494" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -2117,10 +2117,7 @@
     <tile bgName="bgr_tile_forest_autumn_cave" x="9600" y="3520" w="64" h="64" xo="128" yo="448" id="10018583" name="inst_9743A6D8" depth="20" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn_cave" x="9600" y="3584" w="64" h="64" xo="128" yo="512" id="10018584" name="inst_B0748140" depth="20" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn_cave" x="9600" y="3776" w="64" h="64" xo="128" yo="576" id="10018585" name="inst_ECAB84CC" depth="20" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgr_tile_forest_autumn_cave" x="6784" y="3584" w="64" h="64" xo="320" yo="320" id="10012543" name="inst_8D437FF8" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgr_tile_forest_autumn_cave" x="6784" y="3648" w="64" h="64" xo="320" yo="320" id="10012545" name="inst_296CF8DE" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgr_tile_forest_autumn_cave" x="6784" y="3712" w="64" h="64" xo="320" yo="320" id="10012548" name="inst_32A64963" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgr_tile_forest_autumn_cave" x="6784" y="3776" w="64" h="64" xo="320" yo="320" id="10012550" name="inst_C94A5A50" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_cave" x="6784" y="3648" w="64" h="64" xo="320" yo="192" id="10019700" name="inst_29EC8635" depth="20" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn_cave" x="6784" y="3840" w="64" h="64" xo="320" yo="320" id="10012552" name="inst_2BF04FBB" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn_cave" x="6784" y="3904" w="64" h="64" xo="320" yo="320" id="10012554" name="inst_0DE318D7" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn_cave" x="6784" y="3968" w="64" h="64" xo="320" yo="320" id="10012555" name="inst_BA932709" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -2131,10 +2128,6 @@
     <tile bgName="bgr_tile_forest_autumn_cave" x="6720" y="3328" w="64" h="64" xo="256" yo="512" id="10012566" name="inst_9F3FF4EC" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn_cave" x="6912" y="3328" w="64" h="64" xo="384" yo="512" id="10012567" name="inst_72908C5C" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn_cave" x="6784" y="3328" w="64" h="64" xo="320" yo="512" id="10012568" name="inst_61F46815" depth="10" locked="0" colour="4294967295" scaleX="2" scaleY="1"/>
-    <tile bgName="bgr_tile_forest_autumn_cave" x="6848" y="3584" w="64" h="64" xo="384" yo="320" id="10012577" name="inst_A1A502D6" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgr_tile_forest_autumn_cave" x="6848" y="3648" w="64" h="64" xo="384" yo="320" id="10012580" name="inst_4DF9BB09" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgr_tile_forest_autumn_cave" x="6848" y="3712" w="64" h="64" xo="384" yo="320" id="10012581" name="inst_1011C16B" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgr_tile_forest_autumn_cave" x="6848" y="3776" w="64" h="64" xo="384" yo="320" id="10012582" name="inst_50712A50" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn_cave" x="6848" y="3840" w="64" h="64" xo="384" yo="320" id="10012583" name="inst_550F2F54" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn_cave" x="6848" y="3904" w="64" h="64" xo="384" yo="320" id="10012584" name="inst_39C3A004" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn_cave" x="6848" y="3968" w="64" h="64" xo="384" yo="320" id="10012585" name="inst_48CD7B90" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -2145,15 +2138,10 @@
     <tile bgName="bgr_tile_forest_autumn_cave" x="6720" y="3968" w="64" h="64" xo="256" yo="320" id="10012590" name="inst_9125BF58" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn_cave" x="6720" y="3904" w="64" h="64" xo="256" yo="320" id="10012591" name="inst_B7F06115" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn_cave" x="6720" y="3840" w="64" h="64" xo="256" yo="320" id="10012592" name="inst_75B2AC8E" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgr_tile_forest_autumn_cave" x="6720" y="3776" w="64" h="64" xo="256" yo="320" id="10012595" name="inst_A52776E8" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgr_tile_forest_autumn_cave" x="6720" y="3712" w="64" h="64" xo="256" yo="320" id="10012596" name="inst_A352E986" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgr_tile_forest_autumn_cave" x="6720" y="3584" w="64" h="64" xo="256" yo="320" id="10012598" name="inst_ADB5A86F" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgr_tile_forest_autumn_cave" x="6720" y="3648" w="64" h="64" xo="256" yo="320" id="10012599" name="inst_6E142CF4" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_forest_autumn_cave" x="6784" y="4096" w="64" h="64" xo="320" yo="320" id="10012617" name="inst_2DD3A498" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgr_tile_Shadows" x="4096" y="3840" w="64" h="64" xo="0" yo="192" id="10018563" name="inst_1AFDFA3B" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="2"/>
     <tile bgName="bgr_tile_Shadows" x="4288" y="3840" w="64" h="64" xo="0" yo="192" id="10018564" name="inst_F3E5439A" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="2"/>
     <tile bgName="bgr_tile_Shadows" x="4352" y="3968" w="64" h="64" xo="0" yo="192" id="10018565" name="inst_CB1B923E" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="2"/>
-    <tile bgName="bgr_tile_Shadows" x="6336" y="3584" w="64" h="64" xo="0" yo="192" id="10018566" name="inst_F8FEC276" depth="10" locked="0" colour="4294967295" scaleX="23" scaleY="4"/>
     <tile bgName="bgr_tile_Shadows" x="4160" y="3776" w="64" h="64" xo="64" yo="64" id="10018567" name="inst_6AEB2795" depth="10" locked="0" colour="4294967295" scaleX="2" scaleY="2"/>
     <tile bgName="bgr_tile_Shadows" x="4160" y="3776" w="64" h="64" xo="0" yo="192" id="10018568" name="inst_586ED560" depth="10" locked="0" colour="4294967295" scaleX="2" scaleY="2"/>
     <tile bgName="bgr_tile_Shadows" x="8896" y="5312" w="64" h="64" xo="0" yo="192" id="10018576" name="inst_A5BD04B4" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="2"/>
@@ -2161,6 +2149,19 @@
     <tile bgName="bgr_tile_Shadows" x="9280" y="5376" w="64" h="64" xo="0" yo="192" id="10018578" name="inst_23D43FF3" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="2"/>
     <tile bgName="bgr_tile_Shadows" x="8960" y="5248" w="64" h="64" xo="64" yo="64" id="10018579" name="inst_FD1F72E5" depth="10" locked="0" colour="4294967295" scaleX="4" scaleY="2"/>
     <tile bgName="bgr_tile_Shadows" x="8960" y="5248" w="64" h="64" xo="0" yo="192" id="10018580" name="inst_583D5AE5" depth="10" locked="0" colour="4294967295" scaleX="4" scaleY="2"/>
+    <tile bgName="bgr_tile_Shadows" x="6336" y="3584" w="64" h="64" xo="0" yo="192" id="10019705" name="inst_91D8DB5F" depth="10" locked="0" colour="4294967295" scaleX="23" scaleY="4"/>
+    <tile bgName="bgr_tile_forest_autumn_cave" x="6784" y="3584" w="64" h="64" xo="320" yo="320" id="10019706" name="inst_55CF84CB" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_cave" x="6784" y="3648" w="64" h="64" xo="320" yo="320" id="10019707" name="inst_CC96CE55" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_cave" x="6784" y="3712" w="64" h="64" xo="320" yo="320" id="10019708" name="inst_013516FC" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_cave" x="6784" y="3776" w="64" h="64" xo="320" yo="320" id="10019709" name="inst_08C85C92" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_cave" x="6848" y="3776" w="64" h="64" xo="384" yo="320" id="10019710" name="inst_4DE76B07" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_cave" x="6848" y="3712" w="64" h="64" xo="384" yo="320" id="10019711" name="inst_AB83E9ED" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_cave" x="6848" y="3648" w="64" h="64" xo="384" yo="320" id="10019712" name="inst_B229DC18" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_cave" x="6848" y="3584" w="64" h="64" xo="384" yo="320" id="10019713" name="inst_522E3DA0" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_cave" x="6720" y="3584" w="64" h="64" xo="256" yo="320" id="10019714" name="inst_FD7518D5" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_cave" x="6720" y="3648" w="64" h="64" xo="256" yo="320" id="10019715" name="inst_C1EA398F" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_cave" x="6720" y="3712" w="64" h="64" xo="256" yo="320" id="10019716" name="inst_E048DB51" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgr_tile_forest_autumn_cave" x="6720" y="3776" w="64" h="64" xo="256" yo="320" id="10019717" name="inst_186F8D6F" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
