@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-12020</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>draw_set_font(fnt_menu);
 draw_set_color(c_white);
-draw_text(view_xview+15, view_yview-5, "Alpha 8.2.4");
+draw_text(view_xview+15, view_yview-5, "Alpha 0.8.2.4");
 </string>
           </argument>
         </arguments>

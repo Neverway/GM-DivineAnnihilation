@@ -3,7 +3,7 @@
   <spriteName>spr_system_light_point</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-100002</depth>
+  <depth>-12019</depth>
   <persistent>0</persistent>
   <parentName>obj_system_parent_trigger</parentName>
   <maskName>&lt;undefined&gt;</maskName>

@@ -3,7 +3,7 @@
   <spriteName>spr_system_config</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-100001</depth>
+  <depth>0</depth>
   <persistent>-1</persistent>
   <parentName>obj_system_parent_trigger</parentName>
   <maskName>&lt;undefined&gt;</maskName>
