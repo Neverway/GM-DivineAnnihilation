@@ -251,6 +251,7 @@
     </scripts>
     <scripts name="Item">
       <script>scripts\scr_pickup.gml</script>
+      <script>scripts\scr_itemAdd.gml</script>
     </scripts>
     <scripts name="System">
       <scripts name="Camera">
@@ -345,6 +346,7 @@
       </objects>
       <objects name="Triggers">
         <object>objects\obj_trigger_interact</object>
+        <object>objects\obj_trigger_shop</object>
         <object>objects\obj_trigger_event</object>
         <object>objects\obj_trigger_partyMemberJoin</object>
         <object>objects\obj_trigger_warp</object>
@@ -408,6 +410,9 @@
       </objects>
       <objects name="Inventory">
         <object>objects\obj_menu_inventory</object>
+      </objects>
+      <objects name="Shop">
+        <object>objects\obj_menu_shop</object>
       </objects>
     </objects>
     <objects name="System">

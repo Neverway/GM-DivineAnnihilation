@@ -41,6 +41,7 @@ if object_exists(obj_character_overworld_fox)
 //==========================//
 image_speed = 0;
 image_index = 0;
+global.menuActive = true;
 </string>
           </argument>
         </arguments>
@@ -98,6 +99,7 @@ if global.keySecond
     {
         obj_character_overworld_fox.canMove = true;
         obj_character_overworld_fox.inventoryOpen = false;
+        global.menuActive = false;
     }
     instance_destroy();
 }

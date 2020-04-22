@@ -6,10 +6,10 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>0</bbox_left>
+  <bbox_left>64</bbox_left>
   <bbox_right>639</bbox_right>
   <bbox_top>0</bbox_top>
-  <bbox_bottom>127</bbox_bottom>
+  <bbox_bottom>479</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -17,12 +17,8 @@
   </TextureGroups>
   <For3D>0</For3D>
   <width>640</width>
-  <height>128</height>
+  <height>480</height>
   <frames>
-    <frame index="0">images\spr_menu_textbox_0.png</frame>
-    <frame index="1">images\spr_menu_textbox_1.png</frame>
-    <frame index="2">images\spr_menu_textbox_2.png</frame>
-    <frame index="3">images\spr_menu_textbox_3.png</frame>
-    <frame index="4">images\spr_menu_textbox_4.png</frame>
+    <frame index="0">images\spr_menu_shop_placeholder_0.png</frame>
   </frames>
 </sprite>
