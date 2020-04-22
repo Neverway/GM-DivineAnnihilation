@@ -183,21 +183,21 @@ draw_sprite(sprite_index, image_index, view_xview, view_yview);
 //==========================//
 // Item
 //==========================//
-draw_sprite(global.itemCatagorySlot1, 0, view_xview + 352, view_yview + 234);
-draw_sprite(global.itemCatagorySlot2, 0, view_xview + 352, view_yview + 262);
-draw_sprite(global.itemCatagorySlot3, 0, view_xview + 352, view_yview + 290);
-draw_sprite(global.itemCatagorySlot4, 0, view_xview + 352, view_yview + 318);
-draw_sprite(global.itemCatagorySlot5, 0, view_xview + 352, view_yview + 346);
+draw_sprite(global.itemCategorySlot1, 0, view_xview + 352, view_yview + 234);
+draw_sprite(global.itemCategorySlot2, 0, view_xview + 352, view_yview + 262);
+draw_sprite(global.itemCategorySlot3, 0, view_xview + 352, view_yview + 290);
+draw_sprite(global.itemCategorySlot4, 0, view_xview + 352, view_yview + 318);
+draw_sprite(global.itemCategorySlot5, 0, view_xview + 352, view_yview + 346);
 
 
 //==========================//
 // Equipment
 //==========================//
-draw_sprite(global.equipmentCatagorySlot1, 0, view_xview + 475, view_yview + 234);
-draw_sprite(global.equipmentCatagorySlot2, 0, view_xview + 475, view_yview + 262);
-draw_sprite(global.equipmentCatagorySlot3, 0, view_xview + 475, view_yview + 290);
-draw_sprite(global.equipmentCatagorySlot4, 0, view_xview + 475, view_yview + 318);
-draw_sprite(global.equipmentCatagorySlot5, 0, view_xview + 475, view_yview + 346);
+draw_sprite(global.equipmentCategorySlot1, 0, view_xview + 475, view_yview + 234);
+draw_sprite(global.equipmentCategorySlot2, 0, view_xview + 475, view_yview + 262);
+draw_sprite(global.equipmentCategorySlot3, 0, view_xview + 475, view_yview + 290);
+draw_sprite(global.equipmentCategorySlot4, 0, view_xview + 475, view_yview + 318);
+draw_sprite(global.equipmentCategorySlot5, 0, view_xview + 475, view_yview + 346);
 </string>
           </argument>
         </arguments>

@@ -73,6 +73,14 @@ if keyboard_check_pressed(ord('Z'))
     obj_menu_shop.item2Cost = item2Cost;
     obj_menu_shop.item3Cost = item3Cost;
     obj_menu_shop.item4Cost = item4Cost;
+    obj_menu_shop.item1Category = item1Category;
+    obj_menu_shop.item2Category = item2Category;
+    obj_menu_shop.item3Category = item3Category;
+    obj_menu_shop.item4Category = item4Category;
+    obj_menu_shop.item1Type = item1Type;
+    obj_menu_shop.item2Type = item2Type;
+    obj_menu_shop.item3Type = item3Type;
+    obj_menu_shop.item4Type = item4Type;
 }
 }
 </string>
