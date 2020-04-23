@@ -67,7 +67,6 @@ global.menuActive = true;
 //==========================//
 // Move objects to saved coordinates
 //==========================//
-show_debug_message("&gt;&gt;&gt;It's loading the return cordinates!")
 obj_character_overworld_fox.x = returnX;
 obj_character_overworld_fox.y = returnY;
 obj_system_required_camera.x = returnX;

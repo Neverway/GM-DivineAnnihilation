@@ -64,7 +64,7 @@
     <instance objName="obj_level_collider" x="560" y="1312" name="inst_4724391E" locked="0" code="" scaleX="1.25" scaleY="3.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_warp" x="416" y="1328" name="inst_73524243" locked="0" code="//------------------------------------//&#xA;// Warp trigger&#xA;//-----------------------------------//&#xA;// {x} &amp; {y} are the coordinates of where the warp will bring you&#xA;destinationX = 888;&#xA;destinationY = 1360;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_warp" x="888" y="1328" name="inst_D5A0439F" locked="0" code="//------------------------------------//&#xA;// Warp trigger&#xA;//-----------------------------------//&#xA;// {x} &amp; {y} are the coordinates of where the warp will bring you&#xA;destinationX = 416;&#xA;destinationY = 1360;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_menu_hud_playerNameShelf" x="16" y="0" name="inst_4BC3C2A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="16" y="0" name="inst_4BC3C2A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_hud_playerHealth" x="16" y="0" name="inst_F7F7BF73" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>

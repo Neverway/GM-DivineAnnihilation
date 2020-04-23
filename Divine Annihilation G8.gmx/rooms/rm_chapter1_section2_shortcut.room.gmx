@@ -3,8 +3,8 @@
   <caption></caption>
   <width>12000</width>
   <height>12000</height>
-  <vsnap>64</vsnap>
-  <hsnap>64</hsnap>
+  <vsnap>8</vsnap>
+  <hsnap>8</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -52,15 +52,14 @@
   <instances>
     <instance objName="obj_system_required_camera" x="2048" y="3256" name="inst_20081937" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_character_overworld_fox" x="2048" y="3264" name="inst_6E8239F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_menu_hud_playerNameShelf" x="32" y="0" name="inst_152F2DD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_hud_playerHealth" x="32" y="0" name="inst_C1640EE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="4960" y="1056" name="inst_5765F406" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="4960" y="1056" name="inst_842D14B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="4960" y="1056" name="inst_5F320AA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="4960" y="1056" name="inst_4211F5EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="4648" y="992" name="inst_006C8258" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_system_lightOperator" x="8" y="24" name="inst_800FCFFC" locked="0" code="shadowNegativeColor = c_white;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_system_textbox_handler" x="0" y="32" name="inst_377CC209" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_system_lightOperator" x="8" y="8" name="inst_800FCFFC" locked="0" code="shadowNegativeColor = c_white;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_system_textbox_handler" x="0" y="16" name="inst_377CC209" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="1488" y="976" name="inst_798D9721" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;text = &quot;Good luck!&quot;;&#xA;portrait = spr_textbox_portrait_none;&#xA;textboxNumber = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="1488" y="976" name="inst_0916A481" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;text = &quot;Good luck!&quot;;&#xA;portrait = spr_textbox_portrait_none;&#xA;textboxNumber = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="1488" y="976" name="inst_EC342AEB" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;text = &quot;Good luck!&quot;;&#xA;portrait = spr_textbox_portrait_none;&#xA;textboxNumber = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -75,7 +74,7 @@
     <instance objName="&lt;undefined&gt;" x="1472" y="1024" name="inst_5BEAEB9A" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;text = &quot;Good luck!&quot;;&#xA;portrait = spr_textbox_portrait_none;&#xA;textboxOrder = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="4656" y="3200" name="inst_11BD0E6E" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;text = &quot;Good luck!&quot;;&#xA;portrait = spr_textbox_portrait_none;&#xA;textboxOrder = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="4656" y="3200" name="inst_A1F024D0" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;text = &quot;Good luck!&quot;;&#xA;portrait = spr_textbox_portrait_none;&#xA;textboxOrder = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_character_overworld_cat" x="24" y="112" name="inst_AF9AAB35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_character_overworld_cat" x="24" y="96" name="inst_AF9AAB35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_other_indoor_doorShadow" x="2048" y="3328" name="inst_71C224C1" locked="0" code="" scaleX="3" scaleY="1.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_cave_saltwaterBat" x="2880" y="3136" name="inst_FEA11129" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_cave_saltwaterBat" x="3520" y="2496" name="inst_2E7CE713" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -94,8 +93,8 @@
     <instance objName="obj_other_indoor_doorShadow" x="5696" y="3328" name="inst_57261CA8" locked="0" code="" scaleX="3" scaleY="1.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_other_indoor_doorShadow" x="5696" y="3328" name="inst_F47D53F7" locked="0" code="" scaleX="3" scaleY="1.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_other_indoor_doorShadow" x="5696" y="3328" name="inst_ABA39ABF" locked="0" code="" scaleX="3" scaleY="1.25" colour="4294967295" rotation="0"/>
-    <instance objName="obj_character_overworld_ph1" x="72" y="112" name="inst_9C6A56FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_character_overworld_ph2" x="120" y="112" name="inst_44BAB4D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_character_overworld_ph1" x="72" y="96" name="inst_9C6A56FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_character_overworld_ph2" x="120" y="96" name="inst_44BAB4D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="1920" y="2944" name="inst_13B513E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="1984" y="2880" name="inst_E91EC95F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="2048" y="2848" name="inst_63B9624D" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
@@ -257,15 +256,16 @@
     <instance objName="obj_trigger_warp" x="9408" y="4736" name="inst_3C00066E" locked="0" code="//------------------------------------//&#xA;// Warp trigger&#xA;//-----------------------------------//&#xA;// {x} &amp; {y} are the coordinates of where the warp will bring you&#xA;destinationX = 7456;&#xA;destinationY = 4800;" scaleX="1" scaleY="3.8125" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_warp" x="10368" y="5568" name="inst_FC92872E" locked="0" code="//------------------------------------//&#xA;// Warp trigger&#xA;//-----------------------------------//&#xA;// {x} &amp; {y} are the coordinates of where the warp will bring you&#xA;destinationX = 9632;&#xA;destinationY = 3712;" scaleX="1" scaleY="3.8125" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_warp" x="9600" y="3712" name="inst_CD19F263" locked="0" code="//------------------------------------//&#xA;// Warp trigger&#xA;//-----------------------------------//&#xA;// {x} &amp; {y} are the coordinates of where the warp will bring you&#xA;destinationX = 10336;&#xA;destinationY = 5568;" scaleX="1" scaleY="3.8125" colour="4294967295" rotation="0"/>
-    <instance objName="obj_system_lightingController" x="24" y="40" name="inst_F6611849" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_system_lightingController" x="24" y="24" name="inst_F6611849" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_interact" x="6784" y="3376" name="inst_6B9F5279" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;totalTextboxCount = 1;&#xA;activateOnTouch = false;&#xA;&#xA;text = &quot;*It's an entrance to the old mines, they are seal off now.&quot;&#xA;portrait = spr_character_portrait_none;" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_interact" x="9856" y="3504" name="inst_9175E0F6" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;totalTextboxCount = 3;&#xA;activateOnTouch = false;&#xA;&#xA;text = &quot;*It's another sealed off entrance to the old mines.&quot;&#xA;portrait = spr_character_portrait_fox_idle;&#xA;&#xA;text2 = &quot;*You know, I don't think we have ever explored down there before.&quot;&#xA;portrait2 = spr_character_portrait_cat_idle;&#xA;&#xA;text3 = &quot;*You're right, we should go there sometime.&quot;&#xA;portrait3 = spr_character_portrait_fox_idle;" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_interact" x="6784" y="3568" name="inst_06DBFA09" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;totalTextboxCount = 2;&#xA;activateOnTouch = false;&#xA;&#xA;text = &quot;*I am suprised this bridge still holds.&quot;&#xA;portrait = spr_character_portrait_fox_idle;&#xA;&#xA;text2 = &quot;*Yeah, me too. I am glad it's here though, other wise we would have to go the long way around.&quot;&#xA;portrait2 = spr_character_portrait_cat_idle;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_interact" x="6336" y="3568" name="inst_2CA8CD9D" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;totalTextboxCount = 3;&#xA;activateOnTouch = false;&#xA;&#xA;text = &quot;*That's a pretty long drop.&quot;&#xA;portrait = spr_character_portrait_fox_idle;&#xA;&#xA;text2 = &quot;*Yeah, I can't even see the bottom.&quot;&#xA;portrait2 = spr_character_portrait_cat_idle;&#xA;&#xA;text3 = &quot;*It's a good reminder for us to watch our step.&quot;&#xA;portrait3 = spr_character_portrait_fox_idle;" scaleX="14" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_interact" x="6784" y="4144" name="inst_D545C70A" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;totalTextboxCount = 2;&#xA;activateOnTouch = false;&#xA;&#xA;text = &quot;*I am suprised this bridge still holds.&quot;&#xA;portrait = spr_character_portrait_fox_idle;&#xA;&#xA;text2 = &quot;*Yeah, me too. I am glad it's here though, other wise we would have to go the long way around.&quot;&#xA;portrait2 = spr_character_portrait_cat_idle;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_interact" x="6848" y="3568" name="inst_B81EFED3" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;totalTextboxCount = 3;&#xA;activateOnTouch = false;&#xA;&#xA;text = &quot;*That's a pretty long drop.&quot;&#xA;portrait = spr_character_portrait_fox_idle;&#xA;&#xA;text2 = &quot;*Yeah, I can't even see the bottom.&quot;&#xA;portrait2 = spr_character_portrait_cat_idle;&#xA;&#xA;text3 = &quot;*It's a good reminder for us to watch our step.&quot;&#xA;portrait3 = spr_character_portrait_fox_idle;" scaleX="20" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_system_light_lantern" x="24" y="24" name="inst_9BB3E6DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_system_light_lantern" x="24" y="8" name="inst_9BB3E6DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_system_light_point" x="2048" y="3280" name="inst_82D82351" locked="0" code="lightSize = 200;&#xA;lightColor = c_orange;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_menu_hud_shelf" x="32" y="0" name="inst_82097AD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_system_transition_fadeInLevel" x="-640" y="0" name="inst_970DE91F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>

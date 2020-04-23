@@ -52,15 +52,15 @@
   <instances>
     <instance objName="obj_system_required_camera" x="4336" y="1320" name="inst_20081937" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_character_overworld_fox" x="4336" y="1344" name="inst_6E8239F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_menu_hud_playerNameShelf" x="32" y="0" name="inst_152F2DD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="32" y="0" name="inst_152F2DD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_hud_playerHealth" x="32" y="0" name="inst_C1640EE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="4960" y="1056" name="inst_5765F406" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="4960" y="1056" name="inst_842D14B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="4960" y="1056" name="inst_5F320AA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="4960" y="1056" name="inst_4211F5EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="4648" y="992" name="inst_006C8258" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_system_lightOperator" x="8" y="24" name="inst_800FCFFC" locked="0" code="shadowNegativeColor = c_ltgray;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_system_textbox_handler" x="0" y="32" name="inst_377CC209" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_system_lightOperator" x="8" y="8" name="inst_800FCFFC" locked="0" code="shadowNegativeColor = c_ltgray;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_system_textbox_handler" x="0" y="16" name="inst_377CC209" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="1488" y="976" name="inst_798D9721" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;text = &quot;Good luck!&quot;;&#xA;portrait = spr_textbox_portrait_none;&#xA;textboxNumber = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="1488" y="976" name="inst_0916A481" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;text = &quot;Good luck!&quot;;&#xA;portrait = spr_textbox_portrait_none;&#xA;textboxNumber = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="1488" y="976" name="inst_EC342AEB" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;text = &quot;Good luck!&quot;;&#xA;portrait = spr_textbox_portrait_none;&#xA;textboxNumber = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -81,9 +81,9 @@
     <instance objName="obj_area_cave_structure_bridgePost" x="6528" y="1480" name="inst_E372EC29" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_area_cave_structure_bridgeRope" x="6112" y="1320" name="inst_9BC258B4" locked="0" code="" scaleX="1" scaleY="13" colour="4294967295" rotation="90"/>
     <instance objName="obj_area_cave_structure_bridgeRope" x="6112" y="1456" name="inst_786F250C" locked="0" code="" scaleX="1" scaleY="13" colour="4294967295" rotation="90"/>
-    <instance objName="obj_character_overworld_cat" x="24" y="112" name="inst_A9586374" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_character_overworld_ph1" x="72" y="112" name="inst_DBF2890E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_character_overworld_ph2" x="120" y="112" name="inst_AE67C5B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_character_overworld_cat" x="24" y="96" name="inst_A9586374" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_character_overworld_ph1" x="72" y="96" name="inst_DBF2890E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_character_overworld_ph2" x="120" y="96" name="inst_AE67C5B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="4352" y="1152" name="inst_7687EEA3" locked="0" code="" scaleX="12.375" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="4224" y="1280" name="inst_1CD0DEA2" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="4352" y="1600" name="inst_8F907AB7" locked="0" code="" scaleX="21" scaleY="1" colour="4294967295" rotation="0"/>
@@ -104,7 +104,8 @@
     <instance objName="obj_level_collider" x="6776" y="1592" name="inst_FECE27F4" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="7488" y="864" name="inst_828F39E1" locked="0" code="" scaleX="1.125" scaleY="3.375" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_levelTransition" x="4288" y="1336" name="inst_7FEB60F2" locked="0" code="//------------------------------------//&#xA;// Level Transition&#xA;//-----------------------------------//&#xA;// If returning = true then add lines returnX = {x} &amp; returnY = {Y}&#xA;// {x} &amp; {y} are the coordinates of where the player will be when the next room is loaded&#xA;roomID = room - 1;&#xA;returning = true;&#xA;returnX = 9696;&#xA;returnY = 6208;" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="obj_system_light_lantern" x="24" y="24" name="inst_9BB3E6DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_system_light_lantern" x="24" y="8" name="inst_9BB3E6DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_menu_hud_shelf" x="32" y="0" name="inst_A33ECB4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_system_transition_fadeInLevel" x="-640" y="0" name="inst_B5C1BE66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>

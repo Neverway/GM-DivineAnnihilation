@@ -275,6 +275,7 @@
         <script>scripts\scr_text_interact.gml</script>
         <script>scripts\scr_text_conversationEvent.gml</script>
         <script>scripts\scr_text_event.gml</script>
+        <script>scripts\scr_text_event_multiUse.gml</script>
       </scripts>
     </scripts>
   </scripts>
@@ -348,6 +349,7 @@
         <object>objects\obj_trigger_interact</object>
         <object>objects\obj_trigger_shop</object>
         <object>objects\obj_trigger_event</object>
+        <object>objects\obj_trigger_itemCheck</object>
         <object>objects\obj_trigger_partyMemberJoin</object>
         <object>objects\obj_trigger_warp</object>
         <object>objects\obj_trigger_levelTransition</object>
@@ -406,7 +408,7 @@
       </objects>
       <objects name="Hud">
         <object>objects\obj_menu_hud_playerHealth</object>
-        <object>objects\obj_menu_hud_playerNameShelf</object>
+        <object>objects\obj_menu_hud_shelf</object>
       </objects>
       <objects name="Inventory">
         <object>objects\obj_menu_inventory</object>
@@ -441,6 +443,9 @@
         <objects name="Transition">
           <object>objects\obj_system_transition_fade</object>
           <object>objects\obj_system_transition_fadeInLevel</object>
+        </objects>
+        <objects name="Other">
+          <object>objects\obj_system_other_colliderDestructor</object>
         </objects>
       </objects>
     </objects>

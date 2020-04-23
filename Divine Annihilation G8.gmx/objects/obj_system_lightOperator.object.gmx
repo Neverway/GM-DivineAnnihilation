@@ -63,7 +63,7 @@ if instance_exists(obj_system_lightingController)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Disable lighting
+            <string>/* Disable lighting
 
 //==========================//
 // Disable
@@ -97,7 +97,7 @@ if instance_exists(obj_system_lightingController)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Enable lighting
+            <string>/* Enable lighting
 
 //==========================//
 // Enable

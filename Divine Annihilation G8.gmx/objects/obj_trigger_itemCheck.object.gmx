@@ -37,6 +37,7 @@ event_inherited();
 // Setup
 //==========================//
 inTriggerRange = false;
+active = true
 </string>
           </argument>
         </arguments>
@@ -64,9 +65,96 @@ inTriggerRange = false;
 //==========================//
 // Run interaction script
 //==========================//
-if inTriggerRange
+if inTriggerRange and active
 {
-    script_execute(scr_text_event)
+
+
+//==========================//
+// Compare inventory
+//==========================//
+    if global.itemSlot1 == item
+    {
+        instance_create(destructorX, destructorY, obj_system_other_colliderDestructor);
+        instance_destroy();
+    }
+    else if global.itemSlot2 == item
+    {
+        instance_create(destructorX, destructorY, obj_system_other_colliderDestructor);
+        instance_destroy();
+    }
+    else if global.itemSlot3 == item
+    {
+        instance_create(destructorX, destructorY, obj_system_other_colliderDestructor);
+        instance_destroy();
+    }
+    else if global.itemSlot4 == item
+    {
+        instance_create(destructorX, destructorY, obj_system_other_colliderDestructor);
+        instance_destroy();
+    }
+    else if global.itemSlot5 == item
+    {
+        instance_create(destructorX, destructorY, obj_system_other_colliderDestructor);
+        instance_destroy();
+    }
+    
+    
+    if global.equipmentSlot1 == item
+    {
+        instance_create(destructorX, destructorY, obj_system_other_colliderDestructor);
+        instance_destroy();
+    }
+    else if global.equipmentSlot2 == item
+    {
+        instance_create(destructorX, destructorY, obj_system_other_colliderDestructor);
+        instance_destroy();
+    }
+    else if global.equipmentSlot3 == item
+    {
+        instance_create(destructorX, destructorY, obj_system_other_colliderDestructor);
+        instance_destroy();
+    }
+    else if global.equipmentSlot4 == item
+    {
+        instance_create(destructorX, destructorY, obj_system_other_colliderDestructor);
+        instance_destroy();
+    }
+    else if global.equipmentSlot5 == item
+    {
+        instance_create(destructorX, destructorY, obj_system_other_colliderDestructor);
+        instance_destroy();
+    }
+    
+    else if active
+    {
+        global.textContent = failText;
+        script_execute(scr_text_event_multiUse);
+        active = false;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if !place_meeting(x, y, obj_character_overworld_fox) and active == false
+{
+    active = true;
 }
 </string>
           </argument>
