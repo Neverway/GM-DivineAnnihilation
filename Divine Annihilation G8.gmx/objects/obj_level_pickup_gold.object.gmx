@@ -27,8 +27,9 @@
             <kind>1</kind>
             <string>if keyboard_check_pressed(ord("Z"))
 {
-    global.playerGold += goldAmount
-    global.textContent = pickupText
+    global.playerGold += goldAmount;
+    global.portrait = spr_character_portrait_none;
+    global.textContent = pickupText;
     instance_create(x, y, obj_trigger_event);
     instance_destroy();
 }

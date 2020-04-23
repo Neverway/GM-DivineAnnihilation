@@ -125,9 +125,8 @@ if inTriggerRange and active
         instance_destroy();
     }
     
-    else if active
+    else if active and inTriggerRange
     {
-        global.textContent = failText;
         script_execute(scr_text_event_multiUse);
         active = false;
     }
@@ -184,6 +183,8 @@ if inTriggerRange and active
 // Set target text to instance text
 //==========================//
 global.totalTextboxCount = 1;
+global.portrait = spr_character_portrait_none
+global.textContent = failText;
 //if global.textboxCount = 1
 //{
 //    global.portrait = spr_character_portrait_none;

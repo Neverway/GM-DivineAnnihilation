@@ -66,7 +66,7 @@ ini_write_real(argument0, "playerLevel", global.playerLevel);
 // Save room saved coordinates
 //------------------------------------//
 ini_write_real(argument0, "roomSavedX", x);
-ini_write_real(argument0, "roomSavedY", y);
+ini_write_real(argument0, "roomSavedY", y-16);
 
 
 
