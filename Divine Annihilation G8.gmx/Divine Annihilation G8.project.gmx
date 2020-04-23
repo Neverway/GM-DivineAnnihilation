@@ -460,11 +460,14 @@
       <room>rooms\rm_chapter1_section1_hometown</room>
       <room>rooms\rm_chapter1_section2_shortcut</room>
       <room>rooms\rm_chapter1_section3_deepwoods</room>
+      <room>rooms\rm_chapter1_section4_castleRuins</room>
+      <room>rooms\rm_chapter1_section5_cliff</room>
     </rooms>
     <rooms name="Battles">
       <room>rooms\rm_battle_placeholder</room>
     </rooms>
     <rooms name="Developer">
+      <room>rooms\rm_chapterNUM_sectionNUM_NAME</room>
       <room>rooms\rm_developer_everyTest</room>
     </rooms>
   </rooms>
