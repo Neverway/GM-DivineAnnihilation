@@ -164,6 +164,7 @@ else
 //------------------------------------//
     if global.keyAction and image_index == 0
     {
+        global.saveProfile = selectedProfile;
         script_execute(scr_system_save_load, selectedProfile);
     }   
     
