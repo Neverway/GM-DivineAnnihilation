@@ -195,6 +195,8 @@ draw_sprite(sprite_index, image_index, view_xview, view_yview + 352);
 //==========================//
 draw_set_font(fnt_menu);
 draw_set_color(c_white);
+playersGold = "Gold: " + string(global.playerGold);
+draw_text(view_xview+550, view_yview+93+352, playersGold);
 
 //==========================//
 // Items names
@@ -203,17 +205,17 @@ draw_set_color(c_white);
     {
         draw_set_color(c_white);
         draw_text(view_xview+38, view_yview+9+352, item1Name);
-        draw_text(view_xview+123, view_yview+9+352, item1Cost);
+        draw_text(view_xview+148, view_yview+9+352, item1Cost);
         
         draw_set_color(c_gray);
         draw_text(view_xview+38, view_yview+37+352, item2Name);
-        draw_text(view_xview+123, view_yview+37+352, item2Cost);
+        draw_text(view_xview+148, view_yview+37+352, item2Cost);
         
         draw_text(view_xview+38, view_yview+65+352, item3Name);
-        draw_text(view_xview+123, view_yview+65+352, item3Cost);
+        draw_text(view_xview+148, view_yview+65+352, item3Cost);
         
         draw_text(view_xview+38, view_yview+93+352, item4Name);
-        draw_text(view_xview+123, view_yview+93+352, item4Cost);
+        draw_text(view_xview+148, view_yview+93+352, item4Cost);
     }
 
 
@@ -221,18 +223,18 @@ draw_set_color(c_white);
     {
         draw_set_color(c_gray);
         draw_text(view_xview+38, view_yview+9+352, item1Name);
-        draw_text(view_xview+123, view_yview+9+352, item1Cost);
+        draw_text(view_xview+148, view_yview+9+352, item1Cost);
         
         draw_set_color(c_white);
         draw_text(view_xview+38, view_yview+37+352, item2Name);
-        draw_text(view_xview+123, view_yview+37+352, item2Cost);
+        draw_text(view_xview+148, view_yview+37+352, item2Cost);
         
         draw_set_color(c_gray);
         draw_text(view_xview+38, view_yview+65+352, item3Name);
-        draw_text(view_xview+123, view_yview+65+352, item3Cost);
+        draw_text(view_xview+148, view_yview+65+352, item3Cost);
         
         draw_text(view_xview+38, view_yview+93+352, item4Name);
-        draw_text(view_xview+123, view_yview+93+352, item4Cost);
+        draw_text(view_xview+148, view_yview+93+352, item4Cost);
     }
 
 
@@ -240,18 +242,18 @@ draw_set_color(c_white);
     {
         draw_set_color(c_gray);
         draw_text(view_xview+38, view_yview+9+352, item1Name);
-        draw_text(view_xview+123, view_yview+9+352, item1Cost);
+        draw_text(view_xview+148, view_yview+9+352, item1Cost);
         
         draw_text(view_xview+38, view_yview+37+352, item2Name);
-        draw_text(view_xview+123, view_yview+37+352, item2Cost);
+        draw_text(view_xview+148, view_yview+37+352, item2Cost);
         
         draw_set_color(c_white);
         draw_text(view_xview+38, view_yview+65+352, item3Name);
-        draw_text(view_xview+123, view_yview+65+352, item3Cost);
+        draw_text(view_xview+148, view_yview+65+352, item3Cost);
         
         draw_set_color(c_gray);
         draw_text(view_xview+38, view_yview+93+352, item4Name);
-        draw_text(view_xview+123, view_yview+93+352, item4Cost);
+        draw_text(view_xview+148, view_yview+93+352, item4Cost);
     }
 
 
@@ -259,17 +261,17 @@ draw_set_color(c_white);
     {
         draw_set_color(c_gray);
         draw_text(view_xview+38, view_yview+9+352, item1Name);
-        draw_text(view_xview+123, view_yview+9+352, item1Cost);
+        draw_text(view_xview+148, view_yview+9+352, item1Cost);
         
         draw_text(view_xview+38, view_yview+37+352, item2Name);
-        draw_text(view_xview+123, view_yview+37+352, item2Cost);
+        draw_text(view_xview+148, view_yview+37+352, item2Cost);
         
         draw_text(view_xview+38, view_yview+65+352, item3Name);
-        draw_text(view_xview+123, view_yview+65+352, item3Cost);
+        draw_text(view_xview+148, view_yview+65+352, item3Cost);
         
         draw_set_color(c_white);
         draw_text(view_xview+38, view_yview+93+352, item4Name);
-        draw_text(view_xview+123, view_yview+93+352, item4Cost);
+        draw_text(view_xview+148, view_yview+93+352, item4Cost);
     }
 </string>
           </argument>
