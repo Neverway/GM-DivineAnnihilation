@@ -61,7 +61,7 @@ active = true;
 //==========================//
 if place_meeting(x,y,obj_character_overworld_fox)
 {
-if keyboard_check_pressed(ord('Z'))
+if keyboard_check_pressed(ord('Z')) and active
 {
     obj_character_overworld_fox.canMove = false;
     instance_create(x, y, obj_menu_shop);
@@ -81,6 +81,7 @@ if keyboard_check_pressed(ord('Z'))
     obj_menu_shop.item2Type = item2Type;
     obj_menu_shop.item3Type = item3Type;
     obj_menu_shop.item4Type = item4Type;
+    active = false;
 }
 }
 </string>

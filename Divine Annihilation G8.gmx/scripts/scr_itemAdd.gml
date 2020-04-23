@@ -13,7 +13,6 @@ if argument0 == "item"
     {
         global.itemSlot1 = argument1;
         global.itemCategorySlot1 = argument2;
-        instance_destroy();
     }
     
 //------------------------------------//
@@ -23,7 +22,6 @@ if argument0 == "item"
     {
         global.itemSlot2 = argument1;
         global.itemCategorySlot2 = argument2;
-        instance_destroy();
     }
     
 //------------------------------------//
@@ -33,7 +31,6 @@ if argument0 == "item"
     {
         global.itemSlot3 = argument1;
         global.itemCategorySlot3 = argument2;
-        instance_destroy();
     }
 
 //------------------------------------//
@@ -43,7 +40,6 @@ if argument0 == "item"
     {
         global.itemSlot4 = argument1;
         global.itemCategorySlot4 = argument2;
-        instance_destroy();
     }
         
 //------------------------------------//
@@ -53,7 +49,6 @@ if argument0 == "item"
     {
         global.itemSlot5 = argument1;
         global.itemCategorySlot5 = argument2;
-        instance_destroy();
     }
 }
 
@@ -69,9 +64,8 @@ if argument0 == "equipment"
 //-----------------------------------//
     if global.equipmentSlot1 == "---"
     {
-        global.equipmentSlot1 = argument1
-        global.equipmentCategorySlot1 = argument2
-        instance_destroy()
+        global.equipmentSlot1 = argument1;
+        global.equipmentCategorySlot1 = argument2;
     }
     
 //------------------------------------//
@@ -79,9 +73,8 @@ if argument0 == "equipment"
 //-----------------------------------//
     else if global.equipmentSlot2 == "---"
     {
-        global.equipmentSlot2 = argument1
-        global.equipmentCategorySlot2 = argument2
-        instance_destroy()
+        global.equipmentSlot2 = argument1;
+        global.equipmentCategorySlot2 = argument2;
     }
     
 //------------------------------------//
@@ -89,9 +82,8 @@ if argument0 == "equipment"
 //-----------------------------------//
     else if global.equipmentSlot3 == "---"
     {
-        global.equipmentSlot3 = argument1
-        global.equipmentCategorySlot3 = argument2
-        instance_destroy()
+        global.equipmentSlot3 = argument1;
+        global.equipmentCategorySlot3 = argument2;
     }
     
 //------------------------------------//
@@ -99,9 +91,8 @@ if argument0 == "equipment"
 //-----------------------------------//
     else if global.equipmentSlot4 == "---"
     {
-        global.equipmentSlot4 = argument1
-        global.equipmentCategorySlot4 = argument2
-        instance_destroy()
+        global.equipmentSlot4 = argument1;
+        global.equipmentCategorySlot4 = argument2;
     }
     
 //------------------------------------//
@@ -109,8 +100,7 @@ if argument0 == "equipment"
 //-----------------------------------//
     else if global.equipmentSlot5 == "---"
     {
-        global.equipmentSlot5 = argument1
-        global.equipmentCategorySlot5 = argument2
-        instance_destroy()
+        global.equipmentSlot5 = argument1;
+        global.equipmentCategorySlot5 = argument2;
     }
 }
