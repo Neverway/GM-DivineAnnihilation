@@ -408,7 +408,7 @@
       </objects>
       <objects name="Hud">
         <object>objects\obj_menu_hud_playerHealth</object>
-        <object>objects\obj_menu_hud_shelf</object>
+        <object>objects\obj_menu_hud_playerNameShelf</object>
       </objects>
       <objects name="Inventory">
         <object>objects\obj_menu_inventory</object>

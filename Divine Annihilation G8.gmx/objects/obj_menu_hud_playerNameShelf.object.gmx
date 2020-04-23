@@ -57,7 +57,7 @@ draw_text(view_xview + 32, view_yview + 7, global.playerName);
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>-5,-5</point>
-    <point>89,89</point>
+    <point>0,0</point>
+    <point>25,25</point>
   </PhysicsShapePoints>
 </object>

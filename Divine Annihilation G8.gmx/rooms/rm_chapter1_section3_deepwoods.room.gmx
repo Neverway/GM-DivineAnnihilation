@@ -105,7 +105,7 @@
     <instance objName="obj_level_collider" x="7488" y="864" name="inst_828F39E1" locked="0" code="" scaleX="1.125" scaleY="3.375" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger_levelTransition" x="4288" y="1336" name="inst_7FEB60F2" locked="0" code="//------------------------------------//&#xA;// Level Transition&#xA;//-----------------------------------//&#xA;// If returning = true then add lines returnX = {x} &amp; returnY = {Y}&#xA;// {x} &amp; {y} are the coordinates of where the player will be when the next room is loaded&#xA;roomID = room - 1;&#xA;returning = true;&#xA;returnX = 9696;&#xA;returnY = 6208;" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_system_light_lantern" x="24" y="8" name="inst_9BB3E6DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_menu_hud_shelf" x="32" y="0" name="inst_A33ECB4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_menu_hud_playerNameShelf" x="32" y="0" name="inst_A33ECB4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_system_transition_fadeInLevel" x="-640" y="0" name="inst_B5C1BE66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>

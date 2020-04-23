@@ -265,7 +265,7 @@
     <instance objName="obj_trigger_interact" x="6848" y="3568" name="inst_B81EFED3" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;totalTextboxCount = 3;&#xA;activateOnTouch = false;&#xA;&#xA;text = &quot;*That's a pretty long drop.&quot;&#xA;portrait = spr_character_portrait_fox_idle;&#xA;&#xA;text2 = &quot;*Yeah, I can't even see the bottom.&quot;&#xA;portrait2 = spr_character_portrait_cat_idle;&#xA;&#xA;text3 = &quot;*It's a good reminder for us to watch our step.&quot;&#xA;portrait3 = spr_character_portrait_fox_idle;" scaleX="20" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_system_light_lantern" x="24" y="8" name="inst_9BB3E6DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_system_light_point" x="2048" y="3280" name="inst_82D82351" locked="0" code="lightSize = 200;&#xA;lightColor = c_orange;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_menu_hud_shelf" x="32" y="0" name="inst_82097AD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_menu_hud_playerNameShelf" x="32" y="0" name="inst_82097AD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_system_transition_fadeInLevel" x="-640" y="0" name="inst_970DE91F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
