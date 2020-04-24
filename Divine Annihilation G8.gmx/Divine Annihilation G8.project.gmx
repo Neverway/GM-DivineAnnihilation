@@ -168,6 +168,7 @@
             <sprites name="Outdoor Assets">
               <sprite>sprites\spr_area_hometown_outdoor_lamp</sprite>
               <sprite>sprites\spr_area_hometown_outdoor_fountain</sprite>
+              <sprite>sprites\spr_area_hometown_map</sprite>
             </sprites>
           </sprites>
           <sprites name="Cave">
@@ -237,6 +238,10 @@
         </sprites>
         <sprites name="Transition">
           <sprite>sprites\spr_system_transition_fade</sprite>
+        </sprites>
+        <sprites name="Maps">
+          <sprite>sprites\spr_system_map_hometown</sprite>
+          <sprite>sprites\spr_system_map_marker</sprite>
         </sprites>
         <sprites name="Other">
           <sprite>sprites\spr_system_other_entityShadow</sprite>
@@ -400,6 +405,7 @@
             <objects name="Outdoor Assets">
               <object>objects\obj_area_hometown_outdoor_lamp</object>
               <object>objects\obj_area_hometown_outdoor_fountain</object>
+              <object>objects\obj_area_hometown_outdoor_map</object>
             </objects>
           </objects>
           <objects name="Cave">
@@ -470,6 +476,9 @@
         <objects name="Transition">
           <object>objects\obj_system_transition_fade</object>
           <object>objects\obj_system_transition_fadeInLevel</object>
+        </objects>
+        <objects name="Maps">
+          <object>objects\obj_system_map_hometown</object>
         </objects>
         <objects name="Other">
           <object>objects\obj_system_other_colliderDestructor</object>
