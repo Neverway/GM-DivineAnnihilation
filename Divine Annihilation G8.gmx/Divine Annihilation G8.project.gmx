@@ -102,8 +102,12 @@
         <sprites name="Autumn Forest">
           <sprites name="Cave">
             <sprites name="Saltwater Bat">
-              <sprite>sprites\spr_enemy_cave_saltwaterBat_idle</sprite>
-              <sprite>sprites\spr_enemy_cave_saltwaterBat_chasing</sprite>
+              <sprite>sprites\spr_enemy_cave_saltBat_idle</sprite>
+              <sprite>sprites\spr_enemy_cave_saltBat_chasing</sprite>
+            </sprites>
+            <sprites name="Slag Rat">
+              <sprite>sprites\spr_enemy_cave_slagRat_idle</sprite>
+              <sprite>sprites\spr_enemy_cave_slagRat_chasing</sprite>
             </sprites>
           </sprites>
         </sprites>
@@ -163,11 +167,17 @@
             </sprites>
             <sprites name="Outdoor Assets">
               <sprite>sprites\spr_area_hometown_outdoor_lamp</sprite>
+              <sprite>sprites\spr_area_hometown_outdoor_fountain</sprite>
             </sprites>
           </sprites>
           <sprites name="Cave">
             <sprite>sprites\spr_area_cave_structure_bridgePost</sprite>
             <sprite>sprites\spr_area_cave_structure_bridgeRope</sprite>
+          </sprites>
+          <sprites name="Castle Ruins">
+            <sprites name="Outdoor Assets">
+              <sprite>sprites\spr_area_castleRuins_outdoor_fountain</sprite>
+            </sprites>
           </sprites>
         </sprites>
       </sprites>
@@ -243,6 +253,9 @@
         <background>background\bgr_tile_forest_autumn_indoor</background>
         <background>background\bgr_tile_forest_autumn_cave</background>
       </backgrounds>
+    </backgrounds>
+    <backgrounds name="Backgrounds">
+      <background>background\bgr_background_cliff</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
@@ -322,8 +335,11 @@
       <objects name="Enemies">
         <objects name="Autumn Forest">
           <objects name="Cave">
-            <objects name="Saltwater Bat">
-              <object>objects\obj_enemy_cave_saltwaterBat</object>
+            <objects name="Salt Bat">
+              <object>objects\obj_enemy_cave_saltBat</object>
+            </objects>
+            <objects name="Slag Rat">
+              <object>objects\obj_enemy_cave_slagRat</object>
             </objects>
           </objects>
         </objects>
@@ -383,11 +399,17 @@
             </objects>
             <objects name="Outdoor Assets">
               <object>objects\obj_area_hometown_outdoor_lamp</object>
+              <object>objects\obj_area_hometown_outdoor_fountain</object>
             </objects>
           </objects>
           <objects name="Cave">
             <object>objects\obj_area_cave_structure_bridgePost</object>
             <object>objects\obj_area_cave_structure_bridgeRope</object>
+          </objects>
+          <objects name="Castle Ruins">
+            <objects name="Outdoor Assets">
+              <object>objects\obj_area_castleRuins_outdoor_fountain</object>
+            </objects>
           </objects>
         </objects>
       </objects>

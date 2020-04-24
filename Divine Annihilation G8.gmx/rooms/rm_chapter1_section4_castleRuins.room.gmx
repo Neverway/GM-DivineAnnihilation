@@ -3,8 +3,8 @@
   <caption></caption>
   <width>12000</width>
   <height>12000</height>
-  <vsnap>64</vsnap>
-  <hsnap>64</hsnap>
+  <vsnap>480</vsnap>
+  <hsnap>640</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -81,7 +81,7 @@
     <instance objName="obj_system_other_colliderDestructor" x="3584" y="-1728" name="inst_F6998957" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_system_light_lantern" x="24" y="8" name="inst_9BB3E6DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_hud_playerNameShelf" x="32" y="0" name="inst_A33ECB4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_system_transition_fadeInLevel" x="0" y="0" name="inst_B5C1BE66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_system_transition_fadeInLevel" x="-640" y="0" name="inst_B5C1BE66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgr_tile_forest_autumn" x="0" y="0" w="64" h="64" xo="0" yo="64" id="10019722" name="inst_C99B0D1B" depth="40" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

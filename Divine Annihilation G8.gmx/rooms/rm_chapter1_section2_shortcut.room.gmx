@@ -76,12 +76,10 @@
     <instance objName="&lt;undefined&gt;" x="4656" y="3200" name="inst_A1F024D0" locked="0" code="//------------------------------------//&#xA;// Sign Like Textbox Trigger&#xA;//-----------------------------------//&#xA;text = &quot;Good luck!&quot;;&#xA;portrait = spr_textbox_portrait_none;&#xA;textboxOrder = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_character_overworld_cat" x="24" y="96" name="inst_AF9AAB35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_other_indoor_doorShadow" x="2048" y="3328" name="inst_71C224C1" locked="0" code="" scaleX="3" scaleY="1.25" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_cave_saltwaterBat" x="2880" y="3136" name="inst_FEA11129" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_cave_saltwaterBat" x="3520" y="2496" name="inst_2E7CE713" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_cave_saltwaterBat" x="3584" y="3200" name="inst_B9A1031F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_cave_saltwaterBat" x="4160" y="4288" name="inst_65739E8F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_cave_saltwaterBat" x="4480" y="3712" name="inst_4983D613" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_cave_saltwaterBat" x="3776" y="3648" name="inst_15CF85F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_cave_saltBat" x="2880" y="3136" name="inst_FEA11129" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_cave_saltBat" x="3520" y="2496" name="inst_2E7CE713" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_cave_saltBat" x="3584" y="3200" name="inst_B9A1031F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_cave_saltBat" x="3776" y="3648" name="inst_15CF85F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_other_indoor_doorShadow" x="2944" y="3584" name="inst_EE0BCC59" locked="0" code="" scaleX="3" scaleY="1.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_other_indoor_doorShadow" x="5696" y="3328" name="inst_515C1ECA" locked="0" code="" scaleX="3" scaleY="1.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_area_cave_structure_bridgeRope" x="6832" y="3832" name="inst_1C950479" locked="0" code="" scaleX="1" scaleY="9" colour="4294967295" rotation="0"/>
@@ -96,6 +94,12 @@
     <instance objName="obj_character_overworld_ph1" x="72" y="96" name="inst_9C6A56FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_character_overworld_ph2" x="120" y="96" name="inst_44BAB4D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_savepoint" x="1952" y="3008" name="inst_9460D9B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_cave_slagRat" x="4144" y="4272" name="inst_A6825F91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_cave_slagRat" x="4472" y="3672" name="inst_31830DD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_cave_slagRat" x="8560" y="5256" name="inst_8D4BA7E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_cave_slagRat" x="9528" y="5448" name="inst_DD35A942" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_cave_slagRat" x="10048" y="5304" name="inst_C2193B0F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_cave_slagRat" x="9784" y="3608" name="inst_357DB979" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="1920" y="2944" name="inst_13B513E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="1984" y="2880" name="inst_E91EC95F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="2048" y="2848" name="inst_63B9624D" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
