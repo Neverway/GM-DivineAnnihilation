@@ -416,6 +416,9 @@
       <objects name="Shop">
         <object>objects\obj_menu_shop</object>
       </objects>
+      <objects name="Battle">
+        <object>objects\obj_menu_battle</object>
+      </objects>
     </objects>
     <objects name="System">
       <objects name="Required">

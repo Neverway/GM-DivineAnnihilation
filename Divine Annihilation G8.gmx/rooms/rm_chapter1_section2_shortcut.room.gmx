@@ -95,6 +95,7 @@
     <instance objName="obj_other_indoor_doorShadow" x="5696" y="3328" name="inst_ABA39ABF" locked="0" code="" scaleX="3" scaleY="1.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_character_overworld_ph1" x="72" y="96" name="inst_9C6A56FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_character_overworld_ph2" x="120" y="96" name="inst_44BAB4D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_level_savepoint" x="1952" y="3008" name="inst_9460D9B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="1920" y="2944" name="inst_13B513E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="1984" y="2880" name="inst_E91EC95F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_collider" x="2048" y="2848" name="inst_63B9624D" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
