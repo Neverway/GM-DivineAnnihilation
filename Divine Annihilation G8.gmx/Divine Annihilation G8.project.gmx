@@ -182,6 +182,7 @@
         <sprite>sprites\spr_menu_title_opening</sprite>
         <sprite>sprites\spr_menu_title_main</sprite>
         <sprite>sprites\spr_menu_title_saves</sprite>
+        <sprite>sprites\spr_menu_title_options</sprite>
         <sprite>sprites\spr_menu_title_overwrite</sprite>
         <sprite>sprites\spr_menu_title_confirmErase</sprite>
         <sprite>sprites\spr_menu_title_name</sprite>
@@ -400,6 +401,7 @@
       <objects name="Title">
         <object>objects\obj_menu_title_opening</object>
         <object>objects\obj_menu_title_main</object>
+        <object>objects\obj_menu_title_options</object>
         <object>objects\obj_menu_title_saves</object>
         <object>objects\obj_menu_title_overwrite</object>
         <object>objects\obj_menu_title_confirmErase</object>
