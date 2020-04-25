@@ -1,4 +1,4 @@
-/// scr_pickup("item"/"equipment", "{item name}", "{catagory}")
+/// scr_pickup("item"/"equipment", "{item name}", "{Category}")
 
 //==========================//
 // Assign pickup to item
@@ -12,7 +12,7 @@ if argument0 == "item"
     if global.itemSlot1 == "---"
     {
         global.itemSlot1 = argument1;
-        global.itemCatagorySlot1 = argument2;
+        global.itemCategorySlot1 = argument2;
         instance_destroy();
     }
     
@@ -22,7 +22,7 @@ if argument0 == "item"
     else if global.itemSlot2 == "---"
     {
         global.itemSlot2 = argument1;
-        global.itemCatagorySlot2 = argument2;
+        global.itemCategorySlot2 = argument2;
         instance_destroy();
     }
     
@@ -32,7 +32,7 @@ if argument0 == "item"
     else if global.itemSlot3 == "---"
     {
         global.itemSlot3 = argument1;
-        global.itemCatagorySlot3 = argument2;
+        global.itemCategorySlot3 = argument2;
         instance_destroy();
     }
 
@@ -42,7 +42,7 @@ if argument0 == "item"
     else if global.itemSlot4 == "---"
     {
         global.itemSlot4 = argument1;
-        global.itemCatagorySlot4 = argument2;
+        global.itemCategorySlot4 = argument2;
         instance_destroy();
     }
         
@@ -52,7 +52,7 @@ if argument0 == "item"
     else if global.itemSlot5 == "---"
     {
         global.itemSlot5 = argument1;
-        global.itemCatagorySlot5 = argument2;
+        global.itemCategorySlot5 = argument2;
         instance_destroy();
     }
 }
@@ -70,7 +70,7 @@ if argument0 == "equipment"
     if global.equipmentSlot1 == "---"
     {
         global.equipmentSlot1 = argument1
-        global.equipmentCatagorySlot1 = argument2
+        global.equipmentCategorySlot1 = argument2
         instance_destroy()
     }
     
@@ -80,7 +80,7 @@ if argument0 == "equipment"
     else if global.equipmentSlot2 == "---"
     {
         global.equipmentSlot2 = argument1
-        global.equipmentCatagorySlot2 = argument2
+        global.equipmentCategorySlot2 = argument2
         instance_destroy()
     }
     
@@ -90,7 +90,7 @@ if argument0 == "equipment"
     else if global.equipmentSlot3 == "---"
     {
         global.equipmentSlot3 = argument1
-        global.equipmentCatagorySlot3 = argument2
+        global.equipmentCategorySlot3 = argument2
         instance_destroy()
     }
     
@@ -100,7 +100,7 @@ if argument0 == "equipment"
     else if global.equipmentSlot4 == "---"
     {
         global.equipmentSlot4 = argument1
-        global.equipmentCatagorySlot4 = argument2
+        global.equipmentCategorySlot4 = argument2
         instance_destroy()
     }
     
@@ -110,7 +110,7 @@ if argument0 == "equipment"
     else if global.equipmentSlot5 == "---"
     {
         global.equipmentSlot5 = argument1
-        global.equipmentCatagorySlot5 = argument2
+        global.equipmentCategorySlot5 = argument2
         instance_destroy()
     }
 }

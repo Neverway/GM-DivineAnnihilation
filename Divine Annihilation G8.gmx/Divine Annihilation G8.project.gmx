@@ -176,6 +176,9 @@
             <sprite>sprites\spr_area_cave_structure_bridgeRope</sprite>
           </sprites>
           <sprites name="Castle Ruins">
+            <sprites name="Structures">
+              <sprite>sprites\spr_area_castleRuins_structure_castle</sprite>
+            </sprites>
             <sprites name="Outdoor Assets">
               <sprite>sprites\spr_area_castleRuins_outdoor_fountain</sprite>
             </sprites>
@@ -185,6 +188,7 @@
       <sprites name="Other">
         <sprites name="Indoor Assets">
           <sprite>sprites\spr_other_indoor_doorShadow</sprite>
+          <sprite>sprites\spr_other_indoor_doorGate</sprite>
         </sprites>
       </sprites>
     </sprites>
@@ -257,6 +261,7 @@
         <background>background\bgr_tile_forest_autumn</background>
         <background>background\bgr_tile_forest_autumn_indoor</background>
         <background>background\bgr_tile_forest_autumn_cave</background>
+        <background>background\bgr_tile_forest_autumn_castle</background>
       </backgrounds>
     </backgrounds>
     <backgrounds name="Backgrounds">
@@ -365,6 +370,7 @@
         <objects name="Pickups">
           <object>objects\obj_level_pickup_gold</object>
           <object>objects\obj_level_pickup_hpPotion</object>
+          <object>objects\obj_level_pickup_adventurersTome</object>
         </objects>
       </objects>
       <objects name="Triggers">
@@ -413,6 +419,9 @@
             <object>objects\obj_area_cave_structure_bridgeRope</object>
           </objects>
           <objects name="Castle Ruins">
+            <objects name="Structures">
+              <object>objects\obj_area_castleRuins_structure_castle</object>
+            </objects>
             <objects name="Outdoor Assets">
               <object>objects\obj_area_castleRuins_outdoor_fountain</object>
             </objects>
@@ -422,6 +431,7 @@
       <objects name="Other">
         <objects name="Indoor Assets">
           <object>objects\obj_other_indoor_doorShadow</object>
+          <object>objects\obj_other_indoor_doorGate</object>
         </objects>
       </objects>
     </objects>
