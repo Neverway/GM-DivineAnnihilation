@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>if global.keyAction
 {
-    script_execute(scr_pickup, "equipment", "Adventurers Tome", spr_menu_inventory_icon_other);
+    script_execute(scr_pickup, "equipment", "Adv. Tome", spr_menu_inventory_icon_other);
 }
 </string>
           </argument>

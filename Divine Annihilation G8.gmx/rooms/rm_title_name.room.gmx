@@ -52,7 +52,9 @@
   <instances>
     <instance objName="obj_menu_title_name" x="0" y="0" name="inst_38FB73BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
-  <tiles/>
+  <tiles>
+    <tile bgName="bgr_background_title" x="0" y="-960" w="640" h="1440" xo="0" yo="0" id="10026220" name="inst_EBB89733" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+  </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
   <PhysicsWorldLeft>0</PhysicsWorldLeft>
