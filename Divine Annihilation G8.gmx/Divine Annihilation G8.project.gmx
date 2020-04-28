@@ -498,7 +498,6 @@
   </objects>
   <rooms name="rooms">
     <rooms name="Title">
-      <room>rooms\rm_title_opening</room>
       <room>rooms\rm_title_menu</room>
       <room>rooms\rm_title_name</room>
     </rooms>
@@ -513,8 +512,13 @@
       <room>rooms\rm_battle_placeholder</room>
     </rooms>
     <rooms name="Developer">
+      <rooms name="Developer Rooms">
+        <room>rooms\rm_developer_everyTest</room>
+      </rooms>
+      <rooms name="Scrapped">
+        <room>rooms\rm_scrapped_title_opening</room>
+      </rooms>
       <room>rooms\rm_chapterNUM_sectionNUM_NAME</room>
-      <room>rooms\rm_developer_everyTest</room>
     </rooms>
   </rooms>
   <help>
