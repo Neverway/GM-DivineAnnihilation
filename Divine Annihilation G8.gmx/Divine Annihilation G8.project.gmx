@@ -263,6 +263,9 @@
         <background>background\bgr_tile_forest_autumn_cave</background>
         <background>background\bgr_tile_forest_autumn_castle</background>
       </backgrounds>
+      <backgrounds name="City">
+        <background>background\bgr_tile_city</background>
+      </backgrounds>
     </backgrounds>
     <backgrounds name="Backgrounds">
       <background>background\bgr_background_title</background>
@@ -510,6 +513,9 @@
       <room>rooms\rm_chapter1_section3_deepwoods</room>
       <room>rooms\rm_chapter1_section4_castleRuins</room>
       <room>rooms\rm_chapter1_section5_cliff</room>
+    </rooms>
+    <rooms name="Chapter 2">
+      <room>rooms\rm_chapter2_section2_streets</room>
     </rooms>
     <rooms name="Battles">
       <room>rooms\rm_battle_placeholder</room>
