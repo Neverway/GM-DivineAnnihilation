@@ -96,8 +96,8 @@ else
             <string>global.room_cameFrom = room;
 global.x_cameFrom = obj_character_overworld_fox.x;
 global.y_cameFrom = obj_character_overworld_fox.y;
-global.enemySlot1 = "Chad The Slag Rat";
-room_goto(8);
+global.enemySlot1 = "Slag Rat";
+room_goto(9);
 </string>
           </argument>
         </arguments>

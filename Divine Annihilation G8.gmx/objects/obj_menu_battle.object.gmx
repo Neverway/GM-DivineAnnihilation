@@ -38,7 +38,7 @@ active = true;
 menu = "movesetP1";
 enemySlot1 = global.enemySlot1;
 P1moveset = "none"
-P1moveset = "none"
+P2moveset = "none"
 P1target = "none"
 P2target = "none"
 </string>

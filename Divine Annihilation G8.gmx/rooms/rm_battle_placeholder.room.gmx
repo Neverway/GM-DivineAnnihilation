@@ -51,6 +51,9 @@
   </views>
   <instances>
     <instance objName="obj_system_config" x="0" y="0" name="inst_B16F98B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_character_battle_fox" x="32" y="64" name="inst_9A5F4F23" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="32" y="192" name="inst_5D17A977" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_character_battle_cat" x="32" y="192" name="inst_5D4DF3F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_battle" x="0" y="352" name="inst_CD87094D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>

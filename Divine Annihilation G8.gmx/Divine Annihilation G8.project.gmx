@@ -36,6 +36,14 @@
             <sprite>sprites\spr_character_overworld_fox_walk_front</sprite>
             <sprite>sprites\spr_character_overworld_fox_walk_back</sprite>
           </sprites>
+          <sprites name="Battle">
+            <sprite>sprites\spr_character_battle_fox_idle</sprite>
+            <sprite>sprites\spr_character_battle_fox_attacking</sprite>
+            <sprite>sprites\spr_character_battle_fox_defending</sprite>
+            <sprite>sprites\spr_character_battle_fox_hurt</sprite>
+            <sprite>sprites\spr_character_battle_fox_down</sprite>
+            <sprite>sprites\spr_character_battle_fox_victory</sprite>
+          </sprites>
           <sprites name="Portraits">
             <sprite>sprites\spr_character_portrait_none</sprite>
             <sprite>sprites\spr_character_portrait_fox_idle</sprite>
@@ -320,12 +328,18 @@
           <objects name="Overworld">
             <object>objects\obj_character_overworld_fox</object>
           </objects>
+          <objects name="Battle">
+            <object>objects\obj_character_battle_fox</object>
+          </objects>
         </objects>
         <objects name="Cat">
           <objects name="Overworld">
             <object>objects\obj_character_overworld_cat</object>
             <object>objects\obj_character_overworld_ph1</object>
             <object>objects\obj_character_overworld_ph2</object>
+          </objects>
+          <objects name="Battle">
+            <object>objects\obj_character_battle_cat</object>
           </objects>
         </objects>
       </objects>
