@@ -184,7 +184,7 @@ if global.keyAction and menu == "targetP2" and active
 //==========================//
 // Reset target
 //==========================//
-if global.keySecond and active and menu != "battle"
+if global.keySecond and active
 {
         menu = "movesetP1"
         P1moveset = "none"
@@ -301,55 +301,6 @@ if menu == "battle"
         draw_text(view_xview+38, view_yview+65+352, "P2moveset: " + P2moveset);
         draw_text(view_xview+38, view_yview+93+352, "P2target: " + P2target);
     }
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Draw Icons
-
-//==========================//
-// Setup text
-//==========================//
-draw_set_font(fnt_menu);
-draw_set_color(c_white);
-draw_text(view_xview+550, view_yview+93+352, menu);
-
-//==========================//
-// MovesetP1 or MovesetP2
-//==========================//
-if menu == "movesetP1" or menu == "targetP1"
-{
-    draw_sprite(spr_menu_battle_fox, 0, x, y-32);
-    draw_sprite(spr_menu_battle_cat, 2, x, y-32);
-}
-
-if menu == "movesetP2" or menu == "targetP2"
-{
-    draw_sprite(spr_menu_battle_fox, 2, x, y-32);
-    draw_sprite(spr_menu_battle_cat, 0, x, y-32);
-}
-
-if menu == "battle"
-{
-    draw_sprite(spr_menu_battle_fox, 2, x, y-32);
-    draw_sprite(spr_menu_battle_cat, 3, x, y-32);
 }
 </string>
           </argument>

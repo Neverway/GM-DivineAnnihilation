@@ -229,6 +229,10 @@
       <sprites name="Textbox">
         <sprite>sprites\spr_menu_textbox</sprite>
       </sprites>
+      <sprites name="Battle">
+        <sprite>sprites\spr_menu_battle_fox</sprite>
+        <sprite>sprites\spr_menu_battle_cat</sprite>
+      </sprites>
     </sprites>
     <sprites name="System">
       <sprites name="Required">
@@ -477,6 +481,7 @@
       </objects>
       <objects name="Battle">
         <object>objects\obj_menu_battle</object>
+        <object>objects\object79</object>
       </objects>
     </objects>
     <objects name="System">
@@ -531,13 +536,11 @@
     </rooms>
     <rooms name="Chapter 2">
       <room>rooms\rm_chapter2_section2_streets</room>
-    </rooms>
-    <rooms name="Battles">
-      <room>rooms\rm_battle_placeholder</room>
+      <room>rooms\room11</room>
     </rooms>
     <rooms name="Developer">
       <rooms name="Developer Rooms">
-        <room>rooms\rm_developer_everyTest</room>
+        <room>rooms\rm_developer_battlePlaceHolder</room>
       </rooms>
       <room>rooms\rm_chapterNUM_sectionNUM_NAME</room>
     </rooms>

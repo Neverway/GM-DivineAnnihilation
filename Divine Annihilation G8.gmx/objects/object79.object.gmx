@@ -184,7 +184,7 @@ if global.keyAction and menu == "targetP2" and active
 //==========================//
 // Reset target
 //==========================//
-if global.keySecond and active and menu != "battle"
+if global.keySecond and active
 {
         menu = "movesetP1"
         P1moveset = "none"
