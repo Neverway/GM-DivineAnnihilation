@@ -33,8 +33,8 @@
 draw_set_font(fnt_menu);
 draw_set_color(c_white);
 draw_text(view_xview+38, view_yview+9+352, "Press [1] to load [chapter1_section1_hometown]");
-draw_text(view_xview+38, view_yview+9+352+32, "Press [2] to load [chapter2_section2_streets]");
-draw_text(view_xview+38, view_yview+9+352+64, "Press [3] to load [battle_movesetTest]");
+draw_text(view_xview+38, view_yview+9+352+32, "Press [2] to load [chapter1_section2_shortcut]");
+draw_text(view_xview+38, view_yview+9+352+64, "Press [3] to load [chapter2_section2_streets]");
 </string>
           </argument>
         </arguments>
@@ -57,7 +57,7 @@ draw_text(view_xview+38, view_yview+9+352+64, "Press [3] to load [battle_moveset
         <arguments>
           <argument>
             <kind>11</kind>
-            <room>rm_battle</room>
+            <room>rm_chapter2_section2_streets</room>
           </argument>
         </arguments>
       </action>
@@ -79,7 +79,7 @@ draw_text(view_xview+38, view_yview+9+352+64, "Press [3] to load [battle_moveset
         <arguments>
           <argument>
             <kind>11</kind>
-            <room>rm_chapter2_section2_streets</room>
+            <room>rm_chapter1_section2_shortcut</room>
           </argument>
         </arguments>
       </action>
