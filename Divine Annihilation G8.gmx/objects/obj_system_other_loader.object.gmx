@@ -57,7 +57,7 @@ draw_text(view_xview+38, view_yview+9+352+64, "Press [3] to load [battle_moveset
         <arguments>
           <argument>
             <kind>11</kind>
-            <room>rm_battle_movesetTest</room>
+            <room>rm_battle</room>
           </argument>
         </arguments>
       </action>

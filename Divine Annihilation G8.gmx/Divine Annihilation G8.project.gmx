@@ -542,11 +542,10 @@
       <room>rooms\rm_chapter2_section2_streets</room>
     </rooms>
     <rooms name="Other">
-      <room>rooms\rm_battle_movesetTest</room>
+      <room>rooms\rm_battle</room>
     </rooms>
     <rooms name="Developer">
       <room>rooms\rm_chapterNUM_sectionNUM_NAME</room>
-      <room>rooms\rm_battle</room>
     </rooms>
   </rooms>
   <help>
