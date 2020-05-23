@@ -97,7 +97,7 @@ else
 global.x_cameFrom = obj_character_overworld_fox.x;
 global.y_cameFrom = obj_character_overworld_fox.y;
 global.enemySlot1 = "Salt Bat";
-room_goto(9);
+room_goto(10);
 </string>
           </argument>
         </arguments>
