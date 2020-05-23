@@ -232,6 +232,7 @@
       <sprites name="Battle">
         <sprite>sprites\spr_menu_battle_fox</sprite>
         <sprite>sprites\spr_menu_battle_cat</sprite>
+        <sprite>sprites\spr_menu_battle_charge</sprite>
       </sprites>
     </sprites>
     <sprites name="System">
@@ -334,6 +335,7 @@
           </objects>
           <objects name="Battle">
             <object>objects\obj_character_battle_fox</object>
+            <object>objects\obj_character_battle_testEnemy</object>
           </objects>
         </objects>
         <objects name="Cat">
@@ -481,7 +483,7 @@
       </objects>
       <objects name="Battle">
         <object>objects\obj_menu_battle</object>
-        <object>objects\object79</object>
+        <object>objects\obj_menu_battle_charge</object>
       </objects>
     </objects>
     <objects name="System">
@@ -517,6 +519,7 @@
         <objects name="Other">
           <object>objects\obj_trigger_event</object>
           <object>objects\obj_system_other_colliderDestructor</object>
+          <object>objects\obj_system_other_loader</object>
         </objects>
       </objects>
     </objects>
@@ -526,6 +529,7 @@
       <room>rooms\rm_title_splash</room>
       <room>rooms\rm_title_menu</room>
       <room>rooms\rm_title_name</room>
+      <room>rooms\rm_room_choose</room>
     </rooms>
     <rooms name="Chapter 1">
       <room>rooms\rm_chapter1_section1_hometown</room>
@@ -536,13 +540,13 @@
     </rooms>
     <rooms name="Chapter 2">
       <room>rooms\rm_chapter2_section2_streets</room>
-      <room>rooms\room11</room>
+    </rooms>
+    <rooms name="Other">
+      <room>rooms\rm_battle_movesetTest</room>
     </rooms>
     <rooms name="Developer">
-      <rooms name="Developer Rooms">
-        <room>rooms\rm_developer_battlePlaceHolder</room>
-      </rooms>
       <room>rooms\rm_chapterNUM_sectionNUM_NAME</room>
+      <room>rooms\rm_battle</room>
     </rooms>
   </rooms>
   <help>
