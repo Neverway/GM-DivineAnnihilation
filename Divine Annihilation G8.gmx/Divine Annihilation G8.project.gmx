@@ -233,6 +233,7 @@
         <sprite>sprites\spr_menu_battle_fox</sprite>
         <sprite>sprites\spr_menu_battle_cat</sprite>
         <sprite>sprites\spr_menu_battle_charge</sprite>
+        <sprite>sprites\spr_menu_battle_backgroundOne</sprite>
       </sprites>
     </sprites>
     <sprites name="System">
@@ -484,6 +485,7 @@
       <objects name="Battle">
         <object>objects\obj_menu_battle</object>
         <object>objects\obj_menu_battle_charge</object>
+        <object>objects\obj_menu_battle_background</object>
       </objects>
     </objects>
     <objects name="System">
