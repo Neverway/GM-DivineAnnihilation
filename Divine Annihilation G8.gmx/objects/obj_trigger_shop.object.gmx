@@ -81,6 +81,10 @@ if keyboard_check_pressed(ord('Z')) and active
     obj_menu_shop.item2Type = item2Type;
     obj_menu_shop.item3Type = item3Type;
     obj_menu_shop.item4Type = item4Type;
+    obj_menu_shop.item1Limited = item1Limited;
+    obj_menu_shop.item2Limited = item2Limited;
+    obj_menu_shop.item3Limited = item3Limited;
+    obj_menu_shop.item4Limited = item4Limited;
     active = false;
 }
 }

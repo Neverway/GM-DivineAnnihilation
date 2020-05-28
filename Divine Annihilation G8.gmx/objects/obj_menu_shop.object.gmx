@@ -35,6 +35,7 @@ image_speed = 0;
 active = false;
 alarm[0] = 10;
 global.menuActive = true;
+menu = "Buy";
 </string>
           </argument>
         </arguments>
@@ -106,8 +107,21 @@ global.menuActive = true;
 //------------------------------------//
     if global.keyAction and image_index == 0 and global.playerGold &gt;= item1Cost
     {
-        global.playerGold -= item1Cost;
-        script_execute(scr_itemAdd, item1Type, item1Name, item1Category);
+        if item1Limited
+        {
+            script_execute(scr_itemCheck, item1Name);
+            if hasItem == false
+            {
+                global.playerGold -= item1Cost;
+                script_execute(scr_itemAdd, item1Type, item1Name, item1Category, item1Limited);
+            }
+        }
+        
+        else
+        {
+            global.playerGold -= item1Cost;
+            script_execute(scr_itemAdd, item1Type, item1Name, item1Category, item1Limited);
+        }
     }
 
 
@@ -116,8 +130,21 @@ global.menuActive = true;
 //------------------------------------//
     if global.keyAction and image_index == 1 and global.playerGold &gt;= item2Cost
     {
-        global.playerGold -= item2Cost
-        script_execute(scr_itemAdd, item2Type, item2Name, item2Category);
+        if item2Limited
+        {
+            script_execute(scr_itemCheck, item2Name);
+            if hasItem == false
+            {
+                global.playerGold -= item2Cost;
+                script_execute(scr_itemAdd, item2Type, item2Name, item2Category, item2Limited);
+            }
+        }
+        
+        else
+        {
+            global.playerGold -= item2Cost;
+            script_execute(scr_itemAdd, item2Type, item2Name, item2Category, item2Limited);
+        }
     }
 
 
@@ -126,8 +153,21 @@ global.menuActive = true;
 //------------------------------------//
     if global.keyAction and image_index == 2 and global.playerGold &gt;= item3Cost
     {
-        global.playerGold -= item3Cost
-        script_execute(scr_itemAdd, item3Type, item3Name, item3Category);
+        if item3Limited
+        {
+            script_execute(scr_itemCheck, item3Name);
+            if hasItem == false
+            {
+                global.playerGold -= item3Cost;
+                script_execute(scr_itemAdd, item3Type, item3Name, item3Category, item3Limited);
+            }
+        }
+        
+        else
+        {
+            global.playerGold -= item3Cost;
+            script_execute(scr_itemAdd, item3Type, item3Name, item3Category, item3Limited);
+        }
     }
 
     
@@ -201,6 +241,8 @@ draw_text(view_xview+550, view_yview+93+352, playersGold);
 //==========================//
 // Items names
 //==========================//
+if menu == "Buy"
+{
     if image_index == 0
     {
         draw_set_color(c_white);
@@ -273,6 +315,13 @@ draw_text(view_xview+550, view_yview+93+352, playersGold);
         draw_text(view_xview+38, view_yview+93+352, item4Name);
         draw_text(view_xview+148, view_yview+93+352, item4Cost);
     }
+}
+
+
+if menu == "Sell"
+{
+
+}
 </string>
           </argument>
         </arguments>

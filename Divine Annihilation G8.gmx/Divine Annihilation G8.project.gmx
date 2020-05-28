@@ -295,6 +295,7 @@
     <scripts name="Item">
       <script>scripts\scr_pickup.gml</script>
       <script>scripts\scr_itemAdd.gml</script>
+      <script>scripts\scr_itemCheck.gml</script>
     </scripts>
     <scripts name="System">
       <scripts name="Camera">
