@@ -83,7 +83,7 @@ else
 
 if global.keyAction and active == true
 {
-    instance_create(view_xview + xAdd, view_yview + yAdd, obj_menu_inventory_actions);
+    instance_create(view_xview + xAdd+64, view_yview + yAdd, obj_menu_inventory_actions);
 }
 
 
@@ -272,7 +272,7 @@ if sprite_index == spr_menu_inventory_items
         draw_text(view_xview+380, view_yview+292, global.itemSlot3);
         draw_text(view_xview+380, view_yview+320, global.itemSlot4);
         draw_text(view_xview+380, view_yview+348, global.itemSlot5);
-        xAdd = 380+64;
+        xAdd = 380;
         yAdd = 236;
     }
 
