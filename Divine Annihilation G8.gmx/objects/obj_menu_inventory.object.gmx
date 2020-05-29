@@ -42,6 +42,9 @@ if object_exists(obj_character_overworld_fox)
 image_speed = 0;
 image_index = 0;
 global.menuActive = true;
+active = true;
+xAdd = 380;
+yAdd = 236;
 </string>
           </argument>
         </arguments>
@@ -66,6 +69,28 @@ global.menuActive = true;
             <kind>1</kind>
             <string>/// Menu control
 
+//------------------------------------//
+// Actions
+//------------------------------------//
+if instance_exists(obj_menu_inventory_actions)
+{
+    active = false;
+}
+else
+{
+    active = true;
+}
+
+if global.keyAction and active == true
+{
+    instance_create(view_xview + xAdd, view_yview + yAdd, obj_menu_inventory_actions);
+}
+
+
+if active == true
+{
+
+
 //==========================//
 // Inventory menu
 //==========================//
@@ -75,34 +100,36 @@ global.menuActive = true;
 //------------------------------------//
 // Swap to equipment
 //------------------------------------//
-if global.keyMenuRight
-{
-    sprite_index = spr_menu_inventory_equipment;
-}
+    if global.keyMenuRight
+    {
+        sprite_index = spr_menu_inventory_equipment;
+    }
 
 
 //------------------------------------//
 // Swap to items
 //------------------------------------//
-if global.keyMenuLeft
-{
-    sprite_index = spr_menu_inventory_items;
-}
+    if global.keyMenuLeft
+    {
+        sprite_index = spr_menu_inventory_items;
+    }
 
 
 //------------------------------------//
 // Quit
 //------------------------------------//
-if global.keySecond
-{
-    if instance_exists(obj_character_overworld_fox)
+    if global.keySecond
     {
-        obj_character_overworld_fox.canMove = true;
-        obj_character_overworld_fox.inventoryOpen = false;
-        global.menuActive = false;
+        if instance_exists(obj_character_overworld_fox)
+        {
+            obj_character_overworld_fox.canMove = true;
+            obj_character_overworld_fox.inventoryOpen = false;
+            global.menuActive = false;
+        }
+        instance_destroy();
     }
-    instance_destroy();
 }
+
 </string>
           </argument>
         </arguments>
@@ -130,6 +157,7 @@ if global.keySecond
 //------------------------------------//
 x = view_xview;
 y = view_yview;
+show_debug_message(string(active));
 </string>
           </argument>
         </arguments>
@@ -244,6 +272,8 @@ if sprite_index == spr_menu_inventory_items
         draw_text(view_xview+380, view_yview+292, global.itemSlot3);
         draw_text(view_xview+380, view_yview+320, global.itemSlot4);
         draw_text(view_xview+380, view_yview+348, global.itemSlot5);
+        xAdd = 380+64;
+        yAdd = 236;
     }
 
 
@@ -257,6 +287,8 @@ if sprite_index == spr_menu_inventory_items
         draw_text(view_xview+380, view_yview+292, global.itemSlot3);
         draw_text(view_xview+380, view_yview+320, global.itemSlot4);
         draw_text(view_xview+380, view_yview+348, global.itemSlot5);
+        xAdd = 380;
+        yAdd = 264;
     }
 
 
@@ -270,6 +302,8 @@ if sprite_index == spr_menu_inventory_items
         draw_set_color(c_gray);
         draw_text(view_xview+380, view_yview+320, global.itemSlot4);
         draw_text(view_xview+380, view_yview+348, global.itemSlot5);
+        xAdd = 380;
+        yAdd = 292;
     }
 
 
@@ -283,6 +317,8 @@ if sprite_index == spr_menu_inventory_items
         draw_text(view_xview+380, view_yview+320, global.itemSlot4);
         draw_set_color(c_gray);
         draw_text(view_xview+380, view_yview+348, global.itemSlot5);
+        xAdd = 380;
+        yAdd = 320;
     }
 
 
@@ -295,6 +331,8 @@ if sprite_index == spr_menu_inventory_items
         draw_text(view_xview+380, view_yview+320, global.itemSlot4);
         draw_set_color(c_white);
         draw_text(view_xview+380, view_yview+348, global.itemSlot5);
+        xAdd = 380;
+        yAdd = 348;
     }
     
 
@@ -322,6 +360,8 @@ if sprite_index == spr_menu_inventory_equipment
         draw_text(view_xview+503, view_yview+292, global.equipmentSlot3);
         draw_text(view_xview+503, view_yview+320, global.equipmentSlot4);
         draw_text(view_xview+503, view_yview+348, global.equipmentSlot5);
+        xAdd = 503;
+        yAdd = 236;
     }
     
     
@@ -335,6 +375,8 @@ if sprite_index == spr_menu_inventory_equipment
         draw_text(view_xview+503, view_yview+292, global.equipmentSlot3);
         draw_text(view_xview+503, view_yview+320, global.equipmentSlot4);
         draw_text(view_xview+503, view_yview+348, global.equipmentSlot5);
+        xAdd = 503;
+        yAdd = 264;
     }
 
 
@@ -348,6 +390,8 @@ if sprite_index == spr_menu_inventory_equipment
         draw_set_color(c_gray);
         draw_text(view_xview+503, view_yview+320, global.equipmentSlot4);
         draw_text(view_xview+503, view_yview+348, global.equipmentSlot5);
+        xAdd = 503;
+        yAdd = 292;
     }
 
 
@@ -361,6 +405,8 @@ if sprite_index == spr_menu_inventory_equipment
         draw_text(view_xview+503, view_yview+320, global.equipmentSlot4);
         draw_set_color(c_gray);
         draw_text(view_xview+503, view_yview+348, global.equipmentSlot5);
+        xAdd = 503;
+        yAdd = 320;
     }
 
 
@@ -373,6 +419,8 @@ if sprite_index == spr_menu_inventory_equipment
         draw_text(view_xview+503, view_yview+320, global.equipmentSlot4);
         draw_set_color(c_white);
         draw_text(view_xview+503, view_yview+348, global.equipmentSlot5);
+        xAdd = 503;
+        yAdd = 348;
     }
     
     

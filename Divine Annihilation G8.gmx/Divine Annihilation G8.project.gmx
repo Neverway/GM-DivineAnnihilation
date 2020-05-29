@@ -479,6 +479,7 @@
       </objects>
       <objects name="Inventory">
         <object>objects\obj_menu_inventory</object>
+        <object>objects\obj_menu_inventory_actions</object>
       </objects>
       <objects name="Shop">
         <object>objects\obj_menu_shop</object>
